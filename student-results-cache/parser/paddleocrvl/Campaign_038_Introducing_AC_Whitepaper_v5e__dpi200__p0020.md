@@ -1,0 +1,14 @@
+<div style="text-align: center;"><img src="imgs/img_in_image_box_0_890_308_2204.jpg" alt="Image" width="18%" /></div>
+
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_411_199_1366_886.jpg" alt="Image" width="57%" /></div>
+
+
+Simple Application Server is a server-based service that allows you to build, monitor and maintain your website with just a few clicks. It makes private service building much easier, if all you need is a private virtual machine, and is the best way for beginners to get started with cloud computing.
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_544_1225_1372_1591.jpg" alt="Image" width="50%" /></div>
+
+
+Server Load Balancer allows users to manage sudden spikes in traffic, minimize response times and – vitally – maintain 99.9% availability of web applications. The Server Load Balancer monitors the health of servers and automatically distributes application requests to servers with optimal performance in different zones, ensuring high availability.
+
+Every year, Alibaba Cloud’s Server Load Balancer maximum performance capacity is put to the test by extremely high volumes of traffic during 11-11, Alibaba’s annual Global Shopping Festival, discussed earlier. Similarly, our clients, such as Tianhong, use the Server Load Balancer to ensure their system’s stability, reliability and user availability.

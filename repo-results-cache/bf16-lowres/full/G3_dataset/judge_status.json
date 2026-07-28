@@ -1,0 +1,10 @@
+{
+  "experiment": "G3_dataset",
+  "generate_results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G3_dataset/generate_results.jsonl",
+  "mode": "full",
+  "phase": "judge",
+  "predictions": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G3_dataset/predictions.jsonl",
+  "results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G3_dataset/results.jsonl",
+  "status": "success",
+  "timestamp_utc": "2026-07-06T08:17:22.362803+00:00"
+}

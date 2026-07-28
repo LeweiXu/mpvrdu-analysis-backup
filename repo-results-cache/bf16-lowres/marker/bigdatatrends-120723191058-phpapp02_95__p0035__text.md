@@ -1,0 +1,13 @@
+## Transformation of Fitness
+
+THEN...
+
+Manual tracking
+
+Walk 45 minutes
+Smoothie
+Lift weights 20 minutes
+
+NOW...
+
+Goals + measurement

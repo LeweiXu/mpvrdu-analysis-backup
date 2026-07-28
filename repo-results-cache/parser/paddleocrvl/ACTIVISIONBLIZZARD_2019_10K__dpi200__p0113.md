@@ -1,0 +1,22 @@
+# ACTIVISION BLIZZARD, INC. AND SUBSIDIARIES
+
+## Notes to Consolidated Financial Statements (continued)
+
+We expect to incur aggregate pre-tax restructuring charges of approximately $190 million associated with the restructuring plan, which includes the inventory write-down discussed above. Approximately $50 million of these charges are expected to be incurred in 2020 as we complete the execution of the restructuring plan, as discussed above. These charges will primarily relate to severance (approximately 60% of the aggregate charge), including, in many cases, amounts above those that are legally required, facilities costs (approximately 20% of the aggregate charge), and other asset write-downs and costs (approximately 20% of the aggregate charge). A majority of the total pre-tax charge associated with the restructuring will be paid in cash using amounts on hand and the outlays are expected to continue into 2020.
+
+The total expected pre-tax restructuring charges related to the restructuring plan by segment, inclusive of amounts already incurred, are presented below (amounts in millions):
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td colspan="2">Total Expected Charges</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Activision</td><td style='text-align: center; word-wrap: break-word;'>$     25</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Blizzard</td><td style='text-align: center; word-wrap: break-word;'>105</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>King</td><td style='text-align: center; word-wrap: break-word;'>20</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Other segments (1)</td><td style='text-align: center; word-wrap: break-word;'>40</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Total</td><td style='text-align: center; word-wrap: break-word;'>$     190</td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>
+
+(1) Includes charges for operating segments managed outside the reportable segments and our corporate and administrative functions.
+
+### 18. Interest and Other Expense (Income), Net
+
+Interest and other expense (income), net is comprised of the following (amounts in millions):
+
+<div style="text-align: center;">For the Years Ended December 31,</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>2019</td><td style='text-align: center; word-wrap: break-word;'>2018</td><td style='text-align: center; word-wrap: break-word;'>2017</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Interest income</td><td style='text-align: center; word-wrap: break-word;'>$ (79)</td><td style='text-align: center; word-wrap: break-word;'>$ (65)</td><td style='text-align: center; word-wrap: break-word;'>$ (24)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Interest expense from debt and amortization of debt discount and deferred financing costs</td><td style='text-align: center; word-wrap: break-word;'>90</td><td style='text-align: center; word-wrap: break-word;'>140</td><td style='text-align: center; word-wrap: break-word;'>162</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Unrealized gain on equity investment</td><td style='text-align: center; word-wrap: break-word;'>(38)</td><td style='text-align: center; word-wrap: break-word;'>—</td><td style='text-align: center; word-wrap: break-word;'>—</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Other expense (income), net</td><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>(4)</td><td style='text-align: center; word-wrap: break-word;'>8</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Interest and other expense (income), net</td><td style='text-align: center; word-wrap: break-word;'>$ (26)</td><td style='text-align: center; word-wrap: break-word;'>$ 71</td><td style='text-align: center; word-wrap: break-word;'>$ 146</td></tr></table>

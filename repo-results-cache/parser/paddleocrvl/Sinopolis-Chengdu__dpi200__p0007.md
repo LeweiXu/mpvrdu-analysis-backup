@@ -1,0 +1,3 @@
+Sinopolis is owned and maintained by ChinTell Limited, Hong Kong. Neither HSBC nor any member of the HSBC group of companies ("HSBC") endorses the contents and/or is involved in selecting, creating or editing the contents of Sinopolis, the Week in China website or the Week in China magazine. The views expressed in these publications are solely the views of ChinTell Limited and do not necessarily reflect the views or investment ideas of HSBC. No responsibility will therefore be assumed by HSBC for the contents of these publications or for the errors or omissions therein.
+
+@2017 SINOPOLIS is published by ChinTell Limited, a company based in Hong Kong. All rights reserved. To contact us email: contactus@weekinchina.com

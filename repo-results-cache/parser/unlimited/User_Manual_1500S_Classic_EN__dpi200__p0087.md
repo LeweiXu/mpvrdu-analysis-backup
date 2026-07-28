@@ -1,0 +1,9 @@
+Messages and instructions | Error messages and malfunctions
+![](images/0.jpg)
+
+The ON/OFF switch reacts after about 1 second and the coffee machine switches off.
+In order to clear an error, for example if the software hangs up, pressing and holding the ON/OFF switch will switch off the controller.
+NOTE
+<table><tr><td>Error number</td><td>Error description</td><td>Action instructions</td></tr><tr><td>6</td><td>Brewing unit lockup current /Brewing unit stiff</td><td>* Switch off the coffee machine* Clean the brewing unit▷Care ▷Clean brewing unit, page 73</td></tr><tr><td>88</td><td>Boiler: over-temperature</td><td>* Switch off the coffee machine, allow to cool and switch on againIf error not remedied* Switch off the coffee machine* Call WMF Service</td></tr><tr><td>89</td><td>Boiler: heat-up time error</td><td>* Switch off the coffee machine and on again* If error not remedied call WMF Service</td></tr><tr><td>161</td><td>Flow error: brewing water</td><td>Between each of the following steps switch off the coffee machine and on again. If error not remedied carry out the next step.* Clean the brewing unit▷ Care ▷ Clean brewing unit, page 73* Set the grinding degree coarser▷ Other settings ▷ Set grinding degree, page 58* Reduce quality▷ Settings ▷ Recipes, page 37* If error not remedied call WMF Service</td></tr><tr><td>162</td><td>Flow error: when cleaning</td><td>Between each of the following steps switch off the coffee machine and on again. If error not remedied carry out the next step.* Clean the brewing unit▷ Care ▷ Clean brewing unit, page 73* If error not remedied call WMF Service</td></tr></table>
+88
+User Manual WMF 1500 S

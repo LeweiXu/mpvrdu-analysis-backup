@@ -1,0 +1,8 @@
+{
+  "decode_budget": {
+    "cot": 96,
+    "default": 32,
+    "extract_cot": 96
+  },
+  "final_answer_delimiter": "Answer:"
+}

@@ -1,0 +1,9 @@
+```
+In [395]: feat = getfeat_single_image('rQ4bKra.jpg') #run image to
+x = feat
+y = f([x]) #run feature through DBN > out: prediction\nif y:
+    print "WOOF I'm a Dog!"\nelse:
+    print "MEOW I'm a Cat!"
+```
+
+WOOF I'm a Dog!

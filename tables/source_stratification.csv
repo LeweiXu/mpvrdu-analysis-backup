@@ -1,0 +1,16 @@
+# swept,source_dataset stratum × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# strata,loader dataset id only; no upstream QA provenance exists
+source_dataset,T,TL,TLV,V,n
+mmlongbench,31.9 [27.1-36.6],39.4 [35.2-43.8],56.8 [52.0-61.2],45.9 [42.0-50.0],3143
+(uncoded),"16 cells, no acc","86 cells, no acc","130 cells, no acc","13 cells, no acc",245
+n (per col),831,761,717,834,-

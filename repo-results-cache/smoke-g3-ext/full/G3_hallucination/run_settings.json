@@ -1,0 +1,6 @@
+{
+  "decode_budget": {
+    "default": 64
+  },
+  "final_answer_delimiter": "Answer:"
+}

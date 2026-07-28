@@ -1,0 +1,198 @@
+FOOD & RETAIL
+
+ALICE LEE PLAZA
+
+BAR BAR BLACK SHEEP
+
+ARTS AND SOCIAL SCIENCES
+
+LIANG BAN KUNG FU
+
+The Deck, Level 2
+
+SALAD EXPRESS X PASTA EXPRESS
+
+The Deck, Level 2
+
+THE COFFEE HUT
+
+Block AS2
+
+THE COFFEE ROASTER
+
+Block AS8
+
+THE DECK
+
+UNCLE PENYET
+
+The Deck, Level 2
+
+## BUSINESS SCHOOL
+
+THE SPREAD
+
+Mochtar Riady Building
+
+Level 1
+
+## CENTRAL LIBRARY
+
+MAXX COFFEE
+
+Level 1
+
+NUS CO-OP
+
+Level 1
+
+## COMPUTING
+
+OMO STORE
+
+Block COM1
+
+DESIGN AND ENVIRONMENT
+
+## ENGINEERING
+
+ARISE & SHINE
+
+Block E4
+
+E2 HALAL CAFETERIA
+
+Block E2
+
+PASTA NATION BY PLATYPUS
+
+Block E2A
+
+PLATYPUS FOOD BAR
+
+Block SDE4
+
+PLATYPUS FOOD BAR
+
+Block E2A
+
+
+
+SPINELLI
+
+Block EA
+
+SUBWAY Block E4
+
+CHEERS Block E3
+
+### INNOVATION 4.0
+
+NAMI
+
+Level 1
+
+LEE KONG CHIAN
+
+NATURAL HISTORY
+
+MUSEUM
+
+MUSEUM GIFT SHOP
+
+## MEDICINE
+
+EUREKA TASTE
+
+Block MD6
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_86_1008_1987_1784.jpg" alt="Image" width="77%" /></div>
+
+
+JEWEL COFFEE
+
+Block MD11
+
+## PRINCE GEORGE'S PARK RESIDENCES
+
+FOODCLIQUE
+
+PGPR AIRCON FOOD COURT
+
+SUPERSNACKS
+
+NANYANG MART
+
+## SCIENCE
+
+ARISE & SHINE
+
+Block S16
+
+FRONTIER
+
+GONG CHA
+
+Frontier
+
+LI JI COFFEEHOUSE
+
+Frontier
+
+PLATYPUS FOOD BAR
+
+PASTA EXPRESS
+
+Frontier
+
+PLATYPUS FOOD BAR
+
+Block S16
+
+STARBUCKS
+
+Block S9
+
+TAIWAN ICHIBAN
+
+Frontier
+
+UNCLE PENYET
+
+Frontier
+
+CHEERS
+
+Frontier
+
+NUS CO-OP
+
+LT27
+
+## SHAW FOUNDATION ALUMNI HOUSE
+
+PRIVE GRILL AT THE UNIVERSITY CLUB
+
+Shaw Foundation Alumni
+
+House, Level 4
+
+REEDZ CAFÉ
+
+Shaw Foundation Alumni
+
+House, Level 1
+
+## UNIVERSITY HALL
+
+SPINELLI
+
+Tan Chin Tuan Wing
+
+Level 1
+
+UNIVERSITY SPORTS CENTRE
+
+THE TEA PARTY
+
+Level 3

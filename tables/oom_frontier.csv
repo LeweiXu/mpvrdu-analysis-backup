@@ -1,0 +1,63 @@
+# swept,rung / resolution / pages-fed (OOM rate)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# note,"OOM from status rows, pooled across all G1 runs"
+rung,resolution,pages_fed,oom_rate,n_oom,n_total
+T,med,1,0.1,2,2928
+T,med,2-5,0.8,16,1896
+T,med,6-10,16.7,29,174
+T,med,11-20,50.0,15,30
+T,med,21+,0.0,0,12
+T,med,0,0.0,0,42
+TL,med,1,0.7,21,2928
+TL,med,2-5,13.0,246,1896
+TL,med,6-10,27.0,47,174
+TL,med,11-20,46.7,14,30
+TL,med,21+,100.0,12,12
+TL,med,0,0.0,0,42
+TLV,high,1,2.7,13,488
+TLV,high,2-5,37.0,117,316
+TLV,high,6-10,100.0,29,29
+TLV,high,11-20,100.0,5,5
+TLV,high,21+,100.0,2,2
+TLV,high,0,0.0,0,7
+TLV,low,1,1.6,8,488
+TLV,low,2-5,25.9,82,316
+TLV,low,6-10,62.1,18,29
+TLV,low,11-20,100.0,5,5
+TLV,low,21+,100.0,2,2
+TLV,low,0,0.0,0,7
+TLV,med,1,1.0,33,3416
+TLV,med,2-5,20.7,458,2212
+TLV,med,6-10,61.6,125,203
+TLV,med,11-20,97.1,34,35
+TLV,med,21+,100.0,14,14
+TLV,med,0,0.0,0,49
+V,high,1,0.0,0,488
+V,high,2-5,0.3,1,316
+V,high,6-10,100.0,29,29
+V,high,11-20,100.0,5,5
+V,high,21+,100.0,2,2
+V,high,0,0.0,0,7
+V,low,1,0.0,0,488
+V,low,2-5,0.0,0,316
+V,low,6-10,0.0,0,29
+V,low,11-20,20.0,1,5
+V,low,21+,100.0,2,2
+V,low,0,0.0,0,7
+V,med,1,0.0,0,3416
+V,med,2-5,0.0,0,2212
+V,med,6-10,6.4,13,203
+V,med,11-20,57.1,20,35
+V,med,21+,100.0,14,14
+V,med,0,0.0,0,49
+n (per col),-,-,-,-,-

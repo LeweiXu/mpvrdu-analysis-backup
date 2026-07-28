@@ -1,0 +1,4 @@
+## Mastering Strategic SEO Audits
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Ecommerce Conversion Rate 2.16%</td><td style='text-align: center; word-wrap: break-word;'>Transactions 413,780</td><td style='text-align: center; word-wrap: break-word;'>Revenue $21,360,345.68</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Average Order Value $51.62</td><td style='text-align: center; word-wrap: break-word;'>Unique Purchases 977,406</td><td style='text-align: center; word-wrap: break-word;'>Quantity 1,381,146</td></tr></table>

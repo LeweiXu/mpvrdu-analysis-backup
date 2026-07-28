@@ -1,0 +1,1 @@
+7) Stage 7: The process is repeated for the next two bays.

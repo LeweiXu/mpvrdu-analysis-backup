@@ -1,0 +1,21 @@
+# swept,prompt_mode × doc_type
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,unanswerable
+# page_selection,"similarity (bm25, k=3)"
+# page_selection note,"described as similarity (bm25, k=3); rows are emitted under base retrieved_text_k3 with provenance=retrieved"
+doc_type,none,generic,targeted,n_none,n_generic,n_targeted
+Academic paper,7.3,4.7,73.6,150,148,148
+Administration/Industry file,15.9,14.3,71.4,63,63,63
+Brochure,13.0,9.8,65.2,92,92,92
+Financial report,8.0,8.0,72.0,25,25,25
+Guidebook,16.9,7.1,87.9,142,141,141
+Research report / Introduction,22.0,11.2,82.6,322,321,321
+Tutorial/Workshop,20.4,21.3,96.3,108,108,108
+n (per col),902,898,898,-,-,-

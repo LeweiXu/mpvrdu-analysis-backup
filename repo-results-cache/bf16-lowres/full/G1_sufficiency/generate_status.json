@@ -1,0 +1,10 @@
+{
+  "experiment": "G1_sufficiency",
+  "generate_results": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/generate_results.jsonl",
+  "mode": "full",
+  "phase": "generate",
+  "predictions": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/predictions.jsonl",
+  "results": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/results.jsonl",
+  "status": "success",
+  "timestamp_utc": "2026-07-06T04:56:00.143314+00:00"
+}

@@ -1,0 +1,21 @@
+## 7 DISCUSSION
+
+Abstraction helps humans to solve complex tasks by removing irrelevant details and distill the high-level concepts and principles to guide the problem-solving process. STEP-BACK PROMPTING breaks complex tasks such as knowledge-intensive QA, multi-hop reasoning and science questions into two separate steps of Abstraction and Reasoning. We demonstrate through empirical experiments that Abstraction is an easy skill to teach the LLMs such as PaLM-2L via sample-efficient demonstrations. Grounding on the high-level concepts and principles, LLMs can leverage their intrinsic Reasoning capabilities to derive the solution. This reduces the chance of reasoning failures in the intermediate steps, and is shown to improve the performance on a wide range of complex reasoning tasks. Despite the success, through error analysis, we find that Reasoning is still one of the hardest skills for LLMs to acquire as it is still the dominating failure mode even after the large chunk of task complexity reduction by STEP-BACK PROMPTING.
+
+Nevertheless, Abstraction is neither absolutely necessary nor possible in all scenarios. For instance, the task can be as simple as who was the president of the United States in 2000?, in which case there is not such a need to step back and ask a high-level question as the answer to such questions is readily available. Parallely, questions such as what is the speed of light? point to the first principles themselves. Doing Abstraction in this case would not make a difference.
+
+## 8 RELATED WORK
+
+STEP-BACK PROMPTING is related to the literature of prompting and decomposition.
+
+### 8.1 PROMPTING
+
+Few-shot prompting (Brown et al., 2020; Liu et al., 2023; Mishra et al., 2022a; Wei et al., 2022b) has significantly improved model performance across a range of tasks without requiring to update any model parameters. Our work STEP-BACK PROMPTING is in the same category as chain of thought prompting (Wei et al., 2022b) and scratchpad (Nye et al., 2021) owing to its simplicity and generic nature, however, is focused on the key idea of abstraction which is inspired from the fact that often taking a step back and looking at broader level help humans in performing complex tasks. Our work is also related to the recitation-augmented language models (Sun et al., 2022), however in contrast to their work, we explicitly perform step-back and abstraction, with optional use of retrieval augmentation depending the nature of the task at hand.
+
+### 8.2 DECOMPOSITION
+
+Decomposing a task into simpler tasks and solving these tasks to solve the original task have been an effective way (Zhou et al., 2022; Patel et al., 2022; Khot et al., 2022; Press et al., 2022) to improve model performance on complex tasks. Several prompting methods have been successful in improving model performance. Our work STEP-BACK PROMPTING, in contrast, is on making the question more abstract and high level, which is different from decomposition that is often low level breakdowns of the original question. Furthermore, abstract questions such as what is the employment history of person X? are often generic in nature so have a many-to-one mapping since many questions (e.g., which employer did X work for in 1990? and which employer did X work for in 2000?) can have the same abstract questions. This is in contrast to decomposition where there is often a one-to-many mapping since there are multiple decomposed sub-problems necessary to solve a given question.
+
+## 9 CONCLUSION
+
+We introduce STEP-BACK PROMPTING as a simple and generic method to elicit deep reasoning via abstraction in large language models. Experimentation on LLMs across fact-seeking, commonsense reasoning and domain specific reasoning benchmark shows STEP-BACK PROMPTING significantly improve model performance. We hypothesize that abstraction helps models to hallucinate less and reason better, probably reflecting the true nature of the model which are often hidden while responding to the original question without abstraction. We hope our work will inspire more human-inspired approaches to elicit the hidden potential of large language models.

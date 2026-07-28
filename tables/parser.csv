@@ -1,0 +1,20 @@
+# swept,parser (paddleocrvl / mineru / unlimited)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TL/TLV only
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+doc_type,paddleocrvl TL,paddleocrvl TLV,mineru TL,mineru TLV,unlimited TL,unlimited TLV,n
+Academic paper,37.7 [28.6-47.1],42.0 [31.6-51.3],20.5 [11.4-30.1],35.3 [22.9-48.7],39.0 [28.9-49.3],42.1 [32.3-50.9],151
+Administration/Industry file,57.9 [48.4-70.2],74.5 [64.7-88.1],44.1 [33.9-58.8],66.7 [58.8-80.0],65.0 [57.1-75.0],70.9 [62.3-83.3],61
+Brochure,32.9 [22.4-45.6],41.7 [28.0-56.0],16.7 [9.5-24.6],40.0 [25.8-55.2],36.8 [26.0-48.1],50.0 [35.9-63.4],76
+Financial report,64.3 [49.1-75.7],72.1 [66.0-79.4],42.5 [28.3-54.1],48.0 [37.5-56.7],55.7 [45.6-63.5],55.3 [48.2-63.0],107
+Guidebook,36.5 [23.8-49.5],51.8 [38.1-65.0],26.2 [15.8-36.5],51.6 [36.0-65.2],37.8 [24.8-51.5],51.8 [38.0-66.0],119
+Research report / Introduction,26.7 [19.0-34.2],52.7 [43.5-60.5],21.2 [14.4-27.7],47.5 [38.6-55.4],27.5 [20.1-35.1],54.0 [43.9-62.8],208
+Tutorial/Workshop,46.8 [39.0-54.0],76.6 [69.8-83.2],37.3 [28.4-47.7],71.4 [64.0-78.9],46.4 [37.9-55.4],74.1 [66.7-81.7],112
+n (per col),761,717,770,696,818,767,-

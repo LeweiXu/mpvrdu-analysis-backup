@@ -1,0 +1,3 @@
+### Not all recruiting organizations use LinkedIn job postings or Recruiter job slots. Why are questions about these capabilities included on the exam?
+
+LinkedIn recognizes that while you may not currently be using job postings or job slots, organizations must be able to react quickly and flexibly to changing business needs. Requiring you to know how to effectively display jobs to potential candidates ensures that the LinkedIn Certified Professional—Recruiter certification will be relevant in the overall recruiting industry as a foundational skill set, now and in the future.

@@ -1,0 +1,10 @@
+{
+  "experiment": "G2_family",
+  "generate_results": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G2_family/generate_results.jsonl",
+  "mode": "full",
+  "phase": "generate",
+  "predictions": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G2_family/predictions.jsonl",
+  "results": "/mmfs1/data/group/ems036/lxu/mpvrdu/results/cache/bf16-lowres/full/G2_family/results.jsonl",
+  "status": "success",
+  "timestamp_utc": "2026-07-06T07:25:55.239150+00:00"
+}

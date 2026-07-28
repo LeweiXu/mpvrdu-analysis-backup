@@ -1,0 +1,1 @@
+## How Lead Scoring Works in an Automated Marketing Context

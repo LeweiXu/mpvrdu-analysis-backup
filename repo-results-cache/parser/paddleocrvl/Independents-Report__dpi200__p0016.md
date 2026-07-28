@@ -1,0 +1,1 @@
+By contrast, moderates continue to make up the largest share of independents who do not lean to a party. Nearly half of independents who do not lean to a party describe their views as moderate, while 24% are conservatives and 18% are liberals. These numbers have changed little since 2000.

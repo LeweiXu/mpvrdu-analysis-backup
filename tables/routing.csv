@@ -1,0 +1,19 @@
+# swept,routing policy
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# note,assembled from G1 ladder rows + G3 classifier price
+policy,accuracy,prefill_ms,latency_ms,note
+uniform_cheapest_T,31.9,1428,7161,
+uniform_strongest_TLV,56.8,26311,33013,
+oracle_routing,51.3,14312,20876,per-doc_type frontier rung
+predicted_routing,51.3,14312,49726,oracle rung choice + classifier latency
+n (per col),-,-,-,-

@@ -1,0 +1,10 @@
+{
+  "experiment": "G5_retrieval",
+  "generate_results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G5_retrieval/generate_results.jsonl",
+  "mode": "full",
+  "phase": "judge",
+  "predictions": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G5_retrieval/predictions.jsonl",
+  "results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G5_retrieval/results.jsonl",
+  "status": "success",
+  "timestamp_utc": "2026-07-06T08:36:42.837592+00:00"
+}

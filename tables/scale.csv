@@ -1,0 +1,18 @@
+# swept,reasoner_spec (size + family)
+# dataset,mmlongbench
+# scan,any (digital+scanned)
+# sampling,full
+# parser,paddleocrvl
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# note,8b bf16 baseline from the representation run
+model_spec,T,TL,TLV,V,weights_mb,peak_vram_mb,prefill_ms,latency_ms,n
+internvl3-8b-local,19.6 [16.1-23.1],27.3 [23.8-31.1],34.6 [30.2-38.9],24.1 [20.2-28.4],15889,13303,-,5261,3180
+qwen3vl-2b-local,24.6 [20.7-28.2],32.1 [28.6-35.4],39.2 [35.6-42.8],32.0 [28.4-35.7],4255,14264,18234,24047,3342
+qwen3vl-4b-local,32.4 [27.4-37.2],39.8 [35.6-44.0],53.4 [49.4-57.4],42.3 [38.1-46.8],8876,15058,18126,25041,3242
+qwen3vl-8b-local,31.9 [27.1-36.6],39.4 [35.2-43.8],56.8 [52.0-61.2],45.9 [42.0-50.0],17534,14240,14499,21045,3143
+n (per col),3344,3156,3041,3366,-,-,-,-,-

@@ -1,0 +1,24 @@
+# swept,inference-time lever × effect
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# sources,each lever row loads its own run_tag(s) in the builder; blank rows await their runs
+# retrieval depth,PROVISIONAL (partial G2 pool)
+lever,targets,metric,baseline,lever value,delta,n (base/lever)
+resolution med→high,E3 fidelity,acc @ TLV,57.0,59.8,+2.7,719/681
+interleaving TLV→TLVi,E4 reasoning,acc @ TLV,52.8,55.0,+2.2,847/847
+CoT prompt (grounded→cot),E4 reasoning,acc @ TLV,46.3,52.3,+6.0,667/667
+extraction (grounded→extract_cot),E4 reasoning,acc @ TLV,46.3,49.1,+2.8,667/666
+abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),15.9,77.7,+61.8,195/193
+retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),28.9,36.2,+7.2,304/304
+model swap 8B→InternVL3-8B,reasoner,acc @ TLV,56.8,34.6,-22.1,717/742
+thinking variant (M−S),E4 reasoning,M−S @ TLV,-,-,-,-
+n (per col),-,-,-,-,-,-

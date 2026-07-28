@@ -1,0 +1,17 @@
+# swept,prompt_mode (none / generic / targeted; legacy names of the six-mode set)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,unanswerable
+# page_selection,"similarity (bm25, k=3)"
+# page_selection note,"described as similarity (bm25, k=3); rows are emitted under base retrieved_text_k3 with provenance=retrieved"
+prompt_condition,abstention_rate,answered,n
+none,16.9,750,902
+generic,10.7,802,898
+targeted,80.7,173,898
+n (per col),-,-,-

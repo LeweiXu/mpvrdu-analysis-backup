@@ -1,0 +1,3 @@
+Error ScenariosIconPossible CausesSolution
+Not using the standard measuring postureYour posture was not the standard measuring posture, and your watch was not at the same height as your heart.Perform the measurement based on the standard measuring posture as shown in the figures.
+The measurement was done while you were moving.The measurement was performed in an environment where you were moving, such as in a vehicle or an elevator.Do not use this product to measure blood pressure in an environment where you are moving.

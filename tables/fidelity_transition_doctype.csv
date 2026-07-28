@@ -1,0 +1,39 @@
+# swept,"rung transition (TL→TLV, T→TL, T→TLV) × doc_type"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# pairing,"within-question, both rungs status==ok"
+# transition columns,percentages summing to 100 per row (parenthesised figure is the raw count)
+pairing,doc_type,wrong→right (%),right→wrong (%),right→right (%),wrong→wrong (%),paired n
+TL->TLV,Academic paper,9.2 (11),5.0 (6),32.8 (39),52.9 (63),119
+TL->TLV,Administration/Industry file,16.4 (9),0.0 (0),58.2 (32),25.5 (14),55
+TL->TLV,Brochure,13.9 (10),4.2 (3),27.8 (20),54.2 (39),72
+TL->TLV,Financial report,10.3 (7),1.5 (1),61.8 (42),26.5 (18),68
+TL->TLV,Guidebook,14.5 (16),0.9 (1),37.3 (41),47.3 (52),110
+TL->TLV,Research report / Introduction,26.3 (49),2.2 (4),26.3 (49),45.2 (84),186
+TL->TLV,Tutorial/Workshop,29.9 (32),1.9 (2),46.7 (50),21.5 (23),107
+TL->TLV,**All doc_types**,18.7 (134),2.4 (17),38.1 (273),40.9 (293),717
+T->TL,Academic paper,4.7 (6),9.4 (12),33.6 (43),52.3 (67),128
+T->TL,Administration/Industry file,15.8 (9),7.0 (4),42.1 (24),35.1 (20),57
+T->TL,Brochure,9.3 (7),4.0 (3),24.0 (18),62.7 (47),75
+T->TL,Financial report,11.4 (8),4.3 (3),52.9 (37),31.4 (22),70
+T->TL,Guidebook,5.2 (6),4.3 (5),31.3 (36),59.1 (68),115
+T->TL,Research report / Introduction,10.9 (22),5.0 (10),15.8 (32),68.3 (138),202
+T->TL,Tutorial/Workshop,35.1 (39),1.8 (2),11.7 (13),51.4 (57),111
+T->TL,**All doc_types**,12.8 (97),5.1 (39),26.8 (203),55.3 (419),758
+T->TLV,Academic paper,9.2 (11),10.1 (12),32.8 (39),47.9 (57),119
+T->TLV,Administration/Industry file,25.5 (14),0.0 (0),49.1 (27),25.5 (14),55
+T->TLV,Brochure,22.5 (16),7.0 (5),19.7 (14),50.7 (36),71
+T->TLV,Financial report,16.2 (11),1.5 (1),55.9 (38),26.5 (18),68
+T->TLV,Guidebook,16.4 (18),1.8 (2),35.5 (39),46.4 (51),110
+T->TLV,Research report / Introduction,33.9 (63),3.8 (7),18.8 (35),43.5 (81),186
+T->TLV,Tutorial/Workshop,62.6 (67),0.0 (0),14.0 (15),23.4 (25),107
+T->TLV,**All doc_types**,27.9 (200),3.8 (27),28.9 (207),39.4 (282),716
+n (per col),"TL->TLV: 717, T->TL: 758, T->TLV: 716",-,-,-,-,-

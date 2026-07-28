@@ -1,0 +1,1 @@
+<div style="text-align: center;"><img src="imgs/img_in_image_box_82_76_919_1490.jpg" alt="Image" width="83%" /></div>

@@ -1,0 +1,10 @@
+{
+  "experiment": "G1_sufficiency",
+  "generate_results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/generate_results.jsonl",
+  "mode": "full",
+  "phase": "judge",
+  "predictions": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/predictions.jsonl",
+  "results": "/home/lingwei/mpvrdu/results/cache/bf16-lowres/full/G1_sufficiency/results.jsonl",
+  "status": "success",
+  "timestamp_utc": "2026-07-06T07:50:07.635786+00:00"
+}

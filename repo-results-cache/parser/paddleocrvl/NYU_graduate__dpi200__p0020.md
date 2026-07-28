@@ -1,0 +1,13 @@
+<div style="text-align: center;"><img src="imgs/img_in_image_box_207_49_866_1145.jpg" alt="Image" width="37%" /></div>
+
+
+## WOMEN AT TANDON (OTHMER)
+
+The Women at Tandon Explorations community was created to offer women students a strong support system to reinforce their positive experience as a science, technology, engineering, and math student. The community will foster engagement and relationship building among women in the world of STEM. The community will offer opportunities to network with successful alumnae and senior women at Tandon, participate in social functions, attend events and activities tied to women and STEM, and get involved in community service.
+
+## GLOBAL LABORATORY
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_980_530_1027_598.jpg" alt="Image" width="2%" /></div>
+
+
+Have you ever wondered why something works the way it does? Or maybe you're just interested in learning about the next BIG thing? Come explore the science of New York City and experience this living laboratory. From museums and exhibitions to the streets themselves, there are countless opportunities to observe science in the city. Past opportunities include the Body Worlds: Pulse Exhibit at Discovery Times Square, documentary screenings, Interstellar in IMAX, the Museum of the City of New York, a talk by Bill Nye, an Eco-Cruise in the New York Harbor, the New York Transit Museum, a STEM career panel, a hiking trip, and more. Come explore the scientific wonderland that is New York City!

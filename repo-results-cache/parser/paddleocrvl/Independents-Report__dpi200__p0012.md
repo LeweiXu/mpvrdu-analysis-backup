@@ -1,0 +1,3 @@
+However, Republican-leaning independents differ from Republicans in their views of immigrants' impact on the country. Among GOP leaners, 44% say immigrants strengthen the country because of their hard work and talents; 40% say they are a burden on the country because they take jobs, housing and health care. A majority of those who identify as Republicans (55%) say immigrants burden the country.
+
+Views of immigrants’ impact on the country are largely positive among Democratic-leaning independents (88% say they strengthen the U.S.) and those who identify as Democrats (80%).

@@ -1,0 +1,11 @@
+9
+Older Adults and Technology
+Nationally, tablets and e-book readers are most popular among college graduates and higher-income Americans, and this is also true among seniors. Seniors who have graduated from college are around three times as likely to own both an e-book reader and a tablet as are seniors who have not attended college, and those with an annual household income of $75,000 or more per year are around four times as likely to own each device as are those with a household income of less than $30,000 per year.
+Tablet and e-book reader adoption among seniors
+% of seniors (ages 65 and older) who own a ...
+<table><tr><td></td><td>e-book reader</td><td>Tablet computer</td></tr><tr><td>Total for all 65+</td><td>18%</td><td>18%</td></tr><tr><td>Age</td><td></td><td></td></tr><tr><td>65-69</td><td>23</td><td>23</td></tr><tr><td>70-74</td><td>19</td><td>18</td></tr><tr><td>75-79</td><td>18</td><td>20</td></tr><tr><td>80+</td><td>10</td><td>9</td></tr><tr><td>Education</td><td></td><td></td></tr><tr><td>High school grad or less</td><td>12</td><td>11</td></tr><tr><td>Some college</td><td>19</td><td>19</td></tr><tr><td>College graduate</td><td>30</td><td>31</td></tr><tr><td>Household Income</td><td></td><td></td></tr><tr><td>&lt;$30,000</td><td>8</td><td>8</td></tr><tr><td>$30,000-$49,999</td><td>17</td><td>16</td></tr><tr><td>$50,000-$74,999</td><td>33</td><td>28</td></tr><tr><td>$75,000+</td><td>33</td><td>39</td></tr></table>
+Pew Research Center's Internet Project July 18-September 30, 2013 tracking survey.
+PEW RESEARCH CENTER
+46% of online seniors use social networking sites, but just 6% use Twitter
+Usage of social networking sites by older Americans has been steadily increasing in recent years, but has not yet reached majority status—among older adults who use the internet, 46% use social networking sites such as Facebook, well below the national average of 73% of adult internet users. On a “total population” basis (that is, accounting for individuals who do not use the internet at all), 63% of all American adults, and 27% of all Americans ages 65 and older, are social networking site users.
+www.pewresearch.org

@@ -1,0 +1,43 @@
+# swept,evidence hop (single vs multi) × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# hop,"single/multi only, hop=none dropped"
+# gap column,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+doc_type,rung,single,multi,M − S,n
+Academic paper,T,36.9 [22.5-50.6],43.5 [30.0-58.6],+6.6,146
+Academic paper,TL,33.3 [22.0-44.2],46.8 [28.9-62.5],+13.5,128
+Academic paper,TLV,38.8 [27.4-50.0],48.6 [31.2-65.7],+9.9,117
+Academic paper,V,29.8 [19.5-39.7],34.3 [23.9-46.4],+4.6,151
+Administration/Industry file,T,58.5 [38.3-80.6],37.5 [13.3-57.9],-21.0,57
+Administration/Industry file,TL,68.3 [57.4-81.1],38.5 [0.0-72.2],-29.8,54
+Administration/Industry file,TLV,85.4 [73.8-100.0],54.5 [14.3-77.8],-30.8,52
+Administration/Industry file,V,65.9 [56.5-77.1],23.5 [10.0-33.3],-42.3,58
+Brochure,T,22.9 [11.9-34.2],37.0 [14.3-61.5],+14.1,75
+Brochure,TL,30.6 [20.0-43.2],37.0 [16.7-56.0],+6.4,76
+Brochure,TLV,44.9 [30.2-60.8],34.8 [11.5-60.0],-10.1,72
+Brochure,V,44.9 [27.5-60.8],46.4 [26.1-67.9],+1.5,77
+Financial report,T,60.3 [46.3-72.9],37.2 [25.0-48.6],-23.1,106
+Financial report,TL,68.3 [54.5-78.0],44.4 [11.1-77.8],-23.9,69
+Financial report,TLV,76.7 [71.0-83.9],42.9 [16.7-66.7],-33.8,67
+Financial report,V,47.6 [33.9-62.3],20.5 [12.5-31.6],-27.2,107
+Guidebook,T,41.1 [26.0-58.3],25.5 [10.4-41.3],-15.6,120
+Guidebook,TL,44.4 [30.4-57.9],23.3 [9.3-38.5],-21.2,115
+Guidebook,TLV,58.3 [44.1-71.4],39.5 [20.0-59.5],-18.9,110
+Guidebook,V,54.8 [41.4-67.5],35.6 [21.3-48.9],-19.2,118
+Research report / Introduction,T,28.0 [17.3-39.8],14.7 [7.8-22.2],-13.3,209
+Research report / Introduction,TL,32.7 [21.9-43.1],20.0 [11.2-29.2],-12.7,202
+Research report / Introduction,TLV,67.3 [54.9-77.8],32.9 [21.7-44.1],-34.4,186
+Research report / Introduction,V,64.5 [53.2-73.8],28.0 [16.3-38.3],-36.5,207
+Tutorial/Workshop,T,22.2 [8.9-34.8],0.0 [0.0-0.0],-22.2,109
+Tutorial/Workshop,TL,52.4 [38.5-65.5],40.0 [28.6-49.1],-12.4,108
+Tutorial/Workshop,TLV,85.7 [76.9-93.9],65.9 [53.1-77.3],-19.9,104
+Tutorial/Workshop,V,81.0 [71.9-89.5],56.8 [45.2-67.6],-24.1,107
+n (per col),-,1904,1203,-,-

@@ -1,0 +1,12 @@
+OperationTenant AdministratorTenant GuestOBS AdministratorOBS Buckets ViewerOBS ReadOnl yAccessOBS Operate Access
+Managing loggingYesNoYesNoNoNo
+Managing tagsYesNoYesNoNoNo
+Managing lifecycle rulesYesNoYesNoNoNo
+Managing static website hostingYesNoYesNoNoNo
+Managing CORS rulesYesNoYesNoNoNo
+Managing URL validationYesNoYesNoNoNo
+Managing domain namesYesNoYesNoNoNo
+Managing cross-region replicationYesNoYesNoNoNo
+Managing image processingYesNoYesNoNoNo
+Appendin g objectsYesNoYesNoNoYes
+Configuri ng object ACLYesNoYesNoNoNo

@@ -1,0 +1,3 @@
+## WHAT IS THE **FIRST YEAR RESIDENTIAL EXPERIENCE?**
+
+At NYU, we believe New York is more than just the city where you live. It is a vital partner in your educational experience. It demands you look closely at the critical issues facing you not only in your academic work, but in the community and world around you. As a new student living in one of the residence halls, you will be part of the First Year Residential Experience (FYRE).

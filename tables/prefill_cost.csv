@@ -1,0 +1,41 @@
+# swept,representation (prefill / input tokens)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+doc_type,rung,prefill_ms,input_tokens,n
+Academic paper,T,2781,1616,148
+Academic paper,TL,2940,1697,130
+Academic paper,TLV,24666,4026,119
+Academic paper,V,27539,3201,153
+Administration/Industry file,T,1539,867,60
+Administration/Industry file,TL,1510,860,57
+Administration/Industry file,TLV,20710,3013,55
+Administration/Industry file,V,24313,2827,61
+Brochure,T,1022,565,75
+Brochure,TL,1423,808,76
+Brochure,TLV,27298,3523,72
+Brochure,V,28097,3114,77
+Financial report,T,1920,1140,107
+Financial report,TL,3280,1878,70
+Financial report,TLV,20855,3844,68
+Financial report,V,23207,2709,108
+Guidebook,T,1004,557,120
+Guidebook,TL,1451,828,115
+Guidebook,TLV,22818,3118,110
+Guidebook,V,24237,2735,118
+Research report / Introduction,T,1197,639,209
+Research report / Introduction,TL,1520,866,202
+Research report / Introduction,TLV,29156,3503,186
+Research report / Introduction,V,34775,3530,207
+Tutorial/Workshop,T,272,53,112
+Tutorial/Workshop,TL,719,371,111
+Tutorial/Workshop,TLV,32465,3326,107
+Tutorial/Workshop,V,33952,3247,110
+n (per col),-,-,-,-

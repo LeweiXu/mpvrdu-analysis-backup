@@ -1,0 +1,7 @@
+Object Storage Service
+Product Introduction
+6 Permissions Management
+<table><tr><td>Operation</td><td>Tenant Administrator</td><td>Tenant Guest</td><td>OBS Administrator</td><td>OBS Buckets Viewer</td><td>OBS ReadOnly Access</td><td>OBS Operate Access</td></tr><tr><td>Managing logging</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing tags</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing lifecycle rules</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing static website hosting</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing CORS rules</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing URL validation</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing domain names</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing cross-region replication</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Managing image processing</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Appending objects</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td>Configuring object ACL</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr></table>
+Issue 26 (2024-02-28)
+Copyright © Huawei Technologies Co., Ltd.
+39
