@@ -6,16 +6,16 @@
 reconciliation:
   [SKIP] headline T reproduces the trusted ladder
   [PASS] reasoner_unified precision 8B T == headline (expected 31.9, got 31.9)
-  [FAIL] G4 none T reproduces the headline ladder (expected 31.9, got 27.7)
+  [PASS] G4 none T reproduces the headline ladder (expected 31.9, got 31.9)
   [SKIP] headline TL reproduces the trusted ladder
   [PASS] reasoner_unified precision 8B TL == headline (expected 39.4, got 39.4)
-  [FAIL] G4 none TL reproduces the headline ladder (expected 39.4, got 36.1)
+  [PASS] G4 none TL reproduces the headline ladder (expected 39.4, got 38.8)
   [SKIP] headline TLV reproduces the trusted ladder
   [PASS] reasoner_unified precision 8B TLV == headline (expected 56.8, got 56.8)
-  [FAIL] G4 none TLV reproduces the headline ladder (expected 56.8, got 52.8)
+  [FAIL] G4 none TLV reproduces the headline ladder (expected 56.8, got 52.5)
   [SKIP] headline V reproduces the trusted ladder
   [PASS] reasoner_unified precision 8B V == headline (expected 45.9, got 45.9)
-  [PASS] G4 none V reproduces the headline ladder (expected 45.9, got 46.2)
+  [PASS] G4 none V reproduces the headline ladder (expected 45.9, got 45.6)
   [FAIL] G3 re-run none abstention reproduces the legacy rate (expected 16.9, got 13.5)
   [PASS] G3 re-run grounded abstention reproduces the legacy rate (expected 10.7, got 10.549999999999999)
   [PASS] G3 re-run abstain abstention reproduces the legacy rate (expected 80.7, got 79.29999999999998)
@@ -36,6 +36,7 @@ reconciliation:
 | g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
 | g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
+| g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
 | g3-hallucination-full | G3_hallucination | 2928 | 2698 | 230 | 0 | 7.9 |
 | g4-faithfulness-full | G4_faithfulness_answerable | 20328 | 20328 | 0 | 0 | 0.0 |
 | g5a-drop-best | G5_selection | 2864 | 2816 | 0 | 48 | 0.0 |
@@ -45,7 +46,7 @@ reconciliation:
 | g5b-gold1 | G5_selection | 7680 | 7584 | 0 | 96 | 0.0 |
 | g5b-gold2 | G5_selection | 3936 | 3856 | 0 | 80 | 0.0 |
 | g5b-gold3 | G5_selection | 640 | 640 | 0 | 0 | 0.0 |
-| **all** |  | **88245** | 84607 | 3270 | 368 | 3.7 |
+| **all** |  | **94101** | 90463 | 3270 | 368 | 3.5 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -418,11 +419,21 @@ _Rows group on the pageset condition grammar (ranking source, gold rule, distrac
 | keep top 1 | bm25 | 9.1 [6.2-12.8] (n=352) | 8.5 [5.8-11.7] (n=352) | 12.2 [9.0-16.6] (n=352) | 9.4 [6.2-13.4] (n=352) | 1408 |
 | keep top 1 | colqwen3 | 9.1 [6.1-12.4] (n=352) | 10.2 [6.9-14.1] (n=352) | 12.8 [8.9-17.6] (n=352) | 11.1 [7.5-15.4] (n=352) | 1408 |
 | **oracle (gold 1, d=0)** | - | 37.2 [31.1-43.2] (n=479) | 44.6 [38.7-50.2] (n=473) | 64.0 [58.4-69.5] (n=472) | 55.0 [49.7-60.2] (n=480) | 1904 |
-| gold 1 + 1 distractors | bm25 | 27.4 [17.4-38.3] (n=124) | 40.3 [31.3-49.2] (n=124) | 61.0 [52.8-68.2] (n=123) | 53.7 [44.0-62.5] (n=123) | 494 |
-| gold 1 + 1 distractors | colqwen3 | 27.4 [17.7-37.0] (n=124) | 41.9 [32.0-52.0] (n=124) | 54.8 [46.3-64.1] (n=124) | 51.6 [42.6-60.6] (n=124) | 496 |
-| gold 1 + 2 distractors | bm25 | 27.6 [17.5-38.0] (n=123) | 39.0 [29.3-48.8] (n=123) | 62.6 [53.4-71.1] (n=123) | 50.4 [40.7-59.9] (n=123) | 492 |
-| gold 1 + 2 distractors | colqwen3 | 28.2 [18.2-38.8] (n=124) | 39.5 [28.9-49.6] (n=124) | 62.1 [54.0-70.5] (n=124) | 55.6 [45.3-66.2] (n=124) | 496 |
-| n (per col) | - | 3311 | 3311 | 3310 | 3310 | - |
+| gold 1 + 1 distractors | bm25 | 39.7 [33.5-45.7] (n=474) | 46.8 [41.3-52.4] (n=474) | 64.6 [59.2-69.5] (n=474) | 57.4 [52.1-62.4] (n=474) | 1896 |
+| gold 1 + 1 distractors | colqwen3 | 39.5 [33.7-45.2] (n=474) | 48.9 [43.3-54.1] (n=474) | 63.7 [58.7-68.6] (n=474) | 55.7 [50.5-60.4] (n=474) | 1896 |
+| gold 1 + 2 distractors | bm25 | 40.9 [34.8-47.2] (n=474) | 46.2 [40.8-51.7] (n=474) | 64.8 [59.6-69.9] (n=474) | 53.6 [48.4-58.7] (n=474) | 1896 |
+| gold 1 + 2 distractors | colqwen3 | 38.8 [32.3-45.0] (n=474) | 47.9 [42.0-53.4] (n=474) | 64.3 [59.5-68.7] (n=474) | 56.1 [51.2-61.4] (n=474) | 1896 |
+| **oracle (gold 2, d=0)** | - | 28.6 [22.3-35.0] (n=245) | 34.7 [27.7-41.9] (n=199) | 42.3 [34.7-49.8] (n=189) | 34.6 [27.9-41.2] (n=246) | 879 |
+| gold 2 + 1 distractors | bm25 | 29.0 [22.2-35.8] (n=241) | 34.9 [29.0-40.6] (n=241) | 39.0 [31.7-46.5] (n=241) | 34.0 [27.2-41.0] (n=241) | 964 |
+| gold 2 + 1 distractors | colqwen3 | 25.7 [19.6-32.0] (n=241) | 34.0 [27.8-40.7] (n=241) | 38.6 [31.2-46.3] (n=241) | 34.4 [27.7-41.7] (n=241) | 964 |
+| gold 2 + 2 distractors | bm25 | 27.0 [20.7-33.5] (n=241) | 32.8 [26.2-39.2] (n=241) | 39.8 [32.7-46.8] (n=241) | 34.4 [28.2-40.9] (n=241) | 964 |
+| gold 2 + 2 distractors | colqwen3 | 25.3 [18.9-32.2] (n=241) | 33.6 [27.3-40.3] (n=241) | 35.7 [28.3-43.0] (n=241) | 32.4 [25.9-39.6] (n=241) | 964 |
+| **oracle (gold 3, d=0)** | - | 25.0 [10.2-41.5] (n=40) | 33.3 [18.2-50.0] (n=33) | 42.9 [25.9-61.5] (n=28) | 42.5 [24.3-57.8] (n=40) | 141 |
+| gold 3 + 1 distractors | bm25 | 22.5 [9.8-38.5] (n=40) | 35.0 [20.5-50.0] (n=40) | 50.0 [34.1-65.9] (n=40) | 37.5 [21.4-54.1] (n=40) | 160 |
+| gold 3 + 1 distractors | colqwen3 | 22.5 [7.9-39.0] (n=40) | 40.0 [23.7-56.8] (n=40) | 45.0 [28.2-61.0] (n=40) | 40.0 [25.0-54.1] (n=40) | 160 |
+| gold 3 + 2 distractors | bm25 | 17.5 [5.1-32.5] (n=40) | 37.5 [21.1-53.8] (n=40) | 52.5 [35.1-67.4] (n=40) | 40.0 [25.6-55.0] (n=40) | 160 |
+| gold 3 + 2 distractors | colqwen3 | 27.5 [12.8-43.9] (n=40) | 37.5 [22.5-53.7] (n=40) | 40.0 [23.7-55.8] (n=40) | 30.0 [16.2-44.2] (n=40) | 160 |
+| n (per col) | - | 5836 | 5836 | 5836 | 5836 | - |
 
 ### Hallucination: abstention rate on unanswerable questions by prompt
 
@@ -777,8 +788,8 @@ _One row per lever: the measured baseline, the lever value, and the delta in poi
 | --- | --- | --- | --- | --- | --- | --- |
 | resolution med→high | E3 fidelity | acc @ TLV | 57.0 | 59.8 | +2.7 | 719/681 |
 | interleaving TLV→TLVi | E4 reasoning | acc @ TLV | 52.8 | 55.0 | +2.2 | 847/847 |
-| CoT prompt (grounded→cot) | E4 reasoning | acc @ TLV | 46.3 | 52.3 | +6.0 | 667/667 |
-| extraction (grounded→extract_cot) | E4 reasoning | acc @ TLV | 46.3 | 49.1 | +2.8 | 667/666 |
+| CoT prompt (grounded→cot) | E4 reasoning | acc @ TLV | 45.7 | 53.1 | +7.4 | 847/847 |
+| extraction (grounded→extract_cot) | E4 reasoning | acc @ TLV | 45.7 | 50.2 | +4.5 | 847/846 |
 | abstention prompt (none→targeted) | E5 faithfulness | abstention @ TLV (unanswerable) | 15.9 | 77.7 | +61.8 | 195/193 |
 | retrieval depth k1→k5 (vision) | E2 selection | acc @ V (PROVISIONAL) | 28.9 | 36.2 | +7.2 | 304/304 |
 | model swap 8B→InternVL3-8B | reasoner | acc @ TLV | 56.8 | 34.6 | -22.1 | 717/742 |
@@ -786,6 +797,35 @@ _One row per lever: the measured baseline, the lever value, and the delta in poi
 | n (per col) | - | - | - | - | - | - |
 
 ## Appendix — not mapped to an RQ, retained
+
+### Abstention detection scope: extracted final answer vs whole generation
+
+> **swept**: abstention detection scope (extracted answer vs whole generation) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: TLV · **pool**: unanswerable · **page_selection**: similarity (bm25, k=3) · **prompt_mode**: none · **delimiter**: Answer: (configured by the faithfulness specs)
+
+_Same judged rows, two detection scopes. A positive delta means the whole generation carries abstention wording that the post-delimiter answer drops, so the configured scope reports fewer abstentions._
+
+| prompt_mode | scored (extracted) | whole text | delta | delimiter in answer | n |
+| --- | --- | --- | --- | --- | --- |
+| none | 13.5 | 16.4 | +2.9 | 230 (24%) | 976 |
+| grounded | 10.6 | 10.6 | +0.0 | 0 (0%) | 976 |
+| abstain | 79.3 | 79.3 | +0.0 | 0 (0%) | 976 |
+| abstain_balanced | 74.5 | 74.5 | +0.0 | 0 (0%) | 976 |
+| cot | 10.0 | 19.0 | +8.9 | 893 (91%) | 976 |
+| extract_cot | 15.9 | 17.5 | +1.6 | 822 (84%) | 976 |
+| n (per col) | - | - | - | - | 5856 |
+
+### Pool coverage: cells the earlier V100 run lost to OOM, recovered on the H100
+
+> **swept**: cell pool coverage (shared with the earlier ladder vs recovered) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none (the condition both runs share)
+
+_`shared cells` are the same question/rung pairs the earlier ladder scored and should reproduce it; `recovered cells` are the ones it never completed. A lower recovered column means the pool the earlier run lost was the harder part of it, so a pooled comparison against the earlier number is not like-for-like._
+
+| rung | earlier run | shared cells | recovered cells | new run (all) | n shared / recovered |
+| --- | --- | --- | --- | --- | --- |
+| T | 31.9 | 31.9 | 31.2 | 31.9 | 831 / 16 |
+| TL | 39.4 | 39.9 | 29.1 | 38.8 | 761 / 86 |
+| TLV | 56.8 | 57.0 | 27.7 | 52.5 | 717 / 130 |
+| V | 45.9 | 46.0 | 15.4 | 45.6 | 834 / 13 |
 
 ### Retrieval accuracy (summary): best-F1 operating point per method
 

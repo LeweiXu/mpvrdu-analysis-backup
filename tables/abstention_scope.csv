@@ -1,0 +1,21 @@
+# swept,abstention detection scope (extracted answer vs whole generation)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,unanswerable
+# page_selection,"similarity (bm25, k=3)"
+# prompt_mode,none
+# delimiter,Answer: (configured by the faithfulness specs)
+prompt_mode,scored (extracted),whole text,delta,delimiter in answer,n
+none,13.5,16.4,+2.9,230 (24%),976
+grounded,10.6,10.6,+0.0,0 (0%),976
+abstain,79.3,79.3,+0.0,0 (0%),976
+abstain_balanced,74.5,74.5,+0.0,0 (0%),976
+cot,10.0,19.0,+8.9,893 (91%),976
+extract_cot,15.9,17.5,+1.6,822 (84%),976
+n (per col),-,-,-,-,5856
