@@ -10,7 +10,7 @@ We help our clients to prepare for, respond to and emerge stronger from a wide r
 
 ## Deals Strategy & Operations (DSO)
 
-We provide strategic and operational advice across the deal continuum from setting the deal strategy to post-deal execution. Examples of services we undertake include advising corporates, investment funds, and government entities on strategic investment decisions, conducting commercial/operational due diligence on potential target acquisitions, developing business plans, in addition to a range of post-deal operations services (including post-merger integration, synergy analysis, and carve-outs). Our team includes a diverse mix of profiles with people with relevant strategy, investment, and post-deal operations experience combined with deep sector expertise."
+We provide strategic and operational advice across the deal continuum from setting the deal strategy to post-deal execution. Examples of services we undertake include advising corporates, investment funds, and government entities on strategic investment decisions, conducting commercial/operational due diligence on potential target acquisitions, developing business plans, in addition to a range of post-deal operations services (including post-merger integration, synergy analysis, and carve-outs). Our team includes a diverse mix of profiles with people with relevant strategy, investment, and post-deal operations experience combined with deep sector expertise.
 
 ## Government & Infrastructure
 

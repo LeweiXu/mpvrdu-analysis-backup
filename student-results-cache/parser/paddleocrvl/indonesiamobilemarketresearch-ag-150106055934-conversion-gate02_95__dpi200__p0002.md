@@ -2,7 +2,7 @@
 
 • Population: (July 2013 est.) 251,160,124
 
-GDP (per capita): (2014) $4,271
+• GDP (per capita): (2014) $4,271
 
 • Mobile phone penetration: (2014) 278 million (110%)
 

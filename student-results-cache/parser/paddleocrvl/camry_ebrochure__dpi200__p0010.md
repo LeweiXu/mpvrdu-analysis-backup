@@ -25,7 +25,7 @@ Mechanical/Performance
 
 ✓ Audio Plus with JBL $ ^{®21} $ includes:
 
-- 9-in touchscreen and nine JBL $ ^{®21} $ speakers including subwoofer and amplifier
+- 9-in touchscreen and nine JBL $ ^{®} $21 speakers including subwoofer and amplifier
 
 - Android Auto $ ^{TM} $3 & Apple CarPlay $ ^{®} $2 compatible
 
@@ -148,7 +148,7 @@ Adds to or replaces features offered on SE
 
 ## Options
 
-✓ TRD Premium Audio with nine JBL $ ^{®21} $ speakers - Service Connect up to 10-year trial $ ^{12} $ and Remote Connect 1-year trial $ ^{8} $
+✓ TRD Premium Audio with nine JBL $ ^{®} $ $ ^{21} $ speakers - Service Connect up to 10-year trial $ ^{12} $ and Remote Connect 1-year trial $ ^{8} $
 
 ✓ Two-tone exterior color (color-keyed body with black roof) $ ^{39} $
 

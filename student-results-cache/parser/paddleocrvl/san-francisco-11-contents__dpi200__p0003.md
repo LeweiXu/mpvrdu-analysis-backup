@@ -57,7 +57,7 @@ Beachcomb Ocean Beach up to the Beach Chalet to glimpse 1930s WPA murals celebra
 <div style="text-align: center;"><img src="imgs/img_in_image_box_507_1216_563_1271.jpg" alt="Image" width="5%" /></div>
 
 
-Dinner You've walked the coastline – now savour a seafood feast at Wako (p201).
+Dinner You’ve walked the coastline – now savour a seafood feast at Wako (p201).
 
 ## Nob Hill, Russian Hill & Fillmore (p128)
 

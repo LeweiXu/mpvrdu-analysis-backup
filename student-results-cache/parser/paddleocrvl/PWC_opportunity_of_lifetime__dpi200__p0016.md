@@ -6,9 +6,7 @@ Living in the new normal and respecting social distancing doesn’t mean you can
 
 The quick brown fox jumps over the lazy dog.
 
-Ghada
-
-Consulting FftF
+Ghada Consulting FftF
 
 Ibrahim Core Assurance
 

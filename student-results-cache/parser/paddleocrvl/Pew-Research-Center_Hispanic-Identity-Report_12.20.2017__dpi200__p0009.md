@@ -13,7 +13,7 @@ Two-thirds (65%) of immigrant Latinos most often uses the name of their origin c
 
 Among self-identified Hispanics
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_691_710_1470_988.jpg" alt="Image" width="45%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_691_710_1470_989.jpg" alt="Image" width="45%" /></div>
 
 
 Note: Self-identified Hispanics are those who say they are Hispanic. Self-identified non-Hispanics are those who say they are not Hispanic or Latino but say they have Hispanic ancestry or heritage. Voluntary responses of “Don’t know,” “Refused,” “Depends” and “Other/Refused to lean” not shown.

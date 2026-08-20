@@ -1,4 +1,4 @@
-<div style="text-align: center;"><img src="imgs/img_in_image_box_151_240_1389_1069.jpg" alt="Image" width="74%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_151_240_1388_1068.jpg" alt="Image" width="74%" /></div>
 
 
 ## Thesis Advisory Committee (TAC)

@@ -10,7 +10,7 @@ Specified below are the minimum requirements for admission into NIE/NTU. In addi
 
 • A good Bachelor’s degree from a recognised university
 
-- Other qualifications or working experience as specified for each programme
+• Other qualifications or working experience as specified for each programme
 
 ## PhD and Masters by Research
 

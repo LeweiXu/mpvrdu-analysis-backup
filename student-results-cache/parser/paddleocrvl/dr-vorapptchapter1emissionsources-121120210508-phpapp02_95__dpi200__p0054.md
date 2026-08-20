@@ -21,4 +21,4 @@ Web Meeting
 
 • Every activity the prospects or lead does is given a score.
 
-- When the scores reach a pre-determined threshold, the prospect or lead is deemed Marketing Qualified and therefore sales-ready and transferred to the sales team.
+• When the scores reach a pre-determined threshold, the prospect or lead is deemed Marketing Qualified and therefore sales-ready and transferred to the sales team.

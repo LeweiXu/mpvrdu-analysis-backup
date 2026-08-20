@@ -2,7 +2,7 @@
 
 • Ads industry estimates in Indonesia annually: (2011) $5 billion, (2012) $7 billion. 20% YoY growth.
 
-- Ads media breakdown: TV accounts for 64% total ads expenses, 33% on newspaper, and 3% on magazines-tabloids.
+• Ads media breakdown: TV accounts for 64% total ads expenses, 33% on newspaper, and 3% on magazines-tabloids.
 
 - On average, Indonesian users consume 5 hours of media content. Mobile devices account for 36% of this, 106 minutes. Data from 2012.
 

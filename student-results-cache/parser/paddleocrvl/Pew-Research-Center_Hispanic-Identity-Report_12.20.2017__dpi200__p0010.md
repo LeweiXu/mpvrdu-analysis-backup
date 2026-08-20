@@ -30,9 +30,7 @@ Among self-identified Hispanics
 
 Note: Self-identified Hispanics are those who say they are Hispanic. Volunteered responses of "Don't know" and "Refused" not shown.
 
-Source: Pew Research Center 2015 National Survey of Latinos (Oct. 21-Nov. 30, 2015).
-
-"Hispanic Identity Fades Across Generations as Immigrant Connections Fall Away"
+Source: Pew Research Center 2015 National Survey of Latinos (Oct. 21-Nov. 30, 2015). "Hispanic Identity Fades Across Generations as Immigrant Connections Fall Away"
 
 PEW RESEARCH CENTER
 

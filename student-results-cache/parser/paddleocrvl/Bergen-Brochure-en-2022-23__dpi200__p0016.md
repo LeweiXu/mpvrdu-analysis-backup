@@ -103,13 +103,7 @@ Bontelabo 2 / NO-5003 / +47 471 47 100 / BergenSegway.no
 
 ## 07000 BERGEN TAXI
 
-Taxi, sightseeing, transfers or VIP transport? Call 07000!
-
-Bergen's biggest taxi company is ready to oblige.
-
-We are open all day – all year.
-
-Call us at 07000 or use the 07000 app.
+Taxi, sightseeing, transfers or VIP transport? Call 07000! Bergen's biggest taxi company is ready to oblige. We are open all day – all year. Call us at 07000 or use the 07000 app.
 
 Bergen, Askøy and Øygarden / NO-5257 / 07000 (+47 55997000) / bergentaxi.no
 

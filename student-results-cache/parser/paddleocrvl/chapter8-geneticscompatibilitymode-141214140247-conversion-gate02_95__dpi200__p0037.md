@@ -10,7 +10,7 @@
 
 Freckles
 
-:
+ù
 
 Examples of single-gene inherited traits in humans
 

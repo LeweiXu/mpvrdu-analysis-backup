@@ -10,7 +10,7 @@ Tools required:
 
 • Open-end or hex-head socket wrenches (6.5 cm  $ [\frac{1}{4}] $ and 8 mm  $ [\frac{5}{16}] $)
 
-• 2 adjustable wrenches (or 13 mm  $ [\frac{1}{2}] $ and 11 mm  $ [\frac{7}{16}] $ open-end wrenches)
+• 2 adjustable wrenches (or 13 mm  $ \left[\frac{1}{2}\right] $ and 11 mm  $ \left[\frac{7}{16}\right] $ open-end wrenches)
 
 • Phillips screwdriver
 

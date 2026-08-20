@@ -10,7 +10,7 @@ When the headset is turned off: "Power off"
 
 When entering pairing mode: “Bluetooth pairing”
 
-When establishing a Bluetooth connection: "Bluetooth connected"
+When establishing a Bluetooth connection: “Bluetooth connected”
 
 For the first multipoint connection, when establishing a Bluetooth connection between the second device and the headset: "Bluetooth 2nd Device Connected" (*)
 
@@ -40,7 +40,7 @@ When turning on the Ambient Sound Mode: “Ambient sound”
 
 When turning off the noise canceling function and Ambient Sound Mode: “Ambient Sound Control off”
 
-When the NC Optimizer starts: "Optimizer start"
+When the NC Optimizer starts: “Optimizer start”
 
 When the NC Optimizer finishes: “Optimizer finished”
 

@@ -82,9 +82,7 @@ C. Sundts gate 22 / 55 30 40 00 / augustin.no
 <div style="text-align: center;"><img src="imgs/img_in_image_box_843_1414_1070_1555.jpg" alt="Image" width="9%" /></div>
 
 
-Visit
-
-Bergen
+Visit Bergen
 
 Bergen Guide 2022
 
@@ -150,10 +148,10 @@ Olav Kyrres gate 39 / +47 483 05 555 / brasilia.no/
 
 Café Norge is situated on the ground floor in the heart of Hotel Norge! A pleasant, informal and modern restaurant characterised by beautiful Nordic design.
 
-Nedre Ole Bulls Plass 4 / 55 55 40 00 / scandichotels.no
-
 <div style="text-align: center;"><img src="imgs/img_in_image_box_2042_1046_2268_1185.jpg" alt="Image" width="9%" /></div>
 
+
+Nedre Ole Bulls Plass 4 / 55 55 40 00 / scandichotels.no
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1987_1337_2030_1374.jpg" alt="Image" width="1%" /></div>
 

@@ -10,7 +10,7 @@ Research excellence is a driving force that energises knowledge creation. Renown
 
 • Plasma Sources and Applications Centre (PSAC)
 
-- Multi-centric Education, Research & Industry Science, Technology, Engineering, and Mathematics Centre (meriSTEM)
+• Multi-centric Education, Research & Industry Science, Technology, Engineering, and Mathematics Centre (meriSTEM)
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_0_707_1163_1627.jpg" alt="Image" width="49%" /></div>
 

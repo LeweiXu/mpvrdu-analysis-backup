@@ -1,0 +1,31 @@
+# swept,added distractor count × gold count × evidence source (both flip directions)
+# dataset,mmlongbench
+# scan,any
+# sampling,full (hop: multi)
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,page_set rule (colqwen3 / bm25 ranking)
+# prompt_mode,none
+# ranker,"colqwen3 only, matching the main text and figure"
+# pairing,"within-question against the oracle, pooled over the four rungs"
+# blocks,one block per gold-page count; each reads against its own d=0 oracle and blocks are not comparable
+gold pages,evidence_source,+1 distractor R→W,+1 distractor W→R,+2 distractors R→W,+2 distractors W→R,+3 distractors R→W,+3 distractors W→R,paired n,questions
+1 gold page,(none)†,0.0,14.3,0.0,14.3,0.0,14.3,14,14
+1 gold page,Chart,9.3,7.2,10.3,9.3,17.5,8.2,97,97
+1 gold page,Figure,7.4,6.8,11.1,10.5,9.3,9.9,162,162
+1 gold page,Generalized-text (Layout),10.7,5.4,8.9,7.1,7.1,3.6,56,56
+1 gold page,Pure-text (Plain-text),7.2,6.5,5.9,5.9,7.2,5.9,153,153
+1 gold page,Table,8.7,4.8,5.8,3.8,6.7,6.7,104,104
+1 gold page,**All sources**,7.8,7.0,8.2,8.0,9.7,8.2,474,474
+2-3 gold pages,(none)†,0.0,25.0,0.0,25.0,0.0,25.0,4,4
+2-3 gold pages,Chart,4.9,8.2,6.6,4.9,9.8,8.2,61,61
+2-3 gold pages,Figure,7.1,9.4,8.2,5.9,10.6,2.4,85,85
+2-3 gold pages,Generalized-text (Layout),5.1,7.7,15.4,2.6,20.5,7.7,39,39
+2-3 gold pages,Pure-text (Plain-text),8.3,4.6,10.1,4.6,11.0,4.6,109,109
+2-3 gold pages,Table,7.8,7.8,6.8,4.9,8.7,4.9,103,103
+2-3 gold pages,**All sources**,7.8,7.5,9.6,6.0,11.4,6.0,281,281
+n (per col),-,-,-,-,-,-,-,-,-

@@ -41,7 +41,7 @@ How to make a wireless connection to Bluetooth devices
 
 Connecting to a paired computer (Windows 10)
 
-☐ Listening to music from a device via Bluetooth connection
+☑ Listening to music from a device via Bluetooth connection
 
 Making a video call on a computer
 

@@ -1,0 +1,32 @@
+# swept,reasoner size × gold evidence-page bucket × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,as the integration table (unresolved-evidence questions excluded); the 8B row reproduces it
+# page_selection,oracle
+# prompt_mode,none
+# multi,"cumulative: two or more gold pages, pooling the 2 and 3+ columns"
+# reading,"does scale close the M−S deficit, or lift both hop buckets together"
+# note,each size loads its own run_tags in the builder
+model,rung,1,2,3,4+,3+,multi,M − S,multi Δ vs 8B,n
+2B,T,31.4,20.7,10.0,7.0,8.1,16.8,-14.7,-9.1,826
+2B,TL,38.2,25.7,27.5,21.1,23.4,25.0,-13.2,-6.2,826
+2B,TLV,48.1,27.4,37.5,18.3,25.2,26.7,-21.4,-11.9,826
+2B,V,40.7,20.7,30.0,18.3,22.5,21.3,-19.4,-12.8,826
+4B,T,40.1,26.1,27.5,12.7,18.0,23.6,-16.5,-2.3,826
+4B,TL,43.9,36.1,35.0,22.5,27.0,33.2,-10.6,+2.0,826
+4B,TLV,60.5,42.3,42.5,26.8,32.4,39.2,-21.3,+0.6,826
+4B,V,50.4,34.9,47.5,22.5,31.5,33.8,-16.6,-0.3,826
+8B,T,37.6,29.5,25.0,14.1,18.0,25.9,-11.7,+0.0,826
+8B,TL,45.1,34.0,30.0,22.5,25.2,31.2,-13.9,+0.0,826
+8B,TLV,64.6,38.6,47.5,33.8,38.7,38.6,-25.9,+0.0,826
+8B,V,55.7,35.3,42.5,25.4,31.5,34.1,-21.6,+0.0,826
+32B,T,42.2,34.0,22.5,12.7,16.2,28.4,-13.8,+2.6,826
+32B,TL,50.6,39.4,42.5,26.8,32.4,37.2,-13.4,+6.0,826
+32B,TLV,71.5,49.0,52.5,34.3,40.9,46.4,-25.1,+7.8,825
+32B,V,66.0,48.5,52.5,36.6,42.3,46.6,-19.4,+12.5,826
+n (per col),-,-,-,-,-,-,-,-,-,-

@@ -34,7 +34,7 @@ Load recipes
 <div style="text-align: center;"><img src="imgs/img_in_image_box_737_311_1016_543.jpg" alt="Image" width="23%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_738_572_1018_663.jpg" alt="Image" width="24%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_738_572_1019_663.jpg" alt="Image" width="24%" /></div>
 
 
 Load cup symbols

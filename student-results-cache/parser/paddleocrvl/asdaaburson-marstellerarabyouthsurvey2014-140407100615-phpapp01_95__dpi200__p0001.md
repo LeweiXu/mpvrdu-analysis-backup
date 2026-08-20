@@ -12,6 +12,6 @@ Sample split 50:50 male/female
 
 Levant: Jordan, Iraq, Lebanon and Palestine
 
-North Africa: Algeria, Egypt, Libya, Morocco and Tunisia
+• North Africa: Algeria, Egypt, Libya, Morocco and Tunisia
 
 • Other: Yemen

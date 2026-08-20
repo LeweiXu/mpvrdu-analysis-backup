@@ -13,8 +13,8 @@
 # retrieval source,"g2-retrieval-full generation rows, loaded by the builder"
 # status,PROVISIONAL (partial G2 pool)
 rung,oracle acc,representation loss,retrieval ref,retrieved acc,retrieval loss,reasoning residual (raw UB),oracle n
-T,31.9 [27.1-36.6],+24.9,-,-,-,-,831
-TL,39.4 [35.2-43.8],+17.3,-,-,-,-,761
-TLV,56.8 [52.0-61.2],0.0 (best rung),joint k1 (paired n=254),45.7,+9.4,+43.2,717
-V,45.9 [42.0-50.0],+10.8,vision k5 (paired n=300),36.7,+3.7,-,834
-n (per col),3143,-,-,-,-,-,-
+T,31.9 [27.1-36.7],+20.5,-,-,-,-,847
+TL,38.4 [34.4-42.5],+14.0,-,-,-,-,847
+TLV,52.4 [48.3-56.4],0.0 (best rung),joint k1 (paired n=278),42.1,+10.4,+47.6,847
+V,45.5 [41.6-49.6],+7.0,joint k5 (paired n=226),36.3,+3.1,-,847
+n (per col),3388,-,-,-,-,-,-

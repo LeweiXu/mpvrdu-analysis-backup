@@ -48,7 +48,7 @@ Civil and Public Service
 
 ■ Healthcare
 
-■ Marine
+☑ Marine
 
 ■ Aviation
 
@@ -164,7 +164,7 @@ Real Estate Investment Trusts
 
 Town Planning & Urban Management
 
-Asset Management
+■ Asset Management
 
 Corporate Real Estate Management
 

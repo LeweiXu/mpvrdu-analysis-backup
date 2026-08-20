@@ -1,0 +1,5 @@
+Real time information is collected from roadside video cameras in congested cities such as Kuala Lumpur, then analyzed by computer vision and used to improve the flow of vehicles by changing traffic signals, and to spot traffic accidents, so that emergency vehicles can get to accidents in the shortest possible time.
+
+ET Medical Brain is working to solve the healthcare industry’s biggest problems, such as introducing a smart scheduling platform to Hangzhou Children’s Hospital, and making advances in gene sequencing that enable precision medical treatment. The ET Industrial Brain builds smart algorithms that improve modelling, the accuracy of predictions, regulation enforcement, and emergency response, while our ET Agricultural Brain can use visual recognition, voice recognition and environmental recognition to monitor crops and livestock, reducing disease and improving farming efficiency.
+
+By facilitating access to smart emerging technologies, Alibaba Cloud enables businesses and people to build a more inclusive world.

@@ -36,7 +36,7 @@ Predictive Analytics in Business
 
 Big Data Techniques and Technologies
 
-Social Media Network Analysis
+■ Social Media Network Analysis
 
 ## BUSINESS ECONOMICS
 

@@ -13,12 +13,15 @@
 # sources,each lever row loads its own run_tag(s) in the builder; blank rows await their runs
 # retrieval depth,PROVISIONAL (partial G2 pool)
 lever,targets,metric,baseline,lever value,delta,n (base/lever)
-resolution med→high,E3 fidelity,acc @ TLV,57.0,59.8,+2.7,719/681
+resolution med→high,E3 fidelity,acc @ TLV,52.5,54.7,+2.1,847/847
+drop the parser (TLV→TV),E1 acquisition,acc @ image rung,52.5,51.6,-0.9,847/847
 interleaving TLV→TLVi,E4 reasoning,acc @ TLV,52.8,55.0,+2.2,847/847
 CoT prompt (grounded→cot),E4 reasoning,acc @ TLV,45.7,53.1,+7.4,847/847
+CoT prompt (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.5,+6.4,847/847
 extraction (grounded→extract_cot),E4 reasoning,acc @ TLV,45.7,50.2,+4.5,847/846
-abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),15.9,77.7,+61.8,195/193
+extraction (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.0,+6.8,847/846
+abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),16.8,74.6,+57.8,244/244
 retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),28.9,36.2,+7.2,304/304
-model swap 8B→InternVL3-8B,reasoner,acc @ TLV,56.8,34.6,-22.1,717/742
-thinking variant (M−S),E4 reasoning,M−S @ TLV,-,-,-,-
+model swap 8B→InternVL3-8B,reasoner,acc @ TLV,52.4,32.6,-19.8,847/807
+thinking variant (M−S),E4 reasoning,M−S @ TLV,-25.8,-8.0,+17.8,847/685
 n (per col),-,-,-,-,-,-

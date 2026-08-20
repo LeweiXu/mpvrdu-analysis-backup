@@ -6,7 +6,7 @@ Whether you’re into art galleries, music, cinema or theatre you’ll find it a
 
 New tastes
 
-Worried about not liking British food? No problem! There's a great range of international food stores here in Nottingham – you can become an expert cook in no time. There are also a lot of supermarkets, restaurants, and tea and coffee shops. You'll be surprised, 'British' food is a mix of food from all over the world, and it's pretty good!
+Worried about not liking British food? No problem! There’s a great range of international food stores here in Nottingham – you can become an expert cook in no time. There are also a lot of supermarkets, restaurants, and tea and coffee shops. You’ll be surprised, ‘British’ food is a mix of food from all over the world, and it’s pretty good!
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_95_671_130_705.jpg" alt="Image" width="3%" /></div>
 

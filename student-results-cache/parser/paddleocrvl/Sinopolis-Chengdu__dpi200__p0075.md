@@ -10,6 +10,6 @@ The apartments on offer measure from 82 square metres to 300 square metres with 
 
 direction it is facing) and come with white goods included. A three-bedroom apartment of 230 square metres is priced between Rmb6.5 million and Rmb9.9 million.
 
-Although the buildings are marketed as “commercial-residential” properties the units are actually purely residential, meaning the owner’s rights are guaranteed for 70 years instead of 40\. Some investors might still buy to rent, with a one-bedroom Armani flat predicted to let at Rmb10,000 a month.
+Although the buildings are marketed as “commercial-residential” properties the units are actually purely residential, meaning the owner’s rights are guaranteed for 70 years instead of 40. Some investors might still buy to rent, with a one-bedroom Armani flat predicted to let at Rmb10,000 a month.
 
 The Armani Art Residence is likely the second most expensive property on the market. The first is the InTime residence in the Gaoxin area of Wuhou district. It is built as part of a larger complex incorporating offices, retail and restaurants as well as residential units by the property developer Yintai (the site is also known as the Yintai Centre).

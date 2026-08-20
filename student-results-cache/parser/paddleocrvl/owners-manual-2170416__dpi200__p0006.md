@@ -36,7 +36,7 @@ After removing all packaging materials, clean your refrigerator before using it,
 <div style="text-align: center;"><img src="imgs/img_in_image_box_908_1237_1006_1389.jpg" alt="Image" width="5%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1030_1162_1140_1399.jpg" alt="Image" width="6%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1029_1162_1140_1399.jpg" alt="Image" width="6%" /></div>
 
 
 Plug 1

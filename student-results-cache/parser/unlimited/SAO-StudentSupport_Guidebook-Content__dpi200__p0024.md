@@ -1,0 +1,10 @@
+EMERGENCY HOTLINES
+Emergency Hotlines
+Please make sure that you save these numbers in your mobile or smart phone. They will come in handy in an emergency. For more crisis helplines, please visit www.ntu.edu.sg/studentwellebing.
+<table><tr><td>Emergency Party</td><td>Telephone Number</td></tr><tr><td>Police</td><td>999 (24-hour)</td></tr><tr><td>Ambulance</td><td>995 (24-hour)</td></tr><tr><td>NTU Student Wellbeing Centre</td><td>6790 4462</td></tr><tr><td>Fullerton Healthcare@NTU</td><td>6793 6828</td></tr><tr><td>NTU Campus Security</td><td>6790 5200 (24-hour)</td></tr><tr><td>NTU Fault Reporting Centre</td><td>6790 4777 (24-hour)</td></tr></table>
+Scenarios
+<table><tr><td><img></td><td>Medical Emergencies</td><td>During office hours: Call Fullerton Healthcare@NTU After office hours: Call Campus Security/Hall Fellow</td></tr><tr><td><img></td><td>Emotional Distress/Suicidal Tendencies</td><td>During office hours: Call Student Wellbeing Centre After office hours: Call Campus Security/Hall Fellow</td></tr><tr><td><img></td><td>Road Accidents</td><td>Call Police, Ambulance and Campus Security</td></tr><tr><td><img></td><td>Crime</td><td>Call Police and Campus Security</td></tr><tr><td><img></td><td>Missing Persons</td><td>Call Campus Security</td></tr><tr><td><img></td><td>Fire</td><td>Call Campus Security</td></tr><tr><td><img></td><td>Rowdy Behaviour</td><td>Call Campus Security</td></tr><tr><td><img></td><td>Lift Breakdown/Power Blackouts/ Burst Pipes</td><td>Call NTU Fault Reporting Centre</td></tr></table>
+24-Hour Campus Security
+Our campus is patrolled round-the-clock on a daily basis by a team of security officers. Complementing these patrols are CCTV and security access control systems. A low crime rate, however, does not mean that there is no crime so please guard your safety and belongings.
+Fire drills and emergency evacuation procedures are in place for students' security and safety.
+25

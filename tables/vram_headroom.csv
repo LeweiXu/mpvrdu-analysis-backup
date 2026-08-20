@@ -11,6 +11,7 @@
 # page_selection,oracle
 # prompt_mode,none
 # note,pooled across all G1 runs
+# snapshot,"predictions.v100.jsonl — the pre-recovery V100 rows, kept when the H100 pass upgraded 1,953 of these cells; the live predictions no longer record the V100 ceiling"
 model_spec,rung,resolution,peak_vram_mb_max,peak_vram_mb_p95,headroom_mb,n
 internvl3-8b-local,T,med,12848,9454,3536,831
 internvl3-8b-local,TL,med,13170,10671,3214,762

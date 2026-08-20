@@ -1,6 +1,6 @@
 ## Q & A // Panelists
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_266_481_722_951.jpg" alt="Image" width="21%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_266_481_722_952.jpg" alt="Image" width="21%" /></div>
 
 
 Greg Buzek

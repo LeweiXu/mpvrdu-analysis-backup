@@ -9,7 +9,7 @@
 
 • Press the Up button.
 
-• Raise or rotate your wrist inwards.
+● Raise or rotate your wrist inwards.
 
 - Swipe down on the home screen to open the shortcut menu. Enable Screen On and the screen will stay on 5 minutes.
 

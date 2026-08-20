@@ -112,7 +112,7 @@ To pursue your interests, check out the list of student-run groups below:
 
 • History Society
 
-- Innovation & Design Programme Club
+• Innovation & Design Programme Club
 
 • Economics Society
 
@@ -169,7 +169,7 @@ THE ROTARACT CLUB AT NUS HELD A CARNIVAL AT UTOWN ON 14-15 MAR 2019 TO RAISE FUN
 
 • Rotaract Club
 
-• NUS CFA Students' Interest Group
+• NUS CFA Students’ Interest Group
 
 • Society of Mechanical Engineering
 

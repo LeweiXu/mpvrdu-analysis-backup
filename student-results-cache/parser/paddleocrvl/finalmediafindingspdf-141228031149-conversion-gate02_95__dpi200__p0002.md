@@ -14,13 +14,13 @@ Mr. Hiranjya Baral, Field Coordinator
 
 ## Internews
 
-Mr. David Dougherty- National Opinion Polls Specialist
+Mr. David Dougherty- National Opinion Polls Specialist  
 
-Mr. Oren Murphy Regional Director, Asia
+Mr. Oren Murphy Regional Director, Asia  
 
-Ms. Dorothy Dai, Program Officer, Asia
+Ms. Dorothy Dai, Program Officer, Asia  
 
-Mr. Madhu Acharya, Project Director Nepal
+Mr. Madhu Acharya, Project Director, Nepal  
 
 Mr. Bhumiraj Chapagain, Media Coordinator
 

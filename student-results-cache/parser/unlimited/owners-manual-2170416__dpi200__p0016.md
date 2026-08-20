@@ -1,0 +1,28 @@
+Removing the base grille
+To remove the grille:
+1. Open both doors.
+2. Pull base grille forward to release the support tabs from the metal clips.
+3. Do not remove Tech Sheet fastened behind the grille.
+To replace the grille:
+1. Line up grille support tabs with metal clips.
+2. Push firmly to snap into place.
+3. Close the doors.
+See cleaning instructions for defrost pan and condenser coils on page 22.
+![](images/0.jpg)
+
+Using the THIRSTCRUSHER* dispensing system
+(on some models)
+The ice dispenser
+Ice dispensers from the ice maker storage bin in the freezer. When the dispenser bar is pressed, a trapdoor opens in a chute between the dispenser and the ice bin. Ice moves from the bin and falls through the chute. When the dispenser bar is released, a buzzing sound may be heard for a few seconds as the trapdoor closes. The dispenser system will not operate when the freezer door is open.
+For crushed ice, cubes are crushed before being dispensed. This may cause a slight delay when dispensing crushed ice. Noise from the ice crusher is normal, and pieces of ice may vary in size.
+When changing from CRUSHED to CUBE, a few ounces of crushed ice will be dispensed along with the first cubes.
+To dispense ice:
+1. For cubed ice, move Ice Selector Switch to CUBE position.
+For crushed ice (on some models), move Ice Selector Switch to CRUSHED position.
+AWARNING
+Personal Injury Hazard
+Tumbling ice and pressure on a fragile glass can break it. Use a sturdy glass when dispensing ice or water.
+Failure to do so could result in personal injury or breakage.
+![](images/1.jpg)
+
+16

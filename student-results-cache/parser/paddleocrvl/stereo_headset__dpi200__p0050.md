@@ -22,7 +22,7 @@ The operating instructions of the computer is in hand.
 
 Depending on the computer you are using, the built-in Bluetooth adaptor may need to be turned on. If you do not know how to turn on the Bluetooth adaptor or are unsure if your computer has a built-in Bluetooth adaptor, refer to the operating instructions supplied with the computer.
 
-☐ Set the computer speaker to the ON mode.
+Set the computer speaker to the ON mode.
 
 If the computer speaker is set to the ☐ "OFF" mode, no sound is heard from the headset.
 
@@ -40,6 +40,6 @@ When you pair a second or subsequent device (the headset has pairing information
 <div style="text-align: center;"><img src="imgs/img_in_image_box_171_1634_426_1813.jpg" alt="Image" width="15%" /></div>
 
 
-Check that the indicator (blue) repeatedly flashes twice in a row. You will hear the voice guidance say, "Bluetooth pairing".
+Check that the indicator (blue) repeatedly flashes twice in a row. You will hear the voice guidance say, “Bluetooth pairing”.
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_171_1976_546_2156.jpg" alt="Image" width="22%" /></div>

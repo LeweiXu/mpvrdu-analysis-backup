@@ -28,9 +28,9 @@ Resource prices may vary depending on different regions. For details, see Produc
 
 When determining whether to deploy resources in the same AZ, consider your applications' requirements for disaster recovery (DR) and network latency.
 
-For high DR capability, deploy resources in different AZs in the same region.
+- For high DR capability, deploy resources in different AZs in the same region.
 
-For low network latency, deploy resources in the same AZ.
+- For low network latency, deploy resources in the same AZ.
 
 ## Regions and Endpoints
 

@@ -10,7 +10,7 @@ Company Visits
 
 ■ Career & Recruitment Talks
 
-☑ Career & Internship Fairs
+■ Career & Internship Fairs
 
 Internship & Job Search Briefings
 

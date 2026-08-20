@@ -1,6 +1,6 @@
 3 soccer activities: Individual practice, team practice, playful activities
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_13_586_789_1600.jpg" alt="Image" width="36%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_14_586_788_1600.jpg" alt="Image" width="36%" /></div>
 
 
 Did national-level youth players

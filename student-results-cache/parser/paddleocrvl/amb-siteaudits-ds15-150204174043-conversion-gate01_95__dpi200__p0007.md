@@ -162,7 +162,7 @@ FriendFeed
 
 Github
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1347_841_1438_936.jpg" alt="Image" width="4%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1347_841_1438_937.jpg" alt="Image" width="4%" /></div>
 
 
 Windows
@@ -287,7 +287,7 @@ PayPal
 
 Vimeo
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1475_1170_1573_1266.jpg" alt="Image" width="4%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1474_1170_1573_1266.jpg" alt="Image" width="4%" /></div>
 
 
 Virb

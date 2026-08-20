@@ -1,6 +1,6 @@
 # High Security One60 Wearable
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_497_450_1103_1217.jpg" alt="Image" width="35%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_497_450_1103_1218.jpg" alt="Image" width="35%" /></div>
 
 
 ## FEATURES AND BENEFITS

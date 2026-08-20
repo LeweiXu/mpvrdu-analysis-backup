@@ -1,6 +1,6 @@
 ## THE VIRTUAL WORLD BECKONS
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_130_94_2031_1073.jpg" alt="Image" width="89%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_130_95_2031_1073.jpg" alt="Image" width="89%" /></div>
 
 
 Timeline

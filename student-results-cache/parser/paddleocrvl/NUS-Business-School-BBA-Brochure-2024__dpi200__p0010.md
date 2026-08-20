@@ -4,7 +4,7 @@ As required components in the BBA curriculum, students will be able to meaningfu
 
 Work Experience Milestone
 
-☑ Career Compass Starter Workshops
+■ Career Compass Starter Workshops
 
 ☑ One Internship
 

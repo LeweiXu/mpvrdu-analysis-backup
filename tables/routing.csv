@@ -7,13 +7,17 @@
 # quantization,bf16
 # visual_resolution,med
 # representation,T/TL/TLV/V
-# pool,answerable
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
 # page_selection,oracle
 # prompt_mode,none
-# note,assembled from G1 ladder rows + G3 classifier price
-policy,accuracy,prefill_ms,latency_ms,note
-uniform_cheapest_T,31.9,1428,7161,
-uniform_strongest_TLV,56.8,26311,33013,
-oracle_routing,51.3,14312,20876,per-doc_type frontier rung
-predicted_routing,51.3,14312,49726,oracle rung choice + classifier latency
-n (per col),-,-,-,-
+# note,"the builder loads the complete pool itself so the policies sit on the same rows as the ladder they route over, and the plan's own load is unused; the G3 classifier probe rides in the footer"
+# cost,"mean input tokens, not seconds — the machine-independent quantity, since the two measuring machines prefill the same input ~50x apart"
+policy,accuracy,input_tokens,rel,n,note
+uniform_T,31.9,930,0.18,847,
+uniform_TL,38.8,1644,0.33,847,
+uniform_TV,51.6,4333,0.86,847,
+uniform_TLV,52.5,5049,1.00,847,
+uniform_V,45.6,3442,0.68,847,
+route_by_doc_class,45.6,2410,0.48,847,"62% of questions to an image-free rung; Academic paper=T, Administration/Industry file=T, Brochure=TL, Financial report=T, Guidebook=T, Research report / Introduction=TV, Tutorial/Workshop=TV"
+n (per col),847,-,-,-,-
+modality-bin classifier,11.1% correct (n=135),-,-,-,"predicts a question's bin, not the document class the policy routes on"

@@ -65,9 +65,9 @@ MSc
 
 
 
-MSc (Life Sciences)
-
 2 - 4 years
+
+MSc (Life Sciences)
 
 1 – 3 years
 
@@ -81,9 +81,11 @@ MSc (Mathematics for Educators)
 
 MSc (Science of Learning)
 
-MTeach
-
 1 – 2 years
+
+
+
+MTeach
 
 1 – 2 years
 
@@ -91,9 +93,11 @@ Up to 3 years
 
 2 - 4 years
 
-Up to 3 years
-
 By Coursework or By Coursework with Dissertation
+
+
+
+Up to 3 years
 
 2 - 4 years
 
@@ -105,15 +109,15 @@ MA (Research)
 
 Up to 5 years
 
-MSc (Research)
-
 2 - 4 years
+
+MSc (Research)
 
 Up to 5 years
 
-Doctor of Philosophy (PhD)
-
 Up to 3 years
+
+Doctor of Philosophy (PhD)
 
 Up to 3 years
 

@@ -1,0 +1,19 @@
+# swept,text source × scan status × (text-only / text+vision)
+# dataset,mmlongbench
+# scan,SPLIT digital vs scanned (the pooled parser table is scan: any)
+# sampling,full
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,"TL/TLV for the layout parsers, T/TV for PyMuPDF"
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# delta column,"paired bootstrap on vision − text, not two marginals"
+# scanned pool,"201 questions over 31 documents; the bootstrap resamples documents, so these intervals are wide"
+text source (rungs),digital: text-only,digital: text+vision,digital: Δ (vision − text),scanned: text-only,scanned: text+vision,scanned: Δ (vision − text)
+PaddleOCR-VL (TL→TLV),40.1 [35.1-44.9] (n=646),49.7 [44.6-54.2] (n=646),"+9.6 [+5.7, +13.4]",32.8 [26.2-40.0] (n=201),61.2 [53.1-68.8] (n=201),"+28.4 [+21.7, +34.8]"
+MinerU (TL→TLV),26.6 [22.0-31.4] (n=646),46.0 [41.2-50.3] (n=646),"+19.3 [+14.4, +23.5]",27.4 [20.7-34.6] (n=201),55.7 [47.7-63.6] (n=201),"+28.4 [+19.8, +38.0]"
+Unlimited-OCR (TL→TLV),42.3 [37.2-47.2] (n=646),50.2 [45.1-54.7] (n=646),"+7.9 [+4.2, +11.7]",34.3 [26.8-41.6] (n=201),63.7 [55.4-70.6] (n=201),"+29.4 [+21.7, +36.2]"
+PyMuPDF (raw embedded text) (T→TV),40.6 [35.8-45.4] (n=646),49.7 [45.0-54.3] (n=646),"+9.1 [+5.1, +13.1]",4.0 [1.0-7.4] (n=201),57.7 [50.0-64.4] (n=201),"+53.7 [+46.7, +60.5]"
+**spread (max − min)**,15.6,4.2,11.5,30.3,8.0,25.4

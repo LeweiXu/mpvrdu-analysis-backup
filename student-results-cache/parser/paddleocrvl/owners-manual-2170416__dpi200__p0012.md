@@ -52,12 +52,6 @@ To replace the cover:
 
 To remove the cover:
 
-1. Push up glass insert from the bottom, then slide out with both hands.
-
-2. Lift front of cover frame.
-
-3. Lift cover frame up and out.
-
 Lift the
 
 cover
@@ -66,9 +60,15 @@ front, then
 
 the back.
 
+1. Push up glass insert from the bottom, then slide out with both hands.
+
+2. Lift front of cover frame.
+
+3. Lift cover frame up and out.
+
 ## To replace the cover:
 
-1. Fit back of cover frame into notch sup-ports on walls of refrigerator, then lower front into place.
+1. Fit back of cover frame into notch supports on walls of refrigerator, then lower front into place.
 
 2. Slide back of glass insert into place, then lower front into place.
 

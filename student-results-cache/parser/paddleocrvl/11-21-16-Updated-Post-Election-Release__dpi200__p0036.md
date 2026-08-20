@@ -13,7 +13,7 @@ Most Trump voters say press was ‘too tough’ on Trump, ‘too easy’ on Clin
 
 Notes: Based on those who voted in the election.
 
-Don't know responses not shown. Q33a&b.
+Don’t know responses not shown. Q33a&b.
 
 Source: Voter callback survey conducted Nov. 10-14, 2016.
 

@@ -1,0 +1,17 @@
+# swept,evidence hop (single vs multi) × page ordering (TLV vs TLVi)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# hop,"single/multi only, hop=none dropped"
+# gap column,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+ordering,single,multi,M − S,n
+TLV,64.0 [58.7-69.3],38.5 [32.5-44.9],-25.4,838
+TLVi,65.4 [60.3-70.7],41.9 [36.3-47.8],-23.5,838
+n (per col),960,716,-,-

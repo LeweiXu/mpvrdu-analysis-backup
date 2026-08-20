@@ -1,0 +1,51 @@
+# swept,"retriever × k ∈ {1,3,5,7,10} (complete depth sweep, P/R/F1 as %)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV/V
+# pool,answerable
+# page_selection,retrieved (bm25 text / colqwen2.5 vision / joint)
+# prompt_mode,none
+# units,"PERCENTAGES, unlike the other retrieval tables"
+# provenance column,"measured = read off the side artifact; derived (union) = a joint arm rebuilt from its two constituents at the same depth, after the union rule is verified against every stored joint row"
+retriever,modality,k,P,R,F1,n,provenance
+bge-m3,text,1,33.8,25.5,27.9,847,scored
+bge-m3,text,3,18.7,38.8,23.9,847,scored
+bge-m3,text,5,14.7,48.2,21.2,847,scored
+bge-m3,text,7,12.0,53.2,18.4,847,scored
+bge-m3,text,10,10.0,61.1,16.3,847,scored
+bge-m3|colqwen2.5,joint,1,48.5,55.2,48.6,847,scored
+bge-m3|colqwen2.5,joint,3,23.4,72.8,33.2,847,scored
+bge-m3|colqwen2.5,joint,5,16.7,79.8,25.9,847,scored
+bge-m3|colqwen2.5,joint,7,13.4,83.7,21.6,847,from ranking
+bge-m3|colqwen2.5,joint,10,10.7,87.5,17.9,847,from ranking
+bm25,text,1,29.5,22.2,24.2,847,scored
+bm25,text,3,18.5,37.8,23.4,847,scored
+bm25,text,5,14.0,46.0,20.1,847,scored
+bm25,text,7,11.4,50.8,17.5,847,scored
+bm25,text,10,9.5,58.5,15.4,847,scored
+bm25|colmodernvbert,joint,1,44.2,51.2,44.5,847,scored
+bm25|colmodernvbert,joint,3,22.3,69.8,31.6,847,scored
+bm25|colmodernvbert,joint,5,15.9,77.6,24.8,847,scored
+bm25|colmodernvbert,joint,7,12.6,81.2,20.5,847,from ranking
+bm25|colmodernvbert,joint,10,10.2,85.3,17.2,847,from ranking
+colmodernvbert,vision,1,58.8,46.0,49.6,847,scored
+colmodernvbert,vision,3,31.5,64.6,39.6,847,scored
+colmodernvbert,vision,5,22.7,72.5,32.2,847,scored
+colmodernvbert,vision,7,17.9,77.2,27.1,847,scored
+colmodernvbert,vision,10,14.0,81.7,22.2,847,scored
+colqwen2.5,vision,1,63.3,48.8,52.8,847,scored
+colqwen2.5,vision,3,33.8,68.3,42.5,847,scored
+colqwen2.5,vision,5,23.6,74.9,33.5,847,scored
+colqwen2.5,vision,7,18.5,79.2,27.9,847,scored
+colqwen2.5,vision,10,14.4,83.8,22.9,847,scored
+colqwen3,vision,1,70.2,54.1,58.6,847,scored
+colqwen3,vision,3,36.8,73.9,46.0,847,scored
+colqwen3,vision,5,25.5,80.6,36.1,847,scored
+colqwen3,vision,7,19.9,83.9,29.9,847,scored
+colqwen3,vision,10,15.2,87.4,24.1,847,scored
+n (per col),-,-,-,-,-,-,-

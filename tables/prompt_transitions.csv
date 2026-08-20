@@ -1,0 +1,24 @@
+# swept,"prompt_mode transition (none→abstain, none→abstain_balanced) × rung (answerable pool, oracle pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# pairing,"within-question at one rung, both modes status==ok; only the instruction changes, pages are the oracle set on both sides"
+# R→W split,"`as refusal` vs `as wrong answer` sum to R→W, so the table separates what the instruction refuses from what it merely gets wrong"
+# net column,"W→R − R→W in points, i.e. the mode's accuracy change against the uninstructed prompt"
+transition,rung,right→wrong (%),…as refusal (%),…as wrong answer (%),wrong→right (%),net (pts),abstentions (%),of which previously correct (% of abstentions),paired n
+none->abstain,T,9.9 (84),4.5 (38),5.4 (46),1.3 (11),-8.6,52.2 (442),8.6 (38),847
+none->abstain,TL,11.1 (94),6.3 (53),4.8 (41),1.5 (13),-9.6,47.1 (399),13.3 (53),847
+none->abstain,TLV,12.9 (109),4.8 (41),8.0 (68),1.8 (15),-11.1,27.4 (232),17.7 (41),847
+none->abstain,V,14.6 (124),6.3 (53),8.4 (71),2.6 (22),-12.0,32.5 (275),19.3 (53),847
+none->abstain_balanced,T,9.4 (80),3.9 (33),5.5 (47),1.4 (12),-8.0,47.8 (405),8.1 (33),847
+none->abstain_balanced,TL,10.6 (90),4.8 (41),5.8 (49),1.8 (15),-8.9,42.9 (363),11.3 (41),847
+none->abstain_balanced,TLV,11.8 (100),3.5 (30),8.3 (70),1.9 (16),-9.9,22.9 (194),15.5 (30),847
+none->abstain_balanced,V,13.8 (117),4.5 (38),9.3 (79),3.4 (29),-10.4,27.7 (235),16.2 (38),847
+n (per col),-,-,-,-,-,-,-,-,-

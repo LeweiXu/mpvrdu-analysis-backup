@@ -20,6 +20,6 @@ Source: Survey conducted Dec. 8-13, 2015.
 
 Don’t know responses not shown.
 
-* September 2014 survey asked about Barack Obama's plan for a military campaign against militants in Iraq and Syria. August 2014 survey asked about U.S. airstrikes against militants in Iraq only.
+* September 2014 survey asked about Barack Obama’s plan for a military campaign against militants in Iraq and Syria. August 2014 survey asked about U.S. airstrikes against militants in Iraq only.
 
 ## PEW RESEARCH CENTER

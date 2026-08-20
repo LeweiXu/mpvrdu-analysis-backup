@@ -2,7 +2,7 @@
 
 ## Which of the following is closest to your view?
 
-☑ Traditional values mean a lot to me, and ought to be preserved for generations to come.
+Traditional values mean a lot to me, and ought to be preserved for generations to come.
 
 Traditional values are outdated and belong in the past. I am keen to embrace modern values and beliefs.
 

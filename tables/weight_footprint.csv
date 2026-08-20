@@ -1,0 +1,28 @@
+# swept,model_spec × quantization (weight-only memory)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# source,"annotations/model_weights.csv, a static checkpoint property; no run, no device-0 truncation"
+# memory axis,"weight footprint, NOT peak VRAM"
+model_spec,quant,weights_mb,method,quantizable_params,in study
+internvl3-8b-local,16bit,15889,exact,6.75B,yes
+qwen3vl-2b-local,16bit,4255,exact,1.64B,yes
+qwen3vl-2b-local-8bit,8bit,2619,derived,1.64B,-
+qwen3vl-2b-local-4bit,4bit,1827,derived,1.64B,-
+qwen3vl-32b-local,16bit,66715,exact,31.51B,yes
+qwen3vl-32b-local-8bit,8bit,35206,derived,31.51B,-
+qwen3vl-32b-local-4bit,4bit,19951,derived,31.51B,yes
+qwen3vl-4b-local,16bit,8876,exact,3.86B,yes
+qwen3vl-4b-local-8bit,8bit,5016,derived,3.86B,-
+qwen3vl-4b-local-4bit,4bit,3147,derived,3.86B,-
+qwen3vl-8b-local,16bit,17534,exact,7.25B,yes
+qwen3vl-8b-local-8bit,8bit,10285,derived,7.25B,yes
+qwen3vl-8b-local-4bit,4bit,6775,derived,7.25B,yes
+n (per col),-,-,-,-,-

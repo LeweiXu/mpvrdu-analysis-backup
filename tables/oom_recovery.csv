@@ -11,7 +11,7 @@
 # page_selection,oracle
 # prompt_mode,none (the condition both runs share)
 rung,earlier run,shared cells,recovered cells,new run (all),n shared / recovered
-T,31.9,31.9,31.2,31.9,831 / 16
-TL,39.4,39.9,29.1,38.8,761 / 86
-TLV,56.8,57.0,27.7,52.5,717 / 130
-V,45.9,46.0,15.4,45.6,834 / 13
+T,31.9,31.9,-,31.9,847 / 0
+TL,38.4,38.8,-,38.8,847 / 0
+TLV,52.4,52.5,-,52.5,847 / 0
+V,45.5,45.6,-,45.6,847 / 0

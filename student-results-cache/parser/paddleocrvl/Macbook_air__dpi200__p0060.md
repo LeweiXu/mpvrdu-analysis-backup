@@ -1,0 +1,9 @@
+Carrying your MacBook Air If you carry your MacBook Air in a bag or briefcase, make sure that there are no loose items (such as paper clips or coins) that could accidentally get inside the computer through vent openings or get stuck inside a port. Also, keep magnetically sensitive items away from the MagSafe power port.
+
+Using connectors and ports Never force a connector into a port. When connecting a device, make sure the port is free of debris, that the connector matches the port, and that you have positioned the connector correctly in relation to the port.
+
+Storing your MacBook Air If you are going to store your MacBook Air for an extended period of time, keep it in a cool location (ideally, 71°F or 22°C) and discharge the battery to 50 percent. When storing your computer for longer than five months, discharge the battery to approximately 50 percent. To maintain the capacity of the battery, recharge the battery to 50 percent every six months or so.
+
+Cleaning your MacBook Air When cleaning the outside of your computer and its components, first shut down your MacBook Air, and then unplug the power adapter. Then use a damp, soft, lint-free cloth to clean the computer's exterior. Avoid getting moisture in any openings. Do not spray liquid directly on the computer. Do not use aerosol sprays, solvents, or abrasives that might damage the finish.
+
+Cleaning your MacBook Air screen To clean your MacBook Air screen, first shut down your MacBook Air and unplug the power adapter. Then use the cleaning cloth that came with your MacBook Air to wipe the screen. Dampen the cloth with water if necessary. Do not spray liquid directly on the screen.

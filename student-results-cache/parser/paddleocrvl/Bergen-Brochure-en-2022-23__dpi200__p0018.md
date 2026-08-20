@@ -9,7 +9,7 @@ The Bergen region also has more than 60 highly varied attractions. There are gre
 
 Bergen's Art Street has collections featuring unique treasures from Norway and abroad, both past and present. The collections are housed in a row of galleries lining the picturesque Lille Lungegårdsvann lake in the heart of the city. Permanent and changing exhibitions throughout the year. KODE houses large collections by Munch, Tidemand and Gude, Picasso, Miró and Astrup, as well as contemporary art and KunstLab, a dedicated art museum for children and young people. Bergen Kunsthall is also situated here, where you can see contemporary art, performance art etc.
 
-Bergen, Music City – always a concert to suit your taste. The Edvard Grieg Museum at Troldhaugen, the home of this world-famous composer, is a well-known venue for visitors from far and wide. The city also has a number of concert venues, ranging from small clubs to outdoor arenas and the region's flagship concert hall, the Grieg Hall, home to Bergen Philharmonic Orchestra. The orchestra celebrated its 250th anniversary in 2015.
+Bergen, Music City – always a concert to suit your taste. The Edvard Grieg Museum at Troldhaugen, the home of this world-famous composer, is a well-known venue for visitors from far and wide. The city also has a number of concert venues, ranging from small clubs to outdoor arenas and the region's flagship concert hall, the Grieg Hall, home to Bergen Philharmonic Orchestra. The orchestra celebrated its 250 $ ^{th} $ anniversary in 2015.
 
 
 

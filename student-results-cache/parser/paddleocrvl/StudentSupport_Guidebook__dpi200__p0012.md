@@ -30,4 +30,4 @@ To open a bank account, you will need:
 
 • Your Student’s Pass (IPA Letter subject to the bank’s acceptance)
 
-- Your Singapore address (must be reflected on original official letters, e.g. phone bills, bank statement, utilities bills.)
+• Your Singapore address (must be reflected on original official letters, e.g. phone bills, bank statement, utilities bills.)

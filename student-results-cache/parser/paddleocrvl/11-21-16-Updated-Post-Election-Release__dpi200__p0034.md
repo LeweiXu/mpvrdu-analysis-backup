@@ -11,7 +11,7 @@ candidates and issues
 <div style="text-align: center;"><img src="imgs/img_in_chart_box_1104_441_1509_600.jpg" alt="Image" width="23%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_1104_629_1512_835.jpg" alt="Image" width="24%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_1103_629_1512_835.jpg" alt="Image" width="24%" /></div>
 
 
 % of voters who say they found the presidential debates ___ in deciding who to vote for

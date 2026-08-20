@@ -16,7 +16,7 @@ STEER PROGRAMME
 
 The STEER programme is designed to build and cultivate familiarity and interests in burgeoning economies in India, the Middle East, Vietnam, China and Brazil.
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_699_817_1283_1197.jpg" alt="Image" width="42%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_699_817_1283_1196.jpg" alt="Image" width="42%" /></div>
 
 
 NUS OVERSEAS COLLEGE

@@ -1,0 +1,35 @@
+# swept,reasoner config × rung (prefill / decode / input tokens)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,cost rows use the cells every config in a machine group ran; token rows use the complete pool
+# page_selection,oracle
+# prompt_mode,none
+# machine,rows grouped by measuring machine; the V100 and H100 groups are never comparable
+# note,"the builder loads its own per-group snapshots, so the plan's own load is unused"
+group,config,metric,T,TL,TLV,V,n
+2xV100,Qwen3-VL-8B 16-bit,prefill_s,1.4,1.8,26.3,29.0,717
+2xV100,Qwen3-VL-8B 16-bit,decode_s,5.7,6.6,6.7,7.1,717
+2xV100,Qwen3-VL-8B 8-bit,prefill_s,0.7,0.9,25.0,28.2,717
+2xV100,Qwen3-VL-8B 8-bit,decode_s,18.4,21.2,21.2,21.8,717
+2xV100,Qwen3-VL-8B 4-bit,prefill_s,1.5,1.8,28.0,30.6,717
+2xV100,Qwen3-VL-8B 4-bit,decode_s,9.2,10.7,10.3,11.1,717
+2xV100,Qwen3-VL-2B,prefill_s,0.4,0.4,29.8,34.6,717
+2xV100,Qwen3-VL-2B,decode_s,4.8,5.5,5.8,6.3,717
+2xV100,Qwen3-VL-4B,prefill_s,0.9,1.1,31.1,35.6,717
+2xV100,Qwen3-VL-4B,decode_s,6.2,7.3,6.3,7.4,717
+H100,Qwen3-VL-32B,prefill_s,0.2,0.3,0.5,0.2,683
+H100,Qwen3-VL-32B,decode_s,5.1,6.4,6.5,6.0,683
+H100,Qwen3-VL-32B 4-bit,prefill_s,0.3,0.4,0.6,0.3,683
+H100,Qwen3-VL-32B 4-bit,decode_s,4.4,5.5,5.7,5.2,683
+H100,Qwen3-VL-8B-Thinking,prefill_s,0.1,0.1,0.2,0.1,683
+H100,Qwen3-VL-8B-Thinking,decode_s,24.3,26.6,20.3,16.1,683
+2xV100,InternVL3-8B,prefill_s,-,-,-,-,3180
+2xV100,InternVL3-8B,decode_s,-,-,-,-,3180
+(any),input tokens,mean,938,1658,5091,3470,840
+(any),input tokens,min-max,29-26636,37-29489,1838-58679,1822-43227,840
+n (per col),-,-,831,761,717,834,-

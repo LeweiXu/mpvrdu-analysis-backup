@@ -11,6 +11,7 @@
 # page_selection,oracle
 # prompt_mode,none
 # note,"OOM from status rows, pooled across all G1 runs"
+# snapshot,"predictions.v100.jsonl — the pre-recovery V100 rows, kept when the H100 pass upgraded 1,953 of these cells; the live predictions no longer record the V100 ceiling"
 rung,resolution,pages_fed,oom_rate,n_oom,n_total
 T,med,1,0.1,2,2928
 T,med,2-5,0.8,16,1896

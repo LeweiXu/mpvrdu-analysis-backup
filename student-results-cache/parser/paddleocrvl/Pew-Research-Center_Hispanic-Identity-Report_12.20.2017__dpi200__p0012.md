@@ -14,7 +14,7 @@ Across generations, fewer say parents talked about their pride in their roots
 
 % of U.S. adults with Hispanic ancestry saying their parents ___ talked about their pride in being [country of origin] when growing up
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_874_1112_1515_1639.jpg" alt="Image" width="37%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_874_1112_1514_1640.jpg" alt="Image" width="37%" /></div>
 
 
 Note: Self-identified Hispanics are those who say they are Hispanic. Self-identified non-Hispanics are those who say they are not Hispanic or Latino but say they have Hispanic ancestry or heritage. Voluntary responses of “Don’t know” and “Refused” not shown. Source: Pew Research Center 2015 National Survey of Latinos (Oct. 21-Nov. 30, 2015) and survey of self-identified non-Hispanics with Hispanic ancestry or heritage only (Nov. 11, 2015-Feb. 7, 2016). “Hispanic Identity Fades Across Generations as Immigrant Connections Fall Away”

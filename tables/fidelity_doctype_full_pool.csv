@@ -1,0 +1,54 @@
+# swept,"rung transition (TL→TLV, T→TL, T→TLV, T→TV, TV→TLV) × doc_type"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# pairing,"within-question, both rungs status==ok"
+pairing,doc_type,wrong→right (%),right→wrong (%),right→right (%),wrong→wrong (%),paired n
+TL->TLV,Academic paper,13.6 (21),3.9 (6),29.2 (45),53.2 (82),154
+TL->TLV,Administration/Industry file,14.1 (9),3.1 (2),53.1 (34),29.7 (19),64
+TL->TLV,Brochure,15.6 (12),2.6 (2),29.9 (23),51.9 (40),77
+TL->TLV,Financial report,8.3 (9),9.3 (10),43.5 (47),38.9 (42),108
+TL->TLV,Guidebook,13.3 (16),1.7 (2),38.3 (46),46.7 (56),120
+TL->TLV,Research report / Introduction,24.5 (52),4.2 (9),23.1 (49),48.1 (102),212
+TL->TLV,Tutorial/Workshop,26.8 (30),1.8 (2),46.4 (52),25.0 (28),112
+TL->TLV,**All doc_types**,17.6 (149),3.9 (33),34.9 (296),43.6 (369),847
+T->TL,Academic paper,5.2 (8),8.4 (13),27.9 (43),58.4 (90),154
+T->TL,Administration/Industry file,14.1 (9),7.8 (5),42.2 (27),35.9 (23),64
+T->TL,Brochure,9.1 (7),5.2 (4),23.4 (18),62.3 (48),77
+T->TL,Financial report,13.0 (14),9.3 (10),39.8 (43),38.0 (41),108
+T->TL,Guidebook,7.5 (9),3.3 (4),32.5 (39),56.7 (68),120
+T->TL,Research report / Introduction,9.9 (21),5.2 (11),17.5 (37),67.5 (143),212
+T->TL,Tutorial/Workshop,33.9 (38),0.0 (0),14.3 (16),51.8 (58),112
+T->TL,**All doc_types**,12.5 (106),5.5 (47),26.3 (223),55.6 (471),847
+T->TLV,Academic paper,13.6 (21),7.1 (11),29.2 (45),50.0 (77),154
+T->TLV,Administration/Industry file,20.3 (13),3.1 (2),46.9 (30),29.7 (19),64
+T->TLV,Brochure,22.1 (17),5.2 (4),23.4 (18),49.4 (38),77
+T->TLV,Financial report,13.0 (14),10.2 (11),38.9 (42),38.0 (41),108
+T->TLV,Guidebook,17.5 (21),1.7 (2),34.2 (41),46.7 (56),120
+T->TLV,Research report / Introduction,29.7 (63),4.7 (10),17.9 (38),47.6 (101),212
+T->TLV,Tutorial/Workshop,58.9 (66),0.0 (0),14.3 (16),26.8 (30),112
+T->TLV,**All doc_types**,25.4 (215),4.7 (40),27.2 (230),42.7 (362),847
+T->TV,Academic paper,12.3 (19),3.9 (6),32.5 (50),51.3 (79),154
+T->TV,Administration/Industry file,18.8 (12),1.6 (1),48.4 (31),31.2 (20),64
+T->TV,Brochure,19.5 (15),2.6 (2),26.0 (20),51.9 (40),77
+T->TV,Financial report,11.1 (12),10.2 (11),38.9 (42),39.8 (43),108
+T->TV,Guidebook,15.0 (18),1.7 (2),34.2 (41),49.2 (59),120
+T->TV,Research report / Introduction,28.3 (60),4.2 (9),18.4 (39),49.1 (104),212
+T->TV,Tutorial/Workshop,55.4 (62),0.0 (0),14.3 (16),30.4 (34),112
+T->TV,**All doc_types**,23.4 (198),3.7 (31),28.2 (239),44.7 (379),847
+TV->TLV,Academic paper,7.8 (12),9.7 (15),35.1 (54),47.4 (73),154
+TV->TLV,Administration/Industry file,4.7 (3),4.7 (3),62.5 (40),28.1 (18),64
+TV->TLV,Brochure,9.1 (7),9.1 (7),36.4 (28),45.5 (35),77
+TV->TLV,Financial report,5.6 (6),3.7 (4),46.3 (50),44.4 (48),108
+TV->TLV,Guidebook,5.0 (6),2.5 (3),46.7 (56),45.8 (55),120
+TV->TLV,Research report / Introduction,7.1 (15),6.1 (13),40.6 (86),46.2 (98),212
+TV->TLV,Tutorial/Workshop,8.0 (9),4.5 (5),65.2 (73),22.3 (25),112
+TV->TLV,**All doc_types**,6.8 (58),5.9 (50),45.7 (387),41.6 (352),847
+n (per col),"TL->TLV: 847, T->TL: 847, T->TLV: 847, T->TV: 847, TV->TLV: 847",-,-,-,-,-

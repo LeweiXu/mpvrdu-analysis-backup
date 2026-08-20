@@ -17,7 +17,7 @@ The nation’s Hispanic population has become more dispersed in the past few dec
 
 Among self-identified Hispanics
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_882_742_1516_1064.jpg" alt="Image" width="37%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_882_743_1516_1064.jpg" alt="Image" width="37%" /></div>
 
 
 Note: Self-identified Hispanics are those who say they are Hispanic. Self-identified non-Hispanics are those who say they are not Hispanic or Latino but say they have Hispanic ancestry or heritage. Voluntary responses of “None of them,” “Don’t know” and “Refused” not shown.

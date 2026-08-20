@@ -1,0 +1,51 @@
+# swept,"prompt_mode × evidence source × rung (unanswerable pool, bm25 k=3 pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,unanswerable
+# page_selection,"similarity (bm25, k=3)"
+# ⚠ not usable per source,"an unanswerable question has no gold evidence pages, so the pool is essentially unlabelled; see the note"
+# source blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
+prompt_mode,evidence_source,T,TL,TLV,V
+none,Figure,0.0 (n=3)†,0.0 (n=3)†,0.0 (n=3)†,0.0 (n=3)†
+none,Generalized-text (Layout),0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+none,Pure-text (Plain-text),14.3 (n=7)†,14.3 (n=7)†,0.0 (n=7)†,0.0 (n=7)†
+none,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+none,(none),13.2 (n=235),13.2 (n=235),14.9 (n=235),14.0 (n=235)
+none,**All sources**,13.1 (n=244),13.1 (n=244),14.3 (n=244),13.5 (n=244)
+grounded,Figure,33.3 (n=3)†,0.0 (n=3)†,0.0 (n=3)†,0.0 (n=3)†
+grounded,Generalized-text (Layout),0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+grounded,Pure-text (Plain-text),0.0 (n=7)†,0.0 (n=7)†,14.3 (n=7)†,0.0 (n=7)†
+grounded,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+grounded,(none),22.6 (n=235),6.8 (n=235),8.1 (n=235),5.5 (n=235)
+grounded,**All sources**,22.1 (n=244),6.6 (n=244),8.2 (n=244),5.3 (n=244)
+abstain,Figure,100.0 (n=3)†,100.0 (n=3)†,100.0 (n=3)†,100.0 (n=3)†
+abstain,Generalized-text (Layout),100.0 (n=1)†,100.0 (n=1)†,100.0 (n=1)†,100.0 (n=1)†
+abstain,Pure-text (Plain-text),85.7 (n=7)†,85.7 (n=7)†,85.7 (n=7)†,85.7 (n=7)†
+abstain,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+abstain,(none),80.9 (n=235),79.6 (n=235),74.0 (n=235),81.3 (n=235)
+abstain,**All sources**,81.1 (n=244),79.9 (n=244),74.6 (n=244),81.6 (n=244)
+abstain_balanced,Figure,100.0 (n=3)†,100.0 (n=3)†,66.7 (n=3)†,66.7 (n=3)†
+abstain_balanced,Generalized-text (Layout),100.0 (n=1)†,100.0 (n=1)†,100.0 (n=1)†,100.0 (n=1)†
+abstain_balanced,Pure-text (Plain-text),85.7 (n=7)†,85.7 (n=7)†,85.7 (n=7)†,85.7 (n=7)†
+abstain_balanced,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+abstain_balanced,(none),74.9 (n=235),76.6 (n=235),68.5 (n=235),76.6 (n=235)
+abstain_balanced,**All sources**,75.4 (n=244),77.0 (n=244),68.9 (n=244),76.6 (n=244)
+cot,Figure,0.0 (n=3)†,0.0 (n=3)†,0.0 (n=3)†,0.0 (n=3)†
+cot,Generalized-text (Layout),0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+cot,Pure-text (Plain-text),0.0 (n=7)†,0.0 (n=7)†,14.3 (n=7)†,0.0 (n=7)†
+cot,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+cot,(none),8.9 (n=235),14.5 (n=235),11.9 (n=235),6.0 (n=235)
+cot,**All sources**,8.6 (n=244),13.9 (n=244),11.9 (n=244),5.7 (n=244)
+extract_cot,Figure,0.0 (n=3)†,0.0 (n=3)†,66.7 (n=3)†,0.0 (n=3)†
+extract_cot,Generalized-text (Layout),0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+extract_cot,Pure-text (Plain-text),0.0 (n=7)†,14.3 (n=7)†,28.6 (n=7)†,0.0 (n=7)†
+extract_cot,Table,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†,0.0 (n=1)†
+extract_cot,(none),8.9 (n=235),18.3 (n=235),17.9 (n=235),19.1 (n=235)
+extract_cot,**All sources**,8.6 (n=244),18.0 (n=244),18.4 (n=244),18.4 (n=244)
+n (per col),-,-,-,-,-

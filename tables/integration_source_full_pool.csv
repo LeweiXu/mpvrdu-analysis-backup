@@ -1,0 +1,51 @@
+# swept,evidence hop (single vs multi) × evidence source × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# hop,"single/multi only, hop=none dropped"
+# gap column,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+# source blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
+evidence_source,rung,single,multi,M − S,n
+(none),T,64.3 [42.9-85.7] (n=14),20.0 [0.0-60.0] (n=5),-44.3,19
+(none),TL,78.6 [53.8-100.0] (n=14),20.0 [0.0-60.0] (n=5),-58.6,19
+(none),TV,85.7 [66.7-100.0] (n=14),20.0 [0.0-60.0] (n=5),-65.7,19
+(none),TLV,92.9 [76.9-100.0] (n=14),20.0 [0.0-60.0] (n=5),-72.9,19
+(none),V,64.3 [40.0-85.7] (n=14),20.0 [0.0-60.0] (n=5),-44.3,19
+Chart,T,20.4 [12.5-29.6] (n=98),16.5 [8.5-25.6] (n=79),-4.0,177
+Chart,TL,19.4 [11.6-27.7] (n=98),19.0 [11.0-28.8] (n=79),-0.4,177
+Chart,TV,53.1 [40.6-64.4] (n=98),29.1 [18.3-41.4] (n=79),-23.9,177
+Chart,TLV,56.1 [44.7-66.7] (n=98),32.9 [21.8-44.2] (n=79),-23.2,177
+Chart,V,54.1 [41.6-65.6] (n=98),30.4 [21.6-41.4] (n=79),-23.7,177
+Figure,T,19.3 [13.4-25.9] (n=166),10.1 [4.4-16.7] (n=119),-9.2,285
+Figure,TL,25.3 [18.1-33.0] (n=166),21.8 [13.5-30.1] (n=119),-3.5,285
+Figure,TV,50.6 [42.8-58.1] (n=166),39.5 [30.6-47.7] (n=119),-11.1,285
+Figure,TLV,49.4 [40.9-57.8] (n=166),39.5 [28.4-49.1] (n=119),-9.9,285
+Figure,V,45.8 [37.2-52.9] (n=166),33.6 [24.3-41.7] (n=119),-12.2,285
+Generalized-text (Layout),T,30.4 [15.8-43.9] (n=56),26.7 [14.8-41.1] (n=60),-3.7,116
+Generalized-text (Layout),TL,44.6 [32.3-57.7] (n=56),31.7 [18.6-45.0] (n=60),-13.0,116
+Generalized-text (Layout),TV,60.7 [48.3-73.3] (n=56),40.0 [26.8-52.4] (n=60),-20.7,116
+Generalized-text (Layout),TLV,66.1 [54.4-78.2] (n=56),38.3 [25.0-51.4] (n=60),-27.7,116
+Generalized-text (Layout),V,55.4 [41.7-70.0] (n=56),35.0 [23.3-46.8] (n=60),-20.4,116
+Pure-text (Plain-text),T,46.8 [36.6-58.1] (n=154),31.3 [21.5-42.0] (n=134),-15.4,288
+Pure-text (Plain-text),TL,56.5 [45.5-67.3] (n=154),38.8 [29.9-48.5] (n=134),-17.7,288
+Pure-text (Plain-text),TV,64.3 [53.5-75.2] (n=154),42.5 [32.6-52.9] (n=134),-21.7,288
+Pure-text (Plain-text),TLV,67.5 [56.7-78.4] (n=154),42.5 [33.9-52.1] (n=134),-25.0,288
+Pure-text (Plain-text),V,53.9 [44.3-64.3] (n=154),34.3 [26.4-42.5] (n=134),-19.6,288
+Table,T,47.1 [36.8-56.3] (n=104),35.5 [27.8-43.4] (n=110),-11.7,214
+Table,TL,66.3 [57.4-75.0] (n=104),32.7 [23.1-42.7] (n=110),-33.6,214
+Table,TV,66.3 [58.0-75.5] (n=104),30.0 [21.2-40.5] (n=110),-36.3,214
+Table,TLV,66.3 [57.4-75.0] (n=104),31.8 [22.7-42.5] (n=110),-34.5,214
+Table,V,51.9 [42.4-61.0] (n=104),25.5 [18.1-34.1] (n=110),-26.5,214
+**All sources**,**T**,**37.3 [31.1-43.3] (n=480)**,**25.1 [19.8-30.8] (n=358)**,**-12.2**,**838**
+**All sources**,**TL**,**45.0 [39.0-50.6] (n=480)**,**31.3 [25.6-36.7] (n=358)**,**-13.7**,**838**
+**All sources**,**TV**,**62.1 [56.6-67.6] (n=480)**,**38.5 [32.6-45.2] (n=358)**,**-23.5**,**838**
+**All sources**,**TLV**,**63.5 [58.1-68.8] (n=480)**,**38.5 [32.6-44.7] (n=358)**,**-25.0**,**838**
+**All sources**,**V**,**55.2 [49.8-60.8] (n=480)**,**33.5 [28.7-38.6] (n=358)**,**-21.7**,**838**
+n (per col),-,2400,1790,-,-

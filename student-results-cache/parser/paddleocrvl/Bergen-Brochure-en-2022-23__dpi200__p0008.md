@@ -123,10 +123,10 @@ Kokstadflaten 33 / NO-5257 / +47 468 45 725 / hoytundertaket.no/kokstad/
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1256_1140_1388_1186.jpg" alt="Image" width="5%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1257_1243_1299_1286.jpg" alt="Image" width="1%" /></div>
-
-
 <div style="text-align: center;"><img src="imgs/img_in_image_box_2031_869_2266_1181.jpg" alt="Image" width="10%" /></div>
+
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1257_1243_1299_1286.jpg" alt="Image" width="1%" /></div>
 
 
 ## MAGIC ICE BERGEN

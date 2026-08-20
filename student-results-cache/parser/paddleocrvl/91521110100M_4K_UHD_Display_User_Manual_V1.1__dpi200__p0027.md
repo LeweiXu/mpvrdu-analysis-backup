@@ -12,7 +12,7 @@ detergent solution using a swab method and then clean using the above chemical s
 
 The design allows the user to easily wipe liquids and gel off the LCD panel and control buttons – ensuring a high standard of disinfection and cleanliness.
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_247_616_582_914.jpg" alt="Image" width="19%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_247_616_582_913.jpg" alt="Image" width="19%" /></div>
 
 
 #### 3.6.9 Repacking

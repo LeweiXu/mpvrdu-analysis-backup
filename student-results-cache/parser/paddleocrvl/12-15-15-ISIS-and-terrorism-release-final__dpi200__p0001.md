@@ -19,7 +19,7 @@ How well is govt doing reducing threat of terrorism? (%)
 
 Source: Survey conducted Dec. 8-13, 2015.
 
-Don't know responses not shown.
+Don’t know responses not shown.
 
 PEW RESEARCH CENTER
 

@@ -1,0 +1,50 @@
+# swept,evidence hop (single vs multi) × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# hop,"single/multi only, hop=none dropped"
+# gap column,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+doc_type,rung,single,multi,M − S,n
+Academic paper,T,34.5 [20.7-48.2],39.7 [26.5-53.6],+5.2,152
+Academic paper,TL,29.8 [17.9-41.6],38.2 [25.0-52.7],+8.5,152
+Academic paper,TV,46.4 [32.2-59.5],44.1 [31.1-56.8],-2.3,152
+Academic paper,TLV,39.3 [26.8-51.8],47.1 [33.3-60.0],+7.8,152
+Academic paper,V,31.0 [20.3-40.6],38.2 [26.9-50.8],+7.3,152
+Administration/Industry file,T,58.5 [38.3-80.6],40.0 [11.8-61.9],-18.5,61
+Administration/Industry file,TL,68.3 [57.4-81.1],40.0 [7.1-63.6],-28.3,61
+Administration/Industry file,TV,80.5 [66.0-100.0],50.0 [23.5-69.6],-30.5,61
+Administration/Industry file,TLV,87.8 [78.0-100.0],35.0 [17.6-46.4],-52.8,61
+Administration/Industry file,V,68.3 [57.4-81.2],35.0 [17.6-46.4],-33.3,61
+Brochure,T,24.5 [14.6-35.2],35.7 [13.0-59.3],+11.2,77
+Brochure,TL,30.6 [18.6-44.7],35.7 [16.1-54.8],+5.1,77
+Brochure,TV,42.9 [29.5-55.6],50.0 [27.6-73.1],+7.1,77
+Brochure,TLV,51.0 [34.6-68.2],35.7 [16.0-53.8],-15.3,77
+Brochure,V,44.9 [26.7-63.8],32.1 [12.0-55.6],-12.8,77
+Financial report,T,60.3 [46.3-72.9],34.1 [26.2-44.1],-26.2,107
+Financial report,TL,68.3 [56.1-77.6],31.8 [18.5-48.6],-36.4,107
+Financial report,TV,71.4 [60.0-84.3],20.5 [10.0-36.4],-51.0,107
+Financial report,TLV,74.6 [68.1-83.1],20.5 [10.4-32.4],-54.1,107
+Financial report,V,52.4 [38.7-70.4],20.5 [10.9-33.3],-31.9,107
+Guidebook,T,42.5 [27.1-59.2],25.5 [10.4-41.3],-16.9,120
+Guidebook,TL,46.6 [32.8-60.8],29.8 [14.3-46.0],-16.8,120
+Guidebook,TV,56.2 [42.1-69.3],38.3 [21.7-56.4],-17.9,120
+Guidebook,TLV,60.3 [45.5-74.4],38.3 [22.7-54.4],-22.0,120
+Guidebook,V,53.4 [40.0-66.7],31.9 [19.6-44.4],-21.5,120
+Research report / Introduction,T,28.0 [16.8-39.8],17.1 [9.4-26.2],-10.9,212
+Research report / Introduction,TL,34.6 [23.2-46.2],20.0 [12.6-27.6],-14.6,212
+Research report / Introduction,TV,61.7 [49.5-72.2],31.4 [20.0-41.6],-30.3,212
+Research report / Introduction,TLV,64.5 [53.5-75.0],30.5 [20.8-39.1],-34.0,212
+Research report / Introduction,V,61.7 [49.1-73.9],28.6 [19.0-36.7],-33.1,212
+Tutorial/Workshop,T,23.8 [9.4-37.7],0.0 [0.0-0.0],-23.8,109
+Tutorial/Workshop,TL,54.0 [40.0-68.3],41.3 [28.6-52.0],-12.7,109
+Tutorial/Workshop,TV,84.1 [75.8-91.7],52.2 [40.6-61.5],-32.0,109
+Tutorial/Workshop,TLV,81.0 [71.2-89.8],65.2 [50.0-80.0],-15.7,109
+Tutorial/Workshop,V,81.0 [71.6-89.8],52.2 [40.6-61.5],-28.8,109
+n (per col),-,2400,1790,-,-

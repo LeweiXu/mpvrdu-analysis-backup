@@ -8,7 +8,7 @@ Tsinghua offers its students a superior learning, teaching and research environm
 
 Tsinghua is among the top research universities in the world. It has fostered many outstanding scholars, successful entrepreneurs, and distinguished statesmen widely esteemed at home and abroad. Outstanding alumni include Nobel Prize winners Yang Chen-ning and Lee Tsung-dao, statesmen such as President Xi Jinping, former President Hu Jintao, and former Premier Zhu Rongji.
 
-In the latest global rankings, Tsinghua University ranked 1 $ ^{st} $ in the US News Best Global Universities for Engineering and Computer Science (2020). It ranked 15 $ ^{th} $ in the QS World University Rankings (2021) and 23 $ ^{nd} $ in the THE World University Rankings (2020).
+In the latest global rankings, Tsinghua University ranked 1 $ ^{st} $ in the US News Best Global Universities for Engineering and Computer Science (2020). It ranked 15 $ ^{th} $ in the QS World University Rankings (2021) and 23 $ ^{rd} $ in the THE World University Rankings (2020).
 
 Student life at Tsinghua extends far beyond academic courses. Athletics, performing arts, a vast array of clubs and societies, and diverse social activities not only complement a student's studies at Tsinghua, but also offer wonderful opportunities for friendship and learning.
 

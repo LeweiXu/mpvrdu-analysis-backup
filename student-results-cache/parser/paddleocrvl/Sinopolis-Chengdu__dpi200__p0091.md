@@ -8,7 +8,7 @@ The book was called fangyan, meaning dialect.
 
 Numerous governments have attempted to unify China with a common language, which today is known as Putonghua. But dialects still abound alongside the lingua franca as well.
 
-One defining characteristic of Sichuanese is the lack of a "shi" sound, which makes the difference between the number 10 (shi) and the number 4 (si) even less discernible, as both are pronounced'si'. Another is the use of sazi rather than shenme to mean "What?" which many Sichuanese speakers prefer even when shifting from dialect to speaking Putonghua.
+One defining characteristic of Sichuanese is the lack of a “shi” sound, which makes the difference between the number 10 (shi) and the number 4 (si) even less discernible, as both are pronounced ‘si’. Another is the use of sazi rather than shenme to mean “What?” which many Sichuanese speakers prefer even when shifting from dialect to speaking Putonghua.
 
 
 

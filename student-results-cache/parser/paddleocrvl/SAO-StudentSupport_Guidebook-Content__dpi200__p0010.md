@@ -18,7 +18,7 @@ Undergo a medical examination at the Fullerton Healthcare@NTU for students on mo
 
 Complete the Student’s Pass formalities and collect your Student’s Pass (Please refer to Student’s Pass section)
 
-☐ Complete all matriculation procedures
+Complete all matriculation procedures
 
 Open a bank account if your study duration is more than 6 months
 

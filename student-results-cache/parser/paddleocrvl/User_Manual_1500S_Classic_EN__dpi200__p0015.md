@@ -7,7 +7,7 @@
 
 If the safety instructions are not followed, this could lead to mild to severe injury in case of improper use.
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_86_450_143_503.jpg" alt="Image" width="4%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_86_450_144_503.jpg" alt="Image" width="4%" /></div>
 
 
 ## Personal injury safety instructions

@@ -2,9 +2,7 @@ Visit
 
 Bergen
 
-Bergen
-
-Guide 2022
+Bergen Guide 2022
 
 Chapter 2.2
 

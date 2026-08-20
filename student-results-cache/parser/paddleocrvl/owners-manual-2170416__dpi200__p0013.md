@@ -37,9 +37,11 @@ You can control the amount of humidity in the moisture-sealed crispers. Adjust t
 
 2. Lower front into place.
 
+3. Replace meat drawer and crisper.
+
 Pull out to the stop, lift the front, and pull again.
 
-3. Replace meat drawer and crisper.
+
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_931_915_1316_1278.jpg" alt="Image" width="22%" /></div>
 
@@ -50,6 +52,12 @@ Cold air from the freezer flows into the meat drawer. This helps keep the meat d
 
 Slide the control from side to side to let more or less cold air through.
 
-Use control to adjust meat drawer temperature.
+Use control to
+
+adjust meat drawer
+
+temperature.
+
+
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1065_1522_1372_1876.jpg" alt="Image" width="17%" /></div>

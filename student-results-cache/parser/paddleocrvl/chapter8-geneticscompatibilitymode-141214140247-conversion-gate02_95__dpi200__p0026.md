@@ -1,6 +1,6 @@
 A
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_156_196_961_978.jpg" alt="Image" width="37%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_156_196_960_978.jpg" alt="Image" width="37%" /></div>
 
 
 A. PROPHASE I

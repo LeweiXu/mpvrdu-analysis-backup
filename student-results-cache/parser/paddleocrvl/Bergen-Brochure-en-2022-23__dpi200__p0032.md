@@ -6,9 +6,7 @@
 
 # Fjordcruise at the Hardangerfjord
 
-Take a fjord cruise along the 179 km long Hardangerfjord, also known as the "Queen of the Fjords". The boat departs from Norheimsund quay and takes you deep into the fjord, to the village of Eidfjord. There is a correspondence with bus from Bergen Busstation to Norheimsund and back again. Travelling along the fjord, you'll see beautiful villages and rural districts surrounded by majestic mountains with snow-covered peaks.
-
-It is also possible to make a stop in one of these charming villages, like Herand, Utne, Lofthus, Kinsarvik and Ulvik.
+Take a fjord cruise along the 179 km long Hardangerfjord, also known as the "Queen of the Fjords". The boat departs from Norheimsund quay and takes you deep into the fjord, to the village of Eidfjord. There is a correspondence with bus from Bergen Busstation to Norheimsund and back again. Travelling along the fjord, you'll see beautiful villages and rural districts surrounded by majestic mountains with snow-covered peaks. It is also possible to make a stop in one of these charming villages, like Herand, Utne, Lofthus, Kinsarvik and Ulvik.
 
 
 

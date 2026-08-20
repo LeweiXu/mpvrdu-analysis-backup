@@ -341,37 +341,37 @@ Ytre Arna Museum
 
 ## SHOPPING
 
-57 Arven Gold and Silver Ware Factory and Shop
+57 Arven Gold and Silver Ware Factory and Shop  
 
-58 Dale of Norway
+58 Dale of Norway  
 
-59 Artists at Bryggen
+59 Artists at Bryggen  
 
 60 Oleana Économusée
 
 ## TRANSPORT
 
-Ferry to Denmark
+Ferry to Denmark  
 
-Departure point for tours by traditional boats (C4)
+Departure point for tours by traditional boats (C4)  
 
-Strandkai terminal (D5)
+Strandkai terminal (D5)  
 
-Sightseeing boats. Marina for leisure boats (D4)
+Sightseeing boats. Marina for leisure boats (D4)  
 
-Express boat to Askøy (D5)
+Express boat to Askøy (D5)  
 
-Norwegian Coastal Voyage (Hurtigruten)
+Norwegian Coastal Voyage (Hurtigruten)  
 
-for Northern Norway (D6)
+for Northern Norway (D6)  
 
-Central Bus Station (E4)
+Central Bus Station (E4)  
 
-Railway Station (E4)
+Railway Station (E4)  
 
-Airport bus
+Airport bus  
 
-Cruiseship port
+Cruiseship port  
 
 Bus to Ulriken643
 

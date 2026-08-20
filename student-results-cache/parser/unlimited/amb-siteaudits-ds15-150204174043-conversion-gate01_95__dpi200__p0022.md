@@ -1,0 +1,7 @@
+Mastering Strategic SEO Audits
+<table><tr><td>Sitemap #</td><td>Type</td><td>Issue</td><td>Description</td><td>Issues count</td></tr><tr><td>sitemap.xml</td><td>Warnings</td><td>URLs not accessible</td><td>When we tested a sample of the URLs from your Sitemap, we found that some URLs were not accessible to Googlebot due to an HTTP status error. All accessible URLs will still be submitted.</td><td>159</td></tr><tr><td>sitemap2.xml</td><td>Warnings</td><td>URLs unreachable</td><td>When we tested a sample of the URLs from your Sitemap, we found that some of the URLs were unreachable. Please check your webserver for possible misconfiguration, as these errors may be caused by a server error (such as a 5xx error) or a network error between Googlebot and your server. All reachable URLs will still be submitted.</td><td>1732</td></tr><tr><td>videositemap.xml</td><td>Warnings</td><td>URLs timed out</td><td>When we tested a sample of the URLs from your Sitemap, we found that some URLs were not accessible to Googlebot due to network timeouts. If this problem persists, please check the network availability of your DNS and web servers. All accessible URLs will still be submitted.</td><td>504</td></tr></table>
+digitalsummit
+PHOENIX
+#DS15
+@AlanBleiweiss
+[Non-Text]

@@ -221,7 +221,7 @@ Mechanical/Performance
 
 - Android Auto $ ^{TM} $3 & Apple CarPlay $ ^{®} $2 compatible
 
-- SiriusXM $ ^{®19} $ with 3-month Platinum Plan trial subscription $ ^{20} $
+- SiriusXM $ ^{®} $19 with 3-month Platinum Plan trial subscription $ ^{20} $
 
 ✓ Connected Services $ ^{4} $ trials, including Safety Connect $ ^{®} $ 1-year trial, $ ^{9} $ Service Connect up to 10-year trial, $ ^{12} $ Remote Connect 1-year trial, $ ^{8} $ available Destination Assist 1-year trial, $ ^{15} $ available Dynamic Navigation 3-year trial, $ ^{14} $ Wi-Fi Connect up to 2GB within 3-month trial. $ ^{13} $ 4G network dependent.
 
@@ -229,7 +229,7 @@ Mechanical/Performance
 
 ✓ Toyota Safety Sense $ ^{TM} $ 2.5+ (TSS 2.5+)22
 
-✓ Full-Speed Range Dynamic Radar Cruise Contol (DRCC) $ ^{24} $
+✓ Full-Speed Range Dynamic Radar Cruise Control (DRCC) $ ^{24} $
 
 ✓ Blind Spot Monitor (BSM) $ ^{34} $ with Rear Cross-Traffic Alert (RCTA) $ ^{35} $
 

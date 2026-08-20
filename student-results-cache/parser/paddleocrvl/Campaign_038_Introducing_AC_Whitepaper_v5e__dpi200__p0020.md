@@ -1,7 +1,7 @@
 <div style="text-align: center;"><img src="imgs/img_in_image_box_0_890_308_2204.jpg" alt="Image" width="18%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_411_199_1366_886.jpg" alt="Image" width="57%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_411_199_1365_886.jpg" alt="Image" width="57%" /></div>
 
 
 Simple Application Server is a server-based service that allows you to build, monitor and maintain your website with just a few clicks. It makes private service building much easier, if all you need is a private virtual machine, and is the best way for beginners to get started with cloud computing.

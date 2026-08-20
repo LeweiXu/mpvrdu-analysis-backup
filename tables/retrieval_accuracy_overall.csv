@@ -42,9 +42,4 @@ colqwen3,vision,3,0.368,0.739,0.460,847
 colqwen3,vision,5,0.255,0.806,0.361,847
 colqwen3,vision,7,0.199,0.839,0.299,847
 colqwen3,vision,10,0.152,0.874,0.241,847
-qwen3-embedding,text,1,0.335,0.255,0.279,847
-qwen3-embedding,text,3,0.199,0.413,0.254,847
-qwen3-embedding,text,5,0.150,0.494,0.217,847
-qwen3-embedding|colqwen3,joint,1,0.519,0.587,0.517,847
-qwen3-embedding|colqwen3,joint,3,0.255,0.779,0.360,847
 n (per col),-,-,-,-,-,-

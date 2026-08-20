@@ -3,13 +3,13 @@
 <div style="text-align: center;">Current Sentiment (fig.1)</div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_82_226_955_764.jpg" alt="Image" width="40%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_82_226_956_764.jpg" alt="Image" width="40%" /></div>
 
 
 <div style="text-align: center;">Topic Comparison (fig.3)</div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_199_868_856_1504.jpg" alt="Image" width="30%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_199_868_856_1507.jpg" alt="Image" width="30%" /></div>
 
 
 <div style="text-align: center;">Metrics Summary (fig.2)</div>
@@ -24,6 +24,6 @@ Of sentimented data, 63.89% trend positively, 18.06% are mixed, and 18.06% trend
 
 - Of all posts relevant to the Windows topic, 16.8% contain some sort of sentiment. This proportion of sentiment is high in comparison to other technical topics.
 
-☑ Post volume has remained quite steady since the last reporting period, with minor increases in volume.
+■ Post volume has remained quite steady since the last reporting period, with minor increases in volume.
 
-When compared to other topics W7 remains the most highly discussed topic.
+■ When compared to other topics W7 remains the most highly discussed topic.

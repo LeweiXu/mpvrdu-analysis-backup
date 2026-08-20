@@ -57,7 +57,7 @@ Our Department has six research groups, namely the Southeast Asian Chinese and M
 
 ## (PhD, NUS, 2019) Lecturer, School of Literature, Capital Normal University
 
-The PhD programme in the Department of Chinese Studies has provided me with great opportunities to communicate with world-renowned scholars, which broadens my research horizon and enriches my research experiences. I would like to express my appreciation to my supervisor as well as other professors in the department for their patient guidance, consistent encouragement and constructive suggestions. My student life in NUS is very rewarding and unforgettable.
+“The PhD programme in the Department of Chinese Studies has provided me with great opportunities to communicate with world-renowned scholars, which broadens my research horizon and enriches my research experiences. I would like to express my appreciation to my supervisor as well as other professors in the department for their patient guidance, consistent encouragement and constructive suggestions. My student life in NUS is very rewarding and unforgettable.”
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1229_784_1508_1085.jpg" alt="Image" width="11%" /></div>
 

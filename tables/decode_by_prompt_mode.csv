@@ -1,0 +1,20 @@
+# swept,"prompt_mode × decode cost, at TLV"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV only
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# reading,the uninstructed none row is an upper bound and is flagged; cot/extract_cot carry an 8x decode budget
+prompt_mode,instruction,budget,decode_ms,output_tokens,prefill_ms,n
+none ⚠,none (uninstructed),256,2438,136,177,847
+grounded,concise,256,171,10,177,847
+abstain,concise,256,114,7,178,847
+abstain_balanced,concise,256,119,8,179,847
+cot,concise,2048,2979,166,178,847
+extract_cot,concise,2048,4507,242,181,846
+n (per col),-,-,-,-,-,-

@@ -1,0 +1,29 @@
+# swept,visual_resolution (low / med / high) × evidence source
+# dataset,mmlongbench
+# scan,any (digital+scanned)
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# representation,TLV/V only
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# source blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
+# reading,"does high resolution recover the pixel-limited sources (Chart, Figure) specifically, or lift every source alike"
+evidence_source,rung,low,med,high,n
+(none),TLV,63.2 [38.9-83.3] (n=19),68.4 [44.4-90.9] (n=19),73.7 [52.6-91.3] (n=19),57
+(none),V,36.8 [17.6-60.0] (n=19),47.4 [27.7-66.7] (n=19),52.6 [31.2-71.4] (n=19),57
+Chart,TLV,38.2 [30.1-46.5] (n=178),44.9 [35.5-54.5] (n=178),48.3 [39.2-57.4] (n=178),534
+Chart,V,34.3 [26.2-43.4] (n=178),44.9 [35.8-54.0] (n=178),48.3 [40.3-56.8] (n=178),534
+Figure,TLV,39.7 [32.8-46.6] (n=290),45.5 [38.3-52.4] (n=290),48.3 [41.5-54.9] (n=290),870
+Figure,V,38.3 [31.2-44.9] (n=290),40.0 [33.7-46.1] (n=290),43.8 [37.3-49.8] (n=290),870
+Generalized-text (Layout),TLV,46.6 [37.6-55.3] (n=118),50.0 [41.0-58.3] (n=118),54.2 [45.5-62.6] (n=118),354
+Generalized-text (Layout),V,47.5 [38.3-57.0] (n=118),49.2 [40.8-57.7] (n=118),53.4 [45.0-61.7] (n=118),354
+Pure-text (Plain-text),TLV,52.9 [45.9-60.2] (n=291),55.0 [48.0-62.1] (n=291),55.0 [48.0-62.3] (n=291),873
+Pure-text (Plain-text),V,38.8 [31.9-45.5] (n=291),45.4 [38.8-52.3] (n=291),51.5 [43.5-58.8] (n=291),873
+Table,TLV,48.8 [41.1-55.8] (n=217),49.8 [42.8-56.6] (n=217),48.8 [41.8-55.4] (n=217),651
+Table,V,25.3 [18.7-32.5] (n=217),37.3 [31.0-44.1] (n=217),42.4 [35.5-48.9] (n=217),651
+**All sources**,**TLV**,**49.2 [45.0-53.3] (n=847)**,**52.5 [48.3-56.6] (n=847)**,**54.7 [50.4-58.5] (n=847)**,**2541**
+**All sources**,**V**,**37.8 [33.2-42.3] (n=847)**,**45.7 [41.8-50.1] (n=847)**,**50.2 [46.4-54.1] (n=847)**,**2541**
+n (per col),-,1694,1694,1694,-

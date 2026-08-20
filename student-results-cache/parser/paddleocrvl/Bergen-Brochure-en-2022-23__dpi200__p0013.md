@@ -2,9 +2,7 @@ Visit
 
 Bergen
 
-Bergen
-
-Guide 2022
+Bergen Guide 2022
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_61_115_102_158.jpg" alt="Image" width="1%" /></div>
 

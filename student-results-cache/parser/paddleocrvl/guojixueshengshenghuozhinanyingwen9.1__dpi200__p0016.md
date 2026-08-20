@@ -16,7 +16,7 @@ There are three markets on campus that provide fresh produce and meats.
 
 Known as C Building for its shape resembling the letter C, the Zijing Student Service Center is located beside the Zijing Sports Field, in the heart of the student dormitories area of campus. C Building offers a central location for various shops and services, including a supermarket, hairdresser, post office, bank, ATM, bookshop, photo shop, optical services shop, computer repair shop, souvenir shop, printer shop, phone shop, student card top-up machine and student registration services.
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_840_176_1440_554.jpg" alt="Image" width="36%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_840_176_1440_555.jpg" alt="Image" width="36%" /></div>
 
 
 ## Other On-Campus Service Shops

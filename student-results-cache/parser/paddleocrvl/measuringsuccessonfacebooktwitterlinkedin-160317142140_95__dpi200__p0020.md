@@ -45,7 +45,7 @@ The Art of People: 11 Simple People Skills That Will Get You Everything You Want
 
 People Skills That
 
-amazon.com • The Art of People: 11 Simple People Skills That Will Get You Everything You Want [Dave Kerpen] on Am...
+amazon.com · The Art of People: 11 Simple People Skills That Will Get You Everything You Want [Dave Kerpen] on Am...
 
 
 
@@ -70,6 +70,6 @@ Embracing the next phase of personalization with Gatorade's senior director of c
 
 ## Winning the Battle for Attention: Kenny Mitchell - Personalization
 
-YouTube · Kenny Mitchell, Sr. Director of Consumer Engagement at Gatorade, sat down at SXSW to discuss the role personalization plays in winning the battle for...
+YouTube · Kenny Mitchell, Sr. Director of Consumer Engagement at Galorade, sat down at SXSW to discuss the role personalization plays in winning the battle for...
 
 Like · Comment · Share · 27

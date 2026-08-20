@@ -13,7 +13,7 @@ Launch the video calling application on your computer.
 
 When you make a video call on your computer, select calling connections (HFP/HSP) and not music playback connections (A2DP). If you select music playback connections, a video call may not be available.
 
-On the speaker settings, select calling connections [Headset (WH-1000XM4 Hands-Free)] (**) ([Headphones (WH-1000XM4 Stereo)] (**) is for music playback connections.)
+On the speaker settings, select calling connections [Headset (WH-1000XM4 Hands-Free)] ( $ ^{**} $). ([Headphones (WH-1000XM4 Stereo)] ( $ ^{**} $) is for music playback connections.)
 
 On the microphone settings, select calling connections [Headset (WH-1000XM4 Hands-Free)] ( $ ^{*} $). When the microphone is not set up, the Speak-to-Chat mode activates when it detects the speech of the person wearing the headset, and the sound from the headset is muted.
 

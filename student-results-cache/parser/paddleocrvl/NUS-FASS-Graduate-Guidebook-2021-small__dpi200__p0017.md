@@ -49,9 +49,9 @@ Theatre Studies is known for its cutting-edge scholarship in theatre and perform
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1229_1051_1505_1352.jpg" alt="Image" width="11%" /></div>
 
 
-## at three levels
-
 • MA by coursework (in English Language and Linguistics, and Literary Studies)
+
+## at three levels
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_1227_494_1509_799.jpg" alt="Image" width="12%" /></div>
 

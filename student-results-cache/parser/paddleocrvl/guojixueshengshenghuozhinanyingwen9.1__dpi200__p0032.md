@@ -10,7 +10,7 @@ Fire Department ___ 119
 
 Traffic Police ___ 122
 
-Ambulance ___ 120/999
+Ambulance 120/999
 
 Zhongguancun Police Station 中关村派出所 62554600
 

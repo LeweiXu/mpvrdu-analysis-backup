@@ -1,0 +1,22 @@
+# swept,vision margin (best image rung − best text rung) × doc_type
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# unit,"documents resampled with replacement, 1000 resamples, seed 0, 2.5%/97.5% quantiles — same convention as the marginal CIs"
+# pairing,per question across all five rungs; a question enters only if scored at every rung
+doc_type,Δ vision (points),CI low,CI high,best image,best text,n (paired),excludes 0
+Academic paper,+8.4,+3.3,+13.9,TV,T,154,yes
+Administration/Industry file,+10.9,+4.1,+21.1,TV,TL,64,yes
+Brochure,+13.0,+3.7,+25.4,TV,TL,77,yes
+Financial report,-0.9,-8.0,+8.5,TLV,TL,108,no
+Guidebook,+11.7,+6.4,+18.6,TLV,TL,120,yes
+Research report / Introduction,+20.3,+12.7,+29.1,TLV,TL,212,yes
+Tutorial/Workshop,+25.0,+17.0,+34.7,TLV,TL,112,yes
+all doc_types,+13.7,+10.5,+17.6,TLV,TL,847,yes

@@ -1,0 +1,44 @@
+# swept,quantization (bf16 / 8bit / 4bit) × evidence source × rung
+# dataset,mmlongbench
+# scan,any (digital+scanned)
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# note,16-bit baseline from the representation run
+# source blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
+# reading,"whether the small pooled 4-bit cost concentrates on the numeric, dense-table sources or is flat across them"
+evidence_source,rung,4bit,8bit,16bit,n
+(none),T,52.6 (+0.0) (n=19)†,52.6 (+0.0) (n=19)†,52.6 (n=19)†,57
+(none),TL,57.9 (-5.3) (n=19)†,57.9 (-5.3) (n=19)†,63.2 (n=19)†,57
+(none),TLV,68.4 (+0.0) (n=19)†,73.7 (+5.3) (n=19)†,68.4 (n=19)†,57
+(none),V,47.4 (+0.0) (n=19)†,52.6 (+5.3) (n=19)†,47.4 (n=19)†,57
+Chart,T,17.4 (-0.6) (n=178),18.5 (+0.6) (n=178),18.0 (n=178),534
+Chart,TL,23.0 (+4.5) (n=178),19.1 (+0.6) (n=178),18.5 (n=178),534
+Chart,TLV,39.3 (-5.1) (n=178),46.6 (+2.2) (n=178),44.4 (n=178),534
+Chart,V,42.1 (-2.2) (n=178),41.6 (-2.8) (n=178),44.4 (n=178),534
+Figure,T,18.6 (+3.4) (n=290),17.6 (+2.4) (n=290),15.2 (n=290),870
+Figure,TL,24.5 (+2.1) (n=290),22.4 (+0.0) (n=290),22.4 (n=290),870
+Figure,TLV,45.9 (+1.4) (n=290),47.2 (+2.8) (n=290),44.5 (n=290),870
+Figure,V,42.1 (+1.7) (n=290),42.4 (+2.1) (n=290),40.3 (n=290),870
+Generalized-text (Layout),T,27.1 (-0.8) (n=118),28.8 (+0.8) (n=118),28.0 (n=118),354
+Generalized-text (Layout),TL,39.0 (+0.8) (n=118),37.3 (-0.8) (n=118),38.1 (n=118),354
+Generalized-text (Layout),TLV,49.2 (-1.7) (n=118),51.7 (+0.8) (n=118),50.8 (n=118),354
+Generalized-text (Layout),V,50.0 (+1.7) (n=118),47.5 (-0.8) (n=118),48.3 (n=118),354
+Pure-text (Plain-text),T,37.5 (-2.1) (n=291),40.2 (+0.7) (n=291),39.5 (n=291),873
+Pure-text (Plain-text),TL,46.7 (-0.7) (n=291),45.7 (-1.7) (n=291),47.4 (n=291),873
+Pure-text (Plain-text),TLV,56.0 (+1.0) (n=291),54.3 (-0.7) (n=291),55.0 (n=291),873
+Pure-text (Plain-text),V,45.4 (+1.0) (n=291),45.7 (+1.4) (n=291),44.3 (n=291),873
+Table,T,37.3 (-3.7) (n=217),36.4 (-4.6) (n=217),41.0 (n=217),651
+Table,TL,49.8 (+0.5) (n=217),48.4 (-0.9) (n=217),49.3 (n=217),651
+Table,TLV,49.3 (-0.9) (n=217),48.4 (-1.8) (n=217),50.2 (n=217),651
+Table,V,37.8 (+0.5) (n=217),37.8 (+0.5) (n=217),37.3 (n=217),651
+**All sources**,**T**,**31.8 (-0.1) (n=847)**,**32.5 (+0.6) (n=847)**,**31.9 (n=847)**,**2541**
+**All sources**,**TL**,**39.4 (+1.1) (n=847)**,**37.9 (-0.5) (n=847)**,**38.4 (n=847)**,**2541**
+**All sources**,**TLV**,**51.8 (-0.6) (n=847)**,**53.6 (+1.2) (n=847)**,**52.4 (n=847)**,**2541**
+**All sources**,**V**,**45.5 (+0.0) (n=847)**,**45.7 (+0.2) (n=847)**,**45.5 (n=847)**,**2541**
+n (per col),-,3388,3388,3388,-

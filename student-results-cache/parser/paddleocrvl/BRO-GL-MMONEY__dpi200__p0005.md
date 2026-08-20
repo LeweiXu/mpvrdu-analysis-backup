@@ -1,6 +1,6 @@
 ## Simple, intuitive user interface
 
-MORGAN MONEY's enhanced design provides you with a simple, aggregated view of your entire company's holdings on one screen. Pre-trade compliance checks allow you to avoid investing more than your investment policy concentration limits through soft-blocks. So, before you even place a trade, you can see expected fund concentrations.
+MORGAN MONEY’s enhanced design provides you with a simple, aggregated view of your entire company’s holdings on one screen. Pre-trade compliance checks allow you to avoid investing more than your investment policy concentration limits through soft-blocks. So, before you even place a trade, you can see expected fund concentrations.
 
 <div style="text-align: center;"><img src="imgs/img_in_image_box_102_584_1131_1026.jpg" alt="Image" width="62%" /></div>
 

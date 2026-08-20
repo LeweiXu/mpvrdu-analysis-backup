@@ -10,9 +10,7 @@ Vertical display mount shown without merchandise
 <div style="text-align: center;"><img src="imgs/img_in_image_box_942_784_1566_1191.jpg" alt="Image" width="36%" /></div>
 
 
-Connected Home device plugged into Zips
-
-Multiport
+Connected Home device plugged into Zips Multiport
 
 ## At a glance:
 

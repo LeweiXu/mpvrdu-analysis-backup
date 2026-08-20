@@ -1,0 +1,2 @@
+What happens to my certification with the rollout of Next-Gen Recruiter?
+Your certification will be valid for two years after passing. Even though there will be a change to the Recruiter tool, the main subjects and objectives of the exam will remain the same. Most of the existing certification exam questions will remain relevant in the next generation of Recruiter.

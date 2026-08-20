@@ -1,0 +1,21 @@
+# swept,"prompt_mode × rung (unanswerable pool, bm25 k=3 pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,unanswerable
+# page_selection,"similarity (bm25, k=3)"
+# direction,abstaining is CORRECT here; higher is better
+# anchor,grounded ≈ 10.7 and abstain ≈ 80.7 (legacy generic/targeted)
+prompt_mode,T,TL,TLV,V
+none,13.1 (n=244),13.1 (n=244),14.3 (n=244),13.5 (n=244)
+grounded,22.1 (n=244),6.6 (n=244),8.2 (n=244),5.3 (n=244)
+abstain,81.1 (n=244),79.9 (n=244),74.6 (n=244),81.6 (n=244)
+abstain_balanced,75.4 (n=244),77.0 (n=244),68.9 (n=244),76.6 (n=244)
+cot,8.6 (n=244),13.9 (n=244),11.9 (n=244),5.7 (n=244)
+extract_cot,8.6 (n=244),18.0 (n=244),18.4 (n=244),18.4 (n=244)
+n (per col),1464,1464,1464,1464

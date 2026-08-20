@@ -1,0 +1,18 @@
+# swept,pool (full answerable vs V100 survivor) × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# flag,a rung moving more than 2 points is marked ⚠
+rung,full pool,n (full),survivor pool,n (survivor),Δ (full − survivor)
+T,31.9,847,31.9,831,-0.0
+TL,38.8,847,39.4,761,-0.6
+TLV,52.5,847,56.8,717,-4.2 ⚠
+V,45.6,847,45.9,834,-0.4

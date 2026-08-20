@@ -1,0 +1,22 @@
+# swept,"prompt_mode (none / grounded / cot / extract_cot) × evidence hop, at TLV"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV only
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# hop,"single/multi only, hop=none dropped"
+# gap column,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+# reading,"whether a prompt lever that lifts pooled accuracy also narrows the multi-page deficit, or only shifts the level"
+prompt_mode,single,multi,M − S,Δ M − S vs grounded,n
+none,63.5 [58.1-68.8],38.5 [32.6-44.7],-25.0,-2.1,838
+grounded,55.8 [50.9-61.2],33.0 [26.8-39.5],-22.9,+0.0,838
+cot,60.6 [55.6-65.6],44.1 [38.4-50.2],-16.5,+6.4,838
+extract_cot,57.5 [52.7-62.7],41.5 [36.1-47.2],-16.0,+6.8,837
+abstain,50.8 [45.7-56.1],29.9 [24.2-36.2],-20.9,+1.9,838
+abstain_balanced,52.1 [46.9-57.4],31.0 [25.3-37.1],-21.1,+1.8,838
+n (per col),2880,2147,-,-,-

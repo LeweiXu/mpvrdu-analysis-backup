@@ -1,0 +1,37 @@
+# swept,scan (digital vs scanned) × evidence source × rung
+# dataset,mmlongbench
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# scan,split: digital vs scanned
+# source blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
+# n,"per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one"
+evidence_source,rung,digital,scanned,n
+(none),TL,66.7 [41.2-87.0] (n=18),0.0 [0.0-0.0] (n=1),19
+(none),TLV,66.7 [37.5-90.5] (n=18),100.0 [100.0-100.0] (n=1),19
+(none),V,44.4 [23.5-62.5] (n=18),100.0 [100.0-100.0] (n=1),19
+Chart,TL,23.8 [16.3-32.0] (n=130),4.2 [0.0-10.9] (n=48),178
+Chart,TLV,40.8 [30.0-50.7] (n=130),54.2 [35.1-72.9] (n=48),178
+Chart,V,41.5 [32.2-51.0] (n=130),52.1 [32.6-70.0] (n=48),178
+Figure,TL,17.4 [12.1-23.5] (n=184),31.1 [20.9-41.7] (n=106),290
+Figure,TLV,37.0 [29.6-45.1] (n=184),57.5 [46.9-68.2] (n=106),290
+Figure,V,33.2 [26.6-40.4] (n=184),52.8 [42.4-62.0] (n=106),290
+Generalized-text (Layout),TL,43.8 [33.8-53.7] (n=80),26.3 [11.9-45.5] (n=38),118
+Generalized-text (Layout),TLV,47.5 [37.0-57.6] (n=80),57.9 [42.9-73.5] (n=38),118
+Generalized-text (Layout),V,47.5 [38.2-57.7] (n=80),50.0 [34.3-65.7] (n=38),118
+Pure-text (Plain-text),TL,50.9 [42.9-59.1] (n=226),35.4 [24.1-48.3] (n=65),291
+Pure-text (Plain-text),TLV,54.9 [46.5-63.3] (n=226),55.4 [40.0-69.6] (n=65),291
+Pure-text (Plain-text),V,42.5 [35.7-50.0] (n=226),50.8 [35.7-66.1] (n=65),291
+Table,TL,47.6 [38.6-55.5] (n=185),59.4 [43.3-73.3] (n=32),217
+Table,TLV,46.5 [38.5-53.7] (n=185),71.9 [60.0-82.9] (n=32),217
+Table,V,32.4 [25.9-38.4] (n=185),65.6 [48.5-80.6] (n=32),217
+**All sources**,**TL**,**40.1 [35.1-44.9] (n=646)**,**32.8 [26.2-40.0] (n=201)**,**847**
+**All sources**,**TLV**,**49.7 [44.6-54.2] (n=646)**,**61.2 [53.1-68.8] (n=201)**,**847**
+**All sources**,**V**,**41.5 [37.1-45.6] (n=646)**,**58.2 [50.0-65.4] (n=201)**,**847**
+n (per col),-,1938,603,-

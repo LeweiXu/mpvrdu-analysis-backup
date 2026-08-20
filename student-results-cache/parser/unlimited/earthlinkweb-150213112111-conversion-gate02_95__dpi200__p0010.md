@@ -1,0 +1,6 @@
+Who Has WiFi Installed
+% RESPONDENTS USING WIFI AT STORES
+
+IHL
+HARD DATA SMART DECISIONS
+Source: IHL Group Store Infrastructure Survey 2015

@@ -16,7 +16,7 @@ The screen protect panel is made of toughened glass, but there is a possibility 
 
 - Handle with care. Avoid strong impact, such as dropping from a high place or an object swinging into it.
 
-- Do not scratch the panel with a sharp object or place it in harm’s way.
+• Do not scratch the panel with a sharp object or place it in harm’s way.
 
 #### 3.6.4 A long period of use
 

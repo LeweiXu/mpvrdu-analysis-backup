@@ -10,7 +10,7 @@ Top reactions to Trump’s victory – ‘uneasy,’ ‘hopeful’
 
 % of voters who say the election of Donald Trump makes them feel...
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_872_543_1430_1035.jpg" alt="Image" width="32%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_872_544_1430_1035.jpg" alt="Image" width="32%" /></div>
 
 
 ## PEW RESEARCH CENTER

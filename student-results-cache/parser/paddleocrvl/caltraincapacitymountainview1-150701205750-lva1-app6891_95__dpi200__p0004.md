@@ -1,0 +1,6 @@
+## Rapid growth in Mountain View, Palo Alto
+
+## Average weekday ridership growth
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Rank</td><td style='text-align: center; word-wrap: break-word;'>2012</td><td style='text-align: center; word-wrap: break-word;'>2013</td><td style='text-align: center; word-wrap: break-word;'>2014</td><td style='text-align: center; word-wrap: break-word;'>Change</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Palo Alto University</td><td style='text-align: center; word-wrap: break-word;'>2</td><td style='text-align: center; word-wrap: break-word;'>4,461</td><td style='text-align: center; word-wrap: break-word;'>5,469</td><td style='text-align: center; word-wrap: break-word;'>6,156</td><td style='text-align: center; word-wrap: break-word;'>38%</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Mountain View</td><td style='text-align: center; word-wrap: break-word;'>3</td><td style='text-align: center; word-wrap: break-word;'>3,670</td><td style='text-align: center; word-wrap: break-word;'>3,876</td><td style='text-align: center; word-wrap: break-word;'>4,274</td><td style='text-align: center; word-wrap: break-word;'>16%</td></tr></table>

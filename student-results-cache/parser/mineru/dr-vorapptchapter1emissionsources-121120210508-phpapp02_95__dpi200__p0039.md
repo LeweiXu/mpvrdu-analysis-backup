@@ -1,0 +1,7 @@
+Revenue Performance Management
+Marketing Automation Revenue Cycle Model - Example
+AwarenessNamesRecycled
+Recycled
+Nunturing DatabaseMarketing LeadSales LeadOpportunity
+Marketing LeadSales LeadOpportunitySale
+MarketingSalesSalesSalesSales

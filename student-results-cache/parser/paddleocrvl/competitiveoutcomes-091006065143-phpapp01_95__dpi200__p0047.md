@@ -26,4 +26,4 @@ http://www.slideshare.net/rnja8c/outline-for-behavioral-economics-course-compone
 
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1637_1_2133_689.jpg" alt="Image" width="23%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1637_1_2133_690.jpg" alt="Image" width="23%" /></div>

@@ -1,4 +1,5 @@
-## Wave-III Survey
+<div style="text-align: center;">Wave-III Survey</div>
+
 
 <div style="text-align: center;">Sample Distribution (District Level)</div>
 

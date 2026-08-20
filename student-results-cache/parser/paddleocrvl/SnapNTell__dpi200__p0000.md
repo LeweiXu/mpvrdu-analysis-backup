@@ -2,7 +2,7 @@
 
 Jielin Qiu $ ^{1,2,*} $, Andrea Madotto $ ^{1} $, Zhaojiang Lin $ ^{1} $, Paul A. Crook $ ^{1} $, Yifan Ethan Xu $ ^{1} $, Xin Luna Dong $ ^{1} $, Christos Faloutsos $ ^{2} $, Lei Li $ ^{2} $, Babak Damavandi $ ^{1} $, Seungwhan Moon $ ^{1} $
 
- $ ^{1} $ Meta Reality Labs & FAIR, Meta  $ ^{2} $ Carnegie Mellon University
+ $ ^{1} $ Meta Reality Labs & FAIR, Meta  $ ^{2} $Carnegie Mellon University
 
 {jielinq,leili,christos}@cs.cmu.edu, {andreamad8,zhaojiang,pacrook,ethanxu,lunadong,shanemoon}@meta.com
 

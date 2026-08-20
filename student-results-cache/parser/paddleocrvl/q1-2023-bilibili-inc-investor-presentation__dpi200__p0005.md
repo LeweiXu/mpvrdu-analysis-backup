@@ -4,7 +4,7 @@ Video becomes fundamental to information, entertainment and communication
 
 Massive Video-Based Industry $ ^{(1)} $
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_156_497_1288_1293.jpg" alt="Image" width="42%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_156_497_1288_1292.jpg" alt="Image" width="42%" /></div>
 
 
 More Video Users $ ^{(2)} $, More Time Spent $ ^{(3)} $

@@ -1,0 +1,24 @@
+# swept,withheld/isolated gold page × evidence source (both flip directions)
+# dataset,mmlongbench
+# scan,any
+# sampling,full (hop: multi)
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,page_set rule (colqwen3 / bm25 ranking)
+# prompt_mode,none
+# ranker,"colqwen3 only, matching the main text and figure"
+# pairing,"within-question against the oracle, pooled over the four rungs"
+# reading,"R→W is what the change breaks, W→R what it repairs; the pair is the whole effect"
+evidence_source,drop lowest gold R→W,drop lowest gold W→R,drop highest gold R→W,drop highest gold W→R,keep highest only R→W,keep highest only W→R,keep lowest only R→W,keep lowest only W→R,paired n,questions
+(none)†,0.0,0.0,0.0,20.0,20.0,0.0,20.0,20.0,5,5
+Chart,19.2,3.8,20.5,2.6,19.2,1.3,21.8,0.0,78,78
+Figure,26.3,4.4,31.6,5.3,29.8,2.6,36.0,4.4,114,114
+Generalized-text (Layout),25.0,5.0,31.7,10.0,28.3,1.7,35.0,5.0,60,60
+Pure-text (Plain-text),26.7,3.1,26.7,3.1,31.3,0.8,30.5,0.8,131,131
+Table,22.2,5.6,22.2,1.9,25.0,3.7,24.1,0.9,108,108
+**All sources**,24.7,4.5,27.0,4.3,28.4,2.6,30.4,2.3,352,352
+n (per col),-,-,-,-,-,-,-,-,-,-

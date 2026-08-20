@@ -10,7 +10,7 @@
 
 All five types of errors are happening during the Reasoning step except Principle Error which points to the failure of the Abstraction step. As shown in Figure 4 (right), Principle Error in fact comprises only a small fraction of the errors the model makes: more than 90% of the errors happen at the Reasoning step. Among the four error types during Reasoning, Reasoning Error and Math Error are the major loss buckets. This corroborates with the finding in the ablation study above that very few exemplars are needed to teach LLMs the Abstraction skill. Reasoning step is still the bottleneck of how well STEP-BACK PROMPTING can perform tasks such as MMLU requiring complex reasoning. For MMLU Physics specifically, the Reasoning and Math skills are critical for solving the problems successfully: even if the first principles are retrieved correctly, deep reasoning and math are involved to derive a correct final answer through a typical multi-step reasoning process.
 
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_296_1312_850_1639.jpg" alt="Image" width="32%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_chart_box_296_1312_849_1639.jpg" alt="Image" width="32%" /></div>
 
 
 <div style="text-align: center;"><img src="imgs/img_in_chart_box_880_1329_1403_1648.jpg" alt="Image" width="30%" /></div>

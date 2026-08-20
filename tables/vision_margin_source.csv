@@ -1,0 +1,21 @@
+# swept,vision margin (best image rung − best text rung) × evidence source
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# unit,"documents resampled with replacement, 1000 resamples, seed 0, 2.5%/97.5% quantiles — same convention as the marginal CIs"
+# pairing,per question across all five rungs; a question enters only if scored at every rung
+evidence_source,Δ vision (points),CI low,CI high,best image,best text,n (paired),excludes 0
+(none),+10.5,+0.0,+27.8,TLV,TL,19,no
+Chart,+26.4,+18.5,+34.9,TLV,TL,178,yes
+Figure,+21.7,+16.8,+27.6,TV,TL,290,yes
+Generalized-text (Layout),+13.6,+6.8,+22.4,TLV,TL,118,yes
+Pure-text (Plain-text),+7.6,+4.0,+11.3,TLV,TL,291,yes
+Table,+0.0,-5.0,+6.0,TLV,TL,217,no
+All sources,+13.7,+10.5,+17.6,TLV,TL,847,yes

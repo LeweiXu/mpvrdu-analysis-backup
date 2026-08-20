@@ -9,33 +9,35 @@
 # pool,answerable
 # page_selection,oracle
 # prompt_mode,none
-doc_type,rung,prefill_ms,input_tokens,n
-Academic paper,T,2781,1616,148
-Academic paper,TL,2940,1697,130
-Academic paper,TLV,24666,4026,119
-Academic paper,V,27539,3201,153
-Administration/Industry file,T,1539,867,60
-Administration/Industry file,TL,1510,860,57
-Administration/Industry file,TLV,20710,3013,55
-Administration/Industry file,V,24313,2827,61
-Brochure,T,1022,565,75
-Brochure,TL,1423,808,76
-Brochure,TLV,27298,3523,72
-Brochure,V,28097,3114,77
-Financial report,T,1920,1140,107
-Financial report,TL,3280,1878,70
-Financial report,TLV,20855,3844,68
-Financial report,V,23207,2709,108
-Guidebook,T,1004,557,120
-Guidebook,TL,1451,828,115
-Guidebook,TLV,22818,3118,110
-Guidebook,V,24237,2735,118
-Research report / Introduction,T,1197,639,209
-Research report / Introduction,TL,1520,866,202
-Research report / Introduction,TLV,29156,3503,186
-Research report / Introduction,V,34775,3530,207
-Tutorial/Workshop,T,272,53,112
-Tutorial/Workshop,TL,719,371,111
-Tutorial/Workshop,TLV,32465,3326,107
-Tutorial/Workshop,V,33952,3247,110
-n (per col),-,-,-,-
+# snapshot,"predictions.v100.jsonl — the pre-recovery V100 rows, kept when the H100 pass upgraded 1,953 of these cells; the live predictions no longer record the V100 ceiling"
+# TV,"absent: TV only ever ran on the H100, and a latency column cannot mix the two machines. TV's cost sits in the token counts, which are machine-independent: 929 text + 3,404 visual against TLV's 1,644 + 3,404, i.e. 44% less text and 14% less total input on the same questions"
+doc_type,rung,prefill_ms,input_tokens,decode_ms,output_tokens,n
+Academic paper,T,2781,1616,7894,157,148
+Academic paper,TL,2940,1697,8006,158,130
+Academic paper,TLV,24666,4026,7897,156,119
+Academic paper,V,27539,3201,8207,164,153
+Administration/Industry file,T,1539,867,4109,82,60
+Administration/Industry file,TL,1510,860,3722,75,57
+Administration/Industry file,TLV,20710,3013,3705,75,55
+Administration/Industry file,V,24313,2827,4485,90,61
+Brochure,T,1022,565,5216,104,75
+Brochure,TL,1423,808,6259,121,76
+Brochure,TLV,27298,3523,6464,126,72
+Brochure,V,28097,3114,6234,123,77
+Financial report,T,1920,1140,7774,157,107
+Financial report,TL,3280,1878,6132,122,70
+Financial report,TLV,20855,3844,6071,119,68
+Financial report,V,23207,2709,8698,176,108
+Guidebook,T,1004,557,4627,92,120
+Guidebook,TL,1451,828,5623,111,115
+Guidebook,TLV,22818,3118,5585,110,110
+Guidebook,V,24237,2735,5344,106,118
+Research report / Introduction,T,1197,639,5818,113,209
+Research report / Introduction,TL,1520,866,7720,144,202
+Research report / Introduction,TLV,29156,3503,8053,149,186
+Research report / Introduction,V,34775,3530,8090,151,207
+Tutorial/Workshop,T,272,53,3169,57,112
+Tutorial/Workshop,TL,719,371,6140,110,111
+Tutorial/Workshop,TLV,32465,3326,6280,111,107
+Tutorial/Workshop,V,33952,3247,6394,113,110
+n (per col),-,-,-,-,-,-
