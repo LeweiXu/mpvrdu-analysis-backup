@@ -1,3 +1,0 @@
-## NUS
-
-nus.edu.sg

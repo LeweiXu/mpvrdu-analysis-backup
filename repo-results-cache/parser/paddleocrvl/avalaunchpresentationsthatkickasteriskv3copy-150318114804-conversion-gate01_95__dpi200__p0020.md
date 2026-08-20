@@ -1,5 +1,0 @@
-MIX
-
-Match
-
-## FONT CHOICE

@@ -1,1 +1,0 @@
-Deep neural networks learn hierarchical feature

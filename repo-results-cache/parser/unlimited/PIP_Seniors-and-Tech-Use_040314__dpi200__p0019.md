@@ -1,9 +1,0 @@
-19
-Older Adults and Technology
-Tablet computer ownership for older adults
-% of those 65 and older who own a tablet computer
-<table><tr><td>Total for all 65+ (n=1,526)</td><td>18%</td></tr><tr><td colspan="2">Gender</td></tr><tr><td>a Male (n=612)</td><td>20</td></tr><tr><td>b Female (n=914)</td><td>17</td></tr><tr><td colspan="2">Age</td></tr><tr><td>a 65-69 (n=531)</td><td>\( 23^d \)</td></tr><tr><td>b 70-74 (n=401)</td><td>\( 18^d \)</td></tr><tr><td>c 75-79 (n=244)</td><td>\( 20^d \)</td></tr><tr><td>d \( 80+(n=350) \)</td><td>9</td></tr><tr><td colspan="2">Education</td></tr><tr><td>a High school grad or less (n=598)</td><td>11</td></tr><tr><td>b Some college (n=381)</td><td>\( 19^a \)</td></tr><tr><td>c College graduate (n=537)</td><td>\( 31^{ab} \)</td></tr><tr><td colspan="2">Household Income</td></tr><tr><td>a &lt;$30,000 (n=467)</td><td>8</td></tr><tr><td>b $30,000-$49,999 (n=282)</td><td>\( 16^a \)</td></tr><tr><td>c $50,000-$74,999 (n=192)</td><td>\( 28^{ab} \)</td></tr><tr><td>d $75,000+ (n=274)</td><td>\( 39^{abc} \)</td></tr><tr><td colspan="2">Community Type</td></tr><tr><td>a Urban (n=413)</td><td>\( 20^c \)</td></tr><tr><td>b Suburban (n=758)</td><td>19</td></tr><tr><td>c Rural (n=355)</td><td>14</td></tr></table>
-Pew Research Center's Internet Project July 18-September 30, 2013 tracking survey.
-Note: Columns marked with a superscript letter (a) or another letter indicate a statistically significant difference between that row and the row designated by that superscript letter. Statistical significance is determined inside the specific section covering each demographic trait.
-PEW RESEARCH CENTER
-www.pewresearch.org

@@ -1,3 +1,0 @@
-## iPhone & iPad Solutions
-
-## COMPATIBILITY

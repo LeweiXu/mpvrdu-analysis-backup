@@ -1,1 +1,0 @@
-**Figure 3-8** Enterprise cloud boxes (web disks)

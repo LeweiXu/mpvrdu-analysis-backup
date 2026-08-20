@@ -1,7 +1,0 @@
-## Engagement: A New Perspective on Marketing
-
-Engagement Enhances Customer Insight (contd.):
-
-• Identify customers who influence others to buy: A person who contributes content, such as a product review or a video of the product in use, may be far more valuable than the average purchaser. As a result, your idea of who you consider a good customer should become more robust, and you should make tactical offers with finer control to drive the behavior of these customers. For example, a sporting goods retailer should identify customers who make significant product reviews that influence others' purchases, then initiate programs to encourage those customers to contribute more content.
-
-• Encourage behavior across multiple touch points — online and offline: The engagement profile crosses channels. Once you establish engagement profiles based on online data, the next step is to tie in data from offline sources, such as in-store transactions, phone or catalog orders, and customer service calls. For example, a quick service restaurant should determine if customers that are heavy users of its in-store loyalty program are more likely to provide favorable sentiment in online discussion forums or possess an increased likelihood to recommend the food to a friend.

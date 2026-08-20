@@ -1,1 +1,0 @@
-清华大学国际学生学者中心 International Students & Scholars Center, Tsinghua University

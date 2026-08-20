@@ -1,1 +1,0 @@
-<div style="text-align: center;"><img src="imgs/img_in_chart_box_49_29_2128_1146.jpg" alt="Image" width="97%" /></div>

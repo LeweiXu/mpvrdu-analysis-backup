@@ -1,4 +1,0 @@
-Today24 Months
-Historic trend analysis and forecastingData visualisation
-Standardised reportingSimulation and scenario development
-Data visualisationAnalytics applied within business processes

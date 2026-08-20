@@ -1,4 +1,0 @@
-## LinkedIn Metrics
-
-
-<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Followers</td><td style='text-align: center; word-wrap: break-word;'>Impressions</td><td style='text-align: center; word-wrap: break-word;'>Interactions: Like, Shares, Comments, Followers Acquired</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Update Clicks</td><td style='text-align: center; word-wrap: break-word;'>LinkedIn Referral Traffic</td><td style='text-align: center; word-wrap: break-word;'>Post Types</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Page Views, Unique Visitors</td><td style='text-align: center; word-wrap: break-word;'>Engagement Rate</td><td style='text-align: center; word-wrap: break-word;'>Follower Demographics</td></tr></table>

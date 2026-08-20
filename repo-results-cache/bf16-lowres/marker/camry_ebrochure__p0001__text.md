@@ -1,3 +1,0 @@
-## **Teach your old commute new tricks.**
-
-The 2024 Toyota Camry keeps the convenience of a midsize sedan and delivers a drive that amplifies the fun. With you in mind, Camry comes in a wide range of models, so there's a perfect match for you. Whether giving your adventures a confidence boost with available All-Wheel Drive (AWD) capability or taking your daily commutes as far as they can with hybrid efficiency, there's a Camry fit for your lifestyle.

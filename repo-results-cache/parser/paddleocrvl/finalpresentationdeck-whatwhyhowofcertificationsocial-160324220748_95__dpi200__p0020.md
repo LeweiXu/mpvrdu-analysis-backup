@@ -1,1 +1,0 @@
-## Things Successful Test Takers Do

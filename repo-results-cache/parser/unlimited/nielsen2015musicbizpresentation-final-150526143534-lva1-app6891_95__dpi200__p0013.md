@@ -1,7 +1,0 @@
-[Non-Text]
-n
-THE TOP ALBUMS ACHIEVE SUCCESS IN DIFFERENT WAYS
-<table><tr><td>Rank</td><td>Artist</td><td>Title</td><td>Total Volume (000)</td><td>Album Share</td><td>Song Sales Share</td><td>On-Demand Audio Stream Share</td></tr><tr><td>1</td><td>TAYLOR SWIFT</td><td>1989</td><td>1,608</td><td>67%</td><td>33%</td><td>0%</td></tr><tr><td>2</td><td>DRAKE</td><td>IF YOU&#x27;RE READING THIS</td><td>1,250</td><td>71%</td><td>13%</td><td>16%</td></tr><tr><td>3</td><td>ED SHEERAN</td><td>X</td><td>1,178</td><td>52%</td><td>36%</td><td>11%</td></tr><tr><td>4</td><td>SAM SMITH</td><td>IN THE LONELY HOUR</td><td>1,097</td><td>61%</td><td>27%</td><td>12%</td></tr><tr><td>5</td><td>SOUNDTRACK</td><td>50 SHADES OF GREY</td><td>1,031</td><td>61%</td><td>31%</td><td>8%</td></tr><tr><td>6</td><td>MEGHAN TRAINOR</td><td>TITLE</td><td>961</td><td>63%</td><td>30%</td><td>8%</td></tr><tr><td>7</td><td>MAROON 5</td><td>V</td><td>762</td><td>40%</td><td>48%</td><td>12%</td></tr><tr><td>8</td><td>NICKI MINAJ</td><td>PINKPRINT</td><td>699</td><td>43%</td><td>38%</td><td>18%</td></tr><tr><td>9</td><td>KENDRICK LAMAR</td><td>TO PIMP A BUTTERFLY</td><td>660</td><td>84%</td><td>5%</td><td>11%</td></tr><tr><td>10</td><td>FALL OUT BOY</td><td>AMERICAN BEAUTY...</td><td>632</td><td>65%</td><td>25%</td><td>10%</td></tr></table>
-billboard
-Based on U.S. Album Sales; Track Equivalent Albums; Stream Equivalent Albums
-14

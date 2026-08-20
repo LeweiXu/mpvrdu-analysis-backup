@@ -1,1 +1,0 @@
-Djanogly International Centre, City campus.

@@ -1,1 +1,0 @@
-The share of Democratic-leaning independents with a very unfavorable opinion of the Republican Party has more than quadrupled between 1994 and 2018 (from 8% to 37%). There has been a similar trend in how Republican leaners view the Democratic Party; very unfavorable opinions have increased from 15% in 1994 to 39% in 2018.

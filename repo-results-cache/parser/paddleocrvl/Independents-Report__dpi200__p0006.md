@@ -1,7 +1,0 @@
-Trump’s early rating among independents is closest to Clinton’s, whose job approval averaged about 42% during his first two years in office. Bush, whose overall job rating approached 90% in his first year following the 9/11 terrorist attacks, had approval ratings above 60% among independents in his first two years.
-
-Trump’s job rating among independents, like his overall rating, breaks down along partisan lines. His rating among GOP-leaning independents (72% in 2017, 69% in 2018) was not markedly different from Obama’s and Clinton’s ratings among Democratic-leaning independents during their first two years in office (though much lower than Bush’s among Republican leaners).
-
-Yet Trump’s rating among independents who lean to the opposing party – like his rating among members of the opposing party – was much lower than recent presidents’. In fact, his rating among Democratic-leaning independents during his first two years was about as low as his rating among Democrats (7% in 2017, 9% in 2018).
-
-Trump’s rating also was low among independents who have no partisan leanings. Only about a quarter of non-leaners approved of Trump’s job performance during his first two years, while about six-in-ten (58%) disapproved.

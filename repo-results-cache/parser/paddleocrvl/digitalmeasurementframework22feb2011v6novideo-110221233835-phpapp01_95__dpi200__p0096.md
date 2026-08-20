@@ -1,9 +1,0 @@
-## Engagement: A New Perspective on Marketing
-
-## Engagement Enhances Customer Insight – Social CRM:
-
-Measuring Social Media Engagement (Social CRM) is a new concept. So far there are few measurement vendors providing completely unified services to help tie it all together, however some solutions are appearing, for example the recent (July 2009) announcement of integrated analytics by WebTrends + Radian6 + SalesforceCRM.
-
-Starting small and remaining focused on a few objectives at a time (such as connecting User Generated Content to increased purchases or linking sentiment to loyalty) allows you to identify the metrics that matter to you most. Integrate your customer perspective across channels and campaigns by using a variety of online and offline metrics, so you can calculate the value of new channels and identify efficient strategies for them. And consider the payoff of your hard work. You'll be able to:
-
-• Measure and learn from things you currently ignore: Qualitative metrics like feelings, affinity, and sentiment are difficult to track. And when you can collect the information, it has historically been complicated or impossible to use with other data. But social media makes it easier for customers to offer up their opinion, and, as a result, all that data is sitting out there waiting to be mined. Companies should track these metrics on a regular basis with brand monitoring services, partly to get insights that no survey would ever detect, since they come right from the minds of the customers. For example, a kitchen hardware manufacturer should track commentary in discussion forums about home renovation to get ideas about product shortcomings, identify new or improved products, and track impact on actual sales.

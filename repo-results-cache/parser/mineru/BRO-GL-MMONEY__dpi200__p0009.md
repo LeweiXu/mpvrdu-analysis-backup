@@ -1,2 +1,0 @@
-JEMorgan
-ASSET MANAGEMENT

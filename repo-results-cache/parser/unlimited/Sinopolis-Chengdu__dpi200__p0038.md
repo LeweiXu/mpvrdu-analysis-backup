@@ -1,7 +1,0 @@
-VISITOR INFORMATION
-i
-图 1
-![](images/0.jpg)
-
-SINOPOLIS: CHENGDU
-37

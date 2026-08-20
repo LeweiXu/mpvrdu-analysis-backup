@@ -1,4 +1,0 @@
-Sitemap #TypeIssueDescriptionIssues count
-sitemap.xmlWarningsURLs not accessibleWhen we tested a sample of the URLs from your Sitemap, we found that some URLs were not accessible to Googlebot due to an HTTP status error. All accessible URLs will still be submitted.159
-sitemap2.xmlWarningsURLs unreachableWhen we tested a sample of the URLs from your Sitemap, we found that some of the URLs were unreachable. Please check your webserver for possible misconfiguration, as these errors may be caused by a server error (such as a 5xx error) or a network error between Googlebot and your server. All reachable URLs will still be submitted.1732
-videositemap.xmlWarningsURLs timed outWhen we tested a sample of the URLs from your Sitemap, we found that some URLs were not accessible to Googlebot due to network timeouts. If this problem persists, please check the network availability of your DNS and web servers. All accessible URLs will still be submitted.504

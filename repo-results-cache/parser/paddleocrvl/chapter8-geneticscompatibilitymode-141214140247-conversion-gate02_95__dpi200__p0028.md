@@ -1,1 +1,0 @@
-## MENDEL'S LAWS

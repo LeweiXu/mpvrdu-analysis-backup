@@ -1,1 +1,0 @@
-Simple, intuitive user interface

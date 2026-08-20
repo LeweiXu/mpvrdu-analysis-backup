@@ -1,1 +1,0 @@
-How important is focus when trying to achieve mastery in some area?

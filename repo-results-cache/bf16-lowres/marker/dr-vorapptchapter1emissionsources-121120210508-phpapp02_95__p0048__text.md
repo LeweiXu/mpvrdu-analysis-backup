@@ -1,1 +1,0 @@
-## Closed Loop Analytics - Single view of customer

@@ -1,4 +1,0 @@
-## Facebook Metrics
-
-
-<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Pages Likes</td><td style='text-align: center; word-wrap: break-word;'>Post Reach</td><td style='text-align: center; word-wrap: break-word;'>Engagement: Reactions, Shares, Comments</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Post Clicks</td><td style='text-align: center; word-wrap: break-word;'>Hide, Report as Spam, Unlikes</td><td style='text-align: center; word-wrap: break-word;'>Post Types</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Video Views</td><td style='text-align: center; word-wrap: break-word;'>30-Second Views++</td><td style='text-align: center; word-wrap: break-word;'>FB Referral Traffic</td></tr></table>

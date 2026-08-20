@@ -1,6 +1,0 @@
-## WHAT ARE THE OPPORTUNITIES?
-
-
-<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Seller / Supply Side</td><td style='text-align: center; word-wrap: break-word;'>Marketing</td><td style='text-align: center; word-wrap: break-word;'>Product and Technology</td><td style='text-align: center; word-wrap: break-word;'>Operations and Fulfilment</td><td style='text-align: center; word-wrap: break-word;'>Strategy and Finance</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>· Business Development· Category Management· Onboarding· Training· Account Management· Alliances</td><td style='text-align: center; word-wrap: break-word;'>· Digital Marketing - SEO, PPC, Social· ATL, BTL· Analytics· PR and Communication· Brand Management· Forecasting</td><td style='text-align: center; word-wrap: break-word;'>· Product Management· Program Management· Analytics</td><td style='text-align: center; word-wrap: break-word;'>· Supply chain· Warehousing· Logistics· Customer Service</td><td style='text-align: center; word-wrap: break-word;'>· Planning and forecasting· Fund Raising· Cash flow management</td></tr></table>
-
-Great Entrepreneurial opportunities in making the ecosystem robust – increasing retention, increasing logistics efficiency, analytics etc

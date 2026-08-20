@@ -1,1 +1,0 @@
-## Social Litmus Test: Does Your Goal Work Here?

@@ -1,9 +1,0 @@
-“ The first year of college has to be one of the most intimidating years! It can be hard at times to find your niche, but know that there are so many resources right at your finger tips especially when you live on campus your first year. From your RAs, hall council, faculty, and professional staff members, each play a key role in helping you make that intimidating transition smoothly. One mistake I made in my first year of college was never asking for help. Just remember that help is always there for you, and will be your best friend when navigating your first year of college!”
-![](images/0.jpg)
-
-Blake Viena
-Residence Hall
-Assistant Director
-Brittany Hall
-GETTING CONNECTED
-Our faculty and staff members are excited to welcome you to your new residence hall home in August. Our halls have many opportunities to get connected to other students as well as NYU faculty and staff members. We encourage you to get involved in your residence hall council by running for an elected position or simply engaging in programming, service, and advocacy. NYU's Inter-Residence Hall Council (IRHC) is another way to get involved in the greater NYU community. IRHC's three pillars are student advocacy, service, and community events. IRHC hosts many community events including Welcome Week, service weeks, Town Halls, FLURRY ice skating event in Central Park, UltraViolet Live talent competition, and a semi-formal dance at an iconic NYC venue. The National Residence Hall Honorary (NRHH) is another way to get involved on campus. NRHH focuses on recognizing residential students who go above and beyond. Your NYU experience begins the day you move into your residence hall. Take advantage of this great community by getting connected!

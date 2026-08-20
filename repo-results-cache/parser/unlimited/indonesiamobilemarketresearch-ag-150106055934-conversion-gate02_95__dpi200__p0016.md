@@ -1,4 +1,0 @@
-[Non-Text]
-Native Major Internet Companies
-UC Web
-<table><tr><td>Type</td><td>Company</td></tr><tr><td rowspan="2">E-commerce</td><td>Lazada/Zalora/Foodpanda/Lamido</td></tr><tr><td>Blibli.com</td></tr><tr><td rowspan="2">Group buying</td><td>Disdus.com</td></tr><tr><td>Dealkeren.com</td></tr><tr><td rowspan="2">Online Travel</td><td>Traveloka.com</td></tr><tr><td>Tiket.com</td></tr><tr><td>Ticketing e-commerce</td><td>Rajakarcis.com</td></tr><tr><td rowspan="2">Matrimony Portals</td><td>Bridestory.com</td></tr><tr><td>Weddingku.com</td></tr><tr><td rowspan="2">Online Games</td><td>GameQQ.net</td></tr><tr><td>Kotakgame.com</td></tr><tr><td rowspan="2">Online Music</td><td>Melon.co.id</td></tr><tr><td>Langitmusik.com</td></tr><tr><td>Online News</td><td>Detik.com</td></tr></table>

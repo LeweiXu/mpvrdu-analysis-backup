@@ -1,2 +1,0 @@
-<table><tr><td>Problem</td><td>Possible Causes</td><td>What To Do</td></tr><tr><td>The dishes aren&#x27;t drying</td><td>Wrong program has been selected.</td><td>With a short program, the washing temperature is lower, decreasing cleaning performance. Choose a program with a long washing time.</td></tr><tr><td></td><td>Use of cutlery with a low-quality coating.</td><td>Water drainage is more difficult with these items. Cutlery or dishes of this type are not suitable for washing in the dishwasher.</td></tr></table>
-31

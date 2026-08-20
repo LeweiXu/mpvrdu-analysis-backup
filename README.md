@@ -9,8 +9,10 @@ regenerates for free.
 - `repo-results-cache/` — mirror of the repo's `results/cache/` (jsonl only):
   `predictions.jsonl` (generation) and `results.jsonl` (judged), per run_tag/task,
   plus retrieval/classifier side artifacts and the parser markdown cache.
-- `student-results-cache/` — same for `~/mpvrdu_results/cache`, the H100 run rsynced
-  from the collaborator (generation-only).
+- `student-results-cache/` — frozen snapshot of the H100 run that used to live in
+  `~/mpvrdu_results/cache`. Merged into `repo-results-cache/` on 2026-08-20 and no
+  longer updated; it is the only remaining copy of the smoke-* tags and of
+  g1-reasoner-thinking (a failed experiment dropped from the working tree).
 - `tables/` — the built CSVs and `all_tables.md`.
 
 ## What's NOT here, and why
@@ -23,6 +25,5 @@ regenerates for free.
 ## Restoring
 
 Copy `repo-results-cache/` back over `results/cache/` in the repo (and
-`student-results-cache/` to `~/mpvrdu_results/cache`), then re-run prestage for the
 weights. Renders and any missing derived artifacts rebuild on the next run;
 `python -m ops.build` regenerates the tables.

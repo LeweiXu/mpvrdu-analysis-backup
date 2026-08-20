@@ -1,7 +1,0 @@
-## EXECUTIVE SUMMARY
-
-This whitepaper will introduce you to Alibaba Cloud, the cloud computing division of Alibaba Group. We will take a look at the company's background, explore how Alibaba Cloud has evolved as it has become increasingly established and see how it is facilitating digital transformation and opening up the Chinese market for many businesses.
-
-We will cover how Alibaba Cloud supports business growth through partnerships and competitions, and discuss its unique range of tools and services. This whitepaper will introduce you to a number of Alibaba Cloud's key products and take you through how to get started on the platform, where you can find additional support as well as gain certificates and accreditation.
-
-We will also cover some of what makes Alibaba Cloud stand out in the marketplace, such as powering major shopping festivals, innovative payment methods and big data analysis. And we will look at how your business can benefit from the innovation that runs through the company, helping business from small and medium enterprises through to large multinational corporations to benefit from impressive tools and services including machine learning, elastic computing and a powerful and secure cloud platform.
