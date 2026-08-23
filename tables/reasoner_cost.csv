@@ -22,12 +22,10 @@ group,config,metric,T,TL,TLV,V,n
 2xV100,Qwen3-VL-2B,decode_s,4.8,5.5,5.8,6.3,717
 2xV100,Qwen3-VL-4B,prefill_s,0.9,1.1,31.1,35.6,717
 2xV100,Qwen3-VL-4B,decode_s,6.2,7.3,6.3,7.4,717
-H100,Qwen3-VL-32B,prefill_s,0.2,0.3,0.5,0.2,683
-H100,Qwen3-VL-32B,decode_s,5.1,6.4,6.5,6.0,683
-H100,Qwen3-VL-32B 4-bit,prefill_s,0.3,0.4,0.6,0.3,683
-H100,Qwen3-VL-32B 4-bit,decode_s,4.4,5.5,5.7,5.2,683
-H100,Qwen3-VL-8B-Thinking,prefill_s,0.1,0.1,0.2,0.1,683
-H100,Qwen3-VL-8B-Thinking,decode_s,24.3,26.6,20.3,16.1,683
+H100,Qwen3-VL-32B,prefill_s,0.2,0.4,0.6,0.2,846
+H100,Qwen3-VL-32B,decode_s,5.3,6.5,6.6,6.2,846
+H100,Qwen3-VL-32B 4-bit,prefill_s,0.3,0.4,0.6,0.3,846
+H100,Qwen3-VL-32B 4-bit,decode_s,4.6,5.6,5.8,5.4,846
 2xV100,InternVL3-8B,prefill_s,-,-,-,-,3180
 2xV100,InternVL3-8B,decode_s,-,-,-,-,3180
 (any),input tokens,mean,938,1658,5091,3470,840

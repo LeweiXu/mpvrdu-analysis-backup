@@ -1,0 +1,13 @@
+Finally, the data were put through a post-stratification sample balancing routine. The post-stratification weighting utilized estimates of the U.S. adult Hispanic population based on the 2013 U.S. Census Bureau's American Community Survey, on gender, age, education, census region, heritage and years in the U.S. Phone status of the U.S. adult Hispanic population (i.e., cellphone only, dual/landline only) is based on estimates from the January-June 2015 Centers for Disease Control's National Health Interview Survey and density of the Latino population is from the 2010 Census.
+
+■ Weights are then trimmed to avoid any particular case having too much influence on the overall estimates.
+
+## Survey of self-identified non-Hispanics with self-reported Hispanic ancestry
+
+Results for this study are also based on telephone interviews conducted by SSRS for Pew Research Center, among a nationally representative sample of 401 respondents ages 18 and older who do not identify as Latino or Hispanic, but report having Hispanic, Latino, Latin American or Spanish ancestry or heritage (“self-identified non-Hispanics”). The interviews were conducted in English on cellular and landline telephones from Nov. 11, 2015, through Feb. 7, 2016. (Respondents were offered the opportunity to complete the survey in Spanish, but all surveys were completed in English.)
+
+For results based on the total sample, one can say with 95% confidence that the error attributable to sampling is plus or minus 5.9 percentage points.
+
+This sample of “self-identified non-Hispanics” (i.e., they did not self-identify as Hispanic or Latino, but identified a parent, grandparent, great-grandparent as having Hispanic, Latino, Spanish or Latin American heritage or ancestry), is a very low incidence population. In order to collect an adequate number of interviews to allow for analysis of this group, SSRS used their Excel Omnibus Survey (OS) – a dual-frame survey offered in English and Spanish which they conduct on a weekly basis. Every week, the OS produces a nationally representative sample of adults ages 18 and older.
+
+During the field period, whenever a respondent on the OS was determined to be 18 years or older, and a “self-identified non-Hispanic” that respondent was administered the module of questions which are analyzed in this report. The analytical sample is comprised of all of the “self-identified non-Hispanic” respondents who were compiled over multiple weeks of the OS.

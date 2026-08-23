@@ -10,21 +10,20 @@
 | run_tag | task | cells | ok | oom | error | oom % |
 | --- | --- | --- | --- | --- | --- | --- |
 | g1-interleaved-tlv | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
-| g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1466 | 228 | 0 | 13.5 |
-| g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1585 | 109 | 0 | 6.4 |
-| g1-quantization-full | G1_oracle_ladder | 5256 | 4961 | 295 | 0 | 5.6 |
-| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1488 | 32 | 0 | 2.1 |
+| g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
+| g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
+| g1-quantization-full | G1_oracle_ladder | 5256 | 5256 | 0 | 0 | 0.0 |
+| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1520 | 0 | 0 | 0.0 |
 | g1-reasoner-32b-matched | G1_oracle_ladder | 6776 | 6775 | 1 | 0 | 0.0 |
-| g1-reasoner-full | G1_oracle_ladder | 7884 | 7525 | 359 | 0 | 4.6 |
-| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2239 | 41 | 0 | 1.8 |
-| g1-reasoner-thinking | G1_oracle_ladder | 1847 | 1834 | 13 | 0 | 0.7 |
-| g1-representation-full | G1_oracle_ladder | 3388 | 3143 | 245 | 0 | 7.2 |
-| g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
-| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
+| g1-reasoner-full | G1_oracle_ladder | 7884 | 7844 | 40 | 0 | 0.5 |
+| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2272 | 8 | 0 | 0.4 |
+| g1-representation-full | G1_oracle_ladder | 3388 | 3388 | 0 | 0 | 0.0 |
+| g1-resolution-full | G1_oracle_ladder | 3942 | 3942 | 0 | 0 | 0.0 |
+| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1140 | 0 | 0 | 0.0 |
 | g1-tv-full | G1_oracle_ladder | 847 | 847 | 0 | 0 | 0.0 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
 | g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
-| g3-hallucination-full | G3_hallucination | 2928 | 2698 | 230 | 0 | 7.9 |
+| g3-hallucination-full | G3_hallucination | 2928 | 2928 | 0 | 0 | 0.0 |
 | g4-faithfulness-full | G4_faithfulness_answerable | 20328 | 20328 | 0 | 0 | 0.0 |
 | g5a-drop-best | G5_selection | 2864 | 2816 | 0 | 48 | 0.0 |
 | g5a-drop-worst | G5_selection | 2864 | 2816 | 0 | 48 | 0.0 |
@@ -33,7 +32,7 @@
 | g5b-gold1 | G5_selection | 11520 | 11376 | 0 | 144 | 0.0 |
 | g5b-gold2 | G5_selection | 5904 | 5784 | 0 | 120 | 0.0 |
 | g5b-gold3 | G5_selection | 960 | 960 | 0 | 0 | 0.0 |
-| **all** |  | **104617** | 100878 | 3283 | 456 | 3.1 |
+| **all** |  | **102770** | 100997 | 1317 | 456 | 1.3 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -1488,8 +1487,7 @@ _Weight footprint (MB, `~` = derived for quantized variants) replaces peak VRAM:
 | family | qwen3vl-8b-local | 17534 | 31.9 [27.1-36.7] (n=847) | 38.4 [34.4-42.5] (n=847) | 52.4 [48.3-56.4] (n=847) | 45.5 [41.6-49.6] (n=847) | 3388 |
 | family | internvl3-8b-local | 15889 | 19.3 [15.9-22.8] (n=845) | 25.3 [22.0-28.7] (n=842) | 32.6 [28.6-36.9] (n=807) | 24.1 [20.2-28.4] (n=845) | 3339 |
 | reasoning variant (M−S) | qwen3vl-8b-local | 17534 | -11.7 (nS=480, nM=358) | -13.9 (nS=480, nM=358) | -25.8 (nS=480, nM=358) | -21.5 (nS=480, nM=358) | 3388 |
-| reasoning variant (M−S) | qwen3vl-8b-thinking-local | - | -2.1 (nS=377, nM=302) | -3.3 (nS=377, nM=302) | -8.0 (nS=377, nM=301) | -10.8 (nS=377, nM=299) | 2740 |
-| n (per col) | - | - | 7460 | 7457 | 7420 | 7457 | - |
+| n (per col) | - | - | 6774 | 6771 | 6735 | 6774 | - |
 
 ### Reasoner scale vs evidence hop: accuracy by gold evidence-page bucket, per rung
 
@@ -1573,7 +1571,7 @@ _The reasoner sweep cut by the evidence modality a question draws on, one rung p
 
 > **swept**: model_spec × quantization (weight-only memory) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **source**: annotations/model_weights.csv, a static checkpoint property; no run, no device-0 truncation · **memory axis**: weight footprint, NOT peak VRAM
 
-_Weight footprint is a STATIC property of the checkpoint: the summed safetensors tensor bytes, so unlike the measured peak VRAM it is complete rather than device-0 only, needs no re-run, and is the figure a memory claim should cite. `method=exact` is measured from the real tensor shapes; `derived` applies bitsandbytes' layout to those shapes (int8, or packed NF4 plus double-quant constants, for the 2D Linear weights; compute dtype for embeddings, lm_head, norms and biases) rather than measuring a loaded model. `in study` marks the specs that actually produced judged cells; the rest are annotated for comparison and were never run. Weights are not the whole deployment budget: activations and the KV cache ride on top, and both scale with the input, so an image rung needs materially more than the number here. Regenerate with ops/scripts/model_weight_sizes.py. ⚠ NOT ANNOTATED, so no footprint can be quoted for: qwen3vl-8b-thinking-local. These specs have judged cells but no row in the annotation file; the figure is missing, not zero._
+_Weight footprint is a STATIC property of the checkpoint: the summed safetensors tensor bytes, so unlike the measured peak VRAM it is complete rather than device-0 only, needs no re-run, and is the figure a memory claim should cite. `method=exact` is measured from the real tensor shapes; `derived` applies bitsandbytes' layout to those shapes (int8, or packed NF4 plus double-quant constants, for the 2D Linear weights; compute dtype for embeddings, lm_head, norms and biases) rather than measuring a loaded model. `in study` marks the specs that actually produced judged cells; the rest are annotated for comparison and were never run. Weights are not the whole deployment budget: activations and the KV cache ride on top, and both scale with the input, so an image rung needs materially more than the number here. Regenerate with ops/scripts/model_weight_sizes.py._
 
 | model_spec | quant | weights_mb | method | quantizable_params | in study |
 | --- | --- | --- | --- | --- | --- |
@@ -1860,12 +1858,10 @@ _Prefill and decode in seconds, mean over the cells every config in the machine 
 | 2xV100 | Qwen3-VL-2B | decode_s | 4.8 | 5.5 | 5.8 | 6.3 | 717 |
 | 2xV100 | Qwen3-VL-4B | prefill_s | 0.9 | 1.1 | 31.1 | 35.6 | 717 |
 | 2xV100 | Qwen3-VL-4B | decode_s | 6.2 | 7.3 | 6.3 | 7.4 | 717 |
-| H100 | Qwen3-VL-32B | prefill_s | 0.2 | 0.3 | 0.5 | 0.2 | 683 |
-| H100 | Qwen3-VL-32B | decode_s | 5.1 | 6.4 | 6.5 | 6.0 | 683 |
-| H100 | Qwen3-VL-32B 4-bit | prefill_s | 0.3 | 0.4 | 0.6 | 0.3 | 683 |
-| H100 | Qwen3-VL-32B 4-bit | decode_s | 4.4 | 5.5 | 5.7 | 5.2 | 683 |
-| H100 | Qwen3-VL-8B-Thinking | prefill_s | 0.1 | 0.1 | 0.2 | 0.1 | 683 |
-| H100 | Qwen3-VL-8B-Thinking | decode_s | 24.3 | 26.6 | 20.3 | 16.1 | 683 |
+| H100 | Qwen3-VL-32B | prefill_s | 0.2 | 0.4 | 0.6 | 0.2 | 846 |
+| H100 | Qwen3-VL-32B | decode_s | 5.3 | 6.5 | 6.6 | 6.2 | 846 |
+| H100 | Qwen3-VL-32B 4-bit | prefill_s | 0.3 | 0.4 | 0.6 | 0.3 | 846 |
+| H100 | Qwen3-VL-32B 4-bit | decode_s | 4.6 | 5.6 | 5.8 | 5.4 | 846 |
 | 2xV100 | InternVL3-8B | prefill_s | - | - | - | - | 3180 |
 | 2xV100 | InternVL3-8B | decode_s | - | - | - | - | 3180 |
 | (any) | input tokens | mean | 938 | 1658 | 5091 | 3470 | 840 |
@@ -1880,12 +1876,12 @@ _Decode cost per prompt mode at one rung, so the input side is held fixed and ev
 
 | prompt_mode | instruction | budget | decode_ms | output_tokens | prefill_ms | n |
 | --- | --- | --- | --- | --- | --- | --- |
-| none ⚠ | none (uninstructed) | 256 | 2438 | 136 | 177 | 847 |
-| grounded | concise | 256 | 171 | 10 | 177 | 847 |
-| abstain | concise | 256 | 114 | 7 | 178 | 847 |
-| abstain_balanced | concise | 256 | 119 | 8 | 179 | 847 |
-| cot | concise | 2048 | 2979 | 166 | 178 | 847 |
-| extract_cot | concise | 2048 | 4507 | 242 | 181 | 846 |
+| none ⚠ | none (uninstructed) | - | 2438 | 136 | 177 | 847 |
+| grounded | concise | - | 171 | 10 | 177 | 847 |
+| abstain | concise | - | 114 | 7 | 178 | 847 |
+| abstain_balanced | concise | - | 119 | 8 | 179 | 847 |
+| cot | concise | - | 2979 | 166 | 178 | 847 |
+| extract_cot | concise | - | 4507 | 242 | 181 | 846 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Routing policies: accuracy vs input-token cost
@@ -1921,10 +1917,10 @@ _Each row is ONE bootstrap interval on a difference, not two marginal intervals 
 | integration deficit (M-S): V vs T | V - T | -9.5 | -18.1 | -1.6 | 838 | yes | 9 hop=none dropped by design (no integration reading), same rule as the integration tables |
 | representation margin: TLV vs T | TLV - T | +20.7 | +15.4 | +26.2 | 847 | yes | - |
 | parser-free lateral: TLV vs TV | TLV - TV | +0.9 | -1.3 | +3.3 | 847 | no | - |
-| scale: 32B vs 8B at V | V | +11.2 | +8.3 | +14.2 | 847 | yes | left (qwen3vl-8b-local): 13 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| scale: 32B vs 8B at T | T | +3.7 | +1.5 | +5.7 | 847 | yes | left (qwen3vl-8b-local): 16 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 105 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | +13.9 | +7.3 | +21.0 | 678 | yes | 7 hop=none dropped by design (no integration reading), same rule as the integration tables; left (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-thinking-local): 8 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); 343 never generated (run unfinished, stops in corpus order, so the shortfall is unrelated to difficulty) |
+| scale: 32B vs 8B at V | V | +11.2 | +8.3 | +14.2 | 847 | yes | - |
+| scale: 32B vs 8B at T | T | +3.7 | +1.5 | +5.7 | 847 | yes | - |
+| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 40 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | not computable | - | - | 0 | - | NOT COMPUTABLE: right side has no judged rows; the run has not landed, so no value is reported |
 
 ### Levers: what each inference-time intervention does, where data exists
 
@@ -1944,7 +1940,7 @@ _One row per lever: the measured baseline, the lever value, and the delta in poi
 | abstention prompt (none→targeted) | E5 faithfulness | abstention @ TLV (unanswerable) | 16.8 | 74.6 | +57.8 | 244/244 |
 | retrieval depth k1→k5 (vision) | E2 selection | acc @ V (PROVISIONAL) | 28.9 | 36.2 | +7.2 | 304/304 |
 | model swap 8B→InternVL3-8B | reasoner | acc @ TLV | 52.4 | 32.6 | -19.8 | 847/807 |
-| thinking variant (M−S) | E4 reasoning | M−S @ TLV | -25.8 | -8.0 | +17.8 | 847/685 |
+| thinking variant (M−S) | E4 reasoning | M−S @ TLV | - | - | - | - |
 | n (per col) | - | - | - | - | - | - |
 
 ### Prompt levers: accuracy by evidence hop per prompt mode (TLV, oracle pages)
@@ -2056,5 +2052,4 @@ _This table cannot separate inherited from native questions, and the blank is th
 | source_dataset | T | TL | TLV | V | n |
 | --- | --- | --- | --- | --- | --- |
 | mmlongbench | 31.9 [27.1-36.7] | 38.4 [34.4-42.5] | 52.4 [48.3-56.4] | 45.5 [41.6-49.6] | 3388 |
-| (uncoded) | 16 cells, no acc | 86 cells, no acc | 130 cells, no acc | 13 cells, no acc | 245 |
 | n (per col) | 847 | 847 | 847 | 847 | - |

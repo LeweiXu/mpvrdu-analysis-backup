@@ -1,0 +1,7 @@
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>11 Function icon</td><td style='text-align: center; word-wrap: break-word;'>Extra CleaningFor very dirty and hard to clean dishes. ( It can only be used with ECO, Intensive, Glass, Hygiene )Extra DryingTo dry dishes more completely. ( It can only be used with ECO, Intensive, Glass, Hygiene )ExpressReduce the program time. ( It can only be used with ECO, Intensive, Glass, Hygiene )</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>12 Alt icon</td><td style='text-align: center; word-wrap: break-word;'>Upper basketWhen you select Upper, only the upper rack nozzle is activated. The lower nozzle will not work.Lower basketWhen you select Lower, only the lower rack nozzle is activated. The upper nozzle will not work.</td></tr></table>
+
+## ⚠ WARNING
+
+• Manual pre-rinsing of tableware items increases water and energy consumption and is not recommended.
+
+• Washing tableware in a household dishwasher usually consumes less energy and water in the use phase than hand dishwashing when the household dishwasher is used according to the manufacturer's instructions.

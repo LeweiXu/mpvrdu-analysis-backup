@@ -1,0 +1,3 @@
+39 15 69 161header
+197 184 800 899image
+33 100 68 115page_number

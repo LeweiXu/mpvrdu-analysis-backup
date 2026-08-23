@@ -1,0 +1,30 @@
+<div style="text-align: center;"><img src="imgs/img_in_image_box_179_172_780_532.jpg" alt="Image" width="37%" /></div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Other On-Campus Eateries</td><td style='text-align: center; word-wrap: break-word;'>Opening Hours</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Qingqing Fast Food (清青快餐) (Basement of Qingfen Yuan Canteen)</td><td style='text-align: center; word-wrap: break-word;'>10:30am - 10:30pm</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Qingqing Pizza (清青比萨) (Basement of Zijing Yuan Canteen)</td><td style='text-align: center; word-wrap: break-word;'>10:30am - 10:00pm</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Qingqing Yonghe (清青永和) (Northern part of Guanchou Yuan)</td><td style='text-align: center; word-wrap: break-word;'>6:40am - 2:00pm 4:30pm - 9:00pm</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Muslim Canteen (清真餐厅) (South-west side of Guanchou Yuan)</td><td style='text-align: center; word-wrap: break-word;'>6:30am - 9:00am 11:00am -1:00pm 5:00pm - 7:00pm</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Qingqing Xiuxian Canteen (清青休闲餐厅) (Basement level of Taoli Yuan)</td><td style='text-align: center; word-wrap: break-word;'>11:00am - 10:30pm</td></tr></table>
+
+The 1 $ ^{st} $ floor of Yushu Yuan and the 3 $ ^{rd} $ floors of Guanchou Yuan, Taoli Yuan and Xichun Yuan all offer restaurant-style table service.
+
+## On-Campus Coffee Shops
+
+Tsinghua University has a variety of coffee shops across the campus, including nearby canteens and inside the libraries. Below are some of the available coffee shops.
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Coffee Shop Name</td><td style='text-align: center; word-wrap: break-word;'>Opening Hours</td><td style='text-align: center; word-wrap: break-word;'>Address</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>An Kitchen (安家小厨)</td><td style='text-align: center; word-wrap: break-word;'>Monday to Sunday: 8:00am - 9:00pm</td><td style='text-align: center; word-wrap: break-word;'>1st floor of the Humanities Library 人文社科图书馆 G 层 (一层)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Time Capsule Café (水木领航)</td><td style='text-align: center; word-wrap: break-word;'>Weekdays: 7:30am - 8:30pm Weekends: 8:00am - 8:30pm</td><td style='text-align: center; word-wrap: break-word;'>South-east corner of Qingfen Yuan canteen 清芬园食堂东南角</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Ten Years After Café (拾年咖啡)</td><td style='text-align: center; word-wrap: break-word;'>Monday to Sunday: 8:00am - 12:00am</td><td style='text-align: center; word-wrap: break-word;'>Across from the New Tsinghua Xuetang 新清华学堂对面</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Chuke Coffee (出壳咖啡)</td><td style='text-align: center; word-wrap: break-word;'>Monday to Sunday: 9:30am - 10:00pm</td><td style='text-align: center; word-wrap: break-word;'>Jinchun Yuan Island 近春园</td></tr></table>
+
+# Setting-up, Activating, Re-charging and Replacing Canteen Cards
+
+Student IC cards are the method of payment accepted at campus canteens (apart from at restaurant-style dining areas where cash can be used). For information on how to re-charge student IC cards, refer to the Student IC Card section on page 10 of this Guide. Normally, most canteens will have a re-charge machine just inside the canteen entrance.
+
+The re-charge and payment system for non-degree program students is different; please consult with one's academic program officer for specific information.
+
+## Off-Campus Dining
+
+In the nearby Wudaokou area there is a wide variety of restaurants and cuisines available including Western, Korean, Japanese, along with different Chinese cuisines. Fast food chains such as McDonalds, KFC, Pizza Hut and Yoshinoya are also available.
+
+When eating out, pay attention to food safety. Before dining out in China, many people first check reviews of restaurants by using the website Dazhong Dianping (大众点评): http://www.dianping.com, which also has a mobile app version. Dazhong Dianping provides a vast array of reviews and information, including for dining, shopping, leisure and entertainment.
+
+## Food Delivery
+
+Many restaurants offer delivery services, which can be used via third party apps or by calling the restaurant directly. Food ordered on food delivery apps can be paid for using WeChat, Alipay or via bank card. Most apps require advance mobile payment before the food is delivered. During peak hours, food should be ordered in advance to avoid delay. The standard wait-time for deliveries is between 30 minutes and 1 hour. When the food delivery has arrived, the delivery worker will call the mobile number that was provided when the order was made.

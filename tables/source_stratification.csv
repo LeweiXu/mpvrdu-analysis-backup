@@ -12,5 +12,4 @@
 # strata,loader dataset id only; no upstream QA provenance exists
 source_dataset,T,TL,TLV,V,n
 mmlongbench,31.9 [27.1-36.7],38.4 [34.4-42.5],52.4 [48.3-56.4],45.5 [41.6-49.6],3388
-(uncoded),"16 cells, no acc","86 cells, no acc","130 cells, no acc","13 cells, no acc",245
 n (per col),847,847,847,847,-

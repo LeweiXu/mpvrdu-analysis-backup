@@ -1,0 +1,7 @@
+The University Counselling Services (UCS) offers a wide range of services such as individual counselling and crisis intervention. It is located at level 2 of the UHC. A 24-hour hotline is available for students in extreme distress and cannot wait for a scheduled appointment. Students can call LifeLine NUS at 6516 7777 for immediate assistance or contact Dr Joan Lee at ngslscj@nus.edu.sg.
+
+Students are welcome to use the sports facilities on campus. More information can be found at https://uci.nus.edu.sg/suu/facilities/about-suu-sports-facilities/.
+
+## Activities for ISEP students
+
+ISEP students are encouraged to foster professional and social connections with each other. Senior students are expected to guide the juniors and take a leadership role in organizing and running various activities for students. Activities include research updates, book clubs and regular online/physical informal meetings. Students can join one of the Student Research Communities, Student Support Groups and interest groups e.g. sports, performing arts etc. to forge meaningful ties with other students. Throughout the year, the program will support ad-hoc events such as Movie Night and Community Engagement Day. The University also organizes wellness activities and career enhancement workshops for the student body.

@@ -23,5 +23,5 @@ extraction (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.0,+6.8,847/846
 abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),16.8,74.6,+57.8,244/244
 retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),28.9,36.2,+7.2,304/304
 model swap 8B→InternVL3-8B,reasoner,acc @ TLV,52.4,32.6,-19.8,847/807
-thinking variant (M−S),E4 reasoning,M−S @ TLV,-25.8,-8.0,+17.8,847/685
+thinking variant (M−S),E4 reasoning,M−S @ TLV,-,-,-,-
 n (per col),-,-,-,-,-,-

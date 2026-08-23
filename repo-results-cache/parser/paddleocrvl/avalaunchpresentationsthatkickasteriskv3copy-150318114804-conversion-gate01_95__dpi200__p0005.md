@@ -1,0 +1,13 @@
+BADFONTS
+
+BAD COLORS
+
+Times New Roman
+
+Arial
+
+Comic Sans
+
+BAD SPACING
+
+SLOPPY DRESS

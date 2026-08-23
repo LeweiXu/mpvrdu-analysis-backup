@@ -20,7 +20,7 @@ integration deficit (M-S): TLV vs T,TLV - T,-12.8,-20.5,-4.6,838,yes,"9 hop=none
 integration deficit (M-S): V vs T,V - T,-9.5,-18.1,-1.6,838,yes,"9 hop=none dropped by design (no integration reading), same rule as the integration tables"
 representation margin: TLV vs T,TLV - T,+20.7,+15.4,+26.2,847,yes,-
 parser-free lateral: TLV vs TV,TLV - TV,+0.9,-1.3,+3.3,847,no,-
-scale: 32B vs 8B at V,V,+11.2,+8.3,+14.2,847,yes,"left (qwen3vl-8b-local): 13 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first)"
-scale: 32B vs 8B at T,T,+3.7,+1.5,+5.7,847,yes,"left (qwen3vl-8b-local): 16 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first)"
-family: Qwen3-VL-8B vs InternVL3-8B at TLV,TLV,+21.1,+17.0,+24.9,807,yes,"left (internvl3-8b-local): 105 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first)"
-integration deficit (M-S): Thinking vs base 8B at TLV,TLV,+13.9,+7.3,+21.0,678,yes,"7 hop=none dropped by design (no integration reading), same rule as the integration tables; left (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-thinking-local): 8 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); 343 never generated (run unfinished, stops in corpus order, so the shortfall is unrelated to difficulty)"
+scale: 32B vs 8B at V,V,+11.2,+8.3,+14.2,847,yes,-
+scale: 32B vs 8B at T,T,+3.7,+1.5,+5.7,847,yes,-
+family: Qwen3-VL-8B vs InternVL3-8B at TLV,TLV,+21.1,+17.0,+24.9,807,yes,"left (internvl3-8b-local): 40 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first)"
+integration deficit (M-S): Thinking vs base 8B at TLV,TLV,not computable,-,-,0,-,"NOT COMPUTABLE: right side has no judged rows; the run has not landed, so no value is reported"

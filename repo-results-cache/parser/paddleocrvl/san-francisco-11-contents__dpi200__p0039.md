@@ -1,0 +1,3 @@
+©Lonely Planet Publications Pty Ltd
+
+© Lonely Planet Publications Pty Ltd. To make it easier for you to use, access to this chapter is not digitally restricted. In return, we think it's fair to ask you to use it for personal, non-commercial purposes only. In other words, please don't upload this chapter to a peer-to-peer site, mass email it to everyone you know, or resell it. See the terms and conditions on our site for a longer way of saying the above - 'Do the right thing with our content.'

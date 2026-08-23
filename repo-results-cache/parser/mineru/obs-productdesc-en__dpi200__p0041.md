@@ -1,0 +1,13 @@
+OperationTenant AdministratorTenant GuestOBS AdministratorOBS Buckets ViewerOBS ReadOnl yAccessOBS Operate Access
+Deleting foldersYesNoYesNoNoYes
+Downloa ding filesYesYesYesNoNoYes
+Deleting files with multiple versionsYesNoYesNoNoYes
+Downloa ding files with multiple versionsYesYesYesNoNoYes
+Modifyin g object storage classesYesNoYesNoNoNo
+Restoring filesYesNoYesNoNoNo
+Cancelin g the deletion of filesYesNoYesNoNoYes
+Deleting fragment sYesNoYesNoNoYes
+Controlli ng object accessYesNoYesNoNoNo
+Configuri ng object metadataYesNoYesNoNoNo
+Obtainin g object metadataYesYesYesNoNoYes
+Managin g versioningYesNoYesNoNoNo
