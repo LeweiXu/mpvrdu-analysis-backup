@@ -10,7 +10,7 @@
 # page_selection,oracle
 # prompt_mode,none
 # memory,"weight footprint, not peak VRAM"
-# note,thinking/llama rows appear when their runs land
+# note,the thinking arm is not here; it runs under G6_reasoning
 block,model_spec,weights_mb,T,TL,TLV,V,n
 precision,qwen3vl-8b-local,17534,31.9 [27.1-36.7] (n=847),38.4 [34.4-42.5] (n=847),52.4 [48.3-56.4] (n=847),45.5 [41.6-49.6] (n=847),3388
 precision,qwen3vl-8b-local-8bit,10285~,32.5 [27.6-37.2] (n=847),37.9 [33.7-42.1] (n=847),53.6 [49.4-57.7] (n=847),45.7 [41.5-50.1] (n=847),3388

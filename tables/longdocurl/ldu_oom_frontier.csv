@@ -1,0 +1,39 @@
+# swept,rung x pages fed
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# attrition,"OOM attrition is NESTED, not random: at TLV the questions that OOM at d=5 are a strict superset of those at d=4, and so on down. A cell at high distractor count is therefore the surviving lightest questions, so compare down a column only on the matched question set, never on the raw per-cell accuracy"
+rung,resolution,pages_fed,oom_rate,n_oom,n_total
+T,med,1,0.0,0,1109
+T,med,2-5,0.9,10,1164
+T,med,6-10,3.4,1,29
+T,med,11-20,66.7,6,9
+T,med,21+,66.7,4,6
+TL,med,1,1.9,21,1109
+TL,med,2-5,4.1,48,1164
+TL,med,6-10,13.8,4,29
+TL,med,11-20,77.8,7,9
+TL,med,21+,66.7,4,6
+TV,med,1,0.1,1,1109
+TV,med,2-5,1.6,19,1164
+TV,med,6-10,51.7,15,29
+TV,med,11-20,100.0,9,9
+TV,med,21+,100.0,6,6
+TLV,med,1,2.1,23,1109
+TLV,med,2-5,6.2,72,1164
+TLV,med,6-10,55.2,16,29
+TLV,med,11-20,100.0,9,9
+TLV,med,21+,100.0,6,6
+V,med,1,0.0,0,1109
+V,med,2-5,0.0,0,1164
+V,med,6-10,0.0,0,29
+V,med,11-20,77.8,7,9
+V,med,21+,100.0,6,6
+n (per col),-,-,-,-,-

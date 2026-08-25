@@ -15,6 +15,6 @@
 rung,oracle acc,representation loss,retrieval ref,retrieved acc,retrieval loss,reasoning residual (raw UB),oracle n
 T,31.9 [27.1-36.7],+20.5,-,-,-,-,847
 TL,38.4 [34.4-42.5],+14.0,-,-,-,-,847
-TLV,52.4 [48.3-56.4],0.0 (best rung),joint k1 (paired n=278),42.1,+10.4,+47.6,847
-V,45.5 [41.6-49.6],+7.0,joint k5 (paired n=226),36.3,+3.1,-,847
+TLV,52.4 [48.3-56.4],0.0 (best rung),joint k3 (paired n=135),43.7,+14.8,+47.6,847
+V,45.5 [41.6-49.6],+7.0,joint k3 (paired n=312),37.2,+3.8,-,847
 n (per col),3388,-,-,-,-,-,-

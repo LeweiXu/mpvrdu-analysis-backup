@@ -1,0 +1,28 @@
+# swept,rung
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+doc_type,rung,prefill_ms,input_tokens,decode_ms,output_tokens,n
+Locating,T,1653,962,2537,66,695
+Locating,TL,2486,1405,2876,71,695
+Locating,TV,26733,4024,2369,58,695
+Locating,TLV,26473,4278,2698,61,695
+Locating,V,26464,3310,1928,53,695
+Reasoning,T,1669,939,6080,151,384
+Reasoning,TL,2491,1376,6030,138,384
+Reasoning,TV,28582,4179,7254,163,384
+Reasoning,TLV,26616,4236,6826,144,384
+Reasoning,V,29839,3689,6347,161,384
+Understanding,T,1483,843,5525,140,1238
+Understanding,TL,2066,1156,5819,140,1238
+Understanding,TV,25540,3768,6245,144,1238
+Understanding,TLV,25453,3976,6287,138,1238
+Understanding,V,24951,3119,5242,137,1238
+n (per col),-,-,-,-,-,-

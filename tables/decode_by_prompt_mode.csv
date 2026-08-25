@@ -11,10 +11,10 @@
 # page_selection,oracle
 # reading,the uninstructed none row is an upper bound and is flagged; cot/extract_cot carry an 8x decode budget
 prompt_mode,instruction,budget,decode_ms,output_tokens,prefill_ms,n
-none ⚠,none (uninstructed),-,2438,136,177,847
-grounded,concise,-,171,10,177,847
-abstain,concise,-,114,7,178,847
-abstain_balanced,concise,-,119,8,179,847
-cot,concise,-,2979,166,178,847
-extract_cot,concise,-,4507,242,181,846
+none ⚠,none (uninstructed),256,2438,136,177,847
+grounded,concise,256,171,10,177,847
+abstain,concise,256,114,7,178,847
+abstain_balanced,concise,256,119,8,179,847
+cot,concise,2048,2979,166,178,847
+extract_cot,concise,2048,4507,242,181,846
 n (per col),-,-,-,-,-,-

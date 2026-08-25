@@ -21,7 +21,7 @@ CoT prompt (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.5,+6.4,847/847
 extraction (grounded→extract_cot),E4 reasoning,acc @ TLV,45.7,50.2,+4.5,847/846
 extraction (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.0,+6.8,847/846
 abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),16.8,74.6,+57.8,244/244
-retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),28.9,36.2,+7.2,304/304
+retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),29.8,37.2,+7.4,312/312
 model swap 8B→InternVL3-8B,reasoner,acc @ TLV,52.4,32.6,-19.8,847/807
-thinking variant (M−S),E4 reasoning,M−S @ TLV,-,-,-,-
+thinking variant (M−S),E4 reasoning,M−S @ TLV,-25.8,-9.1,+16.7,847/735
 n (per col),-,-,-,-,-,-

@@ -1,0 +1,20 @@
+# swept,page-set rule (gold withheld / distractors added) x ranking source x rung
+# dataset,longdocurl
+# scan,any
+# sampling,full (hop: multi)
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# prompt_mode,none
+# attrition,"OOM attrition is NESTED, not random: at TLV the questions that OOM at d=5 are a strict superset of those at d=4, and so on down. A cell at high distractor count is therefore the surviving lightest questions, so compare down a column only on the matched question set, never on the raw per-cell accuracy"
+# cells,"per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one"
+condition,ranker,T,TL,TLV,V,n
+"**oracle (all gold, hop=multi)**",-,25.5 [22.3-28.8] (n=1047),25.2 [21.6-28.8] (n=1011),26.0 [22.4-29.8] (n=976),22.3 [19.4-25.6] (n=1052),5109
+drop bottom 1,bm25,22.2 [18.6-26.1] (n=585),22.4 [18.5-26.3] (n=572),23.1 [19.3-27.2] (n=562),20.6 [17.2-24.1] (n=583),2302
+drop bottom 1,colqwen3,24.5 [20.6-28.6] (n=583),23.4 [19.5-27.5] (n=572),25.3 [21.3-29.7] (n=561),22.3 [18.6-25.7] (n=583),2299
+drop top 1,bm25,16.9 [14.2-19.7] (n=1199),15.3 [12.7-18.0] (n=1177),14.5 [12.1-17.3] (n=1157),13.2 [10.9-15.6] (n=1198),4731
+drop top 1,colqwen3,16.2 [13.6-18.9] (n=1198),13.9 [11.6-16.5] (n=1178),13.2 [10.9-15.9] (n=1161),12.3 [10.0-14.6] (n=1198),4735
+n (per col),-,3565,3499,3441,3562,-

@@ -1,0 +1,19 @@
+# swept,gold evidence-page bucket x rung
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# cells,"per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one"
+evidence pages,T,TL,TV,TLV,V,n
+1,8.4 [6.6-10.4] (n=987),7.7 [6.0-9.6] (n=967),7.1 [5.6-8.8] (n=986),7.2 [5.5-8.9] (n=965),8.3 [6.6-10.3] (n=986),4891
+2,25.4 [21.9-29.0] (n=776),24.7 [21.2-28.5] (n=756),25.7 [22.3-29.5] (n=773),25.9 [22.0-29.7] (n=745),22.5 [19.4-25.9] (n=783),3833
+3,24.1 [18.1-30.6] (n=162),27.6 [19.9-35.9] (n=156),25.0 [18.4-31.8] (n=160),27.8 [20.0-35.6] (n=151),23.5 [16.9-30.1] (n=162),791
+4-5,30.5 [18.2-42.2] (n=82),26.3 [15.0-39.8] (n=76),26.6 [15.3-39.1] (n=79),23.2 [11.9-35.7] (n=69),22.0 [12.7-31.6] (n=82),388
+6+,22.2 [6.9-40.9] (n=27),21.7 [8.0-42.1] (n=23),18.2 [0.0-38.5] (n=11),27.3 [7.7-54.5] (n=11),12.0 [0.0-26.1] (n=25),97
+n (per col),2034,1978,2009,1941,2038,-

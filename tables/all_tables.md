@@ -10,20 +10,20 @@
 | run_tag | task | cells | ok | oom | error | oom % |
 | --- | --- | --- | --- | --- | --- | --- |
 | g1-interleaved-tlv | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
-| g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
-| g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
-| g1-quantization-full | G1_oracle_ladder | 5256 | 5256 | 0 | 0 | 0.0 |
-| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1520 | 0 | 0 | 0.0 |
+| g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1466 | 228 | 0 | 13.5 |
+| g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1585 | 109 | 0 | 6.4 |
+| g1-quantization-full | G1_oracle_ladder | 5256 | 4961 | 295 | 0 | 5.6 |
+| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1488 | 32 | 0 | 2.1 |
 | g1-reasoner-32b-matched | G1_oracle_ladder | 6776 | 6775 | 1 | 0 | 0.0 |
-| g1-reasoner-full | G1_oracle_ladder | 7884 | 7844 | 40 | 0 | 0.5 |
-| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2272 | 8 | 0 | 0.4 |
-| g1-representation-full | G1_oracle_ladder | 3388 | 3388 | 0 | 0 | 0.0 |
-| g1-resolution-full | G1_oracle_ladder | 3942 | 3942 | 0 | 0 | 0.0 |
-| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1140 | 0 | 0 | 0.0 |
+| g1-reasoner-full | G1_oracle_ladder | 7884 | 7525 | 359 | 0 | 4.6 |
+| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2239 | 41 | 0 | 1.8 |
+| g1-representation-full | G1_oracle_ladder | 3388 | 3143 | 245 | 0 | 7.2 |
+| g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
+| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
 | g1-tv-full | G1_oracle_ladder | 847 | 847 | 0 | 0 | 0.0 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
 | g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
-| g3-hallucination-full | G3_hallucination | 2928 | 2928 | 0 | 0 | 0.0 |
+| g3-hallucination-full | G3_hallucination | 2928 | 2698 | 230 | 0 | 7.9 |
 | g4-faithfulness-full | G4_faithfulness_answerable | 20328 | 20328 | 0 | 0 | 0.0 |
 | g5a-drop-best | G5_selection | 2864 | 2816 | 0 | 48 | 0.0 |
 | g5a-drop-worst | G5_selection | 2864 | 2816 | 0 | 48 | 0.0 |
@@ -32,7 +32,7 @@
 | g5b-gold1 | G5_selection | 11520 | 11376 | 0 | 144 | 0.0 |
 | g5b-gold2 | G5_selection | 5904 | 5784 | 0 | 120 | 0.0 |
 | g5b-gold3 | G5_selection | 960 | 960 | 0 | 0 | 0.0 |
-| **all** |  | **102770** | 100997 | 1317 | 456 | 1.3 |
+| **all** |  | **102770** | 99044 | 3270 | 456 | 3.2 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -966,11 +966,11 @@ _P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averag
 
 | k | text | vision | joint | n |
 | --- | --- | --- | --- | --- |
-| 1 | 18.0 [13.1-23.3] | 32.7 [26.7-38.5] | 36.4 [31.5-41.2] | 1779 |
-| 3 | 24.3 [18.7-30.5] | 37.6 [32.2-43.3] | 37.6 [31.6-43.7] | 1490 |
-| 5 | 22.3 [16.7-29.0] | 38.1 [31.8-44.4] | 36.8 [29.7-44.2] | 1024 |
+| 1 | 17.5 [12.6-23.3] | 33.4 [27.6-39.0] | 37.2 [32.1-42.0] | 1824 |
+| 3 | 23.6 [18.0-29.6] | 38.8 [32.9-44.2] | 39.1 [32.9-45.3] | 1536 |
+| 5 | 21.9 [16.2-28.7] | 39.6 [32.5-46.1] | 37.3 [30.0-44.3] | 1057 |
 | 7 | 42.9 [42.9-42.9] | 28.6 [28.6-28.6] | 50.0 [50.0-50.0] | 18 |
-| n (per col) | 1523 | 1538 | 1250 | - |
+| n (per col) | 1570 | 1584 | 1281 | - |
 
 ### Matched vs cross: accuracy by retrieval modality and doc_type (TLV)
 
@@ -983,9 +983,9 @@ _P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averag
 | Brochure | 19.4 [8.1-26.7] | 26.7 [22.5-32.8] | 28.1 [23.3-35.0] | 383 |
 | Financial report | 15.2 [15.2-15.2] | 31.2 [31.2-31.2] | 44.4 [44.4-44.4] | 130 |
 | Guidebook | 28.7 [13.9-43.5] | 33.5 [19.1-45.3] | 36.7 [22.2-48.8] | 558 |
-| Research report / Introduction | 16.1 [9.0-24.1] | 34.7 [26.5-42.2] | 34.5 [27.3-40.9] | 1778 |
-| Tutorial/Workshop | 29.9 [15.7-45.9] | 59.2 [51.3-70.0] | 62.5 [50.9-78.0] | 577 |
-| n (per col) | 1523 | 1538 | 1250 | - |
+| Research report / Introduction | 15.4 [8.8-22.9] | 36.9 [28.7-44.5] | 36.6 [29.1-44.1] | 1889 |
+| Tutorial/Workshop | 29.2 [15.4-45.0] | 60.2 [52.0-70.4] | 63.2 [51.8-78.9] | 590 |
+| n (per col) | 1570 | 1584 | 1281 | - |
 
 ## Integration
 
@@ -1469,7 +1469,7 @@ _Same judged rows, two detection scopes. A positive delta means the whole genera
 
 ### Reasoner: precision / scale / matched budget / family / reasoning variant
 
-> **swept**: reasoner block (precision / scale / matched budget / family / reasoning variant) · **dataset**: mmlongbench · **scan**: mixed pools by run; compare within a block · **sampling**: full · **parser**: paddleocrvl · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **memory**: weight footprint, not peak VRAM · **note**: thinking/llama rows appear when their runs land
+> **swept**: reasoner block (precision / scale / matched budget / family / reasoning variant) · **dataset**: mmlongbench · **scan**: mixed pools by run; compare within a block · **sampling**: full · **parser**: paddleocrvl · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **memory**: weight footprint, not peak VRAM · **note**: the thinking arm is not here; it runs under G6_reasoning
 
 _Weight footprint (MB, `~` = derived for quantized variants) replaces peak VRAM: the measured figure is device-0 only. Every accuracy cell carries its own n because OOM attrition is not random with respect to the question pool: it tracks document length and page count, which track the multi-page questions, so a thin cell compares an easier surviving subset. The reasoning-variant block reports M−S per rung (multi minus single accuracy, negative = multi worse), NOT pooled accuracy: the Thinking variant's value is entirely its hop-split behaviour. Blocks share the 8B bf16 baseline row wherever it is the comparison point; pool composition differs by run (scan filters), so compare within a block._
 
@@ -1844,7 +1844,7 @@ _`prefill_ms` and `input_tokens` are the INPUT-bound cost, set by the representa
 
 > **swept**: reasoner config × rung (prefill / decode / input tokens) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: cost rows use the cells every config in a machine group ran; token rows use the complete pool · **page_selection**: oracle · **prompt_mode**: none · **machine**: rows grouped by measuring machine; the V100 and H100 groups are never comparable · **note**: the builder loads its own per-group snapshots, so the plan's own load is unused
 
-_Prefill and decode in seconds, mean over the cells every config in the machine group ran (`n` per rung is that matched intersection, so a difference down a group is the config, not the pool). ⚠ NEVER compare a 2xV100 row against an H100 row. The V100 rows are the pre-recovery `results.v100.jsonl` snapshots; the 32B and Thinking runs only ever ran post-migration on an H100, which prefills the same input roughly 50x faster, so the two groups are separate tables that happen to share columns. The `machine` field on the row is `local` everywhere and cannot distinguish them; the file split is the only handle. Prefill is the input-bound cost set by the representation, decode the output-bound cost set by the prompt and the decode budget. Their sum is not end-to-end latency, which also carries scheduling and detokenisation. All rows are prompt_mode=none, which carries NO instruction (`config.PROMPT_MODES['none']` is the empty string), so the model rambles to the 256-token cap and decode is an uninstructed upper bound; the Thinking row emits reasoning as well, so its decode is not comparable even to the H100 rows beside it. Input-token rows depend only on the rung (identical across every Qwen3-VL spec, which share a tokenizer); InternVL3-8B packs vision differently and is excluded from them. They cover the 840 of 847 answerable questions that were actually fed pages: 7 questions on `mi_phone.pdf` resolve to an EMPTY page set in every run despite carrying valid gold pages, so they are fed no evidence, score 0 everywhere, and would otherwise put a nonsensical ~32-token floor under the image rungs (32 tokens is the bare prompt scaffolding, not a page). Because the V100 groups exclude the cells that OOMed, their inputs are shorter than the complete-pool row: TLV averages 3,501 tokens over the V100 matched cells against 5,049 over the full pool, so the V100 latencies price a lighter input than the token rows show._
+_Prefill and decode in seconds, mean over the cells every config in the machine group ran (`n` per rung is that matched intersection, so a difference down a group is the config, not the pool). ⚠ NEVER compare a 2xV100 row against an H100 row. The V100 rows are the pre-recovery `results.v100.jsonl` snapshots; the 32B runs only ever ran post-migration on an H100, which prefills the same input roughly 50x faster, so the two groups are separate tables that happen to share columns. The `machine` field on the row is `local` everywhere and cannot distinguish them; the file split is the only handle. Prefill is the input-bound cost set by the representation, decode the output-bound cost set by the prompt and the decode budget. Their sum is not end-to-end latency, which also carries scheduling and detokenisation. All rows are prompt_mode=none, which carries NO instruction (`config.PROMPT_MODES['none']` is the empty string), so the model rambles to the 256-token cap and decode is an uninstructed upper bound. Input-token rows depend only on the rung (identical across every Qwen3-VL spec, which share a tokenizer); InternVL3-8B packs vision differently and is excluded from them. They cover the 840 of 847 answerable questions that were actually fed pages: 7 questions on `mi_phone.pdf` resolve to an EMPTY page set in every run despite carrying valid gold pages, so they are fed no evidence, score 0 everywhere, and would otherwise put a nonsensical ~32-token floor under the image rungs (32 tokens is the bare prompt scaffolding, not a page). Because the V100 groups exclude the cells that OOMed, their inputs are shorter than the complete-pool row: TLV averages 3,501 tokens over the V100 matched cells against 5,049 over the full pool, so the V100 latencies price a lighter input than the token rows show._
 
 | group | config | metric | T | TL | TLV | V | n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1876,12 +1876,12 @@ _Decode cost per prompt mode at one rung, so the input side is held fixed and ev
 
 | prompt_mode | instruction | budget | decode_ms | output_tokens | prefill_ms | n |
 | --- | --- | --- | --- | --- | --- | --- |
-| none ⚠ | none (uninstructed) | - | 2438 | 136 | 177 | 847 |
-| grounded | concise | - | 171 | 10 | 177 | 847 |
-| abstain | concise | - | 114 | 7 | 178 | 847 |
-| abstain_balanced | concise | - | 119 | 8 | 179 | 847 |
-| cot | concise | - | 2979 | 166 | 178 | 847 |
-| extract_cot | concise | - | 4507 | 242 | 181 | 846 |
+| none ⚠ | none (uninstructed) | 256 | 2438 | 136 | 177 | 847 |
+| grounded | concise | 256 | 171 | 10 | 177 | 847 |
+| abstain | concise | 256 | 114 | 7 | 178 | 847 |
+| abstain_balanced | concise | 256 | 119 | 8 | 179 | 847 |
+| cot | concise | 2048 | 2979 | 166 | 178 | 847 |
+| extract_cot | concise | 2048 | 4507 | 242 | 181 | 846 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Routing policies: accuracy vs input-token cost
@@ -1917,10 +1917,10 @@ _Each row is ONE bootstrap interval on a difference, not two marginal intervals 
 | integration deficit (M-S): V vs T | V - T | -9.5 | -18.1 | -1.6 | 838 | yes | 9 hop=none dropped by design (no integration reading), same rule as the integration tables |
 | representation margin: TLV vs T | TLV - T | +20.7 | +15.4 | +26.2 | 847 | yes | - |
 | parser-free lateral: TLV vs TV | TLV - TV | +0.9 | -1.3 | +3.3 | 847 | no | - |
-| scale: 32B vs 8B at V | V | +11.2 | +8.3 | +14.2 | 847 | yes | - |
-| scale: 32B vs 8B at T | T | +3.7 | +1.5 | +5.7 | 847 | yes | - |
-| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 40 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | not computable | - | - | 0 | - | NOT COMPUTABLE: right side has no judged rows; the run has not landed, so no value is reported |
+| scale: 32B vs 8B at V | V | +11.2 | +8.3 | +14.2 | 847 | yes | left (qwen3vl-8b-local): 13 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| scale: 32B vs 8B at T | T | +3.7 | +1.5 | +5.7 | 847 | yes | left (qwen3vl-8b-local): 16 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 105 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | +11.8 | +4.8 | +18.7 | 726 | yes | 9 hop=none dropped by design (no integration reading), same rule as the integration tables; left (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-thinking-local): 112 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
 
 ### Levers: what each inference-time intervention does, where data exists
 
@@ -1938,9 +1938,9 @@ _One row per lever: the measured baseline, the lever value, and the delta in poi
 | extraction (grounded→extract_cot) | E4 reasoning | acc @ TLV | 45.7 | 50.2 | +4.5 | 847/846 |
 | extraction (M−S) | E4 reasoning | M−S @ TLV | -22.9 | -16.0 | +6.8 | 847/846 |
 | abstention prompt (none→targeted) | E5 faithfulness | abstention @ TLV (unanswerable) | 16.8 | 74.6 | +57.8 | 244/244 |
-| retrieval depth k1→k5 (vision) | E2 selection | acc @ V (PROVISIONAL) | 28.9 | 36.2 | +7.2 | 304/304 |
+| retrieval depth k1→k5 (vision) | E2 selection | acc @ V (PROVISIONAL) | 29.8 | 37.2 | +7.4 | 312/312 |
 | model swap 8B→InternVL3-8B | reasoner | acc @ TLV | 52.4 | 32.6 | -19.8 | 847/807 |
-| thinking variant (M−S) | E4 reasoning | M−S @ TLV | - | - | - | - |
+| thinking variant (M−S) | E4 reasoning | M−S @ TLV | -25.8 | -9.1 | +16.7 | 847/735 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Prompt levers: accuracy by evidence hop per prompt mode (TLV, oracle pages)
@@ -1969,8 +1969,8 @@ _PROVISIONAL (partial G2 pool). The retrieval-loss columns are built on the g2-r
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | T | 31.9 [27.1-36.7] | +20.5 | - | - | - | - | 847 |
 | TL | 38.4 [34.4-42.5] | +14.0 | - | - | - | - | 847 |
-| TLV | 52.4 [48.3-56.4] | 0.0 (best rung) | joint k1 (paired n=278) | 42.1 | +10.4 | +47.6 | 847 |
-| V | 45.5 [41.6-49.6] | +7.0 | joint k5 (paired n=226) | 36.3 | +3.1 | - | 847 |
+| TLV | 52.4 [48.3-56.4] | 0.0 (best rung) | joint k3 (paired n=135) | 43.7 | +14.8 | +47.6 | 847 |
+| V | 45.5 [41.6-49.6] | +7.0 | joint k3 (paired n=312) | 37.2 | +3.8 | - | 847 |
 | n (per col) | 3388 | - | - | - | - | - | - |
 
 ## Reconciliation & coverage
@@ -2052,4 +2052,5 @@ _This table cannot separate inherited from native questions, and the blank is th
 | source_dataset | T | TL | TLV | V | n |
 | --- | --- | --- | --- | --- | --- |
 | mmlongbench | 31.9 [27.1-36.7] | 38.4 [34.4-42.5] | 52.4 [48.3-56.4] | 45.5 [41.6-49.6] | 3388 |
+| (uncoded) | 16 cells, no acc | 86 cells, no acc | 130 cells, no acc | 13 cells, no acc | 245 |
 | n (per col) | 847 | 847 | 847 | 847 | - |
