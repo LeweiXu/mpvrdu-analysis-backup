@@ -10,10 +10,5 @@
 # page_selection,oracle
 # prompt_mode,none
 # blocks,"overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once"
-evidence_source,T,TL,TV,TLV,V,n
-Figure,21.7 [16.9-27.1],21.9 [17.3-27.4],23.2 [18.1-28.2],23.6 [18.8-29.3],20.9 [16.6-25.4],2463
-Layout,12.2 [9.4-15.4],12.3 [9.2-15.6],11.2 [8.7-14.1],11.9 [8.9-15.2],11.2 [8.5-14.2],3269
-Others,42.9 [0.0-87.5],57.1 [16.7-87.5],42.9 [0.0-87.5],28.6 [0.0-60.0],28.6 [0.0-44.4],35
-Table,9.5 [7.5-11.7],8.3 [6.4-10.6],8.6 [6.7-10.6],7.8 [5.9-9.8],8.4 [6.5-10.5],3695
-Text,27.2 [23.3-30.7],26.6 [22.8-30.5],26.2 [22.2-29.6],26.9 [23.0-30.8],23.9 [20.3-27.2],4327
-n (per col),2036,1980,2011,1943,2040,-
+evidence_source,n
+n (per col),-
