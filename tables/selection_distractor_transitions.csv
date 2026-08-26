@@ -13,19 +13,20 @@
 # ranker,"colqwen3 only, matching the main text and figure"
 # pairing,"within-question against the oracle, pooled over the four rungs"
 # blocks,one block per gold-page count; each reads against its own d=0 oracle and blocks are not comparable
-gold pages,evidence_source,+1 distractor R→W,+1 distractor W→R,+2 distractors R→W,+2 distractors W→R,+3 distractors R→W,+3 distractors W→R,paired n,questions
-1 gold page,(none)†,0.0,14.3,0.0,14.3,0.0,14.3,14,14
-1 gold page,Chart,9.3,7.2,10.3,9.3,17.5,8.2,97,97
-1 gold page,Figure,7.4,6.8,11.1,10.5,9.3,9.9,162,162
-1 gold page,Generalized-text (Layout),10.7,5.4,8.9,7.1,7.1,3.6,56,56
-1 gold page,Pure-text (Plain-text),7.2,6.5,5.9,5.9,7.2,5.9,153,153
-1 gold page,Table,8.7,4.8,5.8,3.8,6.7,6.7,104,104
-1 gold page,**All sources**,7.8,7.0,8.2,8.0,9.7,8.2,474,474
-2-3 gold pages,(none)†,0.0,25.0,0.0,25.0,0.0,25.0,4,4
-2-3 gold pages,Chart,4.9,8.2,6.6,4.9,9.8,8.2,61,61
-2-3 gold pages,Figure,7.1,9.4,8.2,5.9,10.6,2.4,85,85
-2-3 gold pages,Generalized-text (Layout),5.1,7.7,15.4,2.6,20.5,7.7,39,39
-2-3 gold pages,Pure-text (Plain-text),8.3,4.6,10.1,4.6,11.0,4.6,109,109
-2-3 gold pages,Table,7.8,7.8,6.8,4.9,8.7,4.9,103,103
-2-3 gold pages,**All sources**,7.8,7.5,9.6,6.0,11.4,6.0,281,281
-n (per col),-,-,-,-,-,-,-,-,-
+# deep distractor counts,"the +4/+5/+6 columns come from g5c (TLV, colqwen3 only) and lose cells to OOM: paired n falls 474 -> 313 -> 256 -> 196 at gold 1. Attrition is nested, so a high-k cell is the surviving LIGHTEST questions and the slope across columns reads easier than it is. Compare down a column, not across one; the matched-set slope is selection_distractor_matched"
+gold pages,evidence_source,+1 distractor R→W,+1 distractor W→R,+2 distractors R→W,+2 distractors W→R,+3 distractors R→W,+3 distractors W→R,+4 distractors R→W,+4 distractors W→R,+5 distractors R→W,+5 distractors W→R,+6 distractors R→W,+6 distractors W→R,paired n,questions
+1 gold page,(none)†,0.0,14.3,0.0,14.3,0.0,14.3,0.0,14.3,0.0,20.0,0.0,0.0,14,14
+1 gold page,Chart,9.3,7.2,10.3,9.3,17.5,8.2,12.0,8.4,17.6,6.8,20.8,7.5,97,97
+1 gold page,Figure,7.4,6.8,11.1,10.5,9.3,9.9,9.8,5.3,9.8,4.5,9.0,7.9,162,162
+1 gold page,Generalized-text (Layout),10.7,5.4,8.9,7.1,7.1,3.6,10.2,0.0,12.8,2.6,19.4,2.8,56,56
+1 gold page,Pure-text (Plain-text),7.2,6.5,5.9,5.9,7.2,5.9,5.7,6.9,4.5,7.5,6.0,10.0,153,153
+1 gold page,Table,8.7,4.8,5.8,3.8,6.7,6.7,8.6,5.7,0.0,8.7,6.7,0.0,104,104
+1 gold page,**All sources**,7.8,7.0,8.2,8.0,9.7,8.2,9.6,6.7,10.2,7.0,12.2,8.2,474,474
+2-3 gold pages,(none)†,0.0,25.0,0.0,25.0,0.0,25.0,0.0,100.0,-,-,-,-,4,4
+2-3 gold pages,Chart,4.9,8.2,6.6,4.9,9.8,8.2,11.1,19.4,20.0,20.0,-,-,61,61
+2-3 gold pages,Figure,7.1,9.4,8.2,5.9,10.6,2.4,6.2,6.2,4.9,0.0,-,-,85,85
+2-3 gold pages,Generalized-text (Layout),5.1,7.7,15.4,2.6,20.5,7.7,24.0,8.0,15.8,0.0,-,-,39,39
+2-3 gold pages,Pure-text (Plain-text),8.3,4.6,10.1,4.6,11.0,4.6,17.4,10.9,15.6,9.4,-,-,109,109
+2-3 gold pages,Table,7.8,7.8,6.8,4.9,8.7,4.9,15.8,5.3,0.0,10.0,-,-,103,103
+2-3 gold pages,**All sources**,7.8,7.5,9.6,6.0,11.4,6.0,12.0,12.0,10.8,8.4,-,-,281,281
+n (per col),-,-,-,-,-,-,-,-,-,-,-,-,-,-,-

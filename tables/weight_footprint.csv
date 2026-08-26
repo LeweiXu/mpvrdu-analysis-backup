@@ -12,7 +12,13 @@
 # source,"annotations/model_weights.csv, a static checkpoint property; no run, no device-0 truncation"
 # memory axis,"weight footprint, NOT peak VRAM"
 model_spec,quant,weights_mb,method,quantizable_params,in study
+gemma3-12b-local,16bit,24375,exact,11.17B,yes
+gemma3-27b-local,16bit,54865,exact,26.01B,-
+gemma3-4b-local,16bit,8600,exact,3.62B,yes
+glm4v-9b-local,16bit,20586,exact,8.84B,yes
 internvl3-8b-local,16bit,15889,exact,6.75B,yes
+llama3.2-11b-vision-local,16bit,21340,exact,9.51B,-
+minicpmv-8b-local,16bit,17392,exact,7.38B,yes
 qwen3vl-2b-local,16bit,4255,exact,1.64B,yes
 qwen3vl-2b-local-8bit,8bit,2619,derived,1.64B,-
 qwen3vl-2b-local-4bit,4bit,1827,derived,1.64B,-
@@ -25,4 +31,7 @@ qwen3vl-4b-local-4bit,4bit,3147,derived,3.86B,-
 qwen3vl-8b-local,16bit,17534,exact,7.25B,yes
 qwen3vl-8b-local-8bit,8bit,10285,derived,7.25B,yes
 qwen3vl-8b-local-4bit,4bit,6775,derived,7.25B,yes
+qwen3vl-8b-thinking-local,16bit,17534,exact,7.25B,yes
+qwen3vl-8b-thinking-local-8bit,8bit,10285,derived,7.25B,-
+qwen3vl-8b-thinking-local-4bit,4bit,6775,derived,7.25B,-
 n (per col),-,-,-,-,-

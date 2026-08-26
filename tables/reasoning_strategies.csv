@@ -1,0 +1,10 @@
+# swept,inference-time reasoning arm (self-consistency / self-refinement / thinking checkpoint) × accuracy and M−S
+# representation,TLV only
+# page_selection,oracle
+# controls,"loaded by the builder from g4-faithfulness-full; the strategies carry the grounded instruction so their control is grounded, the thinking checkpoint is plain so its control is none"
+# pairing,"per arm, the questions the arm and its control both answered; OOM attrition differs by arm, so an unmatched read compares different pools"
+# reading,the M−S delta is the point: accuracy that rises while M−S stays flat was spent on questions that were already single-page answerable
+arm,control,control acc (%),arm acc (%),delta acc (pts),control M−S,arm M−S,delta M−S (pts),matched n,cells ok/ran
+self-consistency,grounded @ TLV,51.2,51.2,+0.0,-18.4,-15.0,+3.5,602,602/847
+self-refinement,grounded @ TLV,48.2,49.0,+0.8,-19.6,-17.0,+2.6,778,778/847
+thinking checkpoint,Instruct @ TLV (none),57.0,62.2,+5.2,-19.9,-9.1,+10.8,735,735/847

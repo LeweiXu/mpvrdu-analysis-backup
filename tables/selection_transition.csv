@@ -12,6 +12,7 @@
 # prompt_mode,none
 # pivot,"oracle cells loaded from g1-representation-full by the builder and paired per (question, rung)"
 # pairing,"within-question, oracle and perturbed page set both status==ok at that rung"
+# deep distractor counts,"the +4/+5/+6 columns come from g5c (TLV, colqwen3 only) and lose cells to OOM: paired n falls 474 -> 313 -> 256 -> 196 at gold 1. Attrition is nested, so a high-k cell is the surviving LIGHTEST questions and the slope across columns reads easier than it is. Compare down a column, not across one; the matched-set slope is selection_distractor_matched"
 block,transition,ranker,rung,wrong→right (%),right→wrong (%),right→right (%),wrong→wrong (%),paired n
 sufficiency (hop=multi),oracle -> drop bottom 1,bm25,T,1.7 (6),17.3 (61),8.5 (30),72.4 (255),352
 sufficiency (hop=multi),oracle -> drop bottom 1,bm25,TL,2.6 (9),22.4 (79),8.8 (31),66.2 (233),352
@@ -83,6 +84,12 @@ robustness (gold 1),oracle -> +3 distractors,colqwen3,TL,8.2 (39),6.3 (30),38.8 
 robustness (gold 1),oracle -> +3 distractors,colqwen3,TLV,8.2 (39),9.7 (46),54.9 (260),27.2 (129),474
 robustness (gold 1),oracle -> +3 distractors,colqwen3,V,10.5 (50),11.2 (53),44.5 (211),33.8 (160),474
 robustness (gold 1),oracle -> +3 distractors,colqwen3,**All rungs**,8.8 (167),8.0 (152),42.7 (810),40.5 (767),1896
+robustness (gold 1),oracle -> +4 distractors,colqwen3,TLV,6.7 (21),9.6 (30),56.5 (177),27.2 (85),313
+robustness (gold 1),oracle -> +4 distractors,colqwen3,**All rungs**,6.7 (21),9.6 (30),56.5 (177),27.2 (85),313
+robustness (gold 1),oracle -> +5 distractors,colqwen3,TLV,7.0 (18),10.2 (26),56.2 (144),26.6 (68),256
+robustness (gold 1),oracle -> +5 distractors,colqwen3,**All rungs**,7.0 (18),10.2 (26),56.2 (144),26.6 (68),256
+robustness (gold 1),oracle -> +6 distractors,colqwen3,TLV,8.2 (16),12.2 (24),57.1 (112),22.4 (44),196
+robustness (gold 1),oracle -> +6 distractors,colqwen3,**All rungs**,8.2 (16),12.2 (24),57.1 (112),22.4 (44),196
 robustness (gold 2),oracle -> +1 distractor,bm25,T,7.1 (17),7.5 (18),22.0 (53),63.5 (153),241
 robustness (gold 2),oracle -> +1 distractor,bm25,TL,7.1 (17),6.2 (15),27.8 (67),58.9 (142),241
 robustness (gold 2),oracle -> +1 distractor,bm25,TLV,6.6 (16),6.2 (15),32.4 (78),54.8 (132),241
@@ -113,6 +120,10 @@ robustness (gold 2),oracle -> +3 distractors,colqwen3,TL,5.8 (14),11.6 (28),22.4
 robustness (gold 2),oracle -> +3 distractors,colqwen3,TLV,6.2 (15),11.2 (27),27.4 (66),55.2 (133),241
 robustness (gold 2),oracle -> +3 distractors,colqwen3,V,7.5 (18),9.5 (23),25.7 (62),57.3 (138),241
 robustness (gold 2),oracle -> +3 distractors,colqwen3,**All rungs**,5.7 (55),10.9 (105),23.4 (226),60.0 (578),964
+robustness (gold 2),oracle -> +4 distractors,colqwen3,TLV,12.0 (14),12.0 (14),32.5 (38),43.6 (51),117
+robustness (gold 2),oracle -> +4 distractors,colqwen3,**All rungs**,12.0 (14),12.0 (14),32.5 (38),43.6 (51),117
+robustness (gold 2),oracle -> +5 distractors,colqwen3,TLV,8.4 (7),10.8 (9),37.3 (31),43.4 (36),83
+robustness (gold 2),oracle -> +5 distractors,colqwen3,**All rungs**,8.4 (7),10.8 (9),37.3 (31),43.4 (36),83
 robustness (gold 3),oracle -> +1 distractor,bm25,T,2.5 (1),5.0 (2),20.0 (8),72.5 (29),40
 robustness (gold 3),oracle -> +1 distractor,bm25,TL,10.0 (4),5.0 (2),25.0 (10),60.0 (24),40
 robustness (gold 3),oracle -> +1 distractor,bm25,TLV,5.0 (2),2.5 (1),45.0 (18),47.5 (19),40

@@ -38,7 +38,7 @@ bge-m3,text,7,Brochure,0.130,0.596,0.204,77
 bge-m3,text,7,Financial report,0.107,0.503,0.173,108
 bge-m3,text,7,Guidebook,0.125,0.608,0.199,120
 bge-m3,text,7,Research report / Introduction,0.121,0.511,0.184,212
-bge-m3,text,7,Tutorial/Workshop,0.062,0.307,0.097,112
+bge-m3,text,7,Tutorial/Workshop,0.063,0.307,0.097,112
 bge-m3,text,10,Academic paper,0.114,0.694,0.188,154
 bge-m3,text,10,Administration/Industry file,0.161,0.776,0.231,64
 bge-m3,text,10,Brochure,0.105,0.672,0.174,77
@@ -150,7 +150,7 @@ colmodernvbert,vision,7,Brochure,0.178,0.807,0.276,77
 colmodernvbert,vision,7,Financial report,0.101,0.544,0.166,108
 colmodernvbert,vision,7,Guidebook,0.163,0.759,0.253,120
 colmodernvbert,vision,7,Research report / Introduction,0.207,0.819,0.304,212
-colmodernvbert,vision,7,Tutorial/Workshop,0.188,0.775,0.280,112
+colmodernvbert,vision,7,Tutorial/Workshop,0.187,0.775,0.280,112
 colmodernvbert,vision,10,Academic paper,0.144,0.894,0.238,154
 colmodernvbert,vision,10,Administration/Industry file,0.172,0.836,0.247,64
 colmodernvbert,vision,10,Brochure,0.142,0.866,0.232,77
@@ -208,7 +208,7 @@ colqwen3,vision,3,Guidebook,0.347,0.738,0.446,120
 colqwen3,vision,3,Research report / Introduction,0.392,0.730,0.472,212
 colqwen3,vision,3,Tutorial/Workshop,0.411,0.767,0.495,112
 colqwen3,vision,5,Academic paper,0.265,0.870,0.387,154
-colqwen3,vision,5,Administration/Industry file,0.288,0.832,0.375,64
+colqwen3,vision,5,Administration/Industry file,0.287,0.832,0.375,64
 colqwen3,vision,5,Brochure,0.236,0.802,0.346,77
 colqwen3,vision,5,Financial report,0.198,0.730,0.303,108
 colqwen3,vision,5,Guidebook,0.227,0.769,0.330,120
