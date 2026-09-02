@@ -1,0 +1,20 @@
+# swept,expected answer format (String / List / Integer / Float / None) x rung
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# grouping,"LongDocURL answer_format, joined from the corpus"
+# reading,"a confound, not a lever: a List answer must be produced complete to score right"
+answer_format,T,TL,TV,TLV,V,n
+String,77.1 [73.5-80.5] a0.8 w22.1,81.4 [78.7-84.2] a0.9 w17.7,79.0 [75.6-82.2] a0.1 w20.9,81.5 [78.5-84.6] a0.1 w18.4,75.8 [72.7-78.9] a0.2 w24.0,4613
+List,43.2 [38.4-47.6] a0.8 w56.0,47.5 [42.8-52.1] a0.4 w52.1,51.5 [47.3-55.9] a0.0 w48.5,53.8 [49.4-58.7] a0.0 w46.2,45.8 [41.1-50.3] a0.3 w53.9,3674
+Integer,65.8 [60.4-71.2] a1.6 w32.6,70.4 [65.4-74.9] a1.7 w27.9,75.5 [71.6-79.5] a0.5 w24.0,77.6 [72.9-82.1] a1.3 w21.1,64.6 [59.8-69.7] a0.5 w34.9,2064
+Float,74.3 [63.9-82.9] a1.6 w24.0,75.6 [68.6-82.1] a0.6 w23.9,80.8 [74.4-86.7] a1.1 w18.1,81.8 [75.6-87.0] a1.2 w17.1,65.9 [56.6-74.1] a0.0 w34.1,896
+None,100.0 [100.0-100.0] a0.0 w0.0,100.0 [100.0-100.0] a0.0 w0.0,100.0 [100.0-100.0] a0.0 w0.0,100.0 [100.0-100.0] a0.0 w0.0,66.7 [33.3-100.0] a0.0 w33.3,15
+n (per col),2295,2225,2270,2168,2304,-

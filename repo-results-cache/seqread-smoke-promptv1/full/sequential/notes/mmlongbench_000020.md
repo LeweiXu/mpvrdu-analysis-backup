@@ -1,0 +1,15 @@
+## Turn 1 — document page 17 (rank 1 of 12)
+
+The image displays a map titled "The Centres of Indian Space Programme." The map shows various locations across India with their corresponding space-related institutions. The map is organized with cities and regions, and each location is associated with a specific center or facility. The map includes a list of locations and their associated institutions, such as the Semi-Conductor Laboratory in Chandigarh, the Indian Institute of Remote Sensing in Dehradun, and the Vikram Sarabhai Space Centre in Thiruvananthapuram. The map also highlights the Indian Space Science Data Centre in Byalalu and the ISRO Navigation Centre in Lucknow. The map is a visual representation of the Indian Space Programme's infrastructure and centers.
+
+## Turn 2 — document page 18 (rank 2 of 12)
+
+The map in the report shows the various centers and facilities of the Indian Space Programme distributed across different Indian cities and regions. The map includes key institutions such as the Semi-Conductor Laboratory in Chandigarh, the Indian Institute of Remote Sensing in Dehradun, the Vikram Sarabhai Space Centre in Thiruvananthapuram, the Indian Space Research Organisation (ISRO), and other space-related centers. The map also highlights the Indian Space Science Data Centre in Byalalu and the ISRO Navigation Centre in Lucknow. The image displays a map titled "The Centres of Indian Space Programme," which is a visual representation of the Indian Space Programme's infrastructure and centers.
+
+## Turn 3 — document page 6 (rank 3 of 12)
+
+The map in the report shows the various centers and facilities of the Indian Space Programme distributed across different Indian cities and regions. The map includes key institutions such as the Semi-Conductor Laboratory in Chandigarh, the Indian Institute of Remote Sensing in Dehradun, the Vikram Sarabhai Space Centre in Thiruvananthapuram, the Indian Space Research Organisation (ISRO), and other space-related centers. The map also highlights the Indian Space Science Data Centre in Byalalu and the ISRO Navigation Centre in Lucknow. The image displays a map titled "The Centres of Indian Space Programme," which is a visual representation of the Indian Space Programme's infrastructure and centers.
+
+## Turn 4 — document page 15 (rank 4 of 12)
+
+The map in the report shows the various centers and facilities of the Indian Space Programme distributed across different Indian cities and regions. The map includes key institutions such as the Semi-Conductor Laboratory in Chandigarh, the Indian Institute of Remote Sensing in Dehradun, the Vikram Sarabhai Space Centre in Thiruvananthapuram, the Indian Space Research Organisation (ISRO), and other space-related centers. The map also highlights the Indian Space Science Data Centre in Byalalu and the ISRO Navigation Centre in Lucknow. The image displays a map titled "The Centres of Indian Space Programme," which is a visual representation of the Indian Space Programme's infrastructure and centers.

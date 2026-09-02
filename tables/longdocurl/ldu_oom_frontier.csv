@@ -11,4 +11,29 @@
 # prompt_mode,none
 # attrition,"OOM attrition is NESTED, not random: at TLV the questions that OOM at d=5 are a strict superset of those at d=4, and so on down. A cell at high distractor count is therefore the surviving lightest questions, so compare down a column only on the matched question set, never on the raw per-cell accuracy"
 rung,resolution,pages_fed,oom_rate,n_oom,n_total
+T,med,1,0.0,0,1095
+T,med,2-5,0.8,9,1178
+T,med,6-10,10.3,3,29
+T,med,11-20,66.7,6,9
+T,med,21+,66.7,4,6
+TL,med,1,1.6,17,1095
+TL,med,2-5,4.6,54,1178
+TL,med,6-10,34.5,10,29
+TL,med,11-20,77.8,7,9
+TL,med,21+,66.7,4,6
+TV,med,1,0.0,0,1095
+TV,med,2-5,1.5,18,1178
+TV,med,6-10,48.3,14,29
+TV,med,11-20,100.0,9,9
+TV,med,21+,100.0,6,6
+TLV,med,1,1.7,19,1095
+TLV,med,2-5,8.3,98,1178
+TLV,med,6-10,55.2,16,29
+TLV,med,11-20,100.0,9,9
+TLV,med,21+,100.0,6,6
+V,med,1,0.0,0,1095
+V,med,2-5,0.0,0,1178
+V,med,6-10,0.0,0,29
+V,med,11-20,77.8,7,9
+V,med,21+,100.0,6,6
 n (per col),-,-,-,-,-

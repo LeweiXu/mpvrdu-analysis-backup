@@ -1,0 +1,19 @@
+# swept,evidence source × rung
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+evidence_source,T,TL,TV,TLV,V,n
+(none),52.6 [31.2-73.7] a5.3 w42.1,63.2 [38.9-83.3] a5.3 w31.6,68.4 [44.4-88.9] a0.0 w31.6,73.7 [52.6-91.3] a0.0 w26.3,52.6 [29.4-70.8] a5.3 w42.1,95
+Chart,18.5 [12.3-24.6] a12.9 w68.5,19.1 [13.1-25.5] a8.4 w72.5,42.1 [33.1-51.5] a1.7 w56.2,45.5 [37.3-54.3] a1.7 w52.8,43.3 [34.4-52.4] a1.1 w55.6,890
+Figure,15.5 [11.1-20.5] a10.7 w73.8,23.8 [17.8-30.5] a2.8 w73.4,45.5 [39.4-51.4] a2.1 w52.4,44.8 [38.0-51.7] a2.8 w52.4,40.3 [34.2-46.4] a1.4 w58.3,1450
+Generalized-text (Layout),28.0 [18.1-37.6] a1.7 w70.3,37.3 [27.3-47.4] a4.2 w58.5,49.2 [40.7-57.3] a0.8 w50.0,50.8 [42.3-59.2] a0.0 w49.2,44.1 [35.7-52.8] a0.8 w55.1,590
+Pure-text (Plain-text),39.2 [31.5-47.6] a4.1 w56.7,47.8 [41.1-55.3] a1.7 w50.5,53.6 [46.0-61.2] a1.4 w45.0,55.3 [48.8-62.8] a1.4 w43.3,44.3 [37.7-51.3] a0.3 w55.3,1455
+Table,40.6 [33.8-46.4] a6.0 w53.5,48.4 [40.3-55.2] a0.9 w50.7,47.0 [40.4-53.5] a2.8 w50.2,48.4 [41.4-55.4] a2.3 w49.3,37.8 [31.0-44.3] a1.8 w60.4,1085
+n (per col),847,847,847,847,847,-

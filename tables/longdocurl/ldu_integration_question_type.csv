@@ -1,0 +1,62 @@
+# swept,gold evidence-page count (single vs multi) x question type x rung
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# hop,"single/multi only, hop=none dropped"
+# gap,"M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse)"
+# reading,"hop is shared by both corpora and question_type is LongDocURL's alone, so this pairing is what the second dataset is for"
+# thin rows,"per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one"
+question_type,rung,single,multi,M − S,n
+extract,T,74.3 [68.0-80.1],73.9 [69.6-78.1],-0.4,1229
+extract,TL,79.1 [75.9-82.3],75.1 [70.6-79.4],-4.1,1207
+extract,TV,83.5 [80.3-86.4],79.9 [76.7-82.9],-3.6,1218
+extract,TLV,82.9 [80.0-85.8],84.0 [80.4-87.5],+1.0,1183
+extract,V,74.2 [70.3-78.0],75.0 [71.4-78.4],+0.9,1229
+extract_fig2tab,T,58.4 [47.5-68.8],-,-,231
+extract_fig2tab,TL,71.6 [62.4-79.9],-,-,222
+extract_fig2tab,TV,54.5 [44.8-63.3],-,-,231
+extract_fig2tab,TLV,62.3 [52.5-72.2],-,-,220
+extract_fig2tab,V,55.4 [45.8-64.6],-,-,231
+topic2title,T,15.0 [7.5-24.6],33.8 [24.8-44.0],+18.8,199
+topic2title,TL,33.3 [21.0-46.4],27.2 [19.0-35.8],-6.1,196
+topic2title,TV,35.0 [21.2-50.0],35.3 [27.1-44.0],+0.3,196
+topic2title,TLV,36.7 [23.0-50.0],34.8 [26.3-43.7],-1.8,192
+topic2title,V,30.0 [17.9-42.2],31.7 [23.8-41.3],+1.7,199
+summary2title,T,79.2 [65.2-92.3],64.5 [54.3-73.5],-14.6,134
+summary2title,TL,87.5 [72.7-100.0],79.6 [70.8-87.5],-7.9,132
+summary2title,TV,87.5 [72.7-100.0],72.2 [62.4-81.3],-15.3,132
+summary2title,TLV,83.3 [68.0-96.0],75.7 [66.0-85.3],-7.6,127
+summary2title,V,79.2 [60.8-93.4],73.2 [64.2-81.6],-6.0,136
+summary2tab,T,25.0 [0.0-50.0],14.2 [6.7-22.1],-10.8,121
+summary2tab,TL,37.5 [14.3-57.2],16.8 [8.7-26.9],-20.7,115
+summary2tab,TV,25.0 [0.0-50.0],18.6 [10.4-27.2],-6.4,121
+summary2tab,TLV,25.0 [0.0-50.0],19.2 [9.7-30.0],-5.8,107
+summary2tab,V,37.5 [14.3-57.2],17.8 [10.2-26.2],-19.7,126
+calculate,T,58.4 [45.0-70.3],65.4 [51.9-80.0],+7.0,141
+calculate,TL,73.8 [63.7-83.5],53.3 [38.8-71.1],-20.5,129
+calculate,TV,67.4 [58.2-76.1],74.0 [60.0-87.5],+6.6,139
+calculate,TLV,76.2 [65.7-84.7],65.9 [51.2-80.9],-10.3,125
+calculate,V,46.1 [33.3-57.9],58.2 [41.4-73.2],+12.1,144
+count,T,61.5 [42.3-80.8],56.8 [46.7-66.3],-4.7,114
+count,TL,65.4 [46.2-84.6],53.2 [42.7-63.2],-12.2,105
+count,TV,73.1 [53.8-88.5],61.4 [50.7-71.1],-11.6,109
+count,TLV,72.0 [56.0-88.0],64.0 [52.7-74.0],-8.0,100
+count,V,65.4 [46.2-80.9],55.8 [46.3-66.0],-9.6,112
+compare,T,66.7 [52.8-80.0],88.0 [78.9-94.9],+21.3,111
+compare,TL,75.0 [60.6-87.9],80.9 [70.5-89.9],+5.9,104
+compare,TV,77.8 [62.9-89.5],83.8 [74.7-91.7],+6.0,110
+compare,TLV,75.0 [61.1-87.2],83.1 [73.1-91.2],+8.1,101
+compare,V,55.6 [38.2-72.2],69.7 [59.2-79.5],+14.2,112
+summarize,T,71.4 [42.9-100.0],100.0 [100.0-100.0],+28.6,13
+summarize,TL,71.4 [42.9-100.0],83.3 [50.0-100.0],+11.9,13
+summarize,TV,57.1 [28.6-85.7],100.0 [100.0-100.0],+42.9,12
+summarize,TLV,85.7 [57.1-100.0],75.0 [25.0-100.0],-10.7,11
+summarize,V,71.4 [28.6-100.0],100.0 [100.0-100.0],+28.6,13
+n (per col),-,5428,5824,-,-

@@ -1,0 +1,24 @@
+# swept,"question type (9 classes, nested inside task_tag) x rung"
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# grouping,"LongDocURL question_type, joined from the corpus: the result row does not carry it"
+# thin rows,"per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one"
+question_type,T,TL,TV,TLV,V,n
+extract,74.1 [70.4-77.9] a1.3 w24.6,77.1 [74.2-80.0] a1.2 w21.7,81.7 [79.5-83.9] a0.2 w18.1,83.4 [81.1-85.4] a0.5 w16.1,74.6 [72.1-77.1] a0.4 w25.0,6066
+extract_fig2tab,58.4 [47.5-68.8] a0.0 w41.6,71.6 [62.4-79.9] a1.4 w27.0,54.5 [44.8-63.3] a0.0 w45.5,62.3 [52.5-72.2] a0.0 w37.7,55.4 [45.8-64.6] a0.0 w44.6,1135
+topic2title,27.9 [20.3-36.0] a0.0 w72.1,28.8 [21.9-36.5] a0.0 w71.2,34.8 [28.0-42.3] a0.0 w65.2,35.1 [28.7-41.8] a0.0 w64.9,30.8 [24.6-37.3] a0.0 w69.2,992
+summary2title,67.2 [58.1-75.4] a0.7 w32.1,81.1 [73.5-87.8] a0.0 w18.9,75.0 [66.9-83.1] a0.0 w25.0,77.2 [68.8-84.0] a0.0 w22.8,74.3 [66.7-81.8] a0.0 w25.7,661
+summary2tab,14.9 [8.2-22.4] a0.8 w84.3,18.3 [10.3-27.9] a0.0 w81.7,19.0 [11.5-27.8] a0.0 w81.0,19.6 [9.7-30.7] a0.0 w80.4,19.0 [11.1-27.1] a0.0 w81.0,590
+calculate,61.0 [50.4-72.1] a2.8 w36.2,66.7 [57.7-75.3] a0.8 w32.6,69.8 [62.4-78.1] a0.7 w29.5,72.8 [63.8-80.8] a0.0 w27.2,50.7 [42.2-60.1] a0.0 w49.3,678
+count,57.9 [49.1-67.0] a0.9 w41.2,56.2 [46.1-66.0] a1.0 w42.9,64.2 [55.1-72.6] a0.0 w35.8,66.0 [57.0-75.7] a1.0 w33.0,58.0 [49.1-66.1] a0.0 w42.0,540
+compare,81.1 [72.6-89.3] a0.0 w18.9,78.8 [70.7-86.7] a0.0 w21.2,81.8 [74.5-88.9] a0.9 w17.3,80.2 [73.3-87.5] a1.0 w18.8,65.2 [56.9-73.1] a0.9 w33.9,538
+summarize,84.6 [61.5-100.0] a0.0 w15.4,76.9 [53.8-100.0] a0.0 w23.1,75.0 [50.0-100.0] a0.0 w25.0,81.8 [63.4-100.0] a0.0 w18.2,84.6 [61.5-100.0] a0.0 w15.4,62
+n (per col),2295,2225,2270,2168,2304,-

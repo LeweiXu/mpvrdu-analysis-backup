@@ -10,4 +10,19 @@
 # page_selection,oracle
 # prompt_mode,none
 doc_type,rung,prefill_ms,input_tokens,decode_ms,output_tokens,n
+Locating,T,1779,1037,1843,48,695
+Locating,TL,2969,1664,2099,49,695
+Locating,TV,27398,4138,1608,38,695
+Locating,TLV,26957,4460,2059,44,695
+Locating,V,26934,3342,1146,32,695
+Reasoning,T,1885,1056,5941,145,384
+Reasoning,TL,2901,1588,5968,132,384
+Reasoning,TV,28848,4262,6920,152,384
+Reasoning,TLV,26241,4295,6442,131,384
+Reasoning,V,30094,3717,6484,165,384
+Understanding,T,1529,872,4425,113,1238
+Understanding,TL,2285,1278,4725,112,1238
+Understanding,TV,26040,3834,4984,114,1238
+Understanding,TLV,25737,4051,5000,108,1238
+Understanding,V,25340,3128,4251,112,1238
 n (per col),-,-,-,-,-,-

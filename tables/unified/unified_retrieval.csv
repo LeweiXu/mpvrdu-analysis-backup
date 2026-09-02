@@ -1,0 +1,36 @@
+# swept,page recall x retriever x depth x dataset
+# dataset,mmlongbench + longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV/V
+# pool,answerable
+# page_selection,retrieved (bm25 text / colqwen2.5 vision / joint)
+# prompt_mode,none
+# datasets,"both datasets, on their own pools; levels are not comparable across datasets, the response to the intervention is"
+# depths,"k present in both sweeps (1, 5, 10)"
+retriever,dataset,R@1,R@5,R@10,n
+bge-m3,MMLongBench-Doc,0.255,0.482,0.611,847
+bge-m3,MMLongBench-Doc (digital),0.322,0.593,0.713,657
+bge-m3,LongDocURL,0.334,0.623,0.726,2317
+bge-m3|colqwen2.5,MMLongBench-Doc,0.552,0.798,-,847
+bge-m3|colqwen2.5,MMLongBench-Doc (digital),0.555,0.802,-,657
+bge-m3|colqwen2.5,LongDocURL,0.558,0.820,-,2317
+bm25,MMLongBench-Doc,0.222,0.460,0.585,847
+bm25,MMLongBench-Doc (digital),0.279,0.560,0.672,657
+bm25,LongDocURL,0.356,0.611,0.695,2317
+bm25|colmodernvbert,MMLongBench-Doc,0.512,0.776,-,847
+bm25|colmodernvbert,MMLongBench-Doc (digital),0.517,0.782,-,657
+bm25|colmodernvbert,LongDocURL,0.541,0.789,-,2317
+colmodernvbert,MMLongBench-Doc,0.460,0.725,0.817,847
+colmodernvbert,MMLongBench-Doc (digital),0.454,0.721,0.821,657
+colmodernvbert,LongDocURL,0.475,0.745,0.831,2317
+colqwen2.5,MMLongBench-Doc,0.488,0.749,0.838,847
+colqwen2.5,MMLongBench-Doc (digital),0.478,0.741,0.842,657
+colqwen2.5,LongDocURL,0.493,0.780,0.852,2317
+colqwen3,MMLongBench-Doc,0.541,0.806,0.874,847
+colqwen3,MMLongBench-Doc (digital),0.542,0.811,0.882,657
+colqwen3,LongDocURL,0.536,0.811,0.881,2317

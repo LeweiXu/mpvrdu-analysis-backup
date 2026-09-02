@@ -1,0 +1,113 @@
+{
+  "b": 4,
+  "carry_note": true,
+  "condition": "seqread_b4_p1__seqread",
+  "cost": {
+    "decode_s_mean": 36.84,
+    "empty_records": 1,
+    "first_answer_turn_hist": {
+      "1": 1,
+      "3": 1,
+      "5": 1
+    },
+    "first_answer_turn_mean": 3.0,
+    "input_text_tokens_mean": 6481.67,
+    "input_visual_tokens_mean": 4180.0,
+    "latency_s_mean": 37.7,
+    "malformed_turns": 0,
+    "never_answered_in_read": 1,
+    "output_tokens_mean": 1355.67,
+    "pages_read_mean": 3.33,
+    "pages_read_median": 4,
+    "peak_vram_gb_max": 2.01,
+    "prefill_s_mean": 0.85,
+    "retried_turns": 1,
+    "rows_with_output_truncated": 2,
+    "turns_mean": 4.0
+  },
+  "coverage": {
+    "error": 0,
+    "ok": 3,
+    "oom": 0,
+    "rows": 3
+  },
+  "overall": {
+    "abstained": 0.0,
+    "accuracy": 0.0,
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "n": 3,
+    "n_docs": 1,
+    "wrong": 100.0
+  },
+  "p": 1,
+  "parser": "paddleocrvl",
+  "reasoner": "qwen3vl-2b-local-4bit",
+  "representation": "TLV",
+  "resolution": "low",
+  "run_tag": "seqread-tiny",
+  "strata": {
+    "answerable": {
+      "answerable": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 3,
+        "n_docs": 1,
+        "wrong": 100.0
+      }
+    },
+    "evidence_source": {
+      "Chart": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 2,
+        "n_docs": 1,
+        "wrong": 100.0
+      },
+      "Table": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 1,
+        "n_docs": 1,
+        "wrong": 100.0
+      }
+    },
+    "gold_page_count": {
+      "1": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 2,
+        "n_docs": 1,
+        "wrong": 100.0
+      },
+      "2": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 1,
+        "n_docs": 1,
+        "wrong": 100.0
+      }
+    },
+    "scan": {
+      "digital": {
+        "abstained": 0.0,
+        "accuracy": 0.0,
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "n": 3,
+        "n_docs": 1,
+        "wrong": 100.0
+      }
+    }
+  }
+}

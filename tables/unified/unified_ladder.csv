@@ -1,0 +1,17 @@
+# swept,representation ladder x dataset
+# dataset,mmlongbench + longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# datasets,"both datasets, on their own pools; levels are not comparable across datasets, the response to the intervention is"
+# pools,MMLongBench complete answerable pool (847 questions); LongDocURL oracle ladder (ldu-representation)
+dataset,T,TL,TV,TLV,V,best rung,T -> best (pts),n
+MMLongBench-Doc,31.9 a7.3 w60.8 (n=847),38.8 a3.2 w58.0 (n=847),51.6 a1.4 w47.0 (n=847),52.5 a1.4 w46.0 (n=847),45.6 a1.1 w53.4 (n=847),TLV,+20.7,4235
+MMLongBench-Doc (digital),39.9 a3.0 w57.1 (n=657),40.5 a2.1 w57.4 (n=657),49.9 a1.2 w48.9 (n=657),50.1 a1.1 w48.9 (n=657),42.5 a0.8 w56.8 (n=657),TLV,+10.2,3285
+LongDocURL,63.7 a1.0 w35.3 (n=2295),68.0 a0.9 w31.2 (n=2225),69.5 a0.2 w30.3 (n=2270),71.9 a0.4 w27.8 (n=2168),63.1 a0.3 w36.6 (n=2304),TLV,+8.1,11262

@@ -50,18 +50,18 @@ Every table changes ONE variable off the shared baseline below and holds the res
 
 > **swept**: representation ladder T/TL/TV/TLV/V · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition · **page_selection**: oracle · **prompt_mode**: none
 
-_Built on the COMPLETE answerable pool: all 847 answerable questions at every rung with no OOM attrition. T/TL/TLV/V come from g4-faithfulness-full prompt_mode=none and TV from g1-tv-full; those are two run_tags but one pool, because the TV spec pins every axis to g4 prompt_mode=none (same reasoner, resolution, oracle pages, prompt, and the same 847 questions), so the rungs pair question-for-question. TV is the parser-free image rung (PyMuPDF embedded text plus page images), sitting between TL and TLV in cost, so TV->TLV is what the parser buys once the model can already see the page. The V100 version of this table ran on ~130 fewer questions, and that loss was not random: OOM tracks page count and length, so it dropped the long, high-page, multi-hop ones. Structure, columns, groupings and per-cell n match that earlier table; the size of the shift is in the reconciliation tables under Reconciliation & coverage. _
+_Built on the COMPLETE answerable pool: all 847 answerable questions at every rung with no OOM attrition. T/TL/TLV/V come from g4-faithfulness-full prompt_mode=none and TV from g1-tv-full; those are two run_tags but one pool, because the TV spec pins every axis to g4 prompt_mode=none (same reasoner, resolution, oracle pages, prompt, and the same 847 questions), so the rungs pair question-for-question. TV is the parser-free image rung (PyMuPDF embedded text plus page images), sitting between TL and TLV in cost, so TV->TLV is what the parser buys once the model can already see the page. The V100 version of this table ran on ~130 fewer questions, and that loss was not random: OOM tracks page count and length, so it dropped the long, high-page, multi-hop ones. Structure, columns, groupings and per-cell n match that earlier table; the size of the shift is in the reconciliation tables under Reconciliation & coverage. Cells read `accuracy [95% CI] a<declined> w<wrong>`, three percentages that sum to 100. `a` is the share the reasoner declined to answer, `w` the share it committed to a wrong answer. The split is disjoint by construction rather than `100 - accuracy - abstention`: a row can be flagged both correct and abstained, so `a` counts only abstentions that were not credited. On an unanswerable pool a correct abstention scores under accuracy instead, which is the definition the faithfulness tables already use. `a` is NOT simply an error rate on an answerable pool either: at `T` a scanned page has no embedded text, so declining is the right response to what that rung actually delivered. The faithfulness tables split `a` by scan status for exactly this reason. _
 
 | doc_type | T | TL | TV | TLV | V | frontier | n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Academic paper | 36.4 [27.7-44.1] | 33.1 [24.5-42.2] | 44.8 [36.4-52.8] | 42.9 [34.7-51.3] | 33.8 [25.3-41.7] | T | 770 |
-| Administration/Industry file | 50.0 [33.3-67.9] | 56.2 [47.7-66.0] | 67.2 [57.8-79.2] | 67.2 [60.3-76.3] | 54.7 [47.8-63.6] | T | 320 |
-| Brochure | 28.6 [17.6-40.3] | 32.5 [21.5-46.0] | 45.5 [33.3-57.9] | 45.5 [32.9-58.8] | 40.3 [27.6-54.3] | TL | 385 |
-| Financial report | 49.1 [41.2-57.4] | 52.8 [41.4-61.9] | 50.0 [42.2-59.7] | 51.9 [44.0-60.0] | 38.9 [29.6-50.0] | T | 540 |
-| Guidebook | 35.8 [22.5-50.9] | 40.0 [27.2-54.1] | 49.2 [36.7-61.7] | 51.7 [38.3-64.9] | 45.0 [33.3-57.0] | T | 600 |
-| Research report / Introduction | 22.6 [14.2-31.5] | 27.4 [20.5-34.3] | 46.7 [37.0-54.7] | 47.6 [38.8-55.5] | 45.3 [36.1-53.8] | TV | 1060 |
-| Tutorial/Workshop | 14.3 [6.2-22.7] | 48.2 [39.5-57.0] | 69.6 [64.0-75.0] | 73.2 [64.9-81.7] | 67.9 [62.5-73.5] | TV | 560 |
-| **all doc_types** | **31.9 [27.3-36.5]** | **38.8 [34.5-43.0]** | **51.6 [48.0-55.3]** | **52.5 [48.5-56.5]** | **45.6 [41.7-49.5]** | **TV** | **4235** |
+| Academic paper | 36.4 [27.7-44.1] a5.2 w58.4 | 33.1 [24.5-42.2] a1.9 w64.9 | 44.8 [36.4-52.8] a0.0 w55.2 | 42.9 [34.7-51.3] a1.3 w55.8 | 33.8 [25.3-41.7] a0.6 w65.6 | T | 770 |
+| Administration/Industry file | 50.0 [33.3-67.9] a0.0 w50.0 | 56.2 [47.7-66.0] a1.6 w42.2 | 67.2 [57.8-79.2] a0.0 w32.8 | 67.2 [60.3-76.3] a0.0 w32.8 | 54.7 [47.8-63.6] a0.0 w45.3 | T | 320 |
+| Brochure | 28.6 [17.6-40.3] a3.9 w67.5 | 32.5 [21.5-46.0] a3.9 w63.6 | 45.5 [33.3-57.9] a0.0 w54.5 | 45.5 [32.9-58.8] a0.0 w54.5 | 40.3 [27.6-54.3] a0.0 w59.7 | TL | 385 |
+| Financial report | 49.1 [41.2-57.4] a0.9 w50.0 | 52.8 [41.4-61.9] a0.9 w46.3 | 50.0 [42.2-59.7] a0.9 w49.1 | 51.9 [44.0-60.0] a0.9 w47.2 | 38.9 [29.6-50.0] a1.9 w59.3 | T | 540 |
+| Guidebook | 35.8 [22.5-50.9] a7.5 w56.7 | 40.0 [27.2-54.1] a1.7 w58.3 | 49.2 [36.7-61.7] a2.5 w48.3 | 51.7 [38.3-64.9] a2.5 w45.8 | 45.0 [33.3-57.0] a0.8 w54.2 | T | 600 |
+| Research report / Introduction | 22.6 [14.2-31.5] a10.4 w67.0 | 27.4 [20.5-34.3] a6.6 w66.0 | 46.7 [37.0-54.7] a2.4 w50.9 | 47.6 [38.8-55.5] a1.9 w50.5 | 45.3 [36.1-53.8] a1.4 w53.3 | TV | 1060 |
+| Tutorial/Workshop | 14.3 [6.2-22.7] a17.0 w68.8 | 48.2 [39.5-57.0] a2.7 w49.1 | 69.6 [64.0-75.0] a2.7 w27.7 | 73.2 [64.9-81.7] a1.8 w25.0 | 67.9 [62.5-73.5] a1.8 w30.4 | TV | 560 |
+| **all doc_types** | **31.9 [27.3-36.5] a7.3 w60.8** | **38.8 [34.5-43.0] a3.2 w58.0** | **51.6 [48.0-55.3] a1.4 w47.0** | **52.5 [48.5-56.5] a1.4 w46.0** | **45.6 [41.7-49.5] a1.1 w53.4** | **TV** | **4235** |
 | n (per col) | 847 | 847 | 847 | 847 | 847 | - | - |
 
 ### Fidelity: paired within-question verdict transitions by doc_type
@@ -178,16 +178,16 @@ _Built on the COMPLETE answerable pool: all 847 answerable questions at every ru
 
 > **swept**: evidence source × rung · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition · **page_selection**: oracle · **prompt_mode**: none
 
-_Built on the COMPLETE answerable pool: all 847 answerable questions at every rung with no OOM attrition. T/TL/TLV/V come from g4-faithfulness-full prompt_mode=none and TV from g1-tv-full; those are two run_tags but one pool, because the TV spec pins every axis to g4 prompt_mode=none (same reasoner, resolution, oracle pages, prompt, and the same 847 questions), so the rungs pair question-for-question. TV is the parser-free image rung (PyMuPDF embedded text plus page images), sitting between TL and TLV in cost, so TV->TLV is what the parser buys once the model can already see the page. The V100 version of this table ran on ~130 fewer questions, and that loss was not random: OOM tracks page count and length, so it dropped the long, high-page, multi-hop ones. Structure, columns, groupings and per-cell n match that earlier table; the size of the shift is in the reconciliation tables under Reconciliation & coverage. _
+_Built on the COMPLETE answerable pool: all 847 answerable questions at every rung with no OOM attrition. T/TL/TLV/V come from g4-faithfulness-full prompt_mode=none and TV from g1-tv-full; those are two run_tags but one pool, because the TV spec pins every axis to g4 prompt_mode=none (same reasoner, resolution, oracle pages, prompt, and the same 847 questions), so the rungs pair question-for-question. TV is the parser-free image rung (PyMuPDF embedded text plus page images), sitting between TL and TLV in cost, so TV->TLV is what the parser buys once the model can already see the page. The V100 version of this table ran on ~130 fewer questions, and that loss was not random: OOM tracks page count and length, so it dropped the long, high-page, multi-hop ones. Structure, columns, groupings and per-cell n match that earlier table; the size of the shift is in the reconciliation tables under Reconciliation & coverage. Cells read `accuracy [95% CI] a<declined> w<wrong>`, three percentages that sum to 100. `a` is the share the reasoner declined to answer, `w` the share it committed to a wrong answer. The split is disjoint by construction rather than `100 - accuracy - abstention`: a row can be flagged both correct and abstained, so `a` counts only abstentions that were not credited. On an unanswerable pool a correct abstention scores under accuracy instead, which is the definition the faithfulness tables already use. `a` is NOT simply an error rate on an answerable pool either: at `T` a scanned page has no embedded text, so declining is the right response to what that rung actually delivered. The faithfulness tables split `a` by scan status for exactly this reason. _
 
 | evidence_source | T | TL | TV | TLV | V | n |
 | --- | --- | --- | --- | --- | --- | --- |
-| (none) | 52.6 [31.2-73.7] | 63.2 [38.9-83.3] | 68.4 [44.4-88.9] | 73.7 [52.6-91.3] | 52.6 [29.4-70.8] | 95 |
-| Chart | 18.5 [12.3-24.6] | 19.1 [13.1-25.5] | 42.1 [33.1-51.5] | 45.5 [37.3-54.3] | 43.3 [34.4-52.4] | 890 |
-| Figure | 15.5 [11.1-20.5] | 23.8 [17.8-30.5] | 45.5 [39.4-51.4] | 44.8 [38.0-51.7] | 40.3 [34.2-46.4] | 1450 |
-| Generalized-text (Layout) | 28.0 [18.1-37.6] | 37.3 [27.3-47.4] | 49.2 [40.7-57.3] | 50.8 [42.3-59.2] | 44.1 [35.7-52.8] | 590 |
-| Pure-text (Plain-text) | 39.2 [31.5-47.6] | 47.8 [41.1-55.3] | 53.6 [46.0-61.2] | 55.3 [48.8-62.8] | 44.3 [37.7-51.3] | 1455 |
-| Table | 40.6 [33.8-46.4] | 48.4 [40.3-55.2] | 47.0 [40.4-53.5] | 48.4 [41.4-55.4] | 37.8 [31.0-44.3] | 1085 |
+| (none) | 52.6 [31.2-73.7] a5.3 w42.1 | 63.2 [38.9-83.3] a5.3 w31.6 | 68.4 [44.4-88.9] a0.0 w31.6 | 73.7 [52.6-91.3] a0.0 w26.3 | 52.6 [29.4-70.8] a5.3 w42.1 | 95 |
+| Chart | 18.5 [12.3-24.6] a12.9 w68.5 | 19.1 [13.1-25.5] a8.4 w72.5 | 42.1 [33.1-51.5] a1.7 w56.2 | 45.5 [37.3-54.3] a1.7 w52.8 | 43.3 [34.4-52.4] a1.1 w55.6 | 890 |
+| Figure | 15.5 [11.1-20.5] a10.7 w73.8 | 23.8 [17.8-30.5] a2.8 w73.4 | 45.5 [39.4-51.4] a2.1 w52.4 | 44.8 [38.0-51.7] a2.8 w52.4 | 40.3 [34.2-46.4] a1.4 w58.3 | 1450 |
+| Generalized-text (Layout) | 28.0 [18.1-37.6] a1.7 w70.3 | 37.3 [27.3-47.4] a4.2 w58.5 | 49.2 [40.7-57.3] a0.8 w50.0 | 50.8 [42.3-59.2] a0.0 w49.2 | 44.1 [35.7-52.8] a0.8 w55.1 | 590 |
+| Pure-text (Plain-text) | 39.2 [31.5-47.6] a4.1 w56.7 | 47.8 [41.1-55.3] a1.7 w50.5 | 53.6 [46.0-61.2] a1.4 w45.0 | 55.3 [48.8-62.8] a1.4 w43.3 | 44.3 [37.7-51.3] a0.3 w55.3 | 1455 |
+| Table | 40.6 [33.8-46.4] a6.0 w53.5 | 48.4 [40.3-55.2] a0.9 w50.7 | 47.0 [40.4-53.5] a2.8 w50.2 | 48.4 [41.4-55.4] a2.3 w49.3 | 37.8 [31.0-44.3] a1.8 w60.4 | 1085 |
 | n (per col) | 847 | 847 | 847 | 847 | 847 | - |
 
 ### Vision margin: paired bootstrap on best-image minus best-text, by doc_type
@@ -1169,22 +1169,22 @@ _Built on the COMPLETE answerable pool: all 847 answerable questions at every ru
 
 > **swept**: hop_bucket (1 / 2 / 3 / 4-5 / 6+) × rung · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **hop**: bucketed evidence-page count, zero-evidence questions dropped · **tail buckets**: 4-5 and 6+ are small; included for trend, not precision
 
-_Rows are the number of gold evidence pages the question cites, taken from the corpus annotation that `hop` itself is derived from (NOT from `page_indices`, which for a no-gold-page question carries a stand-in page and would misbucket it). Questions with zero evidence pages are excluded. The 4-5 and 6+ buckets are small (about 36 and 31 questions before OOM attrition, against 480 at one page), so read them for trend, not precision: check the per-cell n before quoting either. This is the finer-grained companion to the integration table, which keeps the collapsed single-versus-multi view._
+_Rows are the number of gold evidence pages the question cites, taken from the corpus annotation that `hop` itself is derived from (NOT from `page_indices`, which for a no-gold-page question carries a stand-in page and would misbucket it). Questions with zero evidence pages are excluded. The 4-5 and 6+ buckets are small (about 36 and 31 questions before OOM attrition, against 480 at one page), so read them for trend, not precision: check the per-cell n before quoting either. This is the finer-grained companion to the integration table, which keeps the collapsed single-versus-multi view. Cells read `accuracy [95% CI] a<declined> w<wrong>`, three percentages that sum to 100. `a` is the share the reasoner declined to answer, `w` the share it committed to a wrong answer. The split is disjoint by construction rather than `100 - accuracy - abstention`: a row can be flagged both correct and abstained, so `a` counts only abstentions that were not credited. On an unanswerable pool a correct abstention scores under accuracy instead, which is the definition the faithfulness tables already use. `a` is NOT simply an error rate on an answerable pool either: at `T` a scanned page has no embedded text, so declining is the right response to what that rung actually delivered. The faithfulness tables split `a` by scan status for exactly this reason. _
 
 | evidence pages | T | TL | TLV | V | n |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 37.1 [31.1-43.1] (n=480) | 44.6 [38.9-50.1] (n=480) | 63.7 [58.2-69.3] (n=480) | 55.0 [49.7-60.2] (n=480) | 1920 |
-| 2 | 28.9 [22.5-35.2] (n=246) | 33.3 [27.4-39.7] (n=246) | 37.8 [30.7-44.5] (n=246) | 34.6 [27.9-41.2] (n=246) | 984 |
-| 3 | 25.0 [10.2-41.5] (n=40) | 30.0 [15.4-46.2] (n=40) | 47.5 [30.8-63.4] (n=40) | 42.5 [24.3-57.8] (n=40) | 160 |
-| 4-5 | 13.9 [2.7-27.8] (n=36) | 25.0 [11.8-38.5] (n=36) | 44.4 [26.5-60.5] (n=36) | 36.1 [20.0-51.4] (n=36) | 144 |
-| 6+ | 13.9 [2.6-28.2] (n=36) | 19.4 [7.1-33.4] (n=36) | 22.2 [9.1-37.1] (n=36) | 13.9 [2.9-26.3] (n=36) | 144 |
+| 1 | 37.1 [31.1-43.1] a9.2 w53.8 (n=480) | 44.6 [38.9-50.1] a5.2 w50.2 (n=480) | 63.7 [58.2-69.3] a1.0 w35.2 (n=480) | 55.0 [49.7-60.2] a1.2 w43.8 (n=480) | 1920 |
+| 2 | 28.9 [22.5-35.2] a7.7 w63.4 (n=246) | 33.3 [27.4-39.7] a4.9 w61.8 (n=246) | 37.8 [30.7-44.5] a2.4 w59.8 (n=246) | 34.6 [27.9-41.2] a2.0 w63.4 (n=246) | 984 |
+| 3 | 25.0 [10.2-41.5] a7.5 w67.5 (n=40) | 30.0 [15.4-46.2] a2.5 w67.5 (n=40) | 47.5 [30.8-63.4] a0.0 w52.5 (n=40) | 42.5 [24.3-57.8] a2.5 w55.0 (n=40) | 160 |
+| 4-5 | 13.9 [2.7-27.8] a8.3 w77.8 (n=36) | 25.0 [11.8-38.5] a2.8 w72.2 (n=36) | 44.4 [26.5-60.5] a2.8 w52.8 (n=36) | 36.1 [20.0-51.4] a2.8 w61.1 (n=36) | 144 |
+| 6+ | 13.9 [2.6-28.2] a2.8 w83.3 (n=36) | 19.4 [7.1-33.4] a0.0 w80.6 (n=36) | 22.2 [9.1-37.1] a0.0 w77.8 (n=36) | 13.9 [2.9-26.3] a0.0 w86.1 (n=36) | 144 |
 | n (per col) | 838 | 838 | 838 | 838 | - |
 
 ### Integration detail (overall): how each rung degrades with evidence-page count
 
 > **view**: summary — pooled across all doc_types · **swept**: hop_bucket (1 / 2 / 3 / 4-5 / 6+) × rung · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **hop**: bucketed evidence-page count, zero-evidence questions dropped · **tail buckets**: 4-5 and 6+ are small; included for trend, not precision
 
-_Rows are the number of gold evidence pages the question cites, taken from the corpus annotation that `hop` itself is derived from (NOT from `page_indices`, which for a no-gold-page question carries a stand-in page and would misbucket it). Questions with zero evidence pages are excluded. The 4-5 and 6+ buckets are small (about 36 and 31 questions before OOM attrition, against 480 at one page), so read them for trend, not precision: check the per-cell n before quoting either. This is the finer-grained companion to the integration table, which keeps the collapsed single-versus-multi view. `1 → 6+` is the accuracy of the last bucket minus the first, in points; negative means the rung degrades as evidence spreads. Read it against the per-cell n: TLV OOMs hardest at high page counts, so its tail buckets are a handful of surviving questions and its slope is not comparable to the text rungs'._
+_Rows are the number of gold evidence pages the question cites, taken from the corpus annotation that `hop` itself is derived from (NOT from `page_indices`, which for a no-gold-page question carries a stand-in page and would misbucket it). Questions with zero evidence pages are excluded. The 4-5 and 6+ buckets are small (about 36 and 31 questions before OOM attrition, against 480 at one page), so read them for trend, not precision: check the per-cell n before quoting either. This is the finer-grained companion to the integration table, which keeps the collapsed single-versus-multi view. Cells read `accuracy [95% CI] a<declined> w<wrong>`, three percentages that sum to 100. `a` is the share the reasoner declined to answer, `w` the share it committed to a wrong answer. The split is disjoint by construction rather than `100 - accuracy - abstention`: a row can be flagged both correct and abstained, so `a` counts only abstentions that were not credited. On an unanswerable pool a correct abstention scores under accuracy instead, which is the definition the faithfulness tables already use. `a` is NOT simply an error rate on an answerable pool either: at `T` a scanned page has no embedded text, so declining is the right response to what that rung actually delivered. The faithfulness tables split `a` by scan status for exactly this reason.  `1 → 6+` is the accuracy of the last bucket minus the first, in points; negative means the rung degrades as evidence spreads. Read it against the per-cell n: TLV OOMs hardest at high page counts, so its tail buckets are a handful of surviving questions and its slope is not comparable to the text rungs'._
 
 | rung | 1 | 2 | 3 | 4-5 | 6+ | 1 → 6+ | n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1296,28 +1296,28 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 
 | prompt_mode | T | TL | TLV | V |
 | --- | --- | --- | --- | --- |
-| none | 31.9 [27.3-36.5] (n=847) | 38.8 [34.5-43.0] (n=847) | 52.5 [48.5-56.5] (n=847) ⚠ | 45.6 [41.7-49.5] (n=847) |
-| grounded | 26.8 [22.8-30.9] (n=847) | 34.4 [30.5-38.3] (n=847) | 45.7 [41.7-49.4] (n=847) | 39.9 [36.3-43.8] (n=847) |
-| abstain | 23.3 [19.3-27.2] (n=847) | 29.3 [25.4-33.1] (n=847) | 41.4 [37.3-45.4] (n=847) | 33.5 [29.9-37.1] (n=847) |
-| abstain_balanced | 23.8 [19.7-27.9] (n=847) | 30.0 [26.2-33.8] (n=847) | 42.6 [38.5-46.6] (n=847) | 35.2 [31.5-39.0] (n=847) |
-| cot | 29.5 [25.2-33.7] (n=847) | 36.0 [32.5-39.6] (n=847) | 53.1 [49.4-56.9] (n=847) | 49.7 [45.5-53.8] (n=847) |
-| extract_cot | 28.0 [23.6-32.3] (n=847) | 36.5 [32.9-40.2] (n=847) | 50.2 [46.4-54.1] (n=846) | 44.4 [40.4-48.5] (n=847) |
+| none | 31.9 [27.3-36.5] (n=847) a7.3 w60.8 | 38.8 [34.5-43.0] (n=847) a3.2 w58.0 | 52.5 [48.5-56.5] (n=847) a1.4 w46.0 ⚠ | 45.6 [41.7-49.5] (n=847) a1.1 w53.4 |
+| grounded | 26.8 [22.8-30.9] (n=847) a9.6 w63.6 | 34.4 [30.5-38.3] (n=847) a1.3 w64.3 | 45.7 [41.7-49.4] (n=847) a0.8 w53.5 | 39.9 [36.3-43.8] (n=847) a0.6 w59.5 |
+| abstain | 23.3 [19.3-27.2] (n=847) a52.2 w24.6 | 29.3 [25.4-33.1] (n=847) a47.1 w23.6 | 41.4 [37.3-45.4] (n=847) a27.4 w31.2 | 33.5 [29.9-37.1] (n=847) a32.5 w34.0 |
+| abstain_balanced | 23.8 [19.7-27.9] (n=847) a47.8 w28.3 | 30.0 [26.2-33.8] (n=847) a42.9 w27.2 | 42.6 [38.5-46.6] (n=847) a22.9 w34.5 | 35.2 [31.5-39.0] (n=847) a27.7 w37.1 |
+| cot | 29.5 [25.2-33.7] (n=847) a2.8 w67.7 | 36.0 [32.5-39.6] (n=847) a4.1 w59.9 | 53.1 [49.4-56.9] (n=847) a1.1 w45.8 | 49.7 [45.5-53.8] (n=847) a0.4 w49.9 |
+| extract_cot | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.4-54.1] (n=846) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
 | n (per col) | 5082 | 5082 | 5081 | 5082 |
 
-### Faithfulness: answerable false-abstention rate by prompt mode and rung (oracle pages)
+### Faithfulness: answerable abstention rate by prompt mode and rung (oracle pages)
 
-> **swept**: prompt_mode × rung (answerable pool, oracle pages) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **direction**: abstaining is an ERROR here; lower is better
+> **swept**: prompt_mode × rung (answerable pool, oracle pages) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **direction**: abstaining is an error only where the RUNG carried the evidence; read the d component, not the pooled rate
 
-_Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 default and 2048 for cot/extract_cot, delimiter "Answer:". Abstention is detected on the EXTRACTED final answer (the text after the last "Answer:"), not the whole generation: cot/extract_cot emit reasoning that would otherwise be read as an answer. An extraction that comes back empty is a non-answer, scored incorrect and not an abstention. Every abstention counted here is an ERROR: the pages fed are the oracle evidence pages, so the answer was available. Lower is better, the opposite of the unanswerable table. Per-cell n is inline because OOM attrition is rung-dependent and thins the TLV/V cells; a small n there reads as survivorship, not signal. Rows carrying no gold evidence pages are kept in the answerable pool exactly as the other tables treat hop=none, i.e. not split out, since these tables do not condition on hop._
+_Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 default and 2048 for cot/extract_cot, delimiter "Answer:". Abstention is detected on the EXTRACTED final answer (the text after the last "Answer:"), not the whole generation: cot/extract_cot emit reasoning that would otherwise be read as an answer. An extraction that comes back empty is a non-answer, scored incorrect and not an abstention. NOT ALL OF THIS IS FALSE ABSTENTION. The oracle pages carry the evidence, but the RUNG need not: `T` is PyMuPDF's embedded text layer, and a scanned page has none, so at `T` on a scanned document the reasoner is handed an empty document and declining is the correct response to what it was actually given. The cells carry the split as `<digital>d/<scanned>s`, and it is stark: under `abstain` at `T`, scanned questions abstain 100.0% against 38.4% digital, and under `none` 22.1% against 3.0%. `TL` recovers most of it because the parser OCRs the page (57.4s under `abstain`), and TLV/V always carry the image. Read the `d` component as false abstention; the `s` component at `T` is the encoding delivering nothing, which is the ladder's own finding, not a prompting one. Lower is better on the born-digital component, the opposite of the unanswerable table. Per-cell n is inline because OOM attrition is rung-dependent and thins the TLV/V cells; a small n there reads as survivorship, not signal. Rows carrying no gold evidence pages are kept in the answerable pool exactly as the other tables treat hop=none, i.e. not split out, since these tables do not condition on hop._
 
 | prompt_mode | T | TL | TLV | V |
 | --- | --- | --- | --- | --- |
-| none | 7.4 (n=847) | 3.3 (n=847) | 1.7 (n=847) | 1.1 (n=847) |
-| grounded | 9.6 (n=847) | 1.3 (n=847) | 0.8 (n=847) | 0.6 (n=847) |
-| abstain | 52.2 (n=847) | 47.1 (n=847) | 27.4 (n=847) | 32.5 (n=847) |
-| abstain_balanced | 47.8 (n=847) | 42.9 (n=847) | 22.9 (n=847) | 27.7 (n=847) |
-| cot | 2.8 (n=847) | 4.3 (n=847) | 1.1 (n=847) | 0.4 (n=847) |
-| extract_cot | 2.5 (n=847) | 5.7 (n=847) | 2.1 (n=846) | 2.4 (n=847) |
+| none | 7.4 (n=847) 3.2d/22.1s | 3.3 (n=847) 2.3d/6.8s | 1.7 (n=847) 1.4d/2.6s | 1.1 (n=847) 0.8d/2.1s |
+| grounded | 9.6 (n=847) 2.1d/35.3s | 1.3 (n=847) 1.2d/1.6s | 0.8 (n=847) 0.6d/1.6s | 0.6 (n=847) 0.5d/1.1s |
+| abstain | 52.2 (n=847) 38.4d/100.0s | 47.1 (n=847) 44.1d/57.4s | 27.4 (n=847) 29.7d/19.5s | 32.5 (n=847) 35.5d/22.1s |
+| abstain_balanced | 47.8 (n=847) 32.7d/100.0s | 42.9 (n=847) 39.6d/54.2s | 22.9 (n=847) 25.3d/14.7s | 27.7 (n=847) 30.1d/19.5s |
+| cot | 2.8 (n=847) 2.0d/5.8s | 4.3 (n=847) 3.2d/7.9s | 1.1 (n=847) 1.4d/0.0s | 0.4 (n=847) 0.5d/0.0s |
+| extract_cot | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=846) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
 | n (per col) | 5082 | 5082 | 5081 | 5082 |
 
 ### Faithfulness: unanswerable abstention rate by prompt mode and rung (bm25 k=3 pages)
@@ -1344,100 +1344,100 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 
 | prompt_mode | evidence_source | T | TL | TLV | V |
 | --- | --- | --- | --- | --- | --- |
-| none | Chart | 18.5 [12.3-24.6] (n=178) | 19.1 [13.1-25.5] (n=178) | 45.5 [37.3-54.3] (n=178) | 43.3 [34.4-52.4] (n=178) |
-| none | Figure | 15.5 [11.1-20.5] (n=290) | 23.8 [17.8-30.5] (n=290) | 44.8 [38.0-51.7] (n=290) | 40.3 [34.2-46.4] (n=290) |
-| none | Generalized-text (Layout) | 28.0 [18.1-37.6] (n=118) | 37.3 [27.3-47.4] (n=118) | 50.8 [42.3-59.2] (n=118) | 44.1 [35.7-52.8] (n=118) |
-| none | Pure-text (Plain-text) | 39.2 [31.5-47.6] (n=291) | 47.8 [41.1-55.3] (n=291) | 55.3 [48.8-62.8] (n=291) | 44.3 [37.7-51.3] (n=291) |
-| none | Table | 40.6 [33.8-46.4] (n=217) | 48.4 [40.3-55.2] (n=217) | 48.4 [41.4-55.4] (n=217) | 37.8 [31.0-44.3] (n=217) |
-| none | (none) | 52.6 [31.2-73.7] (n=19)† | 63.2 [38.9-83.3] (n=19)† | 73.7 [52.6-91.3] (n=19)† | 52.6 [29.4-70.8] (n=19)† |
-| none | **All sources** | 31.9 [27.3-36.5] (n=847) | 38.8 [34.5-43.0] (n=847) | 52.5 [48.5-56.5] (n=847) | 45.6 [41.7-49.5] (n=847) |
-| grounded | Chart | 16.3 [10.1-22.7] (n=178) | 16.3 [11.1-22.5] (n=178) | 33.7 [26.8-41.0] (n=178) | 31.5 [24.6-38.8] (n=178) |
-| grounded | Figure | 12.1 [8.0-17.2] (n=290) | 22.4 [16.8-28.1] (n=290) | 42.4 [35.9-48.9] (n=290) | 39.3 [33.0-45.4] (n=290) |
-| grounded | Generalized-text (Layout) | 18.6 [10.8-27.4] (n=118) | 29.7 [20.7-38.3] (n=118) | 42.4 [32.8-52.2] (n=118) | 44.9 [34.7-55.2] (n=118) |
-| grounded | Pure-text (Plain-text) | 37.8 [30.7-45.7] (n=291) | 45.0 [38.4-52.0] (n=291) | 51.2 [43.8-58.5] (n=291) | 41.6 [35.6-48.7] (n=291) |
-| grounded | Table | 29.5 [23.3-35.5] (n=217) | 39.2 [31.9-46.2] (n=217) | 40.1 [33.3-47.3] (n=217) | 30.9 [24.5-36.6] (n=217) |
-| grounded | (none) | 42.1 [22.2-66.7] (n=19)† | 57.9 [33.3-81.8] (n=19)† | 52.6 [29.4-75.0] (n=19)† | 42.1 [19.0-62.5] (n=19)† |
-| grounded | **All sources** | 26.8 [22.8-30.9] (n=847) | 34.4 [30.5-38.3] (n=847) | 45.7 [41.7-49.4] (n=847) | 39.9 [36.3-43.8] (n=847) |
-| abstain | Chart | 13.5 [7.5-19.7] (n=178) | 12.4 [7.0-18.3] (n=178) | 28.7 [22.8-35.4] (n=178) | 26.4 [19.9-32.4] (n=178) |
-| abstain | Figure | 7.2 [4.1-10.9] (n=290) | 14.1 [10.0-18.2] (n=290) | 34.5 [27.9-40.9] (n=290) | 31.0 [24.8-36.7] (n=290) |
-| abstain | Generalized-text (Layout) | 19.5 [11.3-28.2] (n=118) | 25.4 [17.4-33.3] (n=118) | 41.5 [32.1-50.9] (n=118) | 37.3 [28.0-47.0] (n=118) |
-| abstain | Pure-text (Plain-text) | 34.0 [27.4-41.7] (n=291) | 40.5 [34.8-47.2] (n=291) | 45.7 [39.1-53.1] (n=291) | 36.1 [29.6-43.7] (n=291) |
-| abstain | Table | 26.3 [20.4-32.5] (n=217) | 38.2 [31.2-45.5] (n=217) | 39.2 [32.2-46.2] (n=217) | 26.7 [20.7-32.8] (n=217) |
-| abstain | (none) | 36.8 [17.6-62.5] (n=19)† | 52.6 [25.0-77.3] (n=19)† | 57.9 [30.0-81.8] (n=19)† | 42.1 [19.0-62.5] (n=19)† |
-| abstain | **All sources** | 23.3 [19.3-27.2] (n=847) | 29.3 [25.4-33.1] (n=847) | 41.4 [37.3-45.4] (n=847) | 33.5 [29.9-37.1] (n=847) |
-| abstain_balanced | Chart | 14.0 [8.4-20.2] (n=178) | 12.9 [7.4-18.6] (n=178) | 30.9 [24.5-38.2] (n=178) | 25.8 [19.7-32.1] (n=178) |
-| abstain_balanced | Figure | 7.9 [4.5-12.3] (n=290) | 14.5 [10.1-18.9] (n=290) | 36.2 [29.7-42.3] (n=290) | 33.4 [27.0-39.6] (n=290) |
-| abstain_balanced | Generalized-text (Layout) | 19.5 [11.3-28.2] (n=118) | 28.8 [19.7-37.7] (n=118) | 41.5 [32.8-50.9] (n=118) | 39.0 [29.4-49.0] (n=118) |
-| abstain_balanced | Pure-text (Plain-text) | 33.7 [27.0-41.5] (n=291) | 39.5 [33.6-46.5] (n=291) | 47.4 [40.6-54.7] (n=291) | 36.4 [30.3-43.8] (n=291) |
-| abstain_balanced | Table | 26.3 [20.4-32.5] (n=217) | 37.8 [30.8-44.2] (n=217) | 37.3 [30.5-44.3] (n=217) | 30.0 [23.7-36.2] (n=217) |
-| abstain_balanced | (none) | 42.1 [22.2-66.7] (n=19)† | 57.9 [33.3-81.8] (n=19)† | 63.2 [37.5-87.5] (n=19)† | 42.1 [19.0-62.5] (n=19)† |
-| abstain_balanced | **All sources** | 23.8 [19.7-27.9] (n=847) | 30.0 [26.2-33.8] (n=847) | 42.6 [38.5-46.6] (n=847) | 35.2 [31.5-39.0] (n=847) |
-| cot | Chart | 21.3 [14.8-27.6] (n=178) | 16.9 [11.4-22.9] (n=178) | 45.5 [37.7-53.9] (n=178) | 44.4 [35.9-52.7] (n=178) |
-| cot | Figure | 11.7 [7.7-16.3] (n=290) | 18.3 [13.8-23.3] (n=290) | 45.2 [38.1-51.6] (n=290) | 44.8 [38.5-51.1] (n=290) |
-| cot | Generalized-text (Layout) | 24.6 [16.0-33.8] (n=118) | 37.3 [27.2-47.1] (n=118) | 50.0 [39.7-60.4] (n=118) | 55.9 [46.2-65.1] (n=118) |
-| cot | Pure-text (Plain-text) | 34.7 [28.3-42.0] (n=291) | 45.0 [38.5-52.7] (n=291) | 54.6 [48.1-61.8] (n=291) | 48.1 [41.4-54.7] (n=291) |
-| cot | Table | 40.6 [33.5-47.2] (n=217) | 51.2 [44.6-57.7] (n=217) | 55.3 [48.6-61.8] (n=217) | 47.5 [40.1-55.1] (n=217) |
-| cot | (none) | 42.1 [21.1-62.5] (n=19)† | 57.9 [35.3-81.2] (n=19)† | 63.2 [41.2-85.0] (n=19)† | 52.6 [30.0-75.0] (n=19)† |
-| cot | **All sources** | 29.5 [25.2-33.7] (n=847) | 36.0 [32.5-39.6] (n=847) | 53.1 [49.4-56.9] (n=847) | 49.7 [45.5-53.8] (n=847) |
-| extract_cot | Chart | 13.5 [8.3-19.1] (n=178) | 17.4 [11.4-23.9] (n=178) | 39.3 [31.2-48.7] (n=178) | 38.8 [30.1-48.3] (n=178) |
-| extract_cot | Figure | 10.7 [7.0-15.3] (n=290) | 21.0 [16.2-26.0] (n=290) | 44.1 [37.4-49.8] (n=290) | 41.7 [35.3-47.5] (n=290) |
-| extract_cot | Generalized-text (Layout) | 20.3 [12.6-29.3] (n=118) | 37.3 [27.8-47.4] (n=118) | 50.8 [41.7-59.7] (n=118) | 52.5 [44.1-61.1] (n=118) |
-| extract_cot | Pure-text (Plain-text) | 37.5 [30.4-45.2] (n=291) | 45.0 [38.6-52.1] (n=291) | 51.7 [45.2-58.6] (n=290) | 44.3 [37.8-52.1] (n=291) |
-| extract_cot | Table | 41.5 [34.0-48.5] (n=217) | 49.8 [43.6-55.6] (n=217) | 52.5 [46.9-58.8] (n=217) | 39.6 [33.0-47.3] (n=217) |
-| extract_cot | (none) | 31.6 [12.5-50.0] (n=19)† | 52.6 [26.3-75.0] (n=19)† | 57.9 [31.6-83.3] (n=19)† | 42.1 [19.0-62.5] (n=19)† |
-| extract_cot | **All sources** | 28.0 [23.6-32.3] (n=847) | 36.5 [32.9-40.2] (n=847) | 50.2 [46.4-54.1] (n=846) | 44.4 [40.4-48.5] (n=847) |
+| none | Chart | 18.5 [12.3-24.6] (n=178) a12.9 w68.5 | 19.1 [13.1-25.5] (n=178) a8.4 w72.5 | 45.5 [37.3-54.3] (n=178) a1.7 w52.8 | 43.3 [34.4-52.4] (n=178) a1.1 w55.6 |
+| none | Figure | 15.5 [11.1-20.5] (n=290) a10.7 w73.8 | 23.8 [17.8-30.5] (n=290) a2.8 w73.4 | 44.8 [38.0-51.7] (n=290) a2.8 w52.4 | 40.3 [34.2-46.4] (n=290) a1.4 w58.3 |
+| none | Generalized-text (Layout) | 28.0 [18.1-37.6] (n=118) a1.7 w70.3 | 37.3 [27.3-47.4] (n=118) a4.2 w58.5 | 50.8 [42.3-59.2] (n=118) a0.0 w49.2 | 44.1 [35.7-52.8] (n=118) a0.8 w55.1 |
+| none | Pure-text (Plain-text) | 39.2 [31.5-47.6] (n=291) a4.1 w56.7 | 47.8 [41.1-55.3] (n=291) a1.7 w50.5 | 55.3 [48.8-62.8] (n=291) a1.4 w43.3 | 44.3 [37.7-51.3] (n=291) a0.3 w55.3 |
+| none | Table | 40.6 [33.8-46.4] (n=217) a6.0 w53.5 | 48.4 [40.3-55.2] (n=217) a0.9 w50.7 | 48.4 [41.4-55.4] (n=217) a2.3 w49.3 | 37.8 [31.0-44.3] (n=217) a1.8 w60.4 |
+| none | (none) | 52.6 [31.2-73.7] (n=19) a5.3 w42.1† | 63.2 [38.9-83.3] (n=19) a5.3 w31.6† | 73.7 [52.6-91.3] (n=19) a0.0 w26.3† | 52.6 [29.4-70.8] (n=19) a5.3 w42.1† |
+| none | **All sources** | 31.9 [27.3-36.5] (n=847) a7.3 w60.8 | 38.8 [34.5-43.0] (n=847) a3.2 w58.0 | 52.5 [48.5-56.5] (n=847) a1.4 w46.0 | 45.6 [41.7-49.5] (n=847) a1.1 w53.4 |
+| grounded | Chart | 16.3 [10.1-22.7] (n=178) a16.9 w66.9 | 16.3 [11.1-22.5] (n=178) a2.8 w80.9 | 33.7 [26.8-41.0] (n=178) a1.1 w65.2 | 31.5 [24.6-38.8] (n=178) a0.6 w68.0 |
+| grounded | Figure | 12.1 [8.0-17.2] (n=290) a10.3 w77.6 | 22.4 [16.8-28.1] (n=290) a0.3 w77.2 | 42.4 [35.9-48.9] (n=290) a0.7 w56.9 | 39.3 [33.0-45.4] (n=290) a1.0 w59.7 |
+| grounded | Generalized-text (Layout) | 18.6 [10.8-27.4] (n=118) a7.6 w73.7 | 29.7 [20.7-38.3] (n=118) a0.8 w69.5 | 42.4 [32.8-52.2] (n=118) a0.0 w57.6 | 44.9 [34.7-55.2] (n=118) a0.0 w55.1 |
+| grounded | Pure-text (Plain-text) | 37.8 [30.7-45.7] (n=291) a6.5 w55.7 | 45.0 [38.4-52.0] (n=291) a0.7 w54.3 | 51.2 [43.8-58.5] (n=291) a1.0 w47.8 | 41.6 [35.6-48.7] (n=291) a0.7 w57.7 |
+| grounded | Table | 29.5 [23.3-35.5] (n=217) a10.1 w60.4 | 39.2 [31.9-46.2] (n=217) a1.4 w59.4 | 40.1 [33.3-47.3] (n=217) a0.9 w59.0 | 30.9 [24.5-36.6] (n=217) a0.0 w69.1 |
+| grounded | (none) | 42.1 [22.2-66.7] (n=19) a0.0 w57.9† | 57.9 [33.3-81.8] (n=19) a0.0 w42.1† | 52.6 [29.4-75.0] (n=19) a0.0 w47.4† | 42.1 [19.0-62.5] (n=19) a0.0 w57.9† |
+| grounded | **All sources** | 26.8 [22.8-30.9] (n=847) a9.6 w63.6 | 34.4 [30.5-38.3] (n=847) a1.3 w64.3 | 45.7 [41.7-49.4] (n=847) a0.8 w53.5 | 39.9 [36.3-43.8] (n=847) a0.6 w59.5 |
+| abstain | Chart | 13.5 [7.5-19.7] (n=178) a52.2 w34.3 | 12.4 [7.0-18.3] (n=178) a59.0 w28.7 | 28.7 [22.8-35.4] (n=178) a25.3 w46.1 | 26.4 [19.9-32.4] (n=178) a27.5 w46.1 |
+| abstain | Figure | 7.2 [4.1-10.9] (n=290) a76.2 w16.6 | 14.1 [10.0-18.2] (n=290) a65.2 w20.7 | 34.5 [27.9-40.9] (n=290) a35.2 w30.3 | 31.0 [24.8-36.7] (n=290) a38.3 w30.7 |
+| abstain | Generalized-text (Layout) | 19.5 [11.3-28.2] (n=118) a55.9 w24.6 | 25.4 [17.4-33.3] (n=118) a44.1 w30.5 | 41.5 [32.1-50.9] (n=118) a19.5 w39.0 | 37.3 [28.0-47.0] (n=118) a25.4 w37.3 |
+| abstain | Pure-text (Plain-text) | 34.0 [27.4-41.7] (n=291) a41.9 w24.1 | 40.5 [34.8-47.2] (n=291) a35.4 w24.1 | 45.7 [39.1-53.1] (n=291) a23.7 w30.6 | 36.1 [29.6-43.7] (n=291) a30.9 w33.0 |
+| abstain | Table | 26.3 [20.4-32.5] (n=217) a42.4 w31.3 | 38.2 [31.2-45.5] (n=217) a36.4 w25.3 | 39.2 [32.2-46.2] (n=217) a30.0 w30.9 | 26.7 [20.7-32.8] (n=217) a39.6 w33.6 |
+| abstain | (none) | 36.8 [17.6-62.5] (n=19) a36.8 w26.3† | 52.6 [25.0-77.3] (n=19) a31.6 w15.8† | 57.9 [30.0-81.8] (n=19) a26.3 w15.8† | 42.1 [19.0-62.5] (n=19) a36.8 w21.1† |
+| abstain | **All sources** | 23.3 [19.3-27.2] (n=847) a52.2 w24.6 | 29.3 [25.4-33.1] (n=847) a47.1 w23.6 | 41.4 [37.3-45.4] (n=847) a27.4 w31.2 | 33.5 [29.9-37.1] (n=847) a32.5 w34.0 |
+| abstain_balanced | Chart | 14.0 [8.4-20.2] (n=178) a44.9 w41.0 | 12.9 [7.4-18.6] (n=178) a51.7 w35.4 | 30.9 [24.5-38.2] (n=178) a18.5 w50.6 | 25.8 [19.7-32.1] (n=178) a24.2 w50.0 |
+| abstain_balanced | Figure | 7.9 [4.5-12.3] (n=290) a71.7 w20.3 | 14.5 [10.1-18.9] (n=290) a62.1 w23.4 | 36.2 [29.7-42.3] (n=290) a31.0 w32.8 | 33.4 [27.0-39.6] (n=290) a33.1 w33.4 |
+| abstain_balanced | Generalized-text (Layout) | 19.5 [11.3-28.2] (n=118) a52.5 w28.0 | 28.8 [19.7-37.7] (n=118) a41.5 w29.7 | 41.5 [32.8-50.9] (n=118) a18.6 w39.8 | 39.0 [29.4-49.0] (n=118) a21.2 w39.8 |
+| abstain_balanced | Pure-text (Plain-text) | 33.7 [27.0-41.5] (n=291) a39.5 w26.8 | 39.5 [33.6-46.5] (n=291) a32.6 w27.8 | 47.4 [40.6-54.7] (n=291) a18.9 w33.7 | 36.4 [30.3-43.8] (n=291) a25.4 w38.1 |
+| abstain_balanced | Table | 26.3 [20.4-32.5] (n=217) a37.8 w35.9 | 37.8 [30.8-44.2] (n=217) a30.0 w32.3 | 37.3 [30.5-44.3] (n=217) a25.3 w37.3 | 30.0 [23.7-36.2] (n=217) a34.6 w35.5 |
+| abstain_balanced | (none) | 42.1 [22.2-66.7] (n=19) a26.3 w31.6† | 57.9 [33.3-81.8] (n=19) a31.6 w10.5† | 63.2 [37.5-87.5] (n=19) a21.1 w15.8† | 42.1 [19.0-62.5] (n=19) a31.6 w26.3† |
+| abstain_balanced | **All sources** | 23.8 [19.7-27.9] (n=847) a47.8 w28.3 | 30.0 [26.2-33.8] (n=847) a42.9 w27.2 | 42.6 [38.5-46.6] (n=847) a22.9 w34.5 | 35.2 [31.5-39.0] (n=847) a27.7 w37.1 |
+| cot | Chart | 21.3 [14.8-27.6] (n=178) a3.9 w74.7 | 16.9 [11.4-22.9] (n=178) a13.5 w69.7 | 45.5 [37.7-53.9] (n=178) a1.1 w53.4 | 44.4 [35.9-52.7] (n=178) a1.1 w54.5 |
+| cot | Figure | 11.7 [7.7-16.3] (n=290) a1.7 w86.6 | 18.3 [13.8-23.3] (n=290) a2.1 w79.7 | 45.2 [38.1-51.6] (n=290) a0.3 w54.5 | 44.8 [38.5-51.1] (n=290) a0.0 w55.2 |
+| cot | Generalized-text (Layout) | 24.6 [16.0-33.8] (n=118) a0.0 w75.4 | 37.3 [27.2-47.1] (n=118) a2.5 w60.2 | 50.0 [39.7-60.4] (n=118) a0.8 w49.2 | 55.9 [46.2-65.1] (n=118) a0.0 w44.1 |
+| cot | Pure-text (Plain-text) | 34.7 [28.3-42.0] (n=291) a4.1 w61.2 | 45.0 [38.5-52.7] (n=291) a3.1 w51.9 | 54.6 [48.1-61.8] (n=291) a1.0 w44.3 | 48.1 [41.4-54.7] (n=291) a0.7 w51.2 |
+| cot | Table | 40.6 [33.5-47.2] (n=217) a3.2 w56.2 | 51.2 [44.6-57.7] (n=217) a2.8 w46.1 | 55.3 [48.6-61.8] (n=217) a2.3 w42.4 | 47.5 [40.1-55.1] (n=217) a0.0 w52.5 |
+| cot | (none) | 42.1 [21.1-62.5] (n=19) a10.5 w47.4† | 57.9 [35.3-81.2] (n=19) a5.3 w36.8† | 63.2 [41.2-85.0] (n=19) a5.3 w31.6† | 52.6 [30.0-75.0] (n=19) a0.0 w47.4† |
+| cot | **All sources** | 29.5 [25.2-33.7] (n=847) a2.8 w67.7 | 36.0 [32.5-39.6] (n=847) a4.1 w59.9 | 53.1 [49.4-56.9] (n=847) a1.1 w45.8 | 49.7 [45.5-53.8] (n=847) a0.4 w49.9 |
+| extract_cot | Chart | 13.5 [8.3-19.1] (n=178) a5.1 w81.5 | 17.4 [11.4-23.9] (n=178) a14.0 w68.5 | 39.3 [31.2-48.7] (n=178) a2.2 w58.4 | 38.8 [30.1-48.3] (n=178) a2.2 w59.0 |
+| extract_cot | Figure | 10.7 [7.0-15.3] (n=290) a2.1 w87.2 | 21.0 [16.2-26.0] (n=290) a4.1 w74.8 | 44.1 [37.4-49.8] (n=290) a0.7 w55.2 | 41.7 [35.3-47.5] (n=290) a1.4 w56.9 |
+| extract_cot | Generalized-text (Layout) | 20.3 [12.6-29.3] (n=118) a1.7 w78.0 | 37.3 [27.8-47.4] (n=118) a3.4 w59.3 | 50.8 [41.7-59.7] (n=118) a0.8 w48.3 | 52.5 [44.1-61.1] (n=118) a1.7 w45.8 |
+| extract_cot | Pure-text (Plain-text) | 37.5 [30.4-45.2] (n=291) a1.4 w61.2 | 45.0 [38.6-52.1] (n=291) a3.4 w51.5 | 51.7 [45.2-58.6] (n=290) a2.4 w45.9 | 44.3 [37.8-52.1] (n=291) a3.1 w52.6 |
+| extract_cot | Table | 41.5 [34.0-48.5] (n=217) a1.8 w56.7 | 49.8 [43.6-55.6] (n=217) a4.1 w46.1 | 52.5 [46.9-58.8] (n=217) a4.6 w42.9 | 39.6 [33.0-47.3] (n=217) a5.1 w55.3 |
+| extract_cot | (none) | 31.6 [12.5-50.0] (n=19) a5.3 w63.2† | 52.6 [26.3-75.0] (n=19) a5.3 w42.1† | 57.9 [31.6-83.3] (n=19) a10.5 w31.6† | 42.1 [19.0-62.5] (n=19) a5.3 w52.6† |
+| extract_cot | **All sources** | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.4-54.1] (n=846) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
 | n (per col) | - | - | - | - | - |
 
-### Faithfulness: answerable false-abstention rate by prompt mode, evidence source and rung
+### Faithfulness: answerable abstention rate by prompt mode, evidence source and rung
 
-> **swept**: prompt_mode × evidence source × rung (answerable pool, oracle pages) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **direction**: abstaining is an ERROR here; lower is better · **source blocks**: overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once
+> **swept**: prompt_mode × evidence source × rung (answerable pool, oracle pages) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: answerable · **page_selection**: oracle · **direction**: abstaining is an error only where the RUNG carried the evidence; read the d component, not the pooled rate · **source blocks**: overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once
 
-_Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 default and 2048 for cot/extract_cot, delimiter "Answer:". Abstention is detected on the EXTRACTED final answer (the text after the last "Answer:"), not the whole generation: cot/extract_cot emit reasoning that would otherwise be read as an answer. An extraction that comes back empty is a non-answer, scored incorrect and not an abstention. Every abstention counted here is an ERROR: the pages fed are the oracle evidence pages, so the answer was available. Lower is better. A regroup of the pooled grid, not new inference: `evidence_sources` is a per-row covariate on every judged row, so this is the same cells re-aggregated. A question citing several evidence sources is counted under EACH of them, so the per-source rows overlap and CANNOT be summed; the bolded All sources row closing each prompt mode is computed fresh over every row, each counted once, and reproduces the pooled table. † marks a cell computed on fewer than 30 rows, where a single question moves it by more than three points: read the direction, not the value. Per-cell n is inline because OOM attrition is rung-dependent and thins the TLV/V cells; a small n there reads as survivorship, not signal. Rows carrying no gold evidence pages are kept in the answerable pool exactly as the other tables treat hop=none, i.e. not split out, since these tables do not condition on hop._
+_Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 default and 2048 for cot/extract_cot, delimiter "Answer:". Abstention is detected on the EXTRACTED final answer (the text after the last "Answer:"), not the whole generation: cot/extract_cot emit reasoning that would otherwise be read as an answer. An extraction that comes back empty is a non-answer, scored incorrect and not an abstention. NOT ALL OF THIS IS FALSE ABSTENTION. The oracle pages carry the evidence, but the RUNG need not: `T` is PyMuPDF's embedded text layer, and a scanned page has none, so at `T` on a scanned document the reasoner is handed an empty document and declining is the correct response to what it was actually given. The cells carry the split as `<digital>d/<scanned>s`, and it is stark: under `abstain` at `T`, scanned questions abstain 100.0% against 38.4% digital, and under `none` 22.1% against 3.0%. `TL` recovers most of it because the parser OCRs the page (57.4s under `abstain`), and TLV/V always carry the image. Read the `d` component as false abstention; the `s` component at `T` is the encoding delivering nothing, which is the ladder's own finding, not a prompting one. Lower is better on the born-digital component. A regroup of the pooled grid, not new inference: `evidence_sources` is a per-row covariate on every judged row, so this is the same cells re-aggregated. A question citing several evidence sources is counted under EACH of them, so the per-source rows overlap and CANNOT be summed; the bolded All sources row closing each prompt mode is computed fresh over every row, each counted once, and reproduces the pooled table. † marks a cell computed on fewer than 30 rows, where a single question moves it by more than three points: read the direction, not the value. Per-cell n is inline because OOM attrition is rung-dependent and thins the TLV/V cells; a small n there reads as survivorship, not signal. Rows carrying no gold evidence pages are kept in the answerable pool exactly as the other tables treat hop=none, i.e. not split out, since these tables do not condition on hop._
 
 | prompt_mode | evidence_source | T | TL | TLV | V |
 | --- | --- | --- | --- | --- | --- |
-| none | Chart | 12.9 (n=178) | 8.4 (n=178) | 2.8 (n=178) | 1.1 (n=178) |
-| none | Figure | 10.7 (n=290) | 2.8 (n=290) | 2.8 (n=290) | 1.4 (n=290) |
-| none | Generalized-text (Layout) | 2.5 (n=118) | 4.2 (n=118) | 0.0 (n=118) | 0.8 (n=118) |
-| none | Pure-text (Plain-text) | 4.5 (n=291) | 1.7 (n=291) | 1.7 (n=291) | 0.3 (n=291) |
-| none | Table | 6.0 (n=217) | 1.4 (n=217) | 2.3 (n=217) | 1.8 (n=217) |
-| none | (none) | 5.3 (n=19)† | 5.3 (n=19)† | 0.0 (n=19)† | 5.3 (n=19)† |
-| none | **All sources** | 7.4 (n=847) | 3.3 (n=847) | 1.7 (n=847) | 1.1 (n=847) |
-| grounded | Chart | 16.9 (n=178) | 2.8 (n=178) | 1.1 (n=178) | 0.6 (n=178) |
-| grounded | Figure | 10.3 (n=290) | 0.3 (n=290) | 0.7 (n=290) | 1.0 (n=290) |
-| grounded | Generalized-text (Layout) | 7.6 (n=118) | 0.8 (n=118) | 0.0 (n=118) | 0.0 (n=118) |
-| grounded | Pure-text (Plain-text) | 6.5 (n=291) | 0.7 (n=291) | 1.0 (n=291) | 0.7 (n=291) |
-| grounded | Table | 10.1 (n=217) | 1.4 (n=217) | 0.9 (n=217) | 0.0 (n=217) |
-| grounded | (none) | 0.0 (n=19)† | 0.0 (n=19)† | 0.0 (n=19)† | 0.0 (n=19)† |
-| grounded | **All sources** | 9.6 (n=847) | 1.3 (n=847) | 0.8 (n=847) | 0.6 (n=847) |
-| abstain | Chart | 52.2 (n=178) | 59.0 (n=178) | 25.3 (n=178) | 27.5 (n=178) |
-| abstain | Figure | 76.2 (n=290) | 65.2 (n=290) | 35.2 (n=290) | 38.3 (n=290) |
-| abstain | Generalized-text (Layout) | 55.9 (n=118) | 44.1 (n=118) | 19.5 (n=118) | 25.4 (n=118) |
-| abstain | Pure-text (Plain-text) | 41.9 (n=291) | 35.4 (n=291) | 23.7 (n=291) | 30.9 (n=291) |
-| abstain | Table | 42.4 (n=217) | 36.4 (n=217) | 30.0 (n=217) | 39.6 (n=217) |
-| abstain | (none) | 36.8 (n=19)† | 31.6 (n=19)† | 26.3 (n=19)† | 36.8 (n=19)† |
-| abstain | **All sources** | 52.2 (n=847) | 47.1 (n=847) | 27.4 (n=847) | 32.5 (n=847) |
-| abstain_balanced | Chart | 44.9 (n=178) | 51.7 (n=178) | 18.5 (n=178) | 24.2 (n=178) |
-| abstain_balanced | Figure | 71.7 (n=290) | 62.1 (n=290) | 31.0 (n=290) | 33.1 (n=290) |
-| abstain_balanced | Generalized-text (Layout) | 52.5 (n=118) | 41.5 (n=118) | 18.6 (n=118) | 21.2 (n=118) |
-| abstain_balanced | Pure-text (Plain-text) | 39.5 (n=291) | 32.6 (n=291) | 18.9 (n=291) | 25.4 (n=291) |
-| abstain_balanced | Table | 37.8 (n=217) | 30.0 (n=217) | 25.3 (n=217) | 34.6 (n=217) |
-| abstain_balanced | (none) | 26.3 (n=19)† | 31.6 (n=19)† | 21.1 (n=19)† | 31.6 (n=19)† |
-| abstain_balanced | **All sources** | 47.8 (n=847) | 42.9 (n=847) | 22.9 (n=847) | 27.7 (n=847) |
-| cot | Chart | 3.9 (n=178) | 13.5 (n=178) | 1.1 (n=178) | 1.1 (n=178) |
-| cot | Figure | 1.7 (n=290) | 2.4 (n=290) | 0.3 (n=290) | 0.0 (n=290) |
-| cot | Generalized-text (Layout) | 0.0 (n=118) | 3.4 (n=118) | 0.8 (n=118) | 0.0 (n=118) |
-| cot | Pure-text (Plain-text) | 4.1 (n=291) | 3.1 (n=291) | 1.0 (n=291) | 0.7 (n=291) |
-| cot | Table | 3.2 (n=217) | 2.8 (n=217) | 2.3 (n=217) | 0.0 (n=217) |
-| cot | (none) | 10.5 (n=19)† | 5.3 (n=19)† | 5.3 (n=19)† | 0.0 (n=19)† |
-| cot | **All sources** | 2.8 (n=847) | 4.3 (n=847) | 1.1 (n=847) | 0.4 (n=847) |
-| extract_cot | Chart | 5.6 (n=178) | 14.0 (n=178) | 2.2 (n=178) | 2.2 (n=178) |
-| extract_cot | Figure | 2.1 (n=290) | 4.1 (n=290) | 1.0 (n=290) | 1.4 (n=290) |
-| extract_cot | Generalized-text (Layout) | 1.7 (n=118) | 3.4 (n=118) | 0.8 (n=118) | 1.7 (n=118) |
-| extract_cot | Pure-text (Plain-text) | 1.4 (n=291) | 3.4 (n=291) | 2.4 (n=290) | 3.1 (n=291) |
-| extract_cot | Table | 1.8 (n=217) | 4.1 (n=217) | 4.6 (n=217) | 5.1 (n=217) |
-| extract_cot | (none) | 5.3 (n=19)† | 5.3 (n=19)† | 10.5 (n=19)† | 5.3 (n=19)† |
-| extract_cot | **All sources** | 2.5 (n=847) | 5.7 (n=847) | 2.1 (n=846) | 2.4 (n=847) |
+| none | Chart | 12.9 (n=178) 3.8d/37.5s | 8.4 (n=178) 5.4d/16.7s | 2.8 (n=178) 1.5d/6.2s | 1.1 (n=178) 0.0d/4.2s |
+| none | Figure | 10.7 (n=290) 6.9d/17.8s | 2.8 (n=290) 2.1d/4.0s | 2.8 (n=290) 3.2d/2.0s | 1.4 (n=290) 1.1d/2.0s |
+| none | Generalized-text (Layout) | 2.5 (n=118) 2.4d/2.9s | 4.2 (n=118) 1.2d/11.8s | 0.0 (n=118) 0.0d/0.0s | 0.8 (n=118) 0.0d/2.9s |
+| none | Pure-text (Plain-text) | 4.5 (n=291) 1.7d/15.0s | 1.7 (n=291) 0.4d/6.7s | 1.7 (n=291) 1.3d/3.3s | 0.3 (n=291) 0.0d/1.7s |
+| none | Table | 6.0 (n=217) 1.6d/33.3s | 1.4 (n=217) 1.1d/3.3s | 2.3 (n=217) 1.6d/6.7s | 1.8 (n=217) 1.1d/6.7s |
+| none | (none) | 5.3 (n=19) 0.0d/100.0s† | 5.3 (n=19) 5.6d/0.0s† | 0.0 (n=19) 0.0d/0.0s† | 5.3 (n=19) 5.6d/0.0s† |
+| none | **All sources** | 7.4 (n=847) 3.2d/22.1s | 3.3 (n=847) 2.3d/6.8s | 1.7 (n=847) 1.4d/2.6s | 1.1 (n=847) 0.8d/2.1s |
+| grounded | Chart | 16.9 (n=178) 3.8d/52.1s | 2.8 (n=178) 2.3d/4.2s | 1.1 (n=178) 0.0d/4.2s | 0.6 (n=178) 0.0d/2.1s |
+| grounded | Figure | 10.3 (n=290) 2.6d/24.8s | 0.3 (n=290) 0.5d/0.0s | 0.7 (n=290) 0.5d/1.0s | 1.0 (n=290) 1.1d/1.0s |
+| grounded | Generalized-text (Layout) | 7.6 (n=118) 0.0d/26.5s | 0.8 (n=118) 0.0d/2.9s | 0.0 (n=118) 0.0d/0.0s | 0.0 (n=118) 0.0d/0.0s |
+| grounded | Pure-text (Plain-text) | 6.5 (n=291) 1.7d/25.0s | 0.7 (n=291) 0.4d/1.7s | 1.0 (n=291) 0.4d/3.3s | 0.7 (n=291) 0.4d/1.7s |
+| grounded | Table | 10.1 (n=217) 1.1d/66.7s | 1.4 (n=217) 1.6d/0.0s | 0.9 (n=217) 1.1d/0.0s | 0.0 (n=217) 0.0d/0.0s |
+| grounded | (none) | 0.0 (n=19) 0.0d/0.0s† | 0.0 (n=19) 0.0d/0.0s† | 0.0 (n=19) 0.0d/0.0s† | 0.0 (n=19) 0.0d/0.0s† |
+| grounded | **All sources** | 9.6 (n=847) 2.1d/35.3s | 1.3 (n=847) 1.2d/1.6s | 0.8 (n=847) 0.6d/1.6s | 0.6 (n=847) 0.5d/1.1s |
+| abstain | Chart | 52.2 (n=178) 34.6d/100.0s | 59.0 (n=178) 49.2d/85.4s | 25.3 (n=178) 22.3d/33.3s | 27.5 (n=178) 26.9d/29.2s |
+| abstain | Figure | 76.2 (n=290) 63.5d/100.0s | 65.2 (n=290) 68.8d/58.4s | 35.2 (n=290) 45.5d/15.8s | 38.3 (n=290) 48.1d/19.8s |
+| abstain | Generalized-text (Layout) | 55.9 (n=118) 38.1d/100.0s | 44.1 (n=118) 39.3d/55.9s | 19.5 (n=118) 23.8d/8.8s | 25.4 (n=118) 27.4d/20.6s |
+| abstain | Pure-text (Plain-text) | 41.9 (n=291) 26.8d/100.0s | 35.4 (n=291) 29.9d/56.7s | 23.7 (n=291) 22.1d/30.0s | 30.9 (n=291) 28.6d/40.0s |
+| abstain | Table | 42.4 (n=217) 33.2d/100.0s | 36.4 (n=217) 36.4d/36.7s | 30.0 (n=217) 32.6d/13.3s | 39.6 (n=217) 42.2d/23.3s |
+| abstain | (none) | 36.8 (n=19) 33.3d/100.0s† | 31.6 (n=19) 27.8d/100.0s† | 26.3 (n=19) 27.8d/0.0s† | 36.8 (n=19) 38.9d/0.0s† |
+| abstain | **All sources** | 52.2 (n=847) 38.4d/100.0s | 47.1 (n=847) 44.1d/57.4s | 27.4 (n=847) 29.7d/19.5s | 32.5 (n=847) 35.5d/22.1s |
+| abstain_balanced | Chart | 44.9 (n=178) 24.6d/100.0s | 51.7 (n=178) 41.5d/79.2s | 18.5 (n=178) 15.4d/27.1s | 24.2 (n=178) 22.3d/29.2s |
+| abstain_balanced | Figure | 71.7 (n=290) 56.6d/100.0s | 62.1 (n=290) 65.6d/55.4s | 31.0 (n=290) 41.8d/10.9s | 33.1 (n=290) 42.3d/15.8s |
+| abstain_balanced | Generalized-text (Layout) | 52.5 (n=118) 33.3d/100.0s | 41.5 (n=118) 36.9d/52.9s | 18.6 (n=118) 25.0d/2.9s | 21.2 (n=118) 21.4d/20.6s |
+| abstain_balanced | Pure-text (Plain-text) | 39.5 (n=291) 23.8d/100.0s | 32.6 (n=291) 26.4d/56.7s | 18.9 (n=291) 17.7d/23.3s | 25.4 (n=291) 23.4d/33.3s |
+| abstain_balanced | Table | 37.8 (n=217) 27.8d/100.0s | 30.0 (n=217) 30.5d/26.7s | 25.3 (n=217) 27.3d/13.3s | 34.6 (n=217) 36.9d/20.0s |
+| abstain_balanced | (none) | 26.3 (n=19) 22.2d/100.0s† | 31.6 (n=19) 27.8d/100.0s† | 21.1 (n=19) 22.2d/0.0s† | 31.6 (n=19) 33.3d/0.0s† |
+| abstain_balanced | **All sources** | 47.8 (n=847) 32.7d/100.0s | 42.9 (n=847) 39.6d/54.2s | 22.9 (n=847) 25.3d/14.7s | 27.7 (n=847) 30.1d/19.5s |
+| cot | Chart | 3.9 (n=178) 3.1d/6.2s | 13.5 (n=178) 10.0d/22.9s | 1.1 (n=178) 1.5d/0.0s | 1.1 (n=178) 1.5d/0.0s |
+| cot | Figure | 1.7 (n=290) 1.1d/3.0s | 2.4 (n=290) 1.6d/4.0s | 0.3 (n=290) 0.5d/0.0s | 0.0 (n=290) 0.0d/0.0s |
+| cot | Generalized-text (Layout) | 0.0 (n=118) 0.0d/0.0s | 3.4 (n=118) 2.4d/5.9s | 0.8 (n=118) 1.2d/0.0s | 0.0 (n=118) 0.0d/0.0s |
+| cot | Pure-text (Plain-text) | 4.1 (n=291) 2.6d/10.0s | 3.1 (n=291) 2.2d/6.7s | 1.0 (n=291) 1.3d/0.0s | 0.7 (n=291) 0.9d/0.0s |
+| cot | Table | 3.2 (n=217) 1.6d/13.3s | 2.8 (n=217) 1.6d/10.0s | 2.3 (n=217) 2.7d/0.0s | 0.0 (n=217) 0.0d/0.0s |
+| cot | (none) | 10.5 (n=19) 11.1d/0.0s† | 5.3 (n=19) 5.6d/0.0s† | 5.3 (n=19) 5.6d/0.0s† | 0.0 (n=19) 0.0d/0.0s† |
+| cot | **All sources** | 2.8 (n=847) 2.0d/5.8s | 4.3 (n=847) 3.2d/7.9s | 1.1 (n=847) 1.4d/0.0s | 0.4 (n=847) 0.5d/0.0s |
+| extract_cot | Chart | 5.6 (n=178) 5.4d/6.2s | 14.0 (n=178) 10.0d/25.0s | 2.2 (n=178) 0.8d/6.2s | 2.2 (n=178) 2.3d/2.1s |
+| extract_cot | Figure | 2.1 (n=290) 2.6d/1.0s | 4.1 (n=290) 3.2d/5.9s | 1.0 (n=290) 1.1d/1.0s | 1.4 (n=290) 1.6d/1.0s |
+| extract_cot | Generalized-text (Layout) | 1.7 (n=118) 2.4d/0.0s | 3.4 (n=118) 1.2d/8.8s | 0.8 (n=118) 0.0d/2.9s | 1.7 (n=118) 2.4d/0.0s |
+| extract_cot | Pure-text (Plain-text) | 1.4 (n=291) 0.9d/3.3s | 3.4 (n=291) 2.2d/8.3s | 2.4 (n=290) 1.3d/6.7s | 3.1 (n=291) 3.5d/1.7s |
+| extract_cot | Table | 1.8 (n=217) 1.6d/3.3s | 4.1 (n=217) 3.2d/10.0s | 4.6 (n=217) 3.2d/13.3s | 5.1 (n=217) 4.8d/6.7s |
+| extract_cot | (none) | 5.3 (n=19) 5.6d/0.0s† | 5.3 (n=19) 5.6d/0.0s† | 10.5 (n=19) 11.1d/0.0s† | 5.3 (n=19) 5.6d/0.0s† |
+| extract_cot | **All sources** | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=846) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
 | n (per col) | - | - | - | - | - |
 
 ### Faithfulness: unanswerable abstention rate by prompt mode, evidence source and rung
