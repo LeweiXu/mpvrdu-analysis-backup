@@ -1,0 +1,7 @@
+Object Storage Service
+Product Introduction
+1 About OBS
+<table><tr><td>Tool</td><td>Description</td><td>How to Use</td></tr><tr><td>obsutil</td><td>obsutil is a command line tool for you to perform common configuration and management operations on OBS. If you are comfortable using the command line interface (CLI), obsutil is recommended for batch processing and automated tasks.</td><td>obsutil Tool Guide</td></tr><tr><td>obsfs</td><td>obsfs is an OBS tool based on Filesystem in Userspace (FUSE). It helps you mount parallel file systems to Linux, so that you can easily access virtually unlimited storage space of OBS the same way as you would use a regular local file system.</td><td>obsfs Tool Guide</td></tr><tr><td>SDKs</td><td>OBS SDKs encapsulate the REST API provided by OBS to simplify development. You can call API functions provided by the OBS SDKs to enjoy OBS capabilities.</td><td>SDK Reference</td></tr><tr><td>APIs</td><td>OBS offers the REST API for you to access it from web applications with ease. By making API calls, you can upload and download data anytime, anywhere over the Internet.</td><td>API Reference</td></tr></table>
+Issue 26 (2024-02-28)
+Copyright © Huawei Technologies Co., Ltd.
+5

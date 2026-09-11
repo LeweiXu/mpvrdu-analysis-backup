@@ -1,0 +1,29 @@
+As of December 31, 2019, the amount of cash and cash equivalents held outside of the U.S. by our foreign subsidiaries was $2.8 billion, as compared to $1.4 billion as of December 31, 2018. These cash balances are generally available for use in the U.S., subject in some cases to certain restrictions.
+
+Our cash provided from operating activities is somewhat impacted by seasonality. Working capital needs are impacted by weekly sales, which are generally highest in the fourth quarter due to seasonal and holiday-related sales patterns. We consider, on a continuing basis, various transactions to increase shareholder value and enhance our business results, including acquisitions, divestitures, joint ventures, share repurchases, and other structural changes. These transactions may result in future cash proceeds or payments.
+
+## Sources of Liquidity (amounts in millions)
+
+<div style="text-align: center;">For the Years Ended December 31,</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>2019</td><td style='text-align: center; word-wrap: break-word;'>2018</td><td style='text-align: center; word-wrap: break-word;'>Increase (Decrease)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Cash and cash equivalents</td><td style='text-align: center; word-wrap: break-word;'>$     5,794</td><td style='text-align: center; word-wrap: break-word;'>$     4,225</td><td style='text-align: center; word-wrap: break-word;'>$     1,569</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Short-term investments</td><td style='text-align: center; word-wrap: break-word;'>69</td><td style='text-align: center; word-wrap: break-word;'>155</td><td style='text-align: center; word-wrap: break-word;'>(86)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>$     5,863</td><td style='text-align: center; word-wrap: break-word;'>$     4,380</td><td style='text-align: center; word-wrap: break-word;'>$     1,483</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Percentage of total assets</td><td style='text-align: center; word-wrap: break-word;'>30%</td><td style='text-align: center; word-wrap: break-word;'>24%</td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>
+
+<div style="text-align: center;">For the Years Ended December 31,</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>2019</td><td style='text-align: center; word-wrap: break-word;'>2018</td><td style='text-align: center; word-wrap: break-word;'>Increase (Decrease)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Net cash provided by operating activities</td><td style='text-align: center; word-wrap: break-word;'>$ 1,831</td><td style='text-align: center; word-wrap: break-word;'>$ 1,790</td><td style='text-align: center; word-wrap: break-word;'>$ 41</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Net cash used in investing activities</td><td style='text-align: center; word-wrap: break-word;'>(22)</td><td style='text-align: center; word-wrap: break-word;'>(230)</td><td style='text-align: center; word-wrap: break-word;'>208</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Net cash used in financing activities</td><td style='text-align: center; word-wrap: break-word;'>(237)</td><td style='text-align: center; word-wrap: break-word;'>(2,020)</td><td style='text-align: center; word-wrap: break-word;'>1,783</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Effect of foreign exchange rate changes</td><td style='text-align: center; word-wrap: break-word;'>(3)</td><td style='text-align: center; word-wrap: break-word;'>(31)</td><td style='text-align: center; word-wrap: break-word;'>28</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Net increase (decrease) in cash and cash equivalents and restricted cash</td><td style='text-align: center; word-wrap: break-word;'>$ 1,569</td><td style='text-align: center; word-wrap: break-word;'>$ (491)</td><td style='text-align: center; word-wrap: break-word;'>$ 2,060</td></tr></table>
+
+## Net Cash Provided by Operating Activities
+
+The primary driver of net cash flows associated with our operating activities is the collection of customer receivables generated from the sale of our products and services. These collections are typically partially offset by: payments to vendors for the manufacturing, distribution, and marketing of our products; payments for customer service support for our consumers; payments to third-party developers and intellectual property holders; payments for interest on our debt; payments for software development; payments for tax liabilities; and payments to our workforce.
+
+Net cash provided by operating activities for 2019 was $1.83 billion, as compared to $1.79 billion for 2018. The increase was primarily due to:
+
+• lower tax payments, primarily due to payments for a tax settlement in the U.S. in 2018 with no comparable activity in 2019; and
+
+- changes in our working capital resulting from the timing of collections and payments, in addition to lower cash spent to support the Destiny franchise (reflecting our sale of the publishing rights for Destiny to Bungie in December 2018).
+
+The increase was partially offset by lower net income in 2019 as compared to 2018 and a decrease in non-cash adjustments to net income, primarily due to lower amortization of intangible assets related to the acquisition of King and lower amortization of capitalized software development costs and intellectual property licenses.

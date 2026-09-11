@@ -1,0 +1,9 @@
+## Acknowledgements
+
+This report was written by Mark Hugo Lopez, director of Hispanic and Global Migration and Demography research; Ana Gonzalez-Barrera, senior researcher; and Gustavo López, research analyst. Editorial guidance was provided by James Bell, vice president for global strategy; Claudia Deane, vice president for research; and D'Vera Cohn, senior writer/editor. Gonzalez-Barrera and López managed the development of the report's two survey questionnaires, with assistance from Anna Brown, research analyst at Social and Demographic Trends, and Eileen Patten and Renee Stepler, former research analysts at Social and Demographic Trends.
+
+Kyley McGeeney, former senior methodologist, provided guidance on the questionnaire’s development. Courtney Kennedy, director of survey research, reviewed sampling plans and survey details. Andrew Mercer, senior research methodologist, generated new sample weights for the combined survey. Jody Vallejo, professor at the University of Southern California and Stephen Trejo, professor at the University of Texas, Austin, provided comments on early drafts of the two surveys.
+
+Charts for the report were produced by López; Brown; Antonio Flores, research assistant, Global Migration and Demography; Jynnah Radford, research assistant, Global Migration and Demography; and Michael Keegan, information graphics designer. López and Stepler produced the survey’s toplines. López and Radford number-checked the report. Ariana Rodriguez-Gitler was the digital producer. David Kent copy edited the report.
+
+Find related reports on line at pewresearch.org/hispanic.

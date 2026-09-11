@@ -18,8 +18,8 @@ drop the parser (TLV→TV),E1 acquisition,acc @ image rung,52.5,51.6,-0.9,847/84
 interleaving TLV→TLVi,E4 reasoning,acc @ TLV,52.8,55.0,+2.2,847/847
 CoT prompt (grounded→cot),E4 reasoning,acc @ TLV,45.7,53.1,+7.4,847/847
 CoT prompt (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.5,+6.4,847/847
-extraction (grounded→extract_cot),E4 reasoning,acc @ TLV,45.7,50.2,+4.5,847/846
-extraction (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.0,+6.8,847/846
+extraction (grounded→extract_cot),E4 reasoning,acc @ TLV,45.7,50.2,+4.5,847/847
+extraction (M−S),E4 reasoning,M−S @ TLV,-22.9,-16.2,+6.7,847/847
 abstention prompt (none→targeted),E5 faithfulness,abstention @ TLV (unanswerable),16.8,74.6,+57.8,244/244
 retrieval depth k1→k5 (vision),E2 selection,acc @ V (PROVISIONAL),29.8,37.2,+7.4,312/312
 model swap 8B→InternVL3-8B,reasoner,acc @ TLV,52.4,32.6,-19.8,847/807

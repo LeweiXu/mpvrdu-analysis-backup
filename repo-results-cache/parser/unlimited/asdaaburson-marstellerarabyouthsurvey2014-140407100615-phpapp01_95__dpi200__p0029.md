@@ -1,0 +1,19 @@
+asdaa
+[Non-Text]
+Burson-Marsteller
+[Non-Text]
+PENN
+SCHÖEN
+BERLAND
+arabyouthsurvey.com
+#arabyouthsurvey
+ASDA'A Burson-Marsteller
+[Non-Text]
+ARAB YOUTH SURVEY 2014
+![](images/0.jpg)
+
+ARAB YOUTH CONSIDER THEIR COUNTRY'S
+BIGGEST ALLIES TO BE REGIONAL NEIGHBOURS
+SUCH AS SAUDI ARABIA AND THE UAE RATHER
+THAN TRADITIONAL WESTERN COUNTRIES
+30

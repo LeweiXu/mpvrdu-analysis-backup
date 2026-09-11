@@ -1,0 +1,16 @@
+# swept,"prompt_mode (page_aware vs grounded) × evidence hop × rung (answerable pool, oracle pages)"
+# manipulation,"the mode branches on the fed page count; only the multi-page branch asks for cross-page integration, so the multi row is the test and the single row is close to a placebo"
+# M−S change,"difference of differences, positive = the cue narrowed the multi-page deficit"
+rung,hop,grounded,page_aware,Δ (paired) [95% CI],n (paired)
+T,single,32.7,30.6,"**-2.1 [-3.6, -0.6]**",480
+T,multi,18.8,17.7,"-1.1 [-3.2, +0.9]",351
+T,M−S change,-,-,"+0.9 [-1.5, +3.4]",840
+TL,single,40.4,38.1,"**-2.3 [-4.4, -0.4]**",478
+TL,multi,28.8,26.9,"-1.9 [-4.5, +1.0]",316
+TL,M−S change,-,-,"+0.4 [-3.0, +3.6]",803
+TLV,single,56.1,53.8,"**-2.3 [-4.8, -0.2]**",478
+TLV,multi,36.8,36.4,"-0.4 [-3.2, +2.5]",280
+TLV,M−S change,-,-,"+1.9 [-2.0, +5.9]",767
+V,single,48.8,46.5,"**-2.3 [-4.5, -0.2]**",480
+V,multi,28.8,25.1,"**-3.7 [-6.6, -1.1]**",354
+V,M−S change,-,-,"-1.4 [-4.6, +2.0]",843

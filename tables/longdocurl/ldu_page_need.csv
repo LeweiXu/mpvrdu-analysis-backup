@@ -1,0 +1,22 @@
+# swept,question type × whether a multi-page question answers on one page (TLV)
+# dataset,longdocurl
+# scan,any
+# sampling,full (hop: multi)
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# prompt_mode,none
+# bound,"the ranker picks the surviving page, so every survival share is a lower bound on redundancy"
+question_type,solved,keep top-1 %,drop bottom-1 %,counted as
+extract,482,78.6,81.5,-
+topic2title,46,6.5,4.3,multi-hop
+summary2title,78,69.2,78.2,-
+summary2tab,19,31.6,31.6,multi-hop
+calculate,27,29.6,40.7,multi-hop
+count,48,47.9,58.3,multi-hop
+compare,54,70.4,72.2,-
+summarize,3,100.0,100.0,-
+**All**,757,67.9,71.7,-

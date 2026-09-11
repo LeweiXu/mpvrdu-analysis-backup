@@ -1,0 +1,18 @@
+asdaa
+[Non-Text]
+Burson-Marsteller
+[Non-Text]
+PENN
+SCHÖEN
+BERLAND
+arabyouthsurvey.com
+#arabyouthsurvey
+ASDA'A Burson-Marsteller
+[Non-Text]
+ARAB YOUTH SURVEY 2014
+5
+ENTREPRENEURIAL SPIRIT IS HIGH
+AND A GROWING NUMBER OF YOUNG
+ARABS WOULD LIKE TO WORK IN
+THE PRIVATE SECTOR
+24

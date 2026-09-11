@@ -1,0 +1,7 @@
+# swept,"prompt_mode transition (grounded→page_aware) × rung (answerable pool, oracle pages)"
+# reading,a near-zero net with large R→W and W→R means the instruction churns verdicts rather than doing nothing
+rung,R→W,of which as refusal,W→R,net,abstained (grounded),abstained (page_aware),n (paired)
+T,2.6 (n=22),0% (n=0),1.1 (n=9),-1.5,9.6 (n=81),22.7 (n=191),840
+TL,3.7 (n=30),3% (n=1),1.6 (n=13),-2.1,1.1 (n=9),15.1 (n=121),803
+TLV,3.8 (n=29),0% (n=0),2.2 (n=17),-1.6,0.7 (n=5),4.7 (n=36),767
+V,4.5 (n=38),0% (n=0),1.7 (n=14),-2.8,0.6 (n=5),4.9 (n=41),843

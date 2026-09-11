@@ -1,0 +1,8 @@
+Object Storage Service
+Product Introduction
+10 Change History
+10 Change History
+<table><tr><td>Release Date</td><td>What&#x27;s New</td></tr><tr><td>2024-02-28</td><td>This issue is the twenty-sixth official release.This issue incorporates the following change:Added the content related to Deep Archive storage (under limited beta testing).</td></tr><tr><td>2023-12-28</td><td>This issue is the twenty-fifth official release.This issue incorporates the following change:Added the permission dependency of OBS Console in Permissions Management.</td></tr><tr><td>2023-12-19</td><td>This issue is the twenty-fourth official release.This issue incorporates the following change:Updated the figure of the shared responsibility model in Shared Responsibilities.</td></tr><tr><td>2023-09-12</td><td>This issue is the twenty-third official release.This issue incorporates the following change:Put online decompression into commercial use.</td></tr><tr><td>2023-07-21</td><td>This issue is the twenty-second official release.This issue incorporates the following change:Added AP-Jakarta in the regions that support monitoring in Functions.</td></tr><tr><td>2023-07-14</td><td>This issue is the twenty-first official release.This issue incorporates the following change:Added AP-Jakarta in the regions that support back to source in Functions.</td></tr></table>
+Issue 26 (2024-02-28)
+Copyright © Huawei Technologies Co., Ltd.
+58

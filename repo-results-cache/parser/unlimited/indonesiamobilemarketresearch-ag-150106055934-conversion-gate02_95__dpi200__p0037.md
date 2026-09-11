@@ -1,0 +1,5 @@
+Venture Capitals in Indonesia's Internet startups
+UCWeb
+Major Venture Capital in Indonesian Internet industry
+<table><tr><td>VC</td><td>Target Fieldo</td><td>Portfolio</td></tr><tr><td>Rebright Partners</td><td>Internet, Consumer</td><td>Qraved, iMoney, IndoTrading, Adskom</td></tr><tr><td>CyberAgent Ventures</td><td>Internet, Media</td><td>Coda Payments, Bilna, TouchTen, VIP Plaza, Tokopedia</td></tr><tr><td>East Ventures</td><td>Internet, Media, Consumer</td><td>SCOOP, UrbanIndo, RedMart, Tokopedia, Bilna</td></tr><tr><td>GREE Ventures</td><td>Internet, Consumer</td><td>Bukalapak, Berrybenka, UrbanIndo, Luxola, PriceArea.</td></tr><tr><td>Ideosource</td><td>Internet, Consumer</td><td>Kark, Pasar Minggu, Saqina, Ever, Gimmie, Kelir TV, TouchTen</td></tr><tr><td>500 Startups</td><td>Internet, Consumer</td><td>Qraved, Bukalapak</td></tr><tr><td colspan="3">Source: http://www.techinasia.com/10-of-indonesia-most-active-venture-capital-firms/</td></tr></table>
+Several other major VCs are playing the space as well – Mountain SEA Ventures, Ideosource, Grupara, Fenox Venture Capital, IMJ Investment Partners.

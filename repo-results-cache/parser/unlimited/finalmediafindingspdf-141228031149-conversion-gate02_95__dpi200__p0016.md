@@ -1,0 +1,31 @@
+WHY DON'T YOU LISTEN TO THE RADIO?
+I DO NOT HAVE A RADIO
+I DO NOT HAVE TIME
+PROGRAM IN RADIO ARE NOT INTERESTING
+MY RADIO IS DAMAGED
+I CANNOT AFFORD RADIO
+I DON'T GO TO PLACES WHERE
+THEY PLAY THE RADIO
+79%
+10%
+8%
+6%
+5%
+1%
+BASE=1866.
+PERCENTAGE BASED ON MULTIPLE RESPONSE
+![](images/0.jpg)
+
+![](images/1.jpg)
+
+![](images/2.jpg)
+
+![](images/3.jpg)
+
+![](images/4.jpg)
+
+![](images/5.jpg)
+
+![](images/6.jpg)
+
+17

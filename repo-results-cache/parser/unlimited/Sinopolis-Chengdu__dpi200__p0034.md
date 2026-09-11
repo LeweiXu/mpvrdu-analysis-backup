@@ -1,0 +1,11 @@
+VISITOR INFORMATION
+i
+1
+Sichuan's food flair, by Fuchsia Dunlop
+Sichuanese is regarded as one of China's ‘four great cuisines’, and there is no better place to try it than in the provincial capital, Chengdu. Although its reputation is based on fiery chilli heat and the numbing sensation of Sichuan pepper, the local food is far more complex than this stereotype would suggest. Sichuanese chefs are renowned for their mastery of multi-layered flavours (fu he wei) in which the drama of spice and tingle is always balanced by gentler tastes. Even where chillies are used, they are employed with such variety that their taste never palls. They may be fresh, dried, pickled or ground, and used in every combination from the notorious mala ('numbing-and-hot') pairing of dried chillies and Sichuan pepper to the sweet, seductive 'fish-fragrant' flavour (see below). A well-planned Sichuanese meal should be a thrilling rollercoaster of tastes, with a mixture of spicy dishes, simple stir-fried greens and refreshing, lightly-seasoned broths.
+Sichuan is known in China as a 'Land of Plenty' because
+of its abundance of fresh produce all year round. The vegetables sold in the markets change with the seasons; local treats include ‘fish grass’ (ze'er gen), a sour-tasting green that is typically eaten in a spicy salad, the spring shoots of the Chinese toon tree (chun ya) and mallows (dong han cai), an ancient local favourite that is often made into soups. The key seasonings of Schuanese cuisine include not only chillies and Sichuan pepper, but also Pixian chilli bean paste (dou ban jiang), a fermented sauce made from fava beans and chillies. The population of Sichuan has long been composed of immigrants from other parts of China, and the local food is an amalgam of culinary influences from China and abroad, including, most famously, the Mexican chilli.
+Although Sichuanese banquet cookery can be highly sophisticated, the province is best known for the delicious ‘small eats’ (xiao chi) that were traditionally made and sold by street vendors, and for its hearty folk cooking.
+In 2010 Chengdu was the first Asian city recognised by UNESCO as a "City of Gastronomy"
+SINOPOLIS: CHENGDU
+33

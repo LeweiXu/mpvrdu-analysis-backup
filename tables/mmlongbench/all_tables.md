@@ -12,15 +12,16 @@
 | g1-interleaved-tlv | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
 | g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1466 | 228 | 0 | 13.5 |
 | g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1585 | 109 | 0 | 6.4 |
-| g1-quantization-full | G1_oracle_ladder | 5256 | 4961 | 295 | 0 | 5.6 |
-| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1488 | 32 | 0 | 2.1 |
+| g1-quantization-full | G1_oracle_ladder | 5256 | 5174 | 82 | 0 | 1.6 |
+| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1506 | 14 | 0 | 0.9 |
 | g1-reasoner-32b-matched | G1_oracle_ladder | 6776 | 6775 | 1 | 0 | 0.0 |
-| g1-reasoner-full | G1_oracle_ladder | 7884 | 7525 | 359 | 0 | 4.6 |
-| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3270 | 118 | 0 | 3.5 |
-| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2239 | 41 | 0 | 1.8 |
+| g1-reasoner-full | G1_oracle_ladder | 7884 | 7735 | 149 | 0 | 1.9 |
+| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3337 | 51 | 0 | 1.5 |
+| g1-reasoner-llama | G1_oracle_ladder | 3388 | 3169 | 219 | 0 | 6.5 |
+| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2257 | 23 | 0 | 1.0 |
 | g1-representation-full | G1_oracle_ladder | 3388 | 3143 | 245 | 0 | 7.2 |
-| g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
-| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
+| g1-resolution-full | G1_oracle_ladder | 3942 | 3847 | 95 | 0 | 2.4 |
+| g1-resolution-scanned | G1_oracle_ladder | 1119 | 1104 | 15 | 0 | 1.3 |
 | g1-tv-full | G1_oracle_ladder | 847 | 847 | 0 | 0 | 0.0 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
 | g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
@@ -33,12 +34,13 @@
 | g5b-gold1 | G5_selection | 11520 | 11376 | 0 | 144 | 0.0 |
 | g5b-gold2 | G5_selection | 5904 | 5784 | 0 | 120 | 0.0 |
 | g5b-gold3 | G5_selection | 960 | 960 | 0 | 0 | 0.0 |
-| g5c-gold1 | G5_selection | 1445 | 765 | 662 | 18 | 45.8 |
-| g5c-gold2 | G5_selection | 492 | 200 | 282 | 10 | 57.3 |
+| g5c-gold1 | G5_selection | 1440 | 1011 | 423 | 6 | 29.4 |
+| g5c-gold2 | G5_selection | 492 | 279 | 207 | 6 | 42.1 |
 | g6-strategies | G6_reasoning | 1694 | 1380 | 314 | 0 | 18.5 |
 | g6-thinking | G6_reasoning | 847 | 735 | 112 | 0 | 13.2 |
-| g7-models | G1_oracle_ladder | 10164 | 9493 | 671 | 0 | 6.6 |
-| **all** |  | **120800** | 114887 | 5429 | 484 | 4.5 |
+| g7-models | G1_oracle_ladder | 10164 | 9823 | 341 | 0 | 3.4 |
+| g8-pageaware-mmlb | G8_page_aware | 3388 | 3253 | 135 | 0 | 4.0 |
+| **all** |  | **127550** | 122821 | 4261 | 468 | 3.3 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -443,9 +445,9 @@ _Rows group on the pageset condition grammar (ranking source, gold rule, distrac
 | gold 1 + 2 distractors | colqwen3 | 38.8 [32.3-45.0] (n=474) | 47.9 [42.0-53.4] (n=474) | 64.3 [59.5-68.7] (n=474) | 56.1 [51.2-61.4] (n=474) | 1896 |
 | gold 1 + 3 distractors | bm25 | 40.9 [34.8-47.0] (n=474) | 47.0 [41.6-52.1] (n=474) | 65.0 [59.9-69.6] (n=474) | 54.4 [49.7-59.2] (n=474) | 1896 |
 | gold 1 + 3 distractors | colqwen3 | 40.9 [35.0-46.9] (n=474) | 47.0 [41.4-52.9] (n=474) | 63.1 [58.3-67.6] (n=474) | 55.1 [50.3-59.9] (n=474) | 1896 |
-| gold 1 + 4 distractors | colqwen3 | - (n=0) | - (n=0) | 63.3 [56.8-69.5] (n=313) | - (n=0) | 313 |
-| gold 1 + 5 distractors | colqwen3 | - (n=0) | - (n=0) | 63.3 [56.1-70.2] (n=256) | - (n=0) | 256 |
-| gold 1 + 6 distractors | colqwen3 | - (n=0) | - (n=0) | 65.3 [58.4-73.0] (n=196) | - (n=0) | 196 |
+| gold 1 + 4 distractors | colqwen3 | - (n=0) | - (n=0) | 62.5 [56.1-68.5] (n=317) | - (n=0) | 317 |
+| gold 1 + 5 distractors | colqwen3 | - (n=0) | - (n=0) | 62.3 [54.7-69.1] (n=260) | - (n=0) | 260 |
+| gold 1 + 6 distractors | colqwen3 | - (n=0) | - (n=0) | 64.0 [56.8-71.6] (n=200) | - (n=0) | 200 |
 | **oracle (gold 2, d=0)** | - | 28.9 [22.5-35.2] (n=246) | 33.3 [27.4-39.7] (n=246) | 37.8 [30.7-44.5] (n=246) | 34.6 [27.9-41.2] (n=246) | 984 |
 | gold 2 + 1 distractors | bm25 | 29.0 [22.2-35.8] (n=241) | 34.9 [29.0-40.6] (n=241) | 39.0 [31.7-46.5] (n=241) | 34.0 [27.2-41.0] (n=241) | 964 |
 | gold 2 + 1 distractors | colqwen3 | 25.7 [19.6-32.0] (n=241) | 34.0 [27.8-40.7] (n=241) | 38.6 [31.2-46.3] (n=241) | 34.4 [27.7-41.7] (n=241) | 964 |
@@ -453,8 +455,8 @@ _Rows group on the pageset condition grammar (ranking source, gold rule, distrac
 | gold 2 + 2 distractors | colqwen3 | 25.3 [18.9-32.2] (n=241) | 33.6 [27.3-40.3] (n=241) | 35.7 [28.3-43.0] (n=241) | 32.4 [25.9-39.6] (n=241) | 964 |
 | gold 2 + 3 distractors | bm25 | 28.2 [21.5-35.1] (n=241) | 34.9 [27.8-41.7] (n=241) | 40.2 [32.5-47.4] (n=241) | 34.0 [27.3-40.5] (n=241) | 964 |
 | gold 2 + 3 distractors | colqwen3 | 21.6 [16.1-27.5] (n=241) | 28.2 [22.2-34.6] (n=241) | 33.6 [26.4-41.0] (n=241) | 33.2 [26.4-40.0] (n=241) | 964 |
-| gold 2 + 4 distractors | colqwen3 | - (n=0) | - (n=0) | 44.4 [34.3-54.4] (n=117) | - (n=0) | 117 |
-| gold 2 + 5 distractors | colqwen3 | - (n=0) | - (n=0) | 45.8 [33.3-57.5] (n=83) | - (n=0) | 83 |
+| gold 2 + 4 distractors | colqwen3 | - (n=0) | - (n=0) | 43.7 [33.9-53.5] (n=119) | - (n=0) | 119 |
+| gold 2 + 5 distractors | colqwen3 | - (n=0) | - (n=0) | 44.7 [32.9-56.0] (n=85) | - (n=0) | 85 |
 | **oracle (gold 3, d=0)** | - | 25.0 [10.2-41.5] (n=40) | 30.0 [15.4-46.2] (n=40) | 47.5 [30.8-63.4] (n=40) | 42.5 [24.3-57.8] (n=40) | 160 |
 | gold 3 + 1 distractors | bm25 | 22.5 [9.8-38.5] (n=40) | 35.0 [20.5-50.0] (n=40) | 50.0 [34.1-65.9] (n=40) | 37.5 [21.4-54.1] (n=40) | 160 |
 | gold 3 + 1 distractors | colqwen3 | 22.5 [7.9-39.0] (n=40) | 40.0 [23.7-56.8] (n=40) | 45.0 [28.2-61.0] (n=40) | 40.0 [25.0-54.1] (n=40) | 160 |
@@ -462,7 +464,7 @@ _Rows group on the pageset condition grammar (ranking source, gold rule, distrac
 | gold 3 + 2 distractors | colqwen3 | 27.5 [12.8-43.9] (n=40) | 37.5 [22.5-53.7] (n=40) | 40.0 [23.7-55.8] (n=40) | 30.0 [16.2-44.2] (n=40) | 160 |
 | gold 3 + 3 distractors | bm25 | 17.5 [5.1-31.0] (n=40) | 30.0 [15.8-44.5] (n=40) | 40.0 [23.1-55.3] (n=40) | 37.5 [21.1-52.5] (n=40) | 160 |
 | gold 3 + 3 distractors | colqwen3 | 25.0 [10.0-41.5] (n=40) | 35.0 [19.5-51.2] (n=40) | 40.0 [25.0-56.1] (n=40) | 32.5 [17.5-46.5] (n=40) | 160 |
-| n (per col) | - | 7346 | 7346 | 8311 | 7346 | - |
+| n (per col) | - | 7346 | 7346 | 8327 | 7346 | - |
 
 ### Selection: paired within-question verdict transitions from the oracle page set
 
@@ -542,12 +544,12 @@ _Paired on (question_id, rung) against the SAME question's oracle cell, loaded f
 | robustness (gold 1) | oracle -> +3 distractors | colqwen3 | TLV | 8.2 (39) | 9.7 (46) | 54.9 (260) | 27.2 (129) | 474 |
 | robustness (gold 1) | oracle -> +3 distractors | colqwen3 | V | 10.5 (50) | 11.2 (53) | 44.5 (211) | 33.8 (160) | 474 |
 | robustness (gold 1) | oracle -> +3 distractors | colqwen3 | **All rungs** | 8.8 (167) | 8.0 (152) | 42.7 (810) | 40.5 (767) | 1896 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | TLV | 6.7 (21) | 9.6 (30) | 56.5 (177) | 27.2 (85) | 313 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | **All rungs** | 6.7 (21) | 9.6 (30) | 56.5 (177) | 27.2 (85) | 313 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | TLV | 7.0 (18) | 10.2 (26) | 56.2 (144) | 26.6 (68) | 256 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | **All rungs** | 7.0 (18) | 10.2 (26) | 56.2 (144) | 26.6 (68) | 256 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | TLV | 8.2 (16) | 12.2 (24) | 57.1 (112) | 22.4 (44) | 196 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | **All rungs** | 8.2 (16) | 12.2 (24) | 57.1 (112) | 22.4 (44) | 196 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | TLV | 6.6 (21) | 9.5 (30) | 55.8 (177) | 28.1 (89) | 317 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | **All rungs** | 6.6 (21) | 9.5 (30) | 55.8 (177) | 28.1 (89) | 317 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | TLV | 6.9 (18) | 10.0 (26) | 55.4 (144) | 27.7 (72) | 260 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | **All rungs** | 6.9 (18) | 10.0 (26) | 55.4 (144) | 27.7 (72) | 260 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | TLV | 8.0 (16) | 12.0 (24) | 56.0 (112) | 24.0 (48) | 200 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | **All rungs** | 8.0 (16) | 12.0 (24) | 56.0 (112) | 24.0 (48) | 200 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | T | 7.1 (17) | 7.5 (18) | 22.0 (53) | 63.5 (153) | 241 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | TL | 7.1 (17) | 6.2 (15) | 27.8 (67) | 58.9 (142) | 241 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | TLV | 6.6 (16) | 6.2 (15) | 32.4 (78) | 54.8 (132) | 241 |
@@ -578,10 +580,10 @@ _Paired on (question_id, rung) against the SAME question's oracle cell, loaded f
 | robustness (gold 2) | oracle -> +3 distractors | colqwen3 | TLV | 6.2 (15) | 11.2 (27) | 27.4 (66) | 55.2 (133) | 241 |
 | robustness (gold 2) | oracle -> +3 distractors | colqwen3 | V | 7.5 (18) | 9.5 (23) | 25.7 (62) | 57.3 (138) | 241 |
 | robustness (gold 2) | oracle -> +3 distractors | colqwen3 | **All rungs** | 5.7 (55) | 10.9 (105) | 23.4 (226) | 60.0 (578) | 964 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | TLV | 12.0 (14) | 12.0 (14) | 32.5 (38) | 43.6 (51) | 117 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | **All rungs** | 12.0 (14) | 12.0 (14) | 32.5 (38) | 43.6 (51) | 117 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | TLV | 8.4 (7) | 10.8 (9) | 37.3 (31) | 43.4 (36) | 83 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | **All rungs** | 8.4 (7) | 10.8 (9) | 37.3 (31) | 43.4 (36) | 83 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | TLV | 11.8 (14) | 11.8 (14) | 31.9 (38) | 44.5 (53) | 119 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | **All rungs** | 11.8 (14) | 11.8 (14) | 31.9 (38) | 44.5 (53) | 119 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | TLV | 8.2 (7) | 10.6 (9) | 36.5 (31) | 44.7 (38) | 85 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | **All rungs** | 8.2 (7) | 10.6 (9) | 36.5 (31) | 44.7 (38) | 85 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | T | 2.5 (1) | 5.0 (2) | 20.0 (8) | 72.5 (29) | 40 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | TL | 10.0 (4) | 5.0 (2) | 25.0 (10) | 60.0 (24) | 40 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | TLV | 5.0 (2) | 2.5 (1) | 45.0 (18) | 47.5 (19) | 40 |
@@ -721,26 +723,26 @@ _Same pairing as the by-rung table (see it for the definition), POOLED over the 
 | robustness (gold 1) | oracle -> +3 distractors | colqwen3 | Table | 7.5 (31) | 7.5 (31) | 51.7 (215) | 33.4 (139) | 416 | 104 |
 | robustness (gold 1) | oracle -> +3 distractors | colqwen3 | **All sources** | 8.8 (167) | 8.0 (152) | 42.7 (810) | 40.5 (767) | 1896 | 474 |
 | robustness (gold 1) | oracle -> +4 distractors | colqwen3 | (none)† | 14.3 (1) | 0.0 (0) | 85.7 (6) | 0.0 (0) | 7 | 7 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Chart | 8.4 (7) | 12.0 (10) | 53.0 (44) | 26.5 (22) | 83 | 83 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Figure | 5.3 (7) | 9.8 (13) | 43.2 (57) | 41.7 (55) | 132 | 132 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Chart | 8.3 (7) | 11.9 (10) | 52.4 (44) | 27.4 (23) | 84 | 84 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Figure | 5.2 (7) | 9.7 (13) | 42.5 (57) | 42.5 (57) | 134 | 134 |
 | robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Generalized-text (Layout) | 0.0 (0) | 10.2 (5) | 57.1 (28) | 32.7 (16) | 49 | 49 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Pure-text (Plain-text) | 6.9 (6) | 5.7 (5) | 62.1 (54) | 25.3 (22) | 87 | 87 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Pure-text (Plain-text) | 6.8 (6) | 5.7 (5) | 61.4 (54) | 26.1 (23) | 88 | 88 |
 | robustness (gold 1) | oracle -> +4 distractors | colqwen3 | Table | 5.7 (2) | 8.6 (3) | 68.6 (24) | 17.1 (6) | 35 | 35 |
-| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | **All sources** | 6.7 (21) | 9.6 (30) | 56.5 (177) | 27.2 (85) | 313 | 313 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | **All sources** | 6.6 (21) | 9.5 (30) | 55.8 (177) | 28.1 (89) | 317 | 317 |
 | robustness (gold 1) | oracle -> +5 distractors | colqwen3 | (none)† | 20.0 (1) | 0.0 (0) | 80.0 (4) | 0.0 (0) | 5 | 5 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Chart | 6.8 (5) | 17.6 (13) | 45.9 (34) | 29.7 (22) | 74 | 74 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Figure | 4.5 (5) | 9.8 (11) | 46.4 (52) | 39.3 (44) | 112 | 112 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Chart | 6.7 (5) | 17.3 (13) | 45.3 (34) | 30.7 (23) | 75 | 75 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Figure | 4.4 (5) | 9.6 (11) | 45.6 (52) | 40.4 (46) | 114 | 114 |
 | robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Generalized-text (Layout) | 2.6 (1) | 12.8 (5) | 53.8 (21) | 30.8 (12) | 39 | 39 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Pure-text (Plain-text) | 7.5 (5) | 4.5 (3) | 62.7 (42) | 25.4 (17) | 67 | 67 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Pure-text (Plain-text) | 7.4 (5) | 4.4 (3) | 61.8 (42) | 26.5 (18) | 68 | 68 |
 | robustness (gold 1) | oracle -> +5 distractors | colqwen3 | Table† | 8.7 (2) | 0.0 (0) | 82.6 (19) | 8.7 (2) | 23 | 23 |
-| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | **All sources** | 7.0 (18) | 10.2 (26) | 56.2 (144) | 26.6 (68) | 256 | 256 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | **All sources** | 6.9 (18) | 10.0 (26) | 55.4 (144) | 27.7 (72) | 260 | 260 |
 | robustness (gold 1) | oracle -> +6 distractors | colqwen3 | (none)† | 0.0 (0) | 0.0 (0) | 100.0 (3) | 0.0 (0) | 3 | 3 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Chart | 7.5 (4) | 20.8 (11) | 52.8 (28) | 18.9 (10) | 53 | 53 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Figure | 7.9 (7) | 9.0 (8) | 48.3 (43) | 34.8 (31) | 89 | 89 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Chart | 7.4 (4) | 20.4 (11) | 51.9 (28) | 20.4 (11) | 54 | 54 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Figure | 7.7 (7) | 8.8 (8) | 47.3 (43) | 36.3 (33) | 91 | 91 |
 | robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Generalized-text (Layout) | 2.8 (1) | 19.4 (7) | 50.0 (18) | 27.8 (10) | 36 | 36 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Pure-text (Plain-text) | 10.0 (5) | 6.0 (3) | 62.0 (31) | 22.0 (11) | 50 | 50 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Pure-text (Plain-text) | 9.8 (5) | 5.9 (3) | 60.8 (31) | 23.5 (12) | 51 | 51 |
 | robustness (gold 1) | oracle -> +6 distractors | colqwen3 | Table† | 0.0 (0) | 6.7 (1) | 80.0 (12) | 13.3 (2) | 15 | 15 |
-| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | **All sources** | 8.2 (16) | 12.2 (24) | 57.1 (112) | 22.4 (44) | 196 | 196 |
+| robustness (gold 1) | oracle -> +6 distractors | colqwen3 | **All sources** | 8.0 (16) | 12.0 (24) | 56.0 (112) | 24.0 (48) | 200 | 200 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | (none)† | 25.0 (4) | 0.0 (0) | 0.0 (0) | 75.0 (12) | 16 | 4 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | Chart | 7.8 (18) | 5.6 (13) | 21.6 (50) | 65.1 (151) | 232 | 58 |
 | robustness (gold 2) | oracle -> +1 distractor | bm25 | Figure | 4.5 (12) | 5.3 (14) | 22.3 (59) | 67.8 (179) | 264 | 66 |
@@ -784,18 +786,18 @@ _Same pairing as the by-rung table (see it for the definition), POOLED over the 
 | robustness (gold 2) | oracle -> +3 distractors | colqwen3 | Table | 4.4 (17) | 11.2 (43) | 20.6 (79) | 63.8 (245) | 384 | 96 |
 | robustness (gold 2) | oracle -> +3 distractors | colqwen3 | **All sources** | 5.7 (55) | 10.9 (105) | 23.4 (226) | 60.0 (578) | 964 | 241 |
 | robustness (gold 2) | oracle -> +4 distractors | colqwen3 | (none)† | 100.0 (1) | 0.0 (0) | 0.0 (0) | 0.0 (0) | 1 | 1 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Chart | 19.4 (7) | 11.1 (4) | 25.0 (9) | 44.4 (16) | 36 | 36 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Figure | 6.2 (3) | 6.2 (3) | 37.5 (18) | 50.0 (24) | 48 | 48 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Chart | 18.9 (7) | 10.8 (4) | 24.3 (9) | 45.9 (17) | 37 | 37 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Figure | 6.0 (3) | 6.0 (3) | 36.0 (18) | 52.0 (26) | 50 | 50 |
 | robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Generalized-text (Layout)† | 8.0 (2) | 24.0 (6) | 24.0 (6) | 44.0 (11) | 25 | 25 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Pure-text (Plain-text) | 10.9 (5) | 17.4 (8) | 32.6 (15) | 39.1 (18) | 46 | 46 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Table† | 5.3 (1) | 15.8 (3) | 31.6 (6) | 47.4 (9) | 19 | 19 |
-| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | **All sources** | 12.0 (14) | 12.0 (14) | 32.5 (38) | 43.6 (51) | 117 | 117 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Chart† | 20.0 (5) | 20.0 (5) | 24.0 (6) | 36.0 (9) | 25 | 25 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Figure | 0.0 (0) | 4.9 (2) | 43.9 (18) | 51.2 (21) | 41 | 41 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Pure-text (Plain-text) | 10.6 (5) | 17.0 (8) | 31.9 (15) | 40.4 (19) | 47 | 47 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | Table† | 5.0 (1) | 15.0 (3) | 30.0 (6) | 50.0 (10) | 20 | 20 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | **All sources** | 11.8 (14) | 11.8 (14) | 31.9 (38) | 44.5 (53) | 119 | 119 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Chart† | 19.2 (5) | 19.2 (5) | 23.1 (6) | 38.5 (10) | 26 | 26 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Figure | 0.0 (0) | 4.7 (2) | 41.9 (18) | 53.5 (23) | 43 | 43 |
 | robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Generalized-text (Layout)† | 0.0 (0) | 15.8 (3) | 31.6 (6) | 52.6 (10) | 19 | 19 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Pure-text (Plain-text) | 9.4 (3) | 15.6 (5) | 40.6 (13) | 34.4 (11) | 32 | 32 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Table† | 10.0 (1) | 0.0 (0) | 60.0 (6) | 30.0 (3) | 10 | 10 |
-| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | **All sources** | 8.4 (7) | 10.8 (9) | 37.3 (31) | 43.4 (36) | 83 | 83 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Pure-text (Plain-text) | 9.1 (3) | 15.2 (5) | 39.4 (13) | 36.4 (12) | 33 | 33 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | Table† | 9.1 (1) | 0.0 (0) | 54.5 (6) | 36.4 (4) | 11 | 11 |
+| robustness (gold 2) | oracle -> +5 distractors | colqwen3 | **All sources** | 8.2 (7) | 10.6 (9) | 36.5 (31) | 44.7 (38) | 85 | 85 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | Chart† | 0.0 (0) | 0.0 (0) | 33.3 (4) | 66.7 (8) | 12 | 3 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | Figure† | 7.9 (6) | 2.6 (2) | 28.9 (22) | 60.5 (46) | 76 | 19 |
 | robustness (gold 3) | oracle -> +1 distractor | bm25 | Generalized-text (Layout)† | 5.0 (1) | 5.0 (1) | 50.0 (10) | 40.0 (8) | 20 | 5 |
@@ -860,19 +862,19 @@ _Paired within-question against the same question's oracle cell at the TLV rung,
 | gold pages | evidence_source | +1 distractor R→W | +1 distractor W→R | +2 distractors R→W | +2 distractors W→R | +3 distractors R→W | +3 distractors W→R | +4 distractors R→W | +4 distractors W→R | +5 distractors R→W | +5 distractors W→R | +6 distractors R→W | +6 distractors W→R | paired n | questions |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 gold page | (none)† | 0.0 | 14.3 | 0.0 | 14.3 | 0.0 | 14.3 | 0.0 | 14.3 | 0.0 | 20.0 | 0.0 | 0.0 | 14 | 14 |
-| 1 gold page | Chart | 9.3 | 7.2 | 10.3 | 9.3 | 17.5 | 8.2 | 12.0 | 8.4 | 17.6 | 6.8 | 20.8 | 7.5 | 97 | 97 |
-| 1 gold page | Figure | 7.4 | 6.8 | 11.1 | 10.5 | 9.3 | 9.9 | 9.8 | 5.3 | 9.8 | 4.5 | 9.0 | 7.9 | 162 | 162 |
+| 1 gold page | Chart | 9.3 | 7.2 | 10.3 | 9.3 | 17.5 | 8.2 | 11.9 | 8.3 | 17.3 | 6.7 | 20.4 | 7.4 | 97 | 97 |
+| 1 gold page | Figure | 7.4 | 6.8 | 11.1 | 10.5 | 9.3 | 9.9 | 9.7 | 5.2 | 9.6 | 4.4 | 8.8 | 7.7 | 162 | 162 |
 | 1 gold page | Generalized-text (Layout) | 10.7 | 5.4 | 8.9 | 7.1 | 7.1 | 3.6 | 10.2 | 0.0 | 12.8 | 2.6 | 19.4 | 2.8 | 56 | 56 |
-| 1 gold page | Pure-text (Plain-text) | 7.2 | 6.5 | 5.9 | 5.9 | 7.2 | 5.9 | 5.7 | 6.9 | 4.5 | 7.5 | 6.0 | 10.0 | 153 | 153 |
+| 1 gold page | Pure-text (Plain-text) | 7.2 | 6.5 | 5.9 | 5.9 | 7.2 | 5.9 | 5.7 | 6.8 | 4.4 | 7.4 | 5.9 | 9.8 | 153 | 153 |
 | 1 gold page | Table | 8.7 | 4.8 | 5.8 | 3.8 | 6.7 | 6.7 | 8.6 | 5.7 | 0.0 | 8.7 | 6.7 | 0.0 | 104 | 104 |
-| 1 gold page | **All sources** | 7.8 | 7.0 | 8.2 | 8.0 | 9.7 | 8.2 | 9.6 | 6.7 | 10.2 | 7.0 | 12.2 | 8.2 | 474 | 474 |
+| 1 gold page | **All sources** | 7.8 | 7.0 | 8.2 | 8.0 | 9.7 | 8.2 | 9.5 | 6.6 | 10.0 | 6.9 | 12.0 | 8.0 | 474 | 474 |
 | 2-3 gold pages | (none)† | 0.0 | 25.0 | 0.0 | 25.0 | 0.0 | 25.0 | 0.0 | 100.0 | - | - | - | - | 4 | 4 |
-| 2-3 gold pages | Chart | 4.9 | 8.2 | 6.6 | 4.9 | 9.8 | 8.2 | 11.1 | 19.4 | 20.0 | 20.0 | - | - | 61 | 61 |
-| 2-3 gold pages | Figure | 7.1 | 9.4 | 8.2 | 5.9 | 10.6 | 2.4 | 6.2 | 6.2 | 4.9 | 0.0 | - | - | 85 | 85 |
+| 2-3 gold pages | Chart | 4.9 | 8.2 | 6.6 | 4.9 | 9.8 | 8.2 | 10.8 | 18.9 | 19.2 | 19.2 | - | - | 61 | 61 |
+| 2-3 gold pages | Figure | 7.1 | 9.4 | 8.2 | 5.9 | 10.6 | 2.4 | 6.0 | 6.0 | 4.7 | 0.0 | - | - | 85 | 85 |
 | 2-3 gold pages | Generalized-text (Layout) | 5.1 | 7.7 | 15.4 | 2.6 | 20.5 | 7.7 | 24.0 | 8.0 | 15.8 | 0.0 | - | - | 39 | 39 |
-| 2-3 gold pages | Pure-text (Plain-text) | 8.3 | 4.6 | 10.1 | 4.6 | 11.0 | 4.6 | 17.4 | 10.9 | 15.6 | 9.4 | - | - | 109 | 109 |
-| 2-3 gold pages | Table | 7.8 | 7.8 | 6.8 | 4.9 | 8.7 | 4.9 | 15.8 | 5.3 | 0.0 | 10.0 | - | - | 103 | 103 |
-| 2-3 gold pages | **All sources** | 7.8 | 7.5 | 9.6 | 6.0 | 11.4 | 6.0 | 12.0 | 12.0 | 10.8 | 8.4 | - | - | 281 | 281 |
+| 2-3 gold pages | Pure-text (Plain-text) | 8.3 | 4.6 | 10.1 | 4.6 | 11.0 | 4.6 | 17.0 | 10.6 | 15.2 | 9.1 | - | - | 109 | 109 |
+| 2-3 gold pages | Table | 7.8 | 7.8 | 6.8 | 4.9 | 8.7 | 4.9 | 15.0 | 5.0 | 0.0 | 9.1 | - | - | 103 | 103 |
+| 2-3 gold pages | **All sources** | 7.8 | 7.5 | 9.6 | 6.0 | 11.4 | 6.0 | 11.8 | 11.8 | 10.6 | 8.2 | - | - | 281 | 281 |
 | n (per col) | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 
 ### Adding distractor pages: dilution slope on the matched question set
@@ -901,6 +903,31 @@ _The dilution slope on a FIXED question set. OOM attrition over the deep distrac
 | 3 gold pages | +2 distractors | 40.0 | -7.5 | 40 |
 | 3 gold pages | +3 distractors | 40.0 | -7.5 | 40 |
 
+### Retrieval P/R by gold-page count, at the matched depth and above
+
+> **swept**: retriever × gold-page count (P/R at the matched depth) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: TLV/V · **pool**: answerable · **page_selection**: retrieved (bm25 text / colqwen2.5 vision / joint) · **prompt_mode**: none · **depth**: each bucket read at the smallest swept k that can cover it, since the number of pages an answer needs is known when the question is asked · **status**: PROVISIONAL (partial G2 pool)
+
+_Percentages, page-level against the annotated evidence pages. `k=gold` is the depth matched to the question's own gold-page count, which is the operating point available in practice because how many pages an answer needs is usually known when the question is asked; the columns after it are fixed depths. **Precision is capped by construction at gold/k**, so it falls across a row by arithmetic rather than by the retriever getting worse, and recall is the column to read for coverage. A union arm's `k` is PER CONSTITUENT, so it returns up to 2k deduplicated pages and its precision is divided by what it actually returned; that is the trade the union makes and the reason its precision sits below its constituents' at the same nominal depth. Rankings nest, so any depth up to 10 is derived by truncating the deepest stored one; a union arm does not nest and is blank outside the depths it stored. Questions citing three or more gold pages are dropped: 112 questions over counts up to 24 is too thin to split and too heterogeneous to pool._
+
+| retriever | gold pages | n | k=gold P | k=gold R | k=3 P | k=3 R | k=5 P | k=5 R | k=7 P | k=7 R | k=10 P | k=10 R |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| bge-m3 | 1 | 480 | 33.5 | 33.5 | 15.3 | 45.8 | 10.8 | 54.2 | 8.4 | 58.8 | 6.5 | 65.4 |
+| bge-m3\|colqwen2.5 | 1 | 480 | 50.2 | 72.1 | 17.9 | 83.5 | 11.6 | 88.5 | - | - | - | - |
+| bm25 | 1 | 480 | 29.6 | 29.6 | 15.1 | 45.2 | 10.8 | 54.0 | 8.3 | 58.1 | 6.6 | 65.6 |
+| bm25\|colmodernvbert | 1 | 480 | 46.7 | 68.5 | 17.5 | 82.3 | 11.3 | 87.9 | - | - | - | - |
+| colmodernvbert | 1 | 480 | 63.8 | 63.8 | 26.2 | 78.8 | 16.8 | 84.0 | 12.4 | 86.9 | 8.9 | 88.5 |
+| colqwen2.5 | 1 | 480 | 66.9 | 66.9 | 26.8 | 80.4 | 17.0 | 84.8 | 12.6 | 88.1 | 9.0 | 90.4 |
+| colqwen3 | 1 | 480 | 74.0 | 74.0 | 28.8 | 86.5 | 18.1 | 90.6 | 13.2 | 92.1 | 9.3 | 93.3 |
+| qwen3-embedding | 1 | 480 | 33.1 | 33.1 | 16.2 | 48.5 | 11.1 | 55.6 | 8.8 | 61.5 | 6.9 | 69.4 |
+| bge-m3 | 2 | 246 | 30.1 | 30.1 | 25.1 | 37.6 | 20.0 | 50.0 | 15.7 | 54.9 | 12.9 | 64.4 |
+| bge-m3\|colqwen2.5 | 2 | 246 | - | - | 30.2 | 70.3 | 20.9 | 78.0 | - | - | - | - |
+| bm25 | 2 | 246 | 27.4 | 27.4 | 22.5 | 33.7 | 16.7 | 41.7 | 13.5 | 47.2 | 11.1 | 55.1 |
+| bm25\|colmodernvbert | 2 | 246 | - | - | 26.8 | 61.8 | 18.7 | 71.1 | - | - | - | - |
+| colmodernvbert | 2 | 246 | 48.6 | 48.6 | 36.6 | 54.9 | 26.2 | 65.4 | 20.4 | 71.3 | 15.6 | 78.0 |
+| colqwen2.5 | 2 | 246 | 54.5 | 54.5 | 42.3 | 63.4 | 28.5 | 71.1 | 21.6 | 75.6 | 16.3 | 81.3 |
+| colqwen3 | 2 | 246 | 58.9 | 58.9 | 46.5 | 69.7 | 31.0 | 77.4 | 23.0 | 80.5 | 17.1 | 85.2 |
+| qwen3-embedding | 2 | 246 | 35.6 | 35.6 | 27.9 | 41.9 | 21.1 | 52.6 | 17.2 | 60.2 | 13.8 | 68.9 |
+
 ### Retrieval accuracy (summary): best-F1 operating point per method
 
 > **view**: summary — pooled across all doc_types · **swept**: retriever × k (page P/R/F1) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: TLV/V · **pool**: answerable · **page_selection**: retrieved (bm25 text / colqwen2.5 vision / joint) · **prompt_mode**: none
@@ -916,6 +943,7 @@ _best_k = the depth k with the highest mean F1 for that method (all doc_types)._
 | colmodernvbert | vision | 1 | 0.588 | 0.460 | 0.496 | 847 |
 | colqwen2.5 | vision | 1 | 0.633 | 0.488 | 0.528 | 847 |
 | colqwen3 | vision | 1 | 0.702 | 0.541 | 0.586 | 847 |
+| qwen3-embedding | text | 1 | 0.335 | 0.255 | 0.279 | 847 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Retrieval accuracy: page P/R/F1 by method (all doc_types)
@@ -955,13 +983,18 @@ _best_k = the depth k with the highest mean F1 for that method (all doc_types)._
 | colqwen3 | vision | 5 | 0.255 | 0.806 | 0.361 | 847 |
 | colqwen3 | vision | 7 | 0.199 | 0.839 | 0.299 | 847 |
 | colqwen3 | vision | 10 | 0.152 | 0.874 | 0.241 | 847 |
+| qwen3-embedding | text | 1 | 0.335 | 0.255 | 0.279 | 847 |
+| qwen3-embedding | text | 3 | 0.199 | 0.413 | 0.254 | 847 |
+| qwen3-embedding | text | 5 | 0.150 | 0.494 | 0.217 | 847 |
+| qwen3-embedding | text | 7 | 0.126 | 0.560 | 0.194 | 847 |
+| qwen3-embedding | text | 10 | 0.105 | 0.645 | 0.171 | 847 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Retrieval accuracy: page P/R/F1 at every depth, from the full rankings
 
 > **swept**: retriever × k ∈ {1,3,5,7,10} (complete depth sweep, P/R/F1 as %) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: TLV/V · **pool**: answerable · **page_selection**: retrieved (bm25 text / colqwen2.5 vision / joint) · **prompt_mode**: none · **units**: PERCENTAGES, unlike the other retrieval tables · **provenance column**: measured = read off the side artifact; derived (union) = a joint arm rebuilt from its two constituents at the same depth, after the union rule is verified against every stored joint row
 
-_P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averaged over the 847 answerable questions, one row per (retriever, k). Every cell is computed from the retrieval MEMO (`results/cache/<run_tag>/retrieval/<name>__dpi<dpi>.jsonl`), which stores each retriever's complete ranking of a document's pages independent of depth. `retrieval.jsonl` stores only the depths a sweep was configured to score, and the G2 run scored fewer for the joint arms and for qwen3-embedding, which was re-run separately after an OOM by `ops/scripts/complete_retrieval.py` — that tool writes the memo and leaves `retrieval.jsonl` alone by design, and the merge back was never done. The `provenance` column says which: `scored` means a row for that depth also exists in `retrieval.jsonl`, `from ranking` means the depth is read off the same stored ranking without re-running anything. The memo is checked before any of it is used: 26257 scored rows reproduced exactly from the memo, across every retriever and depth `retrieval.jsonl` does carry, so the two agree wherever they overlap. Recovered here: bge-m3|colqwen2.5 k=7, bge-m3|colqwen2.5 k=10, bm25|colmodernvbert k=7, bm25|colmodernvbert k=10. No cell is missing. Note a joint arm at depth k returns up to 2k pages, so its precision is measured over a larger page set than a single arm at the same k._
+_P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averaged over the 847 answerable questions, one row per (retriever, k). Every cell is computed from the retrieval MEMO (`results/cache/<run_tag>/retrieval/<name>__dpi<dpi>.jsonl`), which stores each retriever's complete ranking of a document's pages independent of depth. `retrieval.jsonl` stores only the depths a sweep was configured to score, and the G2 run scored fewer for the joint arms and for qwen3-embedding, which was re-run separately after an OOM by `ops/scripts/complete_retrieval.py` — that tool writes the memo and leaves `retrieval.jsonl` alone by design, and the merge back was never done. The `provenance` column says which: `scored` means a row for that depth also exists in `retrieval.jsonl`, `from ranking` means the depth is read off the same stored ranking without re-running anything. The memo is checked before any of it is used: 30492 scored rows reproduced exactly from the memo, across every retriever and depth `retrieval.jsonl` does carry, so the two agree wherever they overlap. Recovered here: bge-m3|colqwen2.5 k=7, bge-m3|colqwen2.5 k=10, bm25|colmodernvbert k=7, bm25|colmodernvbert k=10. No cell is missing. Note a joint arm at depth k returns up to 2k pages, so its precision is measured over a larger page set than a single arm at the same k._
 
 | retriever | modality | k | P | R | F1 | n | provenance |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1000,6 +1033,11 @@ _P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averag
 | colqwen3 | vision | 5 | 25.5 | 80.6 | 36.1 | 847 | scored |
 | colqwen3 | vision | 7 | 19.9 | 83.9 | 29.9 | 847 | scored |
 | colqwen3 | vision | 10 | 15.2 | 87.4 | 24.1 | 847 | scored |
+| qwen3-embedding | text | 1 | 33.5 | 25.5 | 27.9 | 847 | scored |
+| qwen3-embedding | text | 3 | 19.9 | 41.3 | 25.4 | 847 | scored |
+| qwen3-embedding | text | 5 | 15.0 | 49.4 | 21.7 | 847 | scored |
+| qwen3-embedding | text | 7 | 12.6 | 56.0 | 19.4 | 847 | scored |
+| qwen3-embedding | text | 10 | 10.5 | 64.5 | 17.1 | 847 | scored |
 | n (per col) | - | - | - | - | - | - | - |
 
 ### Retrieval accuracy: page P/R/F1 by method and render DPI
@@ -1039,6 +1077,11 @@ _P/R/F1 as PERCENTAGES (the other retrieval tables emit fractions), macro-averag
 | colqwen3 | vision | 5 | 200 | 0.255 | 0.806 | 0.361 | 847 |
 | colqwen3 | vision | 7 | 200 | 0.199 | 0.839 | 0.299 | 847 |
 | colqwen3 | vision | 10 | 200 | 0.152 | 0.874 | 0.241 | 847 |
+| qwen3-embedding | text | 1 | 200 | 0.335 | 0.255 | 0.279 | 847 |
+| qwen3-embedding | text | 3 | 200 | 0.199 | 0.413 | 0.254 | 847 |
+| qwen3-embedding | text | 5 | 200 | 0.150 | 0.494 | 0.217 | 847 |
+| qwen3-embedding | text | 7 | 200 | 0.126 | 0.560 | 0.194 | 847 |
+| qwen3-embedding | text | 10 | 200 | 0.105 | 0.645 | 0.171 | 847 |
 | n (per col) | - | - | - | - | - | - | - |
 
 ### Top-k sweep: accuracy vs retrieval depth by modality
@@ -1165,6 +1208,19 @@ _Built on the COMPLETE answerable pool: all 847 answerable questions at every ru
 | **All sources** | **V** | **55.2 [49.8-60.8] (n=480)** | **33.5 [28.7-38.6] (n=358)** | **-21.7** | **838** |
 | n (per col) | - | 2400 | 1790 | - | - |
 
+### Integration by gold-page count and evidence-source count (MMLongBench-Doc)
+
+> **swept**: gold-page count × evidence-source count × rung (answerable pool, oracle pages) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition · **page_selection**: oracle · **prompt_mode**: none · **design**: observational — four question populations, not one population under four treatments · **hop**: the `hop` label calls every one-page question single, including the 105 that cite two evidence sources
+
+_Uninstructed, oracle pages. Rows are disjoint and questions carrying no gold page or no source annotation are dropped, so they do not sum to the pool. `M-S` is the row minus the first, in points: down a column it separates the cost of a second evidence SOURCE on one page from the cost of a second PAGE. Observational, not a manipulation: these are four question populations rather than one population under four treatments, so a difference carries whatever else makes a two-source question harder._
+
+| bucket | T | TL | TLV | V | M-S T | M-S TL | M-S TLV | M-S V | n |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 page / 1 source | 41.5 [34.7-48.0] | 46.7 [40.2-52.8] | 66.2 [60.8-71.2] | 59.6 [54.3-65.3] | - | - | - | - | 364 |
+| 1 page / 2+ sources | 18.2 [11.2-26.0] | 32.7 [23.9-42.5] | 48.2 [38.3-58.7] | 36.4 [26.9-46.1] | -23.3 | -14.0 | -18.0 | -23.3 | 110 |
+| 2+ pages / 1 source | 26.3 [20.4-33.0] | 34.4 [28.2-41.3] | 42.0 [35.2-49.1] | 37.1 [30.7-43.4] | -15.1 | -12.3 | -24.2 | -22.6 | 224 |
+| 2+ pages / 2+ sources | 24.4 [16.4-33.3] | 27.6 [19.3-36.8] | 35.0 [25.6-44.9] | 29.3 [20.9-38.9] | -17.1 | -19.1 | -31.2 | -30.3 | 123 |
+
 ### Integration detail: accuracy by gold evidence-page count and rung (oracle pages)
 
 > **swept**: hop_bucket (1 / 2 / 3 / 4-5 / 6+) × rung · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **hop**: bucketed evidence-page count, zero-evidence questions dropped · **tail buckets**: 4-5 and 6+ are small; included for trend, not precision
@@ -1286,6 +1342,53 @@ _hop=none is dropped: those rows are answerable questions that recorded no gold 
 | TLVi | 65.4 [60.3-70.7] | 41.9 [36.3-47.8] | -23.5 | 838 |
 | n (per col) | 960 | 716 | - | - |
 
+### Page-aware prompt vs grounded control, by evidence hop
+
+> **swept**: prompt_mode (page_aware vs grounded) × evidence hop × rung (answerable pool, oracle pages) · **manipulation**: the mode branches on the fed page count; only the multi-page branch asks for cross-page integration, so the multi row is the test and the single row is close to a placebo · **M−S change**: difference of differences, positive = the cue narrowed the multi-page deficit
+
+_Paired within question at one rung: a question counts only where BOTH arms produced a status==ok row there, so every delta is a within-question difference rather than two marginal accuracies read against each other. The page set is the oracle evidence pages on both sides and only the instruction differs. The treatment arm carries 135 OOM cells (TLV 80, TL 44, T 7, V 4) and the control arm none, so the paired n is below 847 at every rung and furthest below it at TLV. `page_aware` is not one instruction: it branches on the number of pages the cell was fed. A one-page cell is only told it has a single page; a multi-page cell is additionally asked to combine information across the pages. Under oracle selection the page count is the gold evidence count, so hop=single takes the single-page branch and hop=multi the cross-page one. **The multi row is the manipulation and the single row is close to a placebo**, which is why the pooled number is the least informative cell in the table. The 9 hop=none questions get no pages at all and so take the single-page branch, describing a page they were not given; they are excluded here. Δ is `page_aware − grounded` in accuracy points, with a document-level paired bootstrap interval (1000 resamples, seed 0, 2.5/97.5 quantiles, documents resampled with replacement), matching `scoring.accuracy`'s convention so it is comparable to the marginal CIs elsewhere. **Bold marks an interval that excludes zero.** The `M−S change` row is a DIFFERENCE OF DIFFERENCES: the multi-page deficit under page_aware minus that deficit under grounded. Positive means the cue narrowed the gap._
+
+| rung | hop | grounded | page_aware | Δ (paired) [95% CI] | n (paired) |
+| --- | --- | --- | --- | --- | --- |
+| T | single | 32.7 | 30.6 | **-2.1 [-3.6, -0.6]** | 480 |
+| T | multi | 18.8 | 17.7 | -1.1 [-3.2, +0.9] | 351 |
+| T | M−S change | - | - | +0.9 [-1.5, +3.4] | 840 |
+| TL | single | 40.4 | 38.1 | **-2.3 [-4.4, -0.4]** | 478 |
+| TL | multi | 28.8 | 26.9 | -1.9 [-4.5, +1.0] | 316 |
+| TL | M−S change | - | - | +0.4 [-3.0, +3.6] | 803 |
+| TLV | single | 56.1 | 53.8 | **-2.3 [-4.8, -0.2]** | 478 |
+| TLV | multi | 36.8 | 36.4 | -0.4 [-3.2, +2.5] | 280 |
+| TLV | M−S change | - | - | +1.9 [-2.0, +5.9] | 767 |
+| V | single | 48.8 | 46.5 | **-2.3 [-4.5, -0.2]** | 480 |
+| V | multi | 28.8 | 25.1 | **-3.7 [-6.6, -1.1]** | 354 |
+| V | M−S change | - | - | -1.4 [-4.6, +2.0] | 843 |
+
+### Page-aware prompt vs grounded control, by rung
+
+> **swept**: prompt_mode (page_aware vs grounded) × rung (answerable pool, oracle pages) · **pairing**: within-question at one rung, both arms status==ok; only the instruction changes, pages are the oracle set on both sides
+
+_Paired within question at one rung: a question counts only where BOTH arms produced a status==ok row there, so every delta is a within-question difference rather than two marginal accuracies read against each other. The page set is the oracle evidence pages on both sides and only the instruction differs. The treatment arm carries 135 OOM cells (TLV 80, TL 44, T 7, V 4) and the control arm none, so the paired n is below 847 at every rung and furthest below it at TLV. Δ is `page_aware − grounded` in accuracy points, with a document-level paired bootstrap interval (1000 resamples, seed 0, 2.5/97.5 quantiles, documents resampled with replacement), matching `scoring.accuracy`'s convention so it is comparable to the marginal CIs elsewhere. **Bold marks an interval that excludes zero.** Pooled over hop; read the hop-split table for the mechanism._
+
+| rung | grounded | page_aware | Δ (paired) [95% CI] | n (paired) |
+| --- | --- | --- | --- | --- |
+| T | 26.7 | 25.1 | **-1.5 [-2.8, -0.4]** | 840 |
+| TL | 35.5 | 33.4 | **-2.1 [-3.7, -0.6]** | 803 |
+| TLV | 48.5 | 46.9 | -1.6 [-3.3, +0.1] | 767 |
+| V | 40.0 | 37.1 | **-2.8 [-4.6, -1.1]** | 843 |
+
+### Page-aware prompt: within-question verdict transitions against grounded
+
+> **swept**: prompt_mode transition (grounded→page_aware) × rung (answerable pool, oracle pages) · **reading**: a near-zero net with large R→W and W→R means the instruction churns verdicts rather than doing nothing
+
+_Paired within question at one rung: a question counts only where BOTH arms produced a status==ok row there, so every delta is a within-question difference rather than two marginal accuracies read against each other. The page set is the oracle evidence pages on both sides and only the instruction differs. The treatment arm carries 135 OOM cells (TLV 80, TL 44, T 7, V 4) and the control arm none, so the paired n is below 847 at every rung and furthest below it at TLV. R→W is the share of paired questions the page notice breaks and W→R the share it repairs, both as percentages of the row's paired n, so their difference is the net accuracy change in points and reproduces the Δ column of the accuracy table. A near-zero net with large R→W and W→R means the instruction is churning verdicts rather than doing nothing. The two abstention columns are the share of the SAME paired questions each arm declined, so they say whether the page notice pushes the model toward refusing as well as toward answering differently. `of which as refusal` is the share OF THE BROKEN questions (not of the paired n) whose new row is an abstention, which separates an instruction that makes the model decline from one that makes it answer wrongly._
+
+| rung | R→W | of which as refusal | W→R | net | abstained (grounded) | abstained (page_aware) | n (paired) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| T | 2.6 (n=22) | 0% (n=0) | 1.1 (n=9) | -1.5 | 9.6 (n=81) | 22.7 (n=191) | 840 |
+| TL | 3.7 (n=30) | 3% (n=1) | 1.6 (n=13) | -2.1 | 1.1 (n=9) | 15.1 (n=121) | 803 |
+| TLV | 3.8 (n=29) | 0% (n=0) | 2.2 (n=17) | -1.6 | 0.7 (n=5) | 4.7 (n=36) | 767 |
+| V | 4.5 (n=38) | 0% (n=0) | 1.7 (n=14) | -2.8 | 0.6 (n=5) | 4.9 (n=41) | 843 |
+
 ## Faithfulness
 
 ### Faithfulness: answerable accuracy by prompt mode and rung (oracle pages)
@@ -1301,8 +1404,8 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 | abstain | 23.3 [19.3-27.2] (n=847) a52.2 w24.6 | 29.3 [25.4-33.1] (n=847) a47.1 w23.6 | 41.4 [37.3-45.4] (n=847) a27.4 w31.2 | 33.5 [29.9-37.1] (n=847) a32.5 w34.0 |
 | abstain_balanced | 23.8 [19.7-27.9] (n=847) a47.8 w28.3 | 30.0 [26.2-33.8] (n=847) a42.9 w27.2 | 42.6 [38.5-46.6] (n=847) a22.9 w34.5 | 35.2 [31.5-39.0] (n=847) a27.7 w37.1 |
 | cot | 29.5 [25.2-33.7] (n=847) a2.8 w67.7 | 36.0 [32.5-39.6] (n=847) a4.1 w59.9 | 53.1 [49.4-56.9] (n=847) a1.1 w45.8 | 49.7 [45.5-53.8] (n=847) a0.4 w49.9 |
-| extract_cot | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.4-54.1] (n=846) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
-| n (per col) | 5082 | 5082 | 5081 | 5082 |
+| extract_cot | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.3-54.1] (n=847) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
+| n (per col) | 5082 | 5082 | 5082 | 5082 |
 
 ### Faithfulness: answerable abstention rate by prompt mode and rung (oracle pages)
 
@@ -1317,8 +1420,8 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 | abstain | 52.2 (n=847) 38.4d/100.0s | 47.1 (n=847) 44.1d/57.4s | 27.4 (n=847) 29.7d/19.5s | 32.5 (n=847) 35.5d/22.1s |
 | abstain_balanced | 47.8 (n=847) 32.7d/100.0s | 42.9 (n=847) 39.6d/54.2s | 22.9 (n=847) 25.3d/14.7s | 27.7 (n=847) 30.1d/19.5s |
 | cot | 2.8 (n=847) 2.0d/5.8s | 4.3 (n=847) 3.2d/7.9s | 1.1 (n=847) 1.4d/0.0s | 0.4 (n=847) 0.5d/0.0s |
-| extract_cot | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=846) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
-| n (per col) | 5082 | 5082 | 5081 | 5082 |
+| extract_cot | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=847) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
+| n (per col) | 5082 | 5082 | 5082 | 5082 |
 
 ### Faithfulness: unanswerable abstention rate by prompt mode and rung (bm25 k=3 pages)
 
@@ -1382,10 +1485,10 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 | extract_cot | Chart | 13.5 [8.3-19.1] (n=178) a5.1 w81.5 | 17.4 [11.4-23.9] (n=178) a14.0 w68.5 | 39.3 [31.2-48.7] (n=178) a2.2 w58.4 | 38.8 [30.1-48.3] (n=178) a2.2 w59.0 |
 | extract_cot | Figure | 10.7 [7.0-15.3] (n=290) a2.1 w87.2 | 21.0 [16.2-26.0] (n=290) a4.1 w74.8 | 44.1 [37.4-49.8] (n=290) a0.7 w55.2 | 41.7 [35.3-47.5] (n=290) a1.4 w56.9 |
 | extract_cot | Generalized-text (Layout) | 20.3 [12.6-29.3] (n=118) a1.7 w78.0 | 37.3 [27.8-47.4] (n=118) a3.4 w59.3 | 50.8 [41.7-59.7] (n=118) a0.8 w48.3 | 52.5 [44.1-61.1] (n=118) a1.7 w45.8 |
-| extract_cot | Pure-text (Plain-text) | 37.5 [30.4-45.2] (n=291) a1.4 w61.2 | 45.0 [38.6-52.1] (n=291) a3.4 w51.5 | 51.7 [45.2-58.6] (n=290) a2.4 w45.9 | 44.3 [37.8-52.1] (n=291) a3.1 w52.6 |
+| extract_cot | Pure-text (Plain-text) | 37.5 [30.4-45.2] (n=291) a1.4 w61.2 | 45.0 [38.6-52.1] (n=291) a3.4 w51.5 | 51.5 [45.1-58.4] (n=291) a2.4 w46.0 | 44.3 [37.8-52.1] (n=291) a3.1 w52.6 |
 | extract_cot | Table | 41.5 [34.0-48.5] (n=217) a1.8 w56.7 | 49.8 [43.6-55.6] (n=217) a4.1 w46.1 | 52.5 [46.9-58.8] (n=217) a4.6 w42.9 | 39.6 [33.0-47.3] (n=217) a5.1 w55.3 |
 | extract_cot | (none) | 31.6 [12.5-50.0] (n=19) a5.3 w63.2† | 52.6 [26.3-75.0] (n=19) a5.3 w42.1† | 57.9 [31.6-83.3] (n=19) a10.5 w31.6† | 42.1 [19.0-62.5] (n=19) a5.3 w52.6† |
-| extract_cot | **All sources** | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.4-54.1] (n=846) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
+| extract_cot | **All sources** | 28.0 [23.6-32.3] (n=847) a2.4 w69.7 | 36.5 [32.9-40.2] (n=847) a5.7 w57.9 | 50.2 [46.3-54.1] (n=847) a2.0 w47.8 | 44.4 [40.4-48.5] (n=847) a2.4 w53.2 |
 | n (per col) | - | - | - | - | - |
 
 ### Faithfulness: answerable abstention rate by prompt mode, evidence source and rung
@@ -1434,10 +1537,10 @@ _Pins: paddleocrvl, qwen3vl-8b-local, bf16, med resolution, decode budget 256 de
 | extract_cot | Chart | 5.6 (n=178) 5.4d/6.2s | 14.0 (n=178) 10.0d/25.0s | 2.2 (n=178) 0.8d/6.2s | 2.2 (n=178) 2.3d/2.1s |
 | extract_cot | Figure | 2.1 (n=290) 2.6d/1.0s | 4.1 (n=290) 3.2d/5.9s | 1.0 (n=290) 1.1d/1.0s | 1.4 (n=290) 1.6d/1.0s |
 | extract_cot | Generalized-text (Layout) | 1.7 (n=118) 2.4d/0.0s | 3.4 (n=118) 1.2d/8.8s | 0.8 (n=118) 0.0d/2.9s | 1.7 (n=118) 2.4d/0.0s |
-| extract_cot | Pure-text (Plain-text) | 1.4 (n=291) 0.9d/3.3s | 3.4 (n=291) 2.2d/8.3s | 2.4 (n=290) 1.3d/6.7s | 3.1 (n=291) 3.5d/1.7s |
+| extract_cot | Pure-text (Plain-text) | 1.4 (n=291) 0.9d/3.3s | 3.4 (n=291) 2.2d/8.3s | 2.4 (n=291) 1.3d/6.7s | 3.1 (n=291) 3.5d/1.7s |
 | extract_cot | Table | 1.8 (n=217) 1.6d/3.3s | 4.1 (n=217) 3.2d/10.0s | 4.6 (n=217) 3.2d/13.3s | 5.1 (n=217) 4.8d/6.7s |
 | extract_cot | (none) | 5.3 (n=19) 5.6d/0.0s† | 5.3 (n=19) 5.6d/0.0s† | 10.5 (n=19) 11.1d/0.0s† | 5.3 (n=19) 5.6d/0.0s† |
-| extract_cot | **All sources** | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=846) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
+| extract_cot | **All sources** | 2.5 (n=847) 2.4d/2.6s | 5.7 (n=847) 4.4d/10.0s | 2.1 (n=847) 1.7d/3.7s | 2.4 (n=847) 2.7d/1.1s |
 | n (per col) | - | - | - | - | - |
 
 ### Faithfulness: unanswerable abstention rate by prompt mode, evidence source and rung
@@ -1569,11 +1672,14 @@ _Weight footprint (MB, `~` = derived for quantized variants) replaces peak VRAM:
 | scale (Gemma-3) | gemma3-12b-local | 24375 | 30.4 [25.6-34.8] (n=840) | 37.5 [33.5-41.5] (n=802) | 50.9 [46.7-55.0] (n=737) | 42.6 [38.1-47.2] (n=775) | 3154 |
 | family | qwen3vl-8b-local | 17534 | 31.9 [27.1-36.7] (n=847) | 38.4 [34.4-42.5] (n=847) | 52.4 [48.3-56.4] (n=847) | 45.5 [41.6-49.6] (n=847) | 3388 |
 | family | internvl3-8b-local | 15889 | 19.3 [15.9-22.8] (n=845) | 25.3 [22.0-28.7] (n=842) | 32.6 [28.6-36.9] (n=807) | 24.1 [20.2-28.4] (n=845) | 3339 |
-| family | glm4v-9b-local | 20586 | 27.4 [24.0-30.8] (n=839) | 33.6 [29.8-37.4] (n=800) | 44.3 [40.3-48.0] (n=783) | 31.0 [26.7-35.2] (n=845) | 3267 |
+| family | llama3.2-11b-vision-local | 21340 | 26.5 [22.1-30.7] (n=843) | 34.3 [30.5-38.0] (n=829) | 33.3 [29.5-37.1] (n=730) | 25.3 [21.6-29.0] (n=767) | 3169 |
+| family | glm4v-9b-local | 20586 | 25.8 [22.3-29.3] (n=840) | 33.5 [29.7-37.4] (n=802) | 44.1 [40.0-47.7] (n=783) | 31.0 [26.7-35.2] (n=845) | 3270 |
 | family | minicpmv-8b-local | 17392 | 30.8 [26.1-35.3] (n=814) | 37.9 [33.7-42.1] (n=730) | 61.9 [56.9-66.3] (n=640) | 53.8 [49.5-58.0] (n=809) | 2993 |
+| reasoning variant | qwen3vl-8b-local | 17534 | 31.9 [27.1-36.7] (n=847) | 38.4 [34.4-42.5] (n=847) | 52.4 [48.3-56.4] (n=847) | 45.5 [41.6-49.6] (n=847) | 3388 |
+| reasoning variant | qwen3vl-8b-thinking-local | 17534 | - (n=0) | - (n=0) | 62.2 [57.6-66.3] (n=735) | - (n=0) | 735 |
 | reasoning variant (M−S) | qwen3vl-8b-local | 17534 | -11.7 (nS=480, nM=358) | -13.9 (nS=480, nM=358) | -25.8 (nS=480, nM=358) | -21.5 (nS=480, nM=358) | 3388 |
 | reasoning variant (M−S) | qwen3vl-8b-thinking-local | 17534 | - | - | -9.1 (nS=474, nM=252) | - | 735 |
-| n (per col) | - | - | 10113 | 9946 | 10458 | 10032 | - |
+| n (per col) | - | - | 10957 | 10777 | 11188 | 10799 | - |
 
 ### Reasoner scale vs evidence hop: accuracy by gold evidence-page bucket, per rung
 
@@ -1666,7 +1772,7 @@ _Weight footprint is a STATIC property of the checkpoint: the summed safetensors
 | gemma3-4b-local | 16bit | 8600 | exact | 3.62B | yes |
 | glm4v-9b-local | 16bit | 20586 | exact | 8.84B | yes |
 | internvl3-8b-local | 16bit | 15889 | exact | 6.75B | yes |
-| llama3.2-11b-vision-local | 16bit | 21340 | exact | 9.51B | - |
+| llama3.2-11b-vision-local | 16bit | 21340 | exact | 9.51B | yes |
 | minicpmv-8b-local | 16bit | 17392 | exact | 7.38B | yes |
 | qwen3vl-2b-local | 16bit | 4255 | exact | 1.64B | yes |
 | qwen3vl-2b-local-8bit | 8bit | 2619 | derived | 1.64B | - |
@@ -1893,6 +1999,20 @@ _rate = oom cells / all cells; pooled over page buckets and G1 runs._
 | V | 4.4 | 0.4 | 0.8 | 7623 |
 | n (per col) | 1694 | 1694 | 22022 | - |
 
+### Cost of each rung: accuracy, tokens fed, and the two latency halves
+
+> **swept**: rung → accuracy, tokens fed, prefill and decode latency · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition · **page_selection**: oracle · **prompt_mode**: none · **latency**: wall clock on the measuring machine; a scale, not an absolute · **oom**: not measurable on this pool, whose failed cells were re-run on larger hardware; see oom_frontier
+
+_Uninstructed prompt, oracle pages, complete answerable pool. Latency is wall clock on the measuring machine and is a scale, not an absolute: it moves with the GPU. `input tokens` is text plus visual and is what the representation buys or costs; `output tokens` and `decode_s` are set by the prompt and the decode budget rather than by the rung, so a rung that appears to decode more is one whose longer input drew a longer answer. The two halves do not sum to end-to-end latency, which also carries scheduling and detokenisation. OOM is not measurable on this pool, whose failed cells were re-run on larger hardware; `oom_frontier` reports it from the preserved V100 snapshot._
+
+| rung | accuracy | text tokens | visual tokens | input tokens | prefill_s | output tokens | decode_s |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| T | 31.9 [27.3-36.5] | 930 | 0 | 930 | 0.1 | 115 | 2.0 |
+| TL | 38.8 [34.5-43.0] | 1644 | 0 | 1644 | 0.1 | 133 | 2.3 |
+| TV | 51.6 [48.0-55.3] | 929 | 3404 | 4333 | 0.1 | 140 | 2.4 |
+| TLV | 52.5 [48.5-56.5] | 1644 | 3404 | 5049 | 0.2 | 136 | 2.4 |
+| V | 45.6 [41.7-49.5] | 38 | 3404 | 3442 | 0.1 | 139 | 2.4 |
+
 ### Mined: prefill vs decode cost per rung per doc_type
 
 > **swept**: representation (prefill / input tokens) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: answerable · **page_selection**: oracle · **prompt_mode**: none · **snapshot**: predictions.v100.jsonl — the pre-recovery V100 rows, kept when the H100 pass upgraded 1,953 of these cells; the live predictions no longer record the V100 ceiling · **TV**: absent: TV only ever ran on the H100, and a latency column cannot mix the two machines. TV's cost sits in the token counts, which are machine-independent: 929 text + 3,404 visual against TLV's 1,644 + 3,404, i.e. 44% less text and 14% less total input on the same questions
@@ -1963,6 +2083,57 @@ _Prefill and decode in seconds, mean over the cells every config in the machine 
 | (any) | input tokens | min-max | 29-26636 | 37-29489 | 1838-58679 | 1822-43227 | 840 |
 | n (per col) | - | - | 831 | 761 | 717 | 834 | - |
 
+### Generation cost for every reasoner configuration, each over its own pool
+
+> **swept**: every reasoner config × rung (prefill / decode / cells) · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: each row is its OWN pool, not a matched intersection; the `cells` row per config is its per-rung count · **page_selection**: oracle · **prompt_mode**: none · **machine**: rows grouped by measuring machine; the V100 and H100 groups are never comparable · **note**: the builder loads its own per-row snapshots and tasks, so the plan's own load is unused
+
+_Every reasoner configuration that produced cells, prefill and decode in seconds, oracle pages at medium resolution, prompt_mode=none. ⚠ NEVER compare a V100 row against an H100 row: the same input prefills roughly 50x faster on the H100, so the two groups are separate tables that happen to share columns. The `machine` field on the row is `local` everywhere and cannot distinguish them; the file split and the magnitudes are the only handles. Unlike `reasoner_cost`, EVERY ROW HERE IS ITS OWN POOL: coverage varies too much across the roster to take a matched intersection without one thin member shrinking it for everybody, so the `cells` row gives each config's own per-rung count and a difference down the table is a difference in pool as well as in config. Rows whose tag has a pre-recovery `results.v100.jsonl` read it, because the live file for those tags has the OOM cells re-run on an H100 and rewritten as ok; rows with no such snapshot never went through that pass and read the live file. Within the V100 group the card allocation is not uniform either: the larger models need 32 GB cards where the 8B and below fit two 16 GB ones, so a row is a cost on the hardware that could hold it rather than on one fixed machine. InternVL3-8B and MiniCPM-V generate through one blocking call and record no prefill/decode split, reported as `-` rather than as zero. Prefill is the input-bound cost set by the representation, decode the output-bound cost set by the prompt and the decode budget; their sum is not end-to-end latency. prompt_mode=none carries NO instruction, so the model runs to the 256-token cap and decode is an uninstructed upper bound; the Thinking row additionally emits reasoning and is not comparable even within its own group._
+
+| machine | config | metric | T | TL | TLV | V |
+| --- | --- | --- | --- | --- | --- | --- |
+| V100 | Qwen3-VL-2B | prefill_s | 0.4 | 0.7 | 35.1 | 36.9 |
+| V100 | Qwen3-VL-2B | decode_s | 4.9 | 5.8 | 6.2 | 6.3 |
+| V100 | Qwen3-VL-2B | cells | 843 | 833 | 821 | 845 |
+| V100 | Qwen3-VL-4B | prefill_s | 0.9 | 1.4 | 33.4 | 37.4 |
+| V100 | Qwen3-VL-4B | decode_s | 6.3 | 7.5 | 6.4 | 7.5 |
+| V100 | Qwen3-VL-4B | cells | 839 | 800 | 761 | 842 |
+| V100 | Qwen3-VL-8B, 16-bit | prefill_s | 1.4 | 1.8 | 26.3 | 29.0 |
+| V100 | Qwen3-VL-8B, 16-bit | decode_s | 5.7 | 6.6 | 6.7 | 7.1 |
+| V100 | Qwen3-VL-8B, 16-bit | cells | 831 | 761 | 717 | 834 |
+| V100 | Qwen3-VL-8B, 8-bit | prefill_s | 0.7 | 1.0 | 26.0 | 29.1 |
+| V100 | Qwen3-VL-8B, 8-bit | decode_s | 18.5 | 21.4 | 21.6 | 21.9 |
+| V100 | Qwen3-VL-8B, 8-bit | cells | 837 | 786 | 743 | 839 |
+| V100 | Qwen3-VL-8B, 4-bit | prefill_s | 1.5 | 2.2 | 30.2 | 32.4 |
+| V100 | Qwen3-VL-8B, 4-bit | decode_s | 9.3 | 10.9 | 10.6 | 11.2 |
+| V100 | Qwen3-VL-8B, 4-bit | cells | 839 | 800 | 762 | 843 |
+| V100 | Qwen3-VL-8B-Thinking | prefill_s | 1.5 | 1.9 | 28.2 | 36.0 |
+| V100 | Qwen3-VL-8B-Thinking | decode_s | 75.3 | 79.4 | 50.8 | 46.2 |
+| V100 | Qwen3-VL-8B-Thinking | cells | 376 | 362 | 735 | 377 |
+| V100 | InternVL3-8B | prefill_s | - | - | - | - |
+| V100 | InternVL3-8B | decode_s | - | - | - | - |
+| V100 | InternVL3-8B | cells | 831 | 762 | 742 | 845 |
+| V100 | MiniCPM-V-4.5 (8B) | prefill_s | - | - | - | - |
+| V100 | MiniCPM-V-4.5 (8B) | decode_s | - | - | - | - |
+| V100 | MiniCPM-V-4.5 (8B) | cells | 814 | 730 | 640 | 809 |
+| V100 | GLM-4.6V-Flash (9B) | prefill_s | 1.9 | 2.7 | 23.8 | 24.2 |
+| V100 | GLM-4.6V-Flash (9B) | decode_s | 1.7 | 2.0 | 0.8 | 0.5 |
+| V100 | GLM-4.6V-Flash (9B) | cells | 840 | 802 | 783 | 845 |
+| V100 | Gemma-3-4B | prefill_s | 0.8 | 1.5 | 3.2 | 1.8 |
+| V100 | Gemma-3-4B | decode_s | 2.2 | 2.5 | 2.5 | 2.0 |
+| V100 | Gemma-3-4B | cells | 846 | 843 | 828 | 829 |
+| V100 | Gemma-3-12B | prefill_s | 2.4 | 3.5 | 5.1 | 2.3 |
+| V100 | Gemma-3-12B | decode_s | 4.0 | 4.3 | 3.8 | 3.3 |
+| V100 | Gemma-3-12B | cells | 840 | 802 | 737 | 775 |
+| H100 | Qwen3-VL-32B | prefill_s | 0.2 | 0.4 | 0.6 | 0.2 |
+| H100 | Qwen3-VL-32B | decode_s | 5.3 | 6.5 | 6.6 | 6.2 |
+| H100 | Qwen3-VL-32B | cells | 847 | 847 | 846 | 847 |
+| H100 | Qwen3-VL-32B, 4-bit | prefill_s | 0.3 | 0.4 | 0.6 | 0.3 |
+| H100 | Qwen3-VL-32B, 4-bit | decode_s | 4.6 | 5.6 | 5.8 | 5.4 |
+| H100 | Qwen3-VL-32B, 4-bit | cells | 847 | 847 | 847 | 847 |
+| (any) | input tokens | mean | 938 | 1658 | 5091 | 3470 |
+| (any) | input tokens | min-max | 29-26636 | 37-29489 | 1838-58679 | 1822-43227 |
+| (any) | input tokens | cells | 840 | 840 | 840 | 840 |
+
 ### Decode cost by prompt mode (TLV, oracle pages)
 
 > **swept**: prompt_mode × decode cost, at TLV · **dataset**: mmlongbench · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: TLV only · **pool**: complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition · **page_selection**: oracle · **reading**: the uninstructed none row is an upper bound and is flagged; cot/extract_cot carry an 8x decode budget
@@ -1976,7 +2147,7 @@ _Decode cost per prompt mode at one rung, so the input side is held fixed and ev
 | abstain | concise | 256 | 114 | 7 | 178 | 847 |
 | abstain_balanced | concise | 256 | 119 | 8 | 179 | 847 |
 | cot | concise | 2048 | 2979 | 166 | 178 | 847 |
-| extract_cot | concise | 2048 | 4507 | 242 | 181 | 846 |
+| extract_cot | concise | 2048 | 4551 | 244 | 181 | 847 |
 | n (per col) | - | - | - | - | - | - |
 
 ### Routing policies: accuracy vs input-token cost
@@ -2014,8 +2185,8 @@ _Each row is ONE bootstrap interval on a difference, not two marginal intervals 
 | parser-free lateral: TLV vs TV | TLV - TV | +0.9 | -1.3 | +3.3 | 847 | no | - |
 | scale: 32B vs 8B at V | V | +11.2 | +8.3 | +14.2 | 847 | yes | left (qwen3vl-8b-local): 13 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
 | scale: 32B vs 8B at T | T | +3.7 | +1.5 | +5.7 | 847 | yes | left (qwen3vl-8b-local): 16 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 105 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
-| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | +11.8 | +4.8 | +18.7 | 726 | yes | 9 hop=none dropped by design (no integration reading), same rule as the integration tables; left (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-thinking-local): 112 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| family: Qwen3-VL-8B vs InternVL3-8B at TLV | TLV | +21.1 | +17.0 | +24.9 | 807 | yes | left (internvl3-8b-local): 93 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
+| integration deficit (M-S): Thinking vs base 8B at TLV | TLV | +11.8 | +4.8 | +18.3 | 726 | yes | 9 hop=none dropped by design (no integration reading), same rule as the integration tables; left (qwen3vl-8b-local): 130 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first); right (qwen3vl-8b-thinking-local): 112 OOM/error (survivorship: OOM tracks page count, so it removes long multi-page questions first) |
 
 ### Levers: what each inference-time intervention does, where data exists
 
@@ -2030,8 +2201,8 @@ _One row per lever: the measured baseline, the lever value, and the delta in poi
 | interleaving TLV→TLVi | E4 reasoning | acc @ TLV | 52.8 | 55.0 | +2.2 | 847/847 |
 | CoT prompt (grounded→cot) | E4 reasoning | acc @ TLV | 45.7 | 53.1 | +7.4 | 847/847 |
 | CoT prompt (M−S) | E4 reasoning | M−S @ TLV | -22.9 | -16.5 | +6.4 | 847/847 |
-| extraction (grounded→extract_cot) | E4 reasoning | acc @ TLV | 45.7 | 50.2 | +4.5 | 847/846 |
-| extraction (M−S) | E4 reasoning | M−S @ TLV | -22.9 | -16.0 | +6.8 | 847/846 |
+| extraction (grounded→extract_cot) | E4 reasoning | acc @ TLV | 45.7 | 50.2 | +4.5 | 847/847 |
+| extraction (M−S) | E4 reasoning | M−S @ TLV | -22.9 | -16.2 | +6.7 | 847/847 |
 | abstention prompt (none→targeted) | E5 faithfulness | abstention @ TLV (unanswerable) | 16.8 | 74.6 | +57.8 | 244/244 |
 | retrieval depth k1→k5 (vision) | E2 selection | acc @ V (PROVISIONAL) | 29.8 | 37.2 | +7.4 | 312/312 |
 | model swap 8B→InternVL3-8B | reasoner | acc @ TLV | 52.4 | 32.6 | -19.8 | 847/807 |
@@ -2061,10 +2232,10 @@ _hop=none is dropped: those rows are answerable questions that recorded no gold 
 | none | 63.5 [58.1-68.8] | 38.5 [32.6-44.7] | -25.0 | -2.1 | 838 |
 | grounded | 55.8 [50.9-61.2] | 33.0 [26.8-39.5] | -22.9 | +0.0 | 838 |
 | cot | 60.6 [55.6-65.6] | 44.1 [38.4-50.2] | -16.5 | +6.4 | 838 |
-| extract_cot | 57.5 [52.7-62.7] | 41.5 [36.1-47.2] | -16.0 | +6.8 | 837 |
+| extract_cot | 57.5 [52.7-62.7] | 41.3 [35.8-47.2] | -16.2 | +6.7 | 838 |
 | abstain | 50.8 [45.7-56.1] | 29.9 [24.2-36.2] | -20.9 | +1.9 | 838 |
 | abstain_balanced | 52.1 [46.9-57.4] | 31.0 [25.3-37.1] | -21.1 | +1.8 | 838 |
-| n (per col) | 2880 | 2147 | - | - | - |
+| n (per col) | 2880 | 2148 | - | - | - |
 
 ### Attribution: representation / retrieval / reasoning loss per rung (PROVISIONAL)
 

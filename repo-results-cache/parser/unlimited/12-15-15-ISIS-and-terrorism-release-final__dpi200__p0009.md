@@ -1,0 +1,10 @@
+9
+PEW RESEARCH CENTER
+There are wide partisan divides on the most important problem facing the nation. Four-in-ten (41%) Republicans mention terrorism, defense issues and national security or ISIS, while fewer independents (28%) and Democrats (23%) cite these issues.
+Additionally, Republicans more commonly mention immigration as the most important problem (14%) than do independents (7%) or Democrats (3%). Democrats are more likely than Republicans to cite partisan gridlock and division in the country (8% of Democrats vs. 2% of Republicans).
+More Republicans than Democrats cite immigration, terrorism as top problems
+Most important problem facing nation ...
+<table><tr><td></td><td>Rep</td><td>Dem</td><td>Ind</td><td>R-D diff</td></tr><tr><td></td><td>%</td><td>%</td><td>%</td><td></td></tr><tr><td>Defense/National security</td><td>16</td><td>5</td><td>6</td><td>R+11</td></tr><tr><td>Immigration</td><td>14</td><td>3</td><td>7</td><td>R+11</td></tr><tr><td>Terrorism</td><td>24</td><td>16</td><td>18</td><td>R+8</td></tr><tr><td>ISIS/War in Iraq/War in Syria</td><td>8</td><td>4</td><td>8</td><td>R+4</td></tr><tr><td>Economy (general)</td><td>7</td><td>6</td><td>12</td><td>R+1</td></tr><tr><td>Dissatisfaction with government, Obama</td><td>4</td><td>5</td><td>6</td><td>D+1</td></tr><tr><td>Gun control/Too many guns/Mass shootings</td><td>4</td><td>5</td><td>6</td><td>D+1</td></tr><tr><td>Unemployment</td><td>4</td><td>7</td><td>8</td><td>D+3</td></tr><tr><td>Political gridlock/Division</td><td>2</td><td>8</td><td>4</td><td>D+6</td></tr><tr><td>NET: Foreign/International</td><td>42</td><td>24</td><td>32</td><td>R+18</td></tr><tr><td>NET: Terrorism/ISIS/National security</td><td>41</td><td>23</td><td>28</td><td>R+18</td></tr><tr><td>NET: Economic issues</td><td>21</td><td>20</td><td>25</td><td>D-1</td></tr><tr><td>Unweighted N</td><td>198</td><td>207</td><td>290</td><td></td></tr></table>
+Source: Survey conducted Dec. 8-13, 2015. Differences in bold are statistically significant.
+PEW RESEARCH CENTER
+www.pewresearch.org

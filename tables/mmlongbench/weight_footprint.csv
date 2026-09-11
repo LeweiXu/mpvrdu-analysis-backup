@@ -17,7 +17,7 @@ gemma3-27b-local,16bit,54865,exact,26.01B,-
 gemma3-4b-local,16bit,8600,exact,3.62B,yes
 glm4v-9b-local,16bit,20586,exact,8.84B,yes
 internvl3-8b-local,16bit,15889,exact,6.75B,yes
-llama3.2-11b-vision-local,16bit,21340,exact,9.51B,-
+llama3.2-11b-vision-local,16bit,21340,exact,9.51B,yes
 minicpmv-8b-local,16bit,17392,exact,7.38B,yes
 qwen3vl-2b-local,16bit,4255,exact,1.64B,yes
 qwen3vl-2b-local-8bit,8bit,2619,derived,1.64B,-

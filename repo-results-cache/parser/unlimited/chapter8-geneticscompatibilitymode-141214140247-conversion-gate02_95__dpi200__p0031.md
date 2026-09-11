@@ -1,0 +1,3 @@
+<table><tr><td>Character الصقة</td><td>Dominant Trait الهينة (السائدة</td><td>Recessive Trait الهينة المختاحية</td></tr><tr><td>Flower color ل</td><td>Purple</td><td>White ضى</td></tr><tr><td>Flower position</td><td>Axial</td><td>Terminal</td></tr><tr><td>Seed color لون البذرة</td><td>Yellow اصغر</td><td>Green اخضر</td></tr><tr><td>Seed shape مشل البذرة</td><td>Round مستبدر</td><td>Wrinkled مجد</td></tr><tr><td>Pod shape مشل قيل البذرة</td><td>Inflated كاملة</td><td>Constricted مخصره</td></tr><tr><td>Pod color لون قيل البذرو</td><td>Green خضراء</td><td>Yellow صفراء</td></tr><tr><td>Stem length طول الساق</td><td>Tall طويل</td><td>Dwarf قصير</td></tr></table>
+The seven pea characteristics studied by Mendel
+الصفات السبعة التي درسها منذ

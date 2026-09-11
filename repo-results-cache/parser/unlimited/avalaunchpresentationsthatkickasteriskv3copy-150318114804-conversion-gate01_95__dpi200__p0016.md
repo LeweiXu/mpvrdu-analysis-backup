@@ -1,0 +1,8 @@
+![](images/0.jpg)
+
+PEOPLE CAN
+ONLY REMEMBER UP TO
+4 CHUNKS
+OF INFORMATION
+AT A TIME.
+[Non-Text]

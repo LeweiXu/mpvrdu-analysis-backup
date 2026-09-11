@@ -114,26 +114,26 @@ robustness (gold 1),oracle -> +3 distractors,colqwen3,Pure-text (Plain-text),8.3
 robustness (gold 1),oracle -> +3 distractors,colqwen3,Table,7.5 (31),7.5 (31),51.7 (215),33.4 (139),416,104
 robustness (gold 1),oracle -> +3 distractors,colqwen3,**All sources**,8.8 (167),8.0 (152),42.7 (810),40.5 (767),1896,474
 robustness (gold 1),oracle -> +4 distractors,colqwen3,(none)†,14.3 (1),0.0 (0),85.7 (6),0.0 (0),7,7
-robustness (gold 1),oracle -> +4 distractors,colqwen3,Chart,8.4 (7),12.0 (10),53.0 (44),26.5 (22),83,83
-robustness (gold 1),oracle -> +4 distractors,colqwen3,Figure,5.3 (7),9.8 (13),43.2 (57),41.7 (55),132,132
+robustness (gold 1),oracle -> +4 distractors,colqwen3,Chart,8.3 (7),11.9 (10),52.4 (44),27.4 (23),84,84
+robustness (gold 1),oracle -> +4 distractors,colqwen3,Figure,5.2 (7),9.7 (13),42.5 (57),42.5 (57),134,134
 robustness (gold 1),oracle -> +4 distractors,colqwen3,Generalized-text (Layout),0.0 (0),10.2 (5),57.1 (28),32.7 (16),49,49
-robustness (gold 1),oracle -> +4 distractors,colqwen3,Pure-text (Plain-text),6.9 (6),5.7 (5),62.1 (54),25.3 (22),87,87
+robustness (gold 1),oracle -> +4 distractors,colqwen3,Pure-text (Plain-text),6.8 (6),5.7 (5),61.4 (54),26.1 (23),88,88
 robustness (gold 1),oracle -> +4 distractors,colqwen3,Table,5.7 (2),8.6 (3),68.6 (24),17.1 (6),35,35
-robustness (gold 1),oracle -> +4 distractors,colqwen3,**All sources**,6.7 (21),9.6 (30),56.5 (177),27.2 (85),313,313
+robustness (gold 1),oracle -> +4 distractors,colqwen3,**All sources**,6.6 (21),9.5 (30),55.8 (177),28.1 (89),317,317
 robustness (gold 1),oracle -> +5 distractors,colqwen3,(none)†,20.0 (1),0.0 (0),80.0 (4),0.0 (0),5,5
-robustness (gold 1),oracle -> +5 distractors,colqwen3,Chart,6.8 (5),17.6 (13),45.9 (34),29.7 (22),74,74
-robustness (gold 1),oracle -> +5 distractors,colqwen3,Figure,4.5 (5),9.8 (11),46.4 (52),39.3 (44),112,112
+robustness (gold 1),oracle -> +5 distractors,colqwen3,Chart,6.7 (5),17.3 (13),45.3 (34),30.7 (23),75,75
+robustness (gold 1),oracle -> +5 distractors,colqwen3,Figure,4.4 (5),9.6 (11),45.6 (52),40.4 (46),114,114
 robustness (gold 1),oracle -> +5 distractors,colqwen3,Generalized-text (Layout),2.6 (1),12.8 (5),53.8 (21),30.8 (12),39,39
-robustness (gold 1),oracle -> +5 distractors,colqwen3,Pure-text (Plain-text),7.5 (5),4.5 (3),62.7 (42),25.4 (17),67,67
+robustness (gold 1),oracle -> +5 distractors,colqwen3,Pure-text (Plain-text),7.4 (5),4.4 (3),61.8 (42),26.5 (18),68,68
 robustness (gold 1),oracle -> +5 distractors,colqwen3,Table†,8.7 (2),0.0 (0),82.6 (19),8.7 (2),23,23
-robustness (gold 1),oracle -> +5 distractors,colqwen3,**All sources**,7.0 (18),10.2 (26),56.2 (144),26.6 (68),256,256
+robustness (gold 1),oracle -> +5 distractors,colqwen3,**All sources**,6.9 (18),10.0 (26),55.4 (144),27.7 (72),260,260
 robustness (gold 1),oracle -> +6 distractors,colqwen3,(none)†,0.0 (0),0.0 (0),100.0 (3),0.0 (0),3,3
-robustness (gold 1),oracle -> +6 distractors,colqwen3,Chart,7.5 (4),20.8 (11),52.8 (28),18.9 (10),53,53
-robustness (gold 1),oracle -> +6 distractors,colqwen3,Figure,7.9 (7),9.0 (8),48.3 (43),34.8 (31),89,89
+robustness (gold 1),oracle -> +6 distractors,colqwen3,Chart,7.4 (4),20.4 (11),51.9 (28),20.4 (11),54,54
+robustness (gold 1),oracle -> +6 distractors,colqwen3,Figure,7.7 (7),8.8 (8),47.3 (43),36.3 (33),91,91
 robustness (gold 1),oracle -> +6 distractors,colqwen3,Generalized-text (Layout),2.8 (1),19.4 (7),50.0 (18),27.8 (10),36,36
-robustness (gold 1),oracle -> +6 distractors,colqwen3,Pure-text (Plain-text),10.0 (5),6.0 (3),62.0 (31),22.0 (11),50,50
+robustness (gold 1),oracle -> +6 distractors,colqwen3,Pure-text (Plain-text),9.8 (5),5.9 (3),60.8 (31),23.5 (12),51,51
 robustness (gold 1),oracle -> +6 distractors,colqwen3,Table†,0.0 (0),6.7 (1),80.0 (12),13.3 (2),15,15
-robustness (gold 1),oracle -> +6 distractors,colqwen3,**All sources**,8.2 (16),12.2 (24),57.1 (112),22.4 (44),196,196
+robustness (gold 1),oracle -> +6 distractors,colqwen3,**All sources**,8.0 (16),12.0 (24),56.0 (112),24.0 (48),200,200
 robustness (gold 2),oracle -> +1 distractor,bm25,(none)†,25.0 (4),0.0 (0),0.0 (0),75.0 (12),16,4
 robustness (gold 2),oracle -> +1 distractor,bm25,Chart,7.8 (18),5.6 (13),21.6 (50),65.1 (151),232,58
 robustness (gold 2),oracle -> +1 distractor,bm25,Figure,4.5 (12),5.3 (14),22.3 (59),67.8 (179),264,66
@@ -177,18 +177,18 @@ robustness (gold 2),oracle -> +3 distractors,colqwen3,Pure-text (Plain-text),4.6
 robustness (gold 2),oracle -> +3 distractors,colqwen3,Table,4.4 (17),11.2 (43),20.6 (79),63.8 (245),384,96
 robustness (gold 2),oracle -> +3 distractors,colqwen3,**All sources**,5.7 (55),10.9 (105),23.4 (226),60.0 (578),964,241
 robustness (gold 2),oracle -> +4 distractors,colqwen3,(none)†,100.0 (1),0.0 (0),0.0 (0),0.0 (0),1,1
-robustness (gold 2),oracle -> +4 distractors,colqwen3,Chart,19.4 (7),11.1 (4),25.0 (9),44.4 (16),36,36
-robustness (gold 2),oracle -> +4 distractors,colqwen3,Figure,6.2 (3),6.2 (3),37.5 (18),50.0 (24),48,48
+robustness (gold 2),oracle -> +4 distractors,colqwen3,Chart,18.9 (7),10.8 (4),24.3 (9),45.9 (17),37,37
+robustness (gold 2),oracle -> +4 distractors,colqwen3,Figure,6.0 (3),6.0 (3),36.0 (18),52.0 (26),50,50
 robustness (gold 2),oracle -> +4 distractors,colqwen3,Generalized-text (Layout)†,8.0 (2),24.0 (6),24.0 (6),44.0 (11),25,25
-robustness (gold 2),oracle -> +4 distractors,colqwen3,Pure-text (Plain-text),10.9 (5),17.4 (8),32.6 (15),39.1 (18),46,46
-robustness (gold 2),oracle -> +4 distractors,colqwen3,Table†,5.3 (1),15.8 (3),31.6 (6),47.4 (9),19,19
-robustness (gold 2),oracle -> +4 distractors,colqwen3,**All sources**,12.0 (14),12.0 (14),32.5 (38),43.6 (51),117,117
-robustness (gold 2),oracle -> +5 distractors,colqwen3,Chart†,20.0 (5),20.0 (5),24.0 (6),36.0 (9),25,25
-robustness (gold 2),oracle -> +5 distractors,colqwen3,Figure,0.0 (0),4.9 (2),43.9 (18),51.2 (21),41,41
+robustness (gold 2),oracle -> +4 distractors,colqwen3,Pure-text (Plain-text),10.6 (5),17.0 (8),31.9 (15),40.4 (19),47,47
+robustness (gold 2),oracle -> +4 distractors,colqwen3,Table†,5.0 (1),15.0 (3),30.0 (6),50.0 (10),20,20
+robustness (gold 2),oracle -> +4 distractors,colqwen3,**All sources**,11.8 (14),11.8 (14),31.9 (38),44.5 (53),119,119
+robustness (gold 2),oracle -> +5 distractors,colqwen3,Chart†,19.2 (5),19.2 (5),23.1 (6),38.5 (10),26,26
+robustness (gold 2),oracle -> +5 distractors,colqwen3,Figure,0.0 (0),4.7 (2),41.9 (18),53.5 (23),43,43
 robustness (gold 2),oracle -> +5 distractors,colqwen3,Generalized-text (Layout)†,0.0 (0),15.8 (3),31.6 (6),52.6 (10),19,19
-robustness (gold 2),oracle -> +5 distractors,colqwen3,Pure-text (Plain-text),9.4 (3),15.6 (5),40.6 (13),34.4 (11),32,32
-robustness (gold 2),oracle -> +5 distractors,colqwen3,Table†,10.0 (1),0.0 (0),60.0 (6),30.0 (3),10,10
-robustness (gold 2),oracle -> +5 distractors,colqwen3,**All sources**,8.4 (7),10.8 (9),37.3 (31),43.4 (36),83,83
+robustness (gold 2),oracle -> +5 distractors,colqwen3,Pure-text (Plain-text),9.1 (3),15.2 (5),39.4 (13),36.4 (12),33,33
+robustness (gold 2),oracle -> +5 distractors,colqwen3,Table†,9.1 (1),0.0 (0),54.5 (6),36.4 (4),11,11
+robustness (gold 2),oracle -> +5 distractors,colqwen3,**All sources**,8.2 (7),10.6 (9),36.5 (31),44.7 (38),85,85
 robustness (gold 3),oracle -> +1 distractor,bm25,Chart†,0.0 (0),0.0 (0),33.3 (4),66.7 (8),12,3
 robustness (gold 3),oracle -> +1 distractor,bm25,Figure†,7.9 (6),2.6 (2),28.9 (22),60.5 (46),76,19
 robustness (gold 3),oracle -> +1 distractor,bm25,Generalized-text (Layout)†,5.0 (1),5.0 (1),50.0 (10),40.0 (8),20,5

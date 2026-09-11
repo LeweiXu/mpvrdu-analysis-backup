@@ -1,0 +1,21 @@
+# swept,"prompt_mode × rung (answerable pool, oracle pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+# direction,abstaining is an error only where the RUNG carried the evidence; read the d component
+prompt_mode,T,TL,TLV,V
+none,26.4 (n=834) 13.2d/71.1s,17.3 (n=833) 15.6d/23.2s,6.5 (n=833) 6.4d/6.8s,7.1 (n=833) 7.3d/6.3s
+grounded,24.1 (n=834) 12.7d/62.6s,16.2 (n=833) 15.6d/18.4s,6.0 (n=833) 6.2d/5.3s,6.5 (n=833) 7.0d/4.7s
+abstain,52.8 (n=834) 38.8d/100.0s,47.7 (n=833) 44.8d/57.4s,27.7 (n=833) 30.0d/20.0s,32.3 (n=833) 35.3d/22.1s
+abstain_balanced,48.2 (n=834) 32.9d/100.0s,43.5 (n=833) 40.1d/54.7s,23.2 (n=833) 25.5d/15.3s,27.9 (n=833) 30.2d/20.0s
+cot,13.3 (n=834) 14.4d/9.5s,21.7 (n=833) 20.2d/26.8s,6.6 (n=833) 7.8d/2.6s,5.3 (n=832) 5.8d/3.7s
+extract_cot,19.4 (n=832) 17.6d/25.3s,26.5 (n=830) 23.2d/37.6s,8.9 (n=828) 8.9d/9.0s,11.6 (n=829) 12.7d/7.9s
+n (per col),5002,4995,4993,4993

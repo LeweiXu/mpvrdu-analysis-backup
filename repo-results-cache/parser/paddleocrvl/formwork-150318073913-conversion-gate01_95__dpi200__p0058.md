@@ -1,0 +1,9 @@
+## STRIKING, MAINTENANCE, STORAGE OF FORMWORK
+
+## Striking :
+
+As column and beam side formwork will be removed before beam and slab soffit formwork, provision must be made for easy removal and in the correct order. If beam and slab soffit formwork is to be removed before the concrete has achieved working strength, permanent propping or shoring is required. Take care to avoid damage to formwork which is to be re used. Eight or more uses may be obtained from timber formwork.
+
+Maintenance Clean forms with stiff brush and clean cold water. Use scrapers only as a last resort. Keep forms well oiled to prevent delamination of plywood or rusting of steel and always oil the edges.
+
+Storage of forms Any formwork with steel components should be stored in the dry. Avoid direct sunlight on timber forms. Store clear of the ground without twist or bend, and keep free of dirt.

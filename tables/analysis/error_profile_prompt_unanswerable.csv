@@ -1,0 +1,17 @@
+# swept,"error category × prompt mode (unanswerable pool, bm25 k=3, TLV)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,"no gold page exists for an unanswerable question, so this runs on the bm25 k=3 page set and its levels are not comparable with the answerable table's"
+# page_selection,"similarity (bm25, k=3)"
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+# unit,"shares are of the questions in a column's pool, not of its wrong answers, so a column sums to its All incorrect row; categories are first-match-wins over config.ERROR_CATEGORIES"
+error_category,none,grounded,abstain,abstain_balanced,cot,extract_cot
+answered_unanswerable,53.7,62.7,25.4,31.1,41.0,50.2
+All incorrect,54.5,62.7,25.4,31.1,57.0,52.3
+n (per col),244,244,244,244,244,243

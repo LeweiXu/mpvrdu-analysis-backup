@@ -1,0 +1,22 @@
+## POPULARITY OF TELEVISION PROGRAM
+
+WHAT TYPES OF PROGRAMS DO YOU LIKE THE MOST ON THE TELEVISION? BASE=1684
+
+26%
+
+TELESERIALS
+
+1%
+
+PUBLIC HEARING
+
+45% NEWS MUSIC SHOW 7%
+
+## 4 % TALK SHOWS
+
+## WHICH IS YOUR FAVOURITE TV PROGRAM? (BASE = 1112)
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_92_74_2045_1406.jpg" alt="Image" width="91%" /></div>
+
+
+1796

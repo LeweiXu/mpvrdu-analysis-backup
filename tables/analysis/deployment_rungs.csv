@@ -1,0 +1,22 @@
+# swept,"rung → accuracy, tokens fed, prefill and decode latency"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+# why,"so a cost cell reads against the ladder tables, which are scored by this judge; the main report's copy of this table is the accuracy rubric's and the two are not interchangeable"
+# TV,"pulled in from g1-tv-full, which the builder loads itself because that rung has its own run_tag and task; it reads this same judged file"
+# latency,"wall clock on the measuring machine; a scale, not an absolute"
+# oom,"not measurable on this pool, whose failed cells were re-run on larger hardware; see the main report's oom_frontier"
+rung,accuracy,text tokens,visual tokens,input tokens,prefill_s,output tokens,decode_s
+T,29.0 [24.5-33.6],932,0,932,0.1,115,2.0
+TL,35.7 [31.6-39.5],1632,0,1632,0.1,133,2.3
+TV,50.1 [46.4-53.7],929,3404,4333,0.1,140,2.4
+TLV,49.5 [45.0-53.4],1632,3427,5058,0.2,136,2.4
+V,42.6 [38.9-46.4],38,3427,3464,0.1,139,2.4

@@ -1,0 +1,7 @@
+ERROR CODES
+If there is a malfunction, the dishwasher will display error codes to identify these:
+<table><tr><td>Codes</td><td>Meanings</td><td>Possible Causes</td></tr><tr><td>E1</td><td>Longer inlet time.</td><td>Faucets is not opened, or water intake is restricted, or water pressure is too low.</td></tr><tr><td>E3</td><td>Not reaching required temperature.</td><td>Malfunction of heating element.</td></tr><tr><td>E4</td><td>Overflow.</td><td>Some element of dishwasher leaks.</td></tr><tr><td>E9</td><td>Touch button adhesion</td><td>Water or other material in the key area</td></tr></table>
+WARNING
+- If overflow occurs, turn off the main water supply before calling a service.
+- If there is water in the base pan because of an overfill or small leak, the water should be removed before restarting the dishwasher.
+17

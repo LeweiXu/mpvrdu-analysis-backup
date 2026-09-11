@@ -1,0 +1,7 @@
+# swept,"prompt_mode (page_aware vs grounded) × rung (answerable pool, oracle pages)"
+# pairing,"within-question at one rung, both arms status==ok; only the instruction changes, pages are the oracle set on both sides"
+rung,grounded,page_aware,Δ (paired) [95% CI],n (paired)
+T,26.7,25.1,"**-1.5 [-2.8, -0.4]**",840
+TL,35.5,33.4,"**-2.1 [-3.7, -0.6]**",803
+TLV,48.5,46.9,"-1.6 [-3.3, +0.1]",767
+V,40.0,37.1,"**-2.8 [-4.6, -1.1]**",843

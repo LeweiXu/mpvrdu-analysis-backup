@@ -1,0 +1,20 @@
+# swept,"prompt_mode × rung (answerable pool, oracle pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+prompt_mode,T,TL,TLV,V
+none,29.0 [24.5-33.6] (n=834) a26.3 w44.7 ⚠,35.7 [31.6-39.5] (n=833) a17.2 w47.2 ⚠,49.5 [45.0-53.4] (n=833) a6.2 w44.3 ⚠,42.6 [38.9-46.4] (n=833) a7.1 w50.3 ⚠
+grounded,24.9 [20.6-28.6] (n=834) a24.1 w51.0,32.3 [28.3-35.9] (n=833) a16.2 w51.5,43.7 [39.5-47.9] (n=833) a6.0 w50.3,37.9 [33.8-41.9] (n=833) a6.5 w55.6
+abstain,21.7 [17.7-25.2] (n=834) a52.8 w25.5,27.9 [24.3-31.2] (n=833) a47.7 w24.5,40.0 [35.7-44.1] (n=833) a27.7 w32.3,31.9 [28.1-35.9] (n=833) a32.3 w35.8
+abstain_balanced,21.7 [17.7-25.4] (n=834) a48.2 w30.1,28.6 [24.8-32.0] (n=833) a43.5 w28.0,40.9 [36.3-45.1] (n=833) a23.2 w35.9,33.5 [29.7-37.5] (n=833) a27.9 w38.7
+cot,26.9 [22.8-30.9] (n=834) a13.3 w59.8,34.1 [30.7-37.7] (n=833) a21.7 w44.2,50.2 [46.6-54.2] (n=833) a6.6 w43.2,46.9 [42.8-51.1] (n=832) a5.3 w47.8
+extract_cot,26.1 [22.4-30.2] (n=832) a19.4 w54.6,33.5 [29.7-37.2] (n=830) a26.5 w40.0,47.5 [43.8-51.1] (n=828) a8.8 w43.7,41.6 [37.4-45.6] (n=829) a11.6 w46.8
+n (per col),5002,4995,4993,4993

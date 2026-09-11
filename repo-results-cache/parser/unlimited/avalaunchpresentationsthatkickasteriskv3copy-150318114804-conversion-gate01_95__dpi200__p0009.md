@@ -1,0 +1,7 @@
+YOUR BRAIN ON
+BULLETS
+ONLY ACTIVATES A PORTION
+OF YOUR BRAIN
+![](images/0.jpg)
+
+[Non-Text]

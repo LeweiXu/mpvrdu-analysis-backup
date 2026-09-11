@@ -1,0 +1,4 @@
+Messages and instructions
+<table><tr><td>Error pattern</td><td>Action instructions</td></tr><tr><td>Pump runs continuously, water in grounds container</td><td>* Switch off the coffee machine and on again* If error not remedied call WMF Service</td></tr><tr><td>Milk foamer assembly and disassembly stiff</td><td>* Lightly smear the O-rings with WMF gasket grease&gt;Instructions in the care kit</td></tr><tr><td>Choc hopper cannot be replaced</td><td>* Manually turn the drive for the dosing auger at the portion controller slightly in a clockwise direction* Check whether Choc hopper is accidentally locked</td></tr><tr><td>Bean hopper cannot be replaced</td><td>* Check whether bean hopper is accidentally locked</td></tr></table>
+92
+User Manual WMF 1500 S

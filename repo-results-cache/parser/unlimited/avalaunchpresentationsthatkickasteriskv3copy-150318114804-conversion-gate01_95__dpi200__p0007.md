@@ -1,0 +1,7 @@
+BEGINNING
+MIDDLE
+![](images/0.jpg)
+
+END
+STORIFY YOUR PRESENTATION
+[Non-Text]

@@ -1,0 +1,1 @@
+increased socialization with others persists even when we control for common demographic factors such as age, income, or geographic area of residence. $ ^{3} $

@@ -1,0 +1,3 @@
+How can Caltrain keep up?
+<table><tr><td>Scenario</td><td>Peak service</td><td>Peak hour train cars</td></tr><tr><td>Today</td><td>5x5</td><td>25</td></tr><tr><td>Metrolink used cars</td><td>6x5</td><td>30</td></tr><tr><td>Electrification</td><td>6x6</td><td>36</td></tr><tr><td>Longer platforms</td><td>6x8</td><td>48</td></tr><tr><td>Increase frequency (w/HSR)</td><td>8x8</td><td>64</td></tr></table>
+Napkin math - watch for peak hour capacity # from Caltrain

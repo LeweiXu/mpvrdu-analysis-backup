@@ -1,0 +1,9 @@
+22
+PEW RESEARCH CENTER
+Twitter usage for older adults
+% of those 65 and older who use Twitter
+<table><tr><td></td><td>Based on internet users 65+ 6%</td><td>Based on all adults 65+ 3%</td></tr><tr><td>All 65+</td><td></td><td></td></tr><tr><td>Gender</td><td></td><td></td></tr><tr><td>a Male</td><td>6</td><td>4</td></tr><tr><td>b Female</td><td>5</td><td>3</td></tr><tr><td>Age</td><td></td><td></td></tr><tr><td>a 65-69</td><td>\( 8^{bd} \)</td><td>\( 6^{bcd} \)</td></tr><tr><td>b 70-74</td><td>4</td><td>3</td></tr><tr><td>c 75-79</td><td>4</td><td>2</td></tr><tr><td>d 80+</td><td>4</td><td>1</td></tr><tr><td>Education</td><td></td><td></td></tr><tr><td>a High school grad or less</td><td>4</td><td>2</td></tr><tr><td>b Some college</td><td>6</td><td>4</td></tr><tr><td>c College graduate</td><td>7</td><td>\( 6^a \)</td></tr><tr><td>Household Income</td><td></td><td></td></tr><tr><td>a &lt;$30,000</td><td>\( 9^c \)</td><td>3</td></tr><tr><td>b $30,000-$49,999</td><td>4</td><td>3</td></tr><tr><td>c $50,000-$74,999</td><td>3</td><td>2</td></tr><tr><td>d $75,000+</td><td>\( 8^c \)</td><td>\( 7^{bc} \)</td></tr><tr><td>Community Type</td><td></td><td></td></tr><tr><td>a Urban</td><td>6</td><td>4</td></tr><tr><td>b Suburban</td><td>6</td><td>\( 4^c \)</td></tr><tr><td>c Rural</td><td>3</td><td>1</td></tr></table>
+Pew Research Center's Internet Project July 18-September 30, 2013 tracking survey.
+Note: Columns marked with a superscript letter ( \( ^{a} \) ) or another letter indicate a statistically significant difference between that row and the row designated by that superscript letter. Statistical significance is determined inside the specific section covering each demographic trait.
+PEW RESEARCH CENTER
+www.pewresearch.org

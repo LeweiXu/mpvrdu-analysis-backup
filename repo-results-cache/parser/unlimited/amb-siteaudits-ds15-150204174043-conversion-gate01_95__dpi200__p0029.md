@@ -1,0 +1,18 @@
+Mastering Strategic SEO Audits
+![](images/0.jpg)
+
+![](images/1.jpg)
+
+![](images/2.jpg)
+
+![](images/3.jpg)
+
+![](images/4.jpg)
+
+Markup Validation Service
+Check the markup (HTML, XHTML, ...) of Web documents
+digitalsummit
+PHOENIX
+#DS15
+@AlanBleiweiss
+[Non-Text]

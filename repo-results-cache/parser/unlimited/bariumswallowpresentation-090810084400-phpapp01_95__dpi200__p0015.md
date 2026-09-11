@@ -1,0 +1,2 @@
+• Cervical esophagus extend from pharyngeal junction to suprasternal notch and is abt 4-5cm.
+- At this level, eosophagus bordered anteriorly by trachea, post by vertebral column and lat by carotid sheath and thyroid gland.

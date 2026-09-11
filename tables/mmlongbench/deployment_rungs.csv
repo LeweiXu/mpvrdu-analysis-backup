@@ -1,0 +1,19 @@
+# swept,"rung → accuracy, tokens fed, prefill and decode latency"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# latency,"wall clock on the measuring machine; a scale, not an absolute"
+# oom,"not measurable on this pool, whose failed cells were re-run on larger hardware; see oom_frontier"
+rung,accuracy,text tokens,visual tokens,input tokens,prefill_s,output tokens,decode_s
+T,31.9 [27.3-36.5],930,0,930,0.1,115,2.0
+TL,38.8 [34.5-43.0],1644,0,1644,0.1,133,2.3
+TV,51.6 [48.0-55.3],929,3404,4333,0.1,140,2.4
+TLV,52.5 [48.5-56.5],1644,3404,5049,0.2,136,2.4
+V,45.6 [41.7-49.5],38,3404,3442,0.1,139,2.4

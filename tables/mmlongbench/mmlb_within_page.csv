@@ -1,0 +1,18 @@
+# swept,"gold-page count × evidence-source count × rung (answerable pool, oracle pages)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"complete answerable pool — g4-faithfulness-full prompt_mode=none (T/TL/TLV/V) + g1-tv-full (TV), 847 questions x 5 rungs, no OOM attrition"
+# page_selection,oracle
+# prompt_mode,none
+# design,"observational — four question populations, not one population under four treatments"
+# hop,"the `hop` label calls every one-page question single, including the 105 that cite two evidence sources"
+bucket,T,TL,TLV,V,M-S T,M-S TL,M-S TLV,M-S V,n
+1 page / 1 source,41.5 [34.7-48.0],46.7 [40.2-52.8],66.2 [60.8-71.2],59.6 [54.3-65.3],-,-,-,-,364
+1 page / 2+ sources,18.2 [11.2-26.0],32.7 [23.9-42.5],48.2 [38.3-58.7],36.4 [26.9-46.1],-23.3,-14.0,-18.0,-23.3,110
+2+ pages / 1 source,26.3 [20.4-33.0],34.4 [28.2-41.3],42.0 [35.2-49.1],37.1 [30.7-43.4],-15.1,-12.3,-24.2,-22.6,224
+2+ pages / 2+ sources,24.4 [16.4-33.3],27.6 [19.3-36.8],35.0 [25.6-44.9],29.3 [20.9-38.9],-17.1,-19.1,-31.2,-30.3,123

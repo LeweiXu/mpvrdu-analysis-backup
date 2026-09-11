@@ -1,0 +1,3 @@
+Independents also have a negative view of increased tariffs between the U.S. and its trading partners (53% say they will be bad for the U.S., 36% good for the U.S.). Independents' views on the 2017 tax bill are more divided: 34% approve of the tax law and 43% disapprove.
+
+As with the border wall, Democratic-leaning independents are more likely to view increased tariffs negatively (75% say they will be bad for the U.S.) than Republican-leaning independents are to view them positively (66% say they will be good). On taxes, two-thirds of GOP leaners approve of the tax law, while an identical share of Democratic leaners disapprove.

@@ -1,0 +1,7 @@
+Object Storage Service
+Product Introduction
+4 Functions
+<table><tr><td>Function</td><td>Description</td><td>Region Availability</td><td>OBS 2.0</td><td>OBS 3.0</td></tr><tr><td>Parallel file systems</td><td>Parallel File System (PFS) is a high-performance file system with access latency in milliseconds. It supports TB/s-level bandwidth and millions of IOPS, which is ideal for processing high-performance computing (HPC) workloads. You can call standard OBS APIs to read data in a parallel file system, or use obsf, an OBS tool, to mount a parallel file system to a Linux server in the cloud. Migrating files and directories in a parallel file system is just like operating a local file system.</td><td>See Function Overview.</td><td>Not supported</td><td>Supported</td></tr><tr><td>Logging</td><td>With logging, you can obtain the bucket access data. After logging is enabled for a bucket, OBS automatically logs every access request for the bucket, packs multiple log records into a log file, and saves the log file to the specified bucket. Using the stored logs, you can analyze or audit logs.</td><td>All</td><td>Supported</td><td>Supported</td></tr><tr><td>Versioning</td><td>When versioning is enabled for a bucket, OBS can keep multiple versions of an object in the bucket. That way you can quickly retrieve and restore every object version as needed, or recover data from both accidental actions and application failures.</td><td>All</td><td>Supported</td><td>Supported</td></tr></table>
+Issue 26 (2024-02-28)
+Copyright © Huawei Technologies Co., Ltd.
+23

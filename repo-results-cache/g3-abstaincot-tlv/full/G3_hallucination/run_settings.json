@@ -1,0 +1,7 @@
+{
+  "decode_budget": {
+    "abstain_cot": 2048,
+    "default": 256
+  },
+  "final_answer_delimiter": "Answer:"
+}

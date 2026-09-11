@@ -18,7 +18,7 @@ _MMLongBench-Doc is the complete answerable pool (g4-faithfulness-full prompt_mo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | MMLongBench-Doc | 31.9 a7.3 w60.8 (n=847) | 38.8 a3.2 w58.0 (n=847) | 51.6 a1.4 w47.0 (n=847) | 52.5 a1.4 w46.0 (n=847) | 45.6 a1.1 w53.4 (n=847) | TLV | +20.7 | 4235 |
 | MMLongBench-Doc (digital) | 39.9 a3.0 w57.1 (n=657) | 40.5 a2.1 w57.4 (n=657) | 49.9 a1.2 w48.9 (n=657) | 50.1 a1.1 w48.9 (n=657) | 42.5 a0.8 w56.8 (n=657) | TLV | +10.2 | 3285 |
-| LongDocURL | 63.7 a1.0 w35.3 (n=2295) | 68.0 a0.9 w31.2 (n=2225) | 69.5 a0.2 w30.3 (n=2270) | 71.9 a0.4 w27.8 (n=2168) | 63.1 a0.3 w36.6 (n=2304) | TLV | +8.1 | 11262 |
+| LongDocURL | 63.7 a1.0 w35.3 (n=2295) | 68.0 a0.9 w31.2 (n=2225) | 69.5 a0.2 w30.3 (n=2270) | 71.9 a0.4 w27.8 (n=2169) | 63.1 a0.3 w36.6 (n=2304) | TLV | +8.1 | 11263 |
 
 ### Representation ladder by evidence source, both datasets
 
@@ -30,7 +30,7 @@ _MMLongBench-Doc is the complete answerable pool (g4-faithfulness-full prompt_mo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Text | MMLongBench-Doc | 39.2 a4.1 w56.7 (n=291) | 47.8 a1.7 w50.5 (n=291) | 53.6 a1.4 w45.0 (n=291) | 55.3 a1.4 w43.3 (n=291) | 44.3 a0.3 w55.3 (n=291) | +16.2 | 1455 |
 | Text | MMLongBench-Doc (digital) | 48.5 a1.3 w50.2 (n=231) | 51.5 a0.4 w48.1 (n=231) | 55.4 a1.3 w43.3 (n=231) | 56.7 a0.9 w42.4 (n=231) | 44.6 a0.0 w55.4 (n=231) | +8.2 | 1155 |
-| Text | LongDocURL | 75.3 a1.2 w23.5 (n=984) | 79.5 a0.7 w19.8 (n=970) | 80.5 a0.4 w19.1 (n=971) | 82.3 a0.5 w17.2 (n=942) | 74.0 a0.3 w25.7 (n=985) | +7.0 | 4852 |
+| Text | LongDocURL | 75.3 a1.2 w23.5 (n=984) | 79.5 a0.7 w19.8 (n=970) | 80.5 a0.4 w19.1 (n=971) | 82.3 a0.5 w17.2 (n=943) | 74.0 a0.3 w25.7 (n=985) | +7.0 | 4853 |
 | Table | MMLongBench-Doc | 40.6 a6.0 w53.5 (n=217) | 48.4 a0.9 w50.7 (n=217) | 47.0 a2.8 w50.2 (n=217) | 48.4 a2.3 w49.3 (n=217) | 37.8 a1.8 w60.4 (n=217) | +7.8 | 1085 |
 | Table | MMLongBench-Doc (digital) | 47.1 a1.6 w51.3 (n=187) | 46.5 a0.5 w52.9 (n=187) | 44.9 a2.1 w52.9 (n=187) | 44.9 a1.6 w53.5 (n=187) | 34.2 a1.1 w64.7 (n=187) | +0.0 | 935 |
 | Table | LongDocURL | 61.2 a0.9 w37.9 (n=858) | 69.5 a1.1 w29.3 (n=811) | 64.6 a0.0 w35.4 (n=853) | 68.2 a0.3 w31.6 (n=789) | 57.3 a0.1 w42.6 (n=868) | +8.4 | 4179 |
@@ -72,6 +72,9 @@ _READ DOWN A DATASET, NOT ACROSS ONE. SUMMARISED: confidence intervals removed. 
 | colqwen3 | MMLongBench-Doc | 0.541 | 0.806 | 0.874 | 847 |
 | colqwen3 | MMLongBench-Doc (digital) | 0.542 | 0.811 | 0.882 | 657 |
 | colqwen3 | LongDocURL | 0.536 | 0.811 | 0.881 | 2317 |
+| qwen3-embedding | MMLongBench-Doc | 0.255 | 0.494 | 0.645 | 847 |
+| qwen3-embedding | MMLongBench-Doc (digital) | 0.321 | 0.605 | 0.749 | 657 |
+| qwen3-embedding | LongDocURL | 0.341 | 0.648 | 0.755 | 2317 |
 
 ## Integration
 

@@ -1,0 +1,17 @@
+# swept,"outcome category × direction (none→abstain, answerable pool, oracle pages, TLV)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,answerable
+# page_selection,oracle
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+# reading,"entered − left is that category's level change, so the block reconciles with faithfulness_answerable_accuracy row for row"
+pool,category,none (%),abstain (%),entered (%),left (%),net (pts),paired n
+answerable,correct,49.5,40.0,2.5 (21),12.0 (100),-9.5,833
+answerable,declined,6.2,27.7,21.6 (180),0.1 (1),+21.5,833
+answerable,wrong,44.3,32.3,8.2 (68),20.2 (168),-12.0,833

@@ -1,0 +1,21 @@
+# swept,"verdict transition × rung (answerable pool, oracle pages, prompt = none)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,answerable
+# page_selection,oracle
+# prompt_mode,none
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+# pairing,"on cell identity; a cell either judge missed is dropped, not counted as a change"
+transition,T,TL,TLV,V
+correct -> correct,29.0,35.7,49.5,42.1
+correct -> wrong,2.0,2.5,2.6,3.4
+wrong -> correct,0.0,0.0,0.0,0.5
+wrong -> wrong,68.9,61.8,47.9,54.0
+gained abstention,18.8,13.9,4.8,6.0
+lost abstention,0.0,0.0,0.0,0.0
+n (per col),834,833,833,833

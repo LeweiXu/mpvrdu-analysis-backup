@@ -1,0 +1,11 @@
+## Changing transportation preferences
+
+Younger people driving less...
+
+- Average miles driven by 16 to 34 year-olds dropped by 23% between 2001 & 2009
+
+- 75% of millennials expect to live in a place where they do not need a car to get around
+
+- Caltrain rider average income $117,000 (could drive if they wanted to)
+
+• 55% are under 35...

@@ -1,0 +1,11 @@
+## The world’s biggest building
+
+The New Century Global Centre was built in the middle of Tianfu New City, on top of Subway Line 1. It was heralded as the largest single building in the world by gross floor area, measuring in at 1,700,000 square metres, and opened in 2013 after only three years of construction. The timing was unfortunate: Deng Hong, the founder of the company developing the project, was arrested that year on corruption charges. The Fortune 500 global summit – initially billed to convene in the Centre – chose to relocate to the Shangri-La hotel instead.
+
+Deng wasn’t seen again for 20 months, but appears to have been in better shape since. As does his Global Centre, which last year welcomed 20 million visitors, a two million increase on the year before. Financially the Centre seems to be performing well too, its managers shrugging off reports in 2016 that the site was going to be sold for Rmb65 billion, claiming there was no reason for Deng to seek a buyer. In fact the project has proven successful enough that an agreement was reached to build another similar centre in Kunming, only this would be substantially smaller, with a floor area of 1,000,000 square metres.
+
+
+
+As you might expect for the world’s largest building by GFA, it can’t rely on retail alone for its revenue: it also has an ice rink, a cinema, restaurants, office space, a water park and two hotels. The hotels both belong to InterContinental and many of their rooms offer views over the “fake beach” that adjoins the water park. The “beach” is just yellow floor, but it received a lot of press attention for its size, stretching over 5,000 square metres. And the surf is provided periodically by a wave machine (life jackets are compulsory, since many Chinese have never learned to swim). Certainly it’s a sight to behold, if not quite the “tropical paradise” the waterpark promises in its name.
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_1283_181_1716_1064.jpg" alt="Image" width="25%" /></div>

@@ -1,0 +1,12 @@
+Table of Contents
+ACTIVISION BLIZZARD, INC. AND SUBSIDIARIES
+Notes to Consolidated Financial Statements (continued)
+As of December 31, 2019, the scheduled maturities and contractual principal repayments of our debt for each of the five succeeding years and thereafter are as follows (amounts in millions):
+For the years ending December 31,
+<table><tr><td>2020</td><td>$—</td></tr><tr><td>2021</td><td>650</td></tr><tr><td>2022</td><td>400</td></tr><tr><td>2023</td><td>—</td></tr><tr><td>2024</td><td>—</td></tr><tr><td>Thereafter</td><td>1,650</td></tr><tr><td>Total</td><td>$2,700</td></tr></table>
+With the exception of the 2026 and the 2047 Notes, using Level 2 inputs (i.e., observable market prices in less-than-active markets) at December 31, 2019, the carrying values of the Notes approximated their fair values, as the interest rates were similar to the current rates at which we could borrow funds over the selected interest periods. At December 31, 2019, based on Level 2 inputs, the fair value of the 2026 and the 2047 Notes were $893 million and $456 million, respectively.
+Using Level 2 inputs at December 31, 2018, the carrying values of the 2021 Notes and the 2022 Notes approximated their fair values, as the interest rates were similar to the current rates at which we could borrow funds over the selected interest periods. At December 31, 2019, based on Level 2 inputs, the fair values of the 2026 Notes, the 2027 Notes, and the 2047 Notes were $800 million, $376 million, and $360 million, respectively.
+14. Accumulated Other Comprehensive Income (Loss)
+The components of accumulated other comprehensive income (loss) were as follows (amounts in millions):
+<table><tr><td rowspan="2"></td><td colspan="5">For the Year Ended December 31, 2019</td></tr><tr><td>Foreign currency translation adjustments</td><td>Unrealized gain (loss) on available-for-sale securities</td><td>Unrealized gain (loss) on forward contracts</td><td>Total</td><td></td></tr><tr><td>Balance at December 31, 2018</td><td>$(629)</td><td>$5</td><td>$23</td><td>$(601)</td><td></td></tr><tr><td>Other comprehensive income (loss) before reclassifications</td><td>5</td><td>—</td><td>24</td><td>29</td><td></td></tr><tr><td>Amounts reclassified from accumulated other comprehensive income (loss) into earnings</td><td>—</td><td>(8)</td><td>(39)</td><td>(47)</td><td></td></tr><tr><td>Balance at December 31, 2019</td><td>$(624)</td><td>$(3)</td><td>$8</td><td>$(619)</td><td></td></tr></table>
+F-34

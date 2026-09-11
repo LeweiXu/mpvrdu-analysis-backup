@@ -1,0 +1,8 @@
+WHIRLPOOL*
+Refrigerator Warranty
+<table><tr><td>LENGTH OF WARRANTY</td><td>WHIRLPOOL WILL PAY FOR</td></tr><tr><td>FULL ONE-YEAR WARRANTYFrom Date of Purchase</td><td>FSP* replacement parts and repair labor to correct defects in materials or workmanship. Service must be provided by an authorized Whirlpool service company.</td></tr><tr><td>FULL FIVE-YEAR WARRANTYFrom Date of Purchase</td><td>FSP replacement parts and repair labor to correct defects in materials or workmanship in the sealed refrigeration system. These parts are:1. Compressor 4. Drier2. Evaporator 5. Connecting tubing3. CondenserService must be provided by an authorized Whirlpool service company.</td></tr><tr><td colspan="2">WHIRLPOOL WILL NOT PAY FOR</td></tr><tr><td colspan="2">A. Service calls to:1. Correct the installation of your refrigerator.2. Instruct you how to use your refrigerator.3. Replace house fuses or correct house wiring or plumbing.4. Replace light bulbs.B. Repairs when your refrigerator is used in other than normal, single-family household use.C. Pickup and delivery. Your refrigerator is designed to be repaired in the home.D. Damage to your refrigerator caused by accident, misuse, fire, flood, acts of God, or use of products not approved by Whirlpool.E. Any food loss due to product failure.F. Repairs to parts or systems caused by unauthorized modifications made to the appliance.5/93</td></tr></table>
+WHIRLPOOL CORPORATION SHALL NOT BE LIABLE FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES.
+Outside the United States, a different warranty may apply. For details, please contact your authorized Whirlpool distributor or military exchange.
+© 1994 Whirlpool U.S.A.
+* Registered Trademark of Whirlpool, U.S.A.
+Printed in U.S.A.

@@ -1,0 +1,49 @@
+# swept,gold page withheld × question type × verdict transition (TLV)
+# dataset,longdocurl
+# scan,any
+# sampling,full (hop: multi)
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,T/TL/TLV/V
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# prompt_mode,none
+# reads,"the same pool as ldu_coverage_by_type, read as paired transitions rather than levels"
+question_type,arm,wrong→right (%),right→wrong (%),right→right (%),wrong→wrong (%),paired n
+extract,keep top-1,3.3 (19),17.9 (103),66.0 (379),12.7 (73),574
+extract,keep bottom-1,1.9 (11),53.1 (305),30.8 (177),14.1 (81),574
+extract,drop bottom-1,2.8 (16),15.5 (89),68.5 (393),13.2 (76),574
+extract,drop top-1,2.4 (14),48.8 (280),35.2 (202),13.6 (78),574
+topic2title,keep top-1,1.5 (2),32.6 (43),2.3 (3),63.6 (84),132
+topic2title,keep bottom-1,0.8 (1),33.3 (44),1.5 (2),64.4 (85),132
+topic2title,drop bottom-1,3.0 (4),33.3 (44),1.5 (2),62.1 (82),132
+topic2title,drop top-1,0.8 (1),33.3 (44),1.5 (2),64.4 (85),132
+summary2title,keep top-1,3.9 (4),23.3 (24),52.4 (54),20.4 (21),103
+summary2title,keep bottom-1,3.9 (4),56.3 (58),19.4 (20),20.4 (21),103
+summary2title,drop bottom-1,4.9 (5),16.5 (17),59.2 (61),19.4 (20),103
+summary2title,drop top-1,1.0 (1),48.5 (50),27.2 (28),23.3 (24),103
+summary2tab,keep top-1,1.0 (1),13.1 (13),6.1 (6),79.8 (79),99
+summary2tab,keep bottom-1,0.0 (0),19.2 (19),0.0 (0),80.8 (80),99
+summary2tab,drop bottom-1,1.0 (1),13.1 (13),6.1 (6),79.8 (79),99
+summary2tab,drop top-1,1.0 (1),19.2 (19),0.0 (0),79.8 (79),99
+calculate,keep top-1,2.4 (1),46.3 (19),19.5 (8),31.7 (13),41
+calculate,keep bottom-1,0.0 (0),43.9 (18),22.0 (9),34.1 (14),41
+calculate,drop bottom-1,4.9 (2),39.0 (16),26.8 (11),29.3 (12),41
+calculate,drop top-1,2.4 (1),43.9 (18),22.0 (9),31.7 (13),41
+count,keep top-1,6.7 (5),33.3 (25),30.7 (23),29.3 (22),75
+count,keep bottom-1,1.3 (1),52.0 (39),12.0 (9),34.7 (26),75
+count,drop bottom-1,5.3 (4),26.7 (20),37.3 (28),30.7 (23),75
+count,drop top-1,2.7 (2),48.0 (36),16.0 (12),33.3 (25),75
+compare,keep top-1,7.7 (5),24.6 (16),58.5 (38),9.2 (6),65
+compare,keep bottom-1,3.1 (2),36.9 (24),46.2 (30),13.8 (9),65
+compare,drop bottom-1,9.2 (6),23.1 (15),60.0 (39),7.7 (5),65
+compare,drop top-1,3.1 (2),35.4 (23),47.7 (31),13.8 (9),65
+summarize,keep top-1,25.0 (1),0.0 (0),75.0 (3),0.0 (0),4
+summarize,keep bottom-1,25.0 (1),25.0 (1),50.0 (2),0.0 (0),4
+summarize,drop bottom-1,25.0 (1),0.0 (0),75.0 (3),0.0 (0),4
+summarize,drop top-1,0.0 (0),50.0 (2),25.0 (1),25.0 (1),4
+**All**,keep top-1,3.5 (38),22.2 (243),47.0 (514),27.3 (298),1093
+**All**,keep bottom-1,1.8 (20),46.5 (508),22.8 (249),28.9 (316),1093
+**All**,drop bottom-1,3.6 (39),19.6 (214),49.7 (543),27.2 (297),1093
+**All**,drop top-1,2.0 (22),43.2 (472),26.1 (285),28.7 (314),1093

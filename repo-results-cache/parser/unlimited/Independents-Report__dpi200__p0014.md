@@ -1,0 +1,4 @@
+15
+PEW RESEARCH CENTER
+Independents who do not lean to a party widely favored same-sex marriage (65% favor this), while 70% say the use of marijuana should be legal.
+www.pewresearch.org

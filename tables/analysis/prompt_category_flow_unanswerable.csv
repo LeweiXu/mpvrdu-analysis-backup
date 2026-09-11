@@ -1,0 +1,16 @@
+# swept,"outcome category × direction (none→abstain, unanswerable pool, bm25 k=3, TLV)"
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV
+# pool,"no gold page exists for an unanswerable question, so this runs on the bm25 k=3 page set and its levels are not comparable with the answerable table's"
+# page_selection,"similarity (bm25, k=3)"
+# judge,"results.errcat.jsonl — judge label gemini-flash-errcat, the error-taxonomy prompt. Same model and same correctness rubric as the main report's judge, but 1.8-3.0 points stricter in practice; levels are not interchangeable with the main report's"
+pool,category,none (%),abstain (%),entered (%),left (%),net (pts),paired n
+unanswerable,correct,45.5,74.6,31.1 (76),2.0 (5),+29.1,244
+unanswerable,declined,0.0,0.0,0.0 (0),0.0 (0),+0.0,244
+unanswerable,wrong,54.5,25.4,2.0 (5),31.1 (76),-29.1,244

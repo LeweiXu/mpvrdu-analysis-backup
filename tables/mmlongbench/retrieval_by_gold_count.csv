@@ -1,0 +1,31 @@
+# swept,retriever × gold-page count (P/R at the matched depth)
+# dataset,mmlongbench
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# representation,TLV/V
+# pool,answerable
+# page_selection,retrieved (bm25 text / colqwen2.5 vision / joint)
+# prompt_mode,none
+# depth,"each bucket read at the smallest swept k that can cover it, since the number of pages an answer needs is known when the question is asked"
+# status,PROVISIONAL (partial G2 pool)
+retriever,gold pages,n,k=gold P,k=gold R,k=3 P,k=3 R,k=5 P,k=5 R,k=7 P,k=7 R,k=10 P,k=10 R
+bge-m3,1,480,33.5,33.5,15.3,45.8,10.8,54.2,8.4,58.8,6.5,65.4
+bge-m3|colqwen2.5,1,480,50.2,72.1,17.9,83.5,11.6,88.5,-,-,-,-
+bm25,1,480,29.6,29.6,15.1,45.2,10.8,54.0,8.3,58.1,6.6,65.6
+bm25|colmodernvbert,1,480,46.7,68.5,17.5,82.3,11.3,87.9,-,-,-,-
+colmodernvbert,1,480,63.8,63.8,26.2,78.8,16.8,84.0,12.4,86.9,8.9,88.5
+colqwen2.5,1,480,66.9,66.9,26.8,80.4,17.0,84.8,12.6,88.1,9.0,90.4
+colqwen3,1,480,74.0,74.0,28.8,86.5,18.1,90.6,13.2,92.1,9.3,93.3
+qwen3-embedding,1,480,33.1,33.1,16.2,48.5,11.1,55.6,8.8,61.5,6.9,69.4
+bge-m3,2,246,30.1,30.1,25.1,37.6,20.0,50.0,15.7,54.9,12.9,64.4
+bge-m3|colqwen2.5,2,246,-,-,30.2,70.3,20.9,78.0,-,-,-,-
+bm25,2,246,27.4,27.4,22.5,33.7,16.7,41.7,13.5,47.2,11.1,55.1
+bm25|colmodernvbert,2,246,-,-,26.8,61.8,18.7,71.1,-,-,-,-
+colmodernvbert,2,246,48.6,48.6,36.6,54.9,26.2,65.4,20.4,71.3,15.6,78.0
+colqwen2.5,2,246,54.5,54.5,42.3,63.4,28.5,71.1,21.6,75.6,16.3,81.3
+colqwen3,2,246,58.9,58.9,46.5,69.7,31.0,77.4,23.0,80.5,17.1,85.2
+qwen3-embedding,2,246,35.6,35.6,27.9,41.9,21.1,52.6,17.2,60.2,13.8,68.9

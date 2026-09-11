@@ -48,4 +48,9 @@ colqwen3,vision,3,36.8,73.9,46.0,847,scored
 colqwen3,vision,5,25.5,80.6,36.1,847,scored
 colqwen3,vision,7,19.9,83.9,29.9,847,scored
 colqwen3,vision,10,15.2,87.4,24.1,847,scored
+qwen3-embedding,text,1,33.5,25.5,27.9,847,scored
+qwen3-embedding,text,3,19.9,41.3,25.4,847,scored
+qwen3-embedding,text,5,15.0,49.4,21.7,847,scored
+qwen3-embedding,text,7,12.6,56.0,19.4,847,scored
+qwen3-embedding,text,10,10.5,64.5,17.1,847,scored
 n (per col),-,-,-,-,-,-,-

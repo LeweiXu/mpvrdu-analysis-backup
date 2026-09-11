@@ -1,0 +1,4 @@
+THE FLOW OF GENETIC
+INFORMATION FROM DNA
+TO RNA TO PROTEIN
+Copyright © 2009 Pearson Education, Inc.

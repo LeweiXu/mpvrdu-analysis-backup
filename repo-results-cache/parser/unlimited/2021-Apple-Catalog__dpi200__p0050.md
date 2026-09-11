@@ -1,0 +1,37 @@
+ORDERING INSTRUCTIONS
+/ Apple Watch Solutions
+W2000 Wearables Product Ordering for Apple Watch
+Apple Watch 3, 4, 5, 6, & 7, Apple Watch Nike and Apple Watch Hermes
+Stand
+ZW2000 W2000 ALL ABOVE TABLE WEARABLE STAND
+Tray Sensor
+Apple Watch 3
+ZW1014 WS2/W2000 APPLE TRAY SENSOR - 38MM SENSOR WHITE
+ZW1012 WS2/W2000 APPLE TRAY SENSOR - 42MM SENSOR WHITE
+Apple Watch 4, 5, 6 & 7
+ZW1011 WS2/W2000 APPLE TRAY SENSOR- 40MM
+ZW1013 WS2/W2000 APPLE TRAY SENSOR - 44MM
+Charging Cradle & OEM Trim Kit
+ZW1005 WS2/W2000 APPLE CHARGE CRADLE
+ZW1017 WS2/W2000 APPLE OEM KIT
+Power Supply
+PS515 5V USB-A POWER SUPPLY
+WS2 Wearables Product Ordering
+Apple Watch 3, 4, 5, 6, & 7, Apple Watch Nike and Apple Watch Hermes
+Stand
+ZW1001 WS2 RECOILER STAND
+ZW1002 WS2 EXPOSED CORD STAND
+Tray Sensor
+Apple Watch 3
+ZW1014 WS2/W2000 APPLE TRAY SENSOR - 38MM SENSOR WHITE
+ZW1012 WS2/W2000 APPLE TRAY SENSOR - 42MM SENSOR WHITE
+Apple Watch 4, 5, 6 & 7
+ZW1011 WS2/W2000 APPLE TRAY SENSOR- 40MM
+ZW1013 WS2/W2000 APPLE TRAY SENSOR - 44MM
+Charging Cradle & OEM Trim Kit
+ZW1005 WS2/W2000 APPLE CHARGE CRADLE
+ZW1017 WS2/W2000 APPLE OEM KIT
+TO CONFIGURE A DISPLAY:
+To complete a display, select one stand, sensor, charging cradle and OEM trim kit. A Zips Power Alarm Unit and Power Supply are required.
+> Cradle has integrated Apple charger.
+44

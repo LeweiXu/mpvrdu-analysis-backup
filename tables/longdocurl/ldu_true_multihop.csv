@@ -1,0 +1,17 @@
+# swept,"gold-page count × rung, all types against the multi-hop types only"
+# dataset,longdocurl
+# scan,any
+# sampling,full
+# parser,paddleocrvl
+# reasoner_spec,qwen3vl-8b-local
+# quantization,bf16
+# visual_resolution,med
+# pool,"LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89)"
+# page_selection,oracle
+# prompt_mode,none
+# types,config.LDU_MULTIHOP_TYPES — kept when under half of a type's solved multi-page questions survive on the top-ranked gold page alone
+bucket,T,TL,TLV,V,M-S T,M-S TL,M-S TLV,M-S V,n
+single page,65.5 [60.5-70.4],73.8 [70.6-76.9],74.5 [71.4-77.7],64.4 [60.9-68.2],-,-,-,-,1095
+multi-page (all types),62.2 [58.6-65.9],62.4 [58.9-66.2],69.3 [65.8-73.0],62.0 [58.3-65.5],-3.3,-11.4,-5.3,-2.4,1213
+multi-page (non multi-hop types),74.1 [70.5-77.4],76.3 [72.6-79.9],82.7 [79.7-85.4],74.5 [71.3-77.4],+8.7,+2.4,+8.2,+10.1,813
+multi-page (multi-hop types),37.5 [32.1-43.1],33.0 [28.1-38.9],40.3 [34.8-46.8],36.4 [31.2-42.0],-28.0,-40.9,-34.2,-28.0,400

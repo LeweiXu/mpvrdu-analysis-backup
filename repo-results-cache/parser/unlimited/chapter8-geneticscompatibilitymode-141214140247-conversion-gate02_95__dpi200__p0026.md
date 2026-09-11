@@ -1,0 +1,23 @@
+![](images/0.jpg)
+
+A. PROPHASE I
+B. METAPHASE I
+C. ANAPHASE I
+D. TELOPHASE I
+E. PROPHASE II
+F. METAPHASE II
+G. ANAPHASE II
+H. TELOPHASE II
+I. TETRAD
+MEIOSIS
+![](images/1.jpg)
+
+![](images/2.jpg)
+
+ANAPHASE II
+![](images/3.jpg)
+
+TELOPHASE II
+![](images/4.jpg)
+
+TETRAD

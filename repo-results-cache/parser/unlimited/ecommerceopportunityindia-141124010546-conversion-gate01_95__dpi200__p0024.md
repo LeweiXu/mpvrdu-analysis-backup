@@ -1,0 +1,3 @@
+WHAT ARE THE OPPORTUNITIES?
+<table><tr><td>Seller / Supply Side</td><td>Marketing</td><td>Product and Technology</td><td>Operations and Fulfilment</td><td>Strategy and Finance</td></tr><tr><td>Business DevelopmentCategoryManagementOnboardingTrainingAccountManagementAlliances</td><td>Digital Marketing - SEO, PPC, SocialATL, BTLAnalyticsPR and CommunicationBrandManagementForecasting</td><td>Product ManagementProgramManagementAnalytics</td><td>Supply chainWarehousingLogisticsCustomer Service</td><td>Planning and forecastingFund RaisingCash flow management</td></tr></table>
+Great Entrepreneurial opportunities in making the ecosystem robust – increasing retention, increasing logistics efficiency, analytics etc

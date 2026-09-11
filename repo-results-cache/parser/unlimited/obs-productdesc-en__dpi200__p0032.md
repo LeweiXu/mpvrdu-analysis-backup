@@ -1,0 +1,10 @@
+Object Storage Service
+Product Introduction
+5 Security
+Table 5-1 OBS access control
+<table><tr><td colspan="2">Method</td><td>Description</td><td>Reference</td></tr><tr><td rowspan="3">Permission control</td><td>IAM permissions</td><td>IAM permissions define which actions on your cloud resources are allowed or denied. After creating an IAM user, the administrator needs to add it to a user group and grant the permissions required by OBS to the user group. Then, all users in this group automatically inherit the granted permissions.</td><td>IAM Permissions</td></tr><tr><td>Bucket policies</td><td>A bucket policy applies to an OBS bucket and the objects in it. A bucket owner can use bucket policies to grant IAM users or other accounts the permissions required to operate the bucket and the objects in it. Bucket policies supplement, and in many cases, replace ACLs of buckets and objects.</td><td>Bucket Policies</td></tr><tr><td>ACLs</td><td>An access control list (ACL) defines grantees and their granted permissions. Bucket and object ACLs are associated with accounts or user groups. When you create a bucket or an object, OBS creates a default ACL that authorizes the owner full control over the bucket or object. Bucket or object owners can configure ACLs to grant basic read and write permissions to specific accounts or user groups.</td><td>ACLs</td></tr><tr><td colspan="2">URL validation</td><td>URL validation protects your data in OBS from being stolen using the Referer field in HTTP requests. Such authorization is controlled using whitelists and blacklists.</td><td>URL Validation</td></tr><tr><td colspan="2">CORS</td><td>OBS allows you to configure cross-origin resource sharing (CORS) rules on buckets to allow or forbid cross-origin requests from certain websites.</td><td>CORS</td></tr></table>
+5.3 Data Protection
+OBS takes different measures to keep data stored in OBS secure and reliable.
+Issue 26 (2024-02-28)
+Copyright © Huawei Technologies Co., Ltd.
+29

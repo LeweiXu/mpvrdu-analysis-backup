@@ -34,3 +34,6 @@ colqwen2.5,LongDocURL,0.493,0.780,0.852,2317
 colqwen3,MMLongBench-Doc,0.541,0.806,0.874,847
 colqwen3,MMLongBench-Doc (digital),0.542,0.811,0.882,657
 colqwen3,LongDocURL,0.536,0.811,0.881,2317
+qwen3-embedding,MMLongBench-Doc,0.255,0.494,0.645,847
+qwen3-embedding,MMLongBench-Doc (digital),0.321,0.605,0.749,657
+qwen3-embedding,LongDocURL,0.341,0.648,0.755,2317

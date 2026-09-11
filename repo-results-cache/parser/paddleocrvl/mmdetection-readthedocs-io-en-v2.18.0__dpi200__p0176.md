@@ -1,0 +1,69 @@
+• There was a bug for computing COCO-style mAP w.r.t different scales (AP_s, AP_m, AP_l), introduced by #621. (#1679)
+
+## Bug Fixes
+
+• Fix a sampling interval bug in Libra R-CNN. (#1800)
+
+• Fix the learning rate in SSD300 WIDER FACE. (#1781)
+
+• Fix the scaling issue when keep_ratio=False. (#1730)
+
+• Fix typos. (#1721, #1492, #1242, #1108, #1107)
+
+• Fix the shuffle argument in build_dataloader. (#1693)
+
+• Clip the proposal when computing mask targets. (#1688)
+
+• Fix the “index out of range” bug for samplers in some corner cases. (#1610, #1404)
+
+• Fix the NMS issue on devices other than GPU:0. (#1603)
+
+• Fix SSD Head and GHM Loss on CPU. (#1578)
+
+• Fix the OOM error when there are too many gt bboxes. (#1575)
+
+• Fix the wrong keyword argument nms_cfg in HTC. (#1573)
+
+• Process masks and semantic segmentation in Expand and MinIoUCrop transforms. (#1550, #1361)
+
+• Fix a scale bug in the Non Local op. (#1528)
+
+• Fix a bug in transforms when gt_bboxes_ignore is None. (#1498)
+
+• Fix a bug when img_prefix is None. (#1497)
+
+• Pass the device argument to grid_anchors and valid_flags. (#1478)
+
+• Fix the data pipeline for test_robustness. (#1476)
+
+• Fix the argument type of deformable pooling. (#1390)
+
+• Fix the coco_eval when there are only two classes. (#1376)
+
+• Fix a bug in Modulated DeformableConv when deformable_group>1. (#1359)
+
+• Fix the mask cropping in RandomCrop. (#1333)
+
+• Fix zero outputs in DeformConv when not running on cuda:0. (#1326)
+
+• Fix the type issue in Expand. (#1288)
+
+• Fix the inference API. (#1255)
+
+• Fix the inplace operation in Expand. (#1249)
+
+• Fix the from-scratch training config. (#1196)
+
+• Fix inplace add in RoIExtractor which cause an error in PyTorch 1.2. (#1160)
+
+• Fix FCOS when input images has no positive sample. (#1136)
+
+• Fix recursive imports. (#1099)
+
+## Improvements
+
+• Print the config file and mmdet version in the log. (#1721)
+
+• Lint the code before compiling in travis CI. (#1715)
+
+• Add a probability argument for the Expand transform. (#1651)

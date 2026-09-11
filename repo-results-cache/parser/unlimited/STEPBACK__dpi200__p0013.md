@@ -1,0 +1,12 @@
+Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models
+<table><tr><td>MMLU Physics/Chemistry First-Principle Prompt</td></tr><tr><td>You are an expert at Physics/Chemistry. You are given a Physics/Chemistry problem. Your task is to extract the Physics/Chemistry concepts and principles involved in solving the problem. Here are a few examples:Question: &lt;Question Example1&gt;Principles Involved: &lt;Principles Example1&gt;Question: &lt;Question Example5&gt;Principles Involved: &lt;Principles Example5&gt;Question: &lt;Question&gt;Principles Involved:</td></tr></table>
+Table 6: Prompt of extracting the underlying principles involved in MMLU physics and chemistry questions.
+<table><tr><td>MMLU Physics/Chemistry Final Answer Prompt</td></tr><tr><td>You are an expert at Physics/Chemistry. You are given a Physics/Chemistry problem and a set of principles involved in solving the problem. Solve the problem step by step by following the principles. Here are a few examples:Question: &lt;Question Example1&gt;Principles: &lt;Principles Example1&gt;Answer: &lt;Answer Example1&gt;...Question: &lt;Question Example5&gt;Principles: &lt;Principles Example5&gt;Answer: &lt;Answer Example5&gt;Question: &lt;Question&gt;Principles: &lt;Principles&gt;Answer:</td></tr></table>
+Table 7: Prompt of querying the model for final answer with first principles behind the question in MMLU high-school Physics and Chemistry.
+We found that out of 4 trials, the model scoring agrees with human ratings \(97\%\), \(98\%\), \(99\%\) and \(99\%\) of the time.
+D PROMPTS AND FEW SHOT EXAMPLES
+D.1 STEM
+For MMLU high-school Physics and Chemistry, we first prompt the model to generate the first principles behind the question. Using the generated first principles, we further prompt the model to generate the final answer through few-shot demonstrations The prompt generating first principles is shown in Table 6 for MMLU high-school Physics and Chemistry.
+After extracting the first principles of solving a particular question, we formulate the prompt in Table 7 to query the model for the final answer.
+Tables 8-9 show one demonstration exemplar of Question-Principles-Answer triplets for MMLU high-school Physics and Chemistry, respectively.
+14

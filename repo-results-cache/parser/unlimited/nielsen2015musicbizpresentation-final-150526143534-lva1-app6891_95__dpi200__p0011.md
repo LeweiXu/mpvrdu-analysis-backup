@@ -1,0 +1,6 @@
+1. 2017年1月1日，公司召开2017年第二次临时股东大会，并通知全体董事。
+n
+ROCK IS DRIVEN BY CATALOG AT ALL FORMATS, WHILE POP IS MAINLY DRIVEN BY CURRENT
+Catalog Share of Format
+
+12

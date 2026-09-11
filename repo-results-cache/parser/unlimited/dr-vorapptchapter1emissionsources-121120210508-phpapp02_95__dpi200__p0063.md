@@ -1,0 +1,2 @@
+A Digital Measurement Framework Objective
+Is to ensure a common, base-level of understanding of the metrics, technology, tools and processes that support Measurement, Reporting, Testing and Optimisation

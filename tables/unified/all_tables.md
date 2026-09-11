@@ -12,15 +12,16 @@
 | g1-interleaved-tlv | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
 | g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1466 | 228 | 0 | 13.5 |
 | g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1585 | 109 | 0 | 6.4 |
-| g1-quantization-full | G1_oracle_ladder | 5256 | 4961 | 295 | 0 | 5.6 |
-| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1488 | 32 | 0 | 2.1 |
+| g1-quantization-full | G1_oracle_ladder | 5256 | 5174 | 82 | 0 | 1.6 |
+| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1506 | 14 | 0 | 0.9 |
 | g1-reasoner-32b-matched | G1_oracle_ladder | 6776 | 6775 | 1 | 0 | 0.0 |
-| g1-reasoner-full | G1_oracle_ladder | 7884 | 7525 | 359 | 0 | 4.6 |
-| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3270 | 118 | 0 | 3.5 |
-| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2239 | 41 | 0 | 1.8 |
+| g1-reasoner-full | G1_oracle_ladder | 7884 | 7735 | 149 | 0 | 1.9 |
+| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3337 | 51 | 0 | 1.5 |
+| g1-reasoner-llama | G1_oracle_ladder | 3388 | 3169 | 219 | 0 | 6.5 |
+| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2257 | 23 | 0 | 1.0 |
 | g1-representation-full | G1_oracle_ladder | 3388 | 3143 | 245 | 0 | 7.2 |
-| g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
-| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
+| g1-resolution-full | G1_oracle_ladder | 3942 | 3847 | 95 | 0 | 2.4 |
+| g1-resolution-scanned | G1_oracle_ladder | 1119 | 1104 | 15 | 0 | 1.3 |
 | g1-tv-full | G1_oracle_ladder | 847 | 847 | 0 | 0 | 0.0 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
 | g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
@@ -33,12 +34,13 @@
 | g5b-gold1 | G5_selection | 11520 | 11376 | 0 | 144 | 0.0 |
 | g5b-gold2 | G5_selection | 5904 | 5784 | 0 | 120 | 0.0 |
 | g5b-gold3 | G5_selection | 960 | 960 | 0 | 0 | 0.0 |
-| g5c-gold1 | G5_selection | 1445 | 765 | 662 | 18 | 45.8 |
-| g5c-gold2 | G5_selection | 492 | 200 | 282 | 10 | 57.3 |
+| g5c-gold1 | G5_selection | 1440 | 1011 | 423 | 6 | 29.4 |
+| g5c-gold2 | G5_selection | 492 | 279 | 207 | 6 | 42.1 |
 | g6-strategies | G6_reasoning | 1694 | 1380 | 314 | 0 | 18.5 |
 | g6-thinking | G6_reasoning | 847 | 735 | 112 | 0 | 13.2 |
-| g7-models | G1_oracle_ladder | 10164 | 9493 | 671 | 0 | 6.6 |
-| **all** |  | **120800** | 114887 | 5429 | 484 | 4.5 |
+| g7-models | G1_oracle_ladder | 10164 | 9823 | 341 | 0 | 3.4 |
+| g8-pageaware-mmlb | G8_page_aware | 3388 | 3253 | 135 | 0 | 4.0 |
+| **all** |  | **127550** | 122821 | 4261 | 468 | 3.3 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -56,7 +58,7 @@ _MMLongBench-Doc is the complete answerable pool (g4-faithfulness-full prompt_mo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | MMLongBench-Doc | 31.9 a7.3 w60.8 (n=847) | 38.8 a3.2 w58.0 (n=847) | 51.6 a1.4 w47.0 (n=847) | 52.5 a1.4 w46.0 (n=847) | 45.6 a1.1 w53.4 (n=847) | TLV | +20.7 | 4235 |
 | MMLongBench-Doc (digital) | 39.9 a3.0 w57.1 (n=657) | 40.5 a2.1 w57.4 (n=657) | 49.9 a1.2 w48.9 (n=657) | 50.1 a1.1 w48.9 (n=657) | 42.5 a0.8 w56.8 (n=657) | TLV | +10.2 | 3285 |
-| LongDocURL | 63.7 a1.0 w35.3 (n=2295) | 68.0 a0.9 w31.2 (n=2225) | 69.5 a0.2 w30.3 (n=2270) | 71.9 a0.4 w27.8 (n=2168) | 63.1 a0.3 w36.6 (n=2304) | TLV | +8.1 | 11262 |
+| LongDocURL | 63.7 a1.0 w35.3 (n=2295) | 68.0 a0.9 w31.2 (n=2225) | 69.5 a0.2 w30.3 (n=2270) | 71.9 a0.4 w27.8 (n=2169) | 63.1 a0.3 w36.6 (n=2304) | TLV | +8.1 | 11263 |
 
 ### Representation ladder by evidence source, both datasets
 
@@ -68,7 +70,7 @@ _MMLongBench-Doc is the complete answerable pool (g4-faithfulness-full prompt_mo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Text | MMLongBench-Doc | 39.2 a4.1 w56.7 (n=291) | 47.8 a1.7 w50.5 (n=291) | 53.6 a1.4 w45.0 (n=291) | 55.3 a1.4 w43.3 (n=291) | 44.3 a0.3 w55.3 (n=291) | +16.2 | 1455 |
 | Text | MMLongBench-Doc (digital) | 48.5 a1.3 w50.2 (n=231) | 51.5 a0.4 w48.1 (n=231) | 55.4 a1.3 w43.3 (n=231) | 56.7 a0.9 w42.4 (n=231) | 44.6 a0.0 w55.4 (n=231) | +8.2 | 1155 |
-| Text | LongDocURL | 75.3 a1.2 w23.5 (n=984) | 79.5 a0.7 w19.8 (n=970) | 80.5 a0.4 w19.1 (n=971) | 82.3 a0.5 w17.2 (n=942) | 74.0 a0.3 w25.7 (n=985) | +7.0 | 4852 |
+| Text | LongDocURL | 75.3 a1.2 w23.5 (n=984) | 79.5 a0.7 w19.8 (n=970) | 80.5 a0.4 w19.1 (n=971) | 82.3 a0.5 w17.2 (n=943) | 74.0 a0.3 w25.7 (n=985) | +7.0 | 4853 |
 | Table | MMLongBench-Doc | 40.6 a6.0 w53.5 (n=217) | 48.4 a0.9 w50.7 (n=217) | 47.0 a2.8 w50.2 (n=217) | 48.4 a2.3 w49.3 (n=217) | 37.8 a1.8 w60.4 (n=217) | +7.8 | 1085 |
 | Table | MMLongBench-Doc (digital) | 47.1 a1.6 w51.3 (n=187) | 46.5 a0.5 w52.9 (n=187) | 44.9 a2.1 w52.9 (n=187) | 44.9 a1.6 w53.5 (n=187) | 34.2 a1.1 w64.7 (n=187) | +0.0 | 935 |
 | Table | LongDocURL | 61.2 a0.9 w37.9 (n=858) | 69.5 a1.1 w29.3 (n=811) | 64.6 a0.0 w35.4 (n=853) | 68.2 a0.3 w31.6 (n=789) | 57.3 a0.1 w42.6 (n=868) | +8.4 | 4179 |
@@ -110,6 +112,9 @@ _READ DOWN A DATASET, NOT ACROSS ONE. The two corpora differ in ways no column h
 | colqwen3 | MMLongBench-Doc | 0.541 | 0.806 | 0.874 | 847 |
 | colqwen3 | MMLongBench-Doc (digital) | 0.542 | 0.811 | 0.882 | 657 |
 | colqwen3 | LongDocURL | 0.536 | 0.811 | 0.881 | 2317 |
+| qwen3-embedding | MMLongBench-Doc | 0.255 | 0.494 | 0.645 | 847 |
+| qwen3-embedding | MMLongBench-Doc (digital) | 0.321 | 0.605 | 0.749 | 657 |
+| qwen3-embedding | LongDocURL | 0.341 | 0.648 | 0.755 | 2317 |
 
 ## Integration
 

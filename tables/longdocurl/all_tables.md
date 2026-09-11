@@ -12,15 +12,16 @@
 | g1-interleaved-tlv | G1_oracle_ladder | 1694 | 1694 | 0 | 0 | 0.0 |
 | g1-parser-full-mineru | G1_oracle_ladder | 1694 | 1466 | 228 | 0 | 13.5 |
 | g1-parser-full-unlimited | G1_oracle_ladder | 1694 | 1585 | 109 | 0 | 6.4 |
-| g1-quantization-full | G1_oracle_ladder | 5256 | 4961 | 295 | 0 | 5.6 |
-| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1488 | 32 | 0 | 2.1 |
+| g1-quantization-full | G1_oracle_ladder | 5256 | 5174 | 82 | 0 | 1.6 |
+| g1-quantization-scanned | G1_oracle_ladder | 1520 | 1506 | 14 | 0 | 0.9 |
 | g1-reasoner-32b-matched | G1_oracle_ladder | 6776 | 6775 | 1 | 0 | 0.0 |
-| g1-reasoner-full | G1_oracle_ladder | 7884 | 7525 | 359 | 0 | 4.6 |
-| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3270 | 118 | 0 | 3.5 |
-| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2239 | 41 | 0 | 1.8 |
-| g1-representation-full | G1_oracle_ladder | 3388 | 3143 | 245 | 0 | 7.2 |
-| g1-resolution-full | G1_oracle_ladder | 3942 | 3549 | 393 | 0 | 10.0 |
-| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1071 | 69 | 0 | 6.1 |
+| g1-reasoner-full | G1_oracle_ladder | 7884 | 7735 | 149 | 0 | 1.9 |
+| g1-reasoner-glm4v-9b | G1_oracle_ladder | 3388 | 3337 | 51 | 0 | 1.5 |
+| g1-reasoner-llama | G1_oracle_ladder | 3388 | 3169 | 219 | 0 | 6.5 |
+| g1-reasoner-scanned | G1_oracle_ladder | 2280 | 2257 | 23 | 0 | 1.0 |
+| g1-representation-full | G1_oracle_ladder | 3151 | 3150 | 1 | 0 | 0.0 |
+| g1-resolution-full | G1_oracle_ladder | 3942 | 3847 | 95 | 0 | 2.4 |
+| g1-resolution-scanned | G1_oracle_ladder | 1140 | 1120 | 20 | 0 | 1.8 |
 | g1-tv-full | G1_oracle_ladder | 847 | 847 | 0 | 0 | 0.0 |
 | g2-retrieval-full | G2_retrieval | 5703 | 4435 | 1268 | 0 | 22.2 |
 | g3-faithfulness-full | G3_hallucination | 5856 | 5856 | 0 | 0 | 0.0 |
@@ -33,12 +34,13 @@
 | g5b-gold1 | G5_selection | 11520 | 11376 | 0 | 144 | 0.0 |
 | g5b-gold2 | G5_selection | 5904 | 5784 | 0 | 120 | 0.0 |
 | g5b-gold3 | G5_selection | 960 | 960 | 0 | 0 | 0.0 |
-| g5c-gold1 | G5_selection | 1445 | 765 | 662 | 18 | 45.8 |
-| g5c-gold2 | G5_selection | 492 | 200 | 282 | 10 | 57.3 |
+| g5c-gold1 | G5_selection | 1440 | 1011 | 423 | 6 | 29.4 |
+| g5c-gold2 | G5_selection | 492 | 279 | 207 | 6 | 42.1 |
 | g6-strategies | G6_reasoning | 1694 | 1380 | 314 | 0 | 18.5 |
 | g6-thinking | G6_reasoning | 847 | 735 | 112 | 0 | 13.2 |
-| g7-models | G1_oracle_ladder | 10164 | 9493 | 671 | 0 | 6.6 |
-| **all** |  | **120800** | 114887 | 5429 | 484 | 4.5 |
+| g7-models | G1_oracle_ladder | 10164 | 9823 | 341 | 0 | 3.4 |
+| g8-pageaware-mmlb | G8_page_aware | 3388 | 3253 | 135 | 0 | 4.0 |
+| **all** |  | **127334** | 122844 | 4022 | 468 | 3.2 |
 
 Every table changes ONE variable off the shared baseline below and holds the rest fixed; each caption states what it swept and what it pinned. G2 uses retrieved pages, G3 the unanswerable pool.
 
@@ -56,9 +58,9 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Understanding | 74.1 [70.4-77.9] a1.3 w24.6 | 77.1 [74.2-80.0] a1.2 w21.7 | 81.7 [79.5-83.9] a0.2 w18.1 | 83.4 [81.1-85.4] a0.5 w16.1 | 74.6 [72.1-77.1] a0.4 w25.0 | TV | 6066 |
 | Locating | 43.5 [37.6-49.5] a0.3 w56.2 | 51.6 [45.5-58.1] a0.4 w48.0 | 46.5 [41.8-51.7] a0.0 w53.5 | 50.0 [44.5-55.9] a0.0 w50.0 | 45.4 [40.2-50.6] a0.0 w54.6 | T | 3378 |
-| Reasoning | 66.8 [61.3-72.1] a1.3 w31.9 | 67.5 [62.8-72.1] a0.6 w31.9 | 71.9 [66.8-76.3] a0.5 w27.6 | 73.3 [68.8-77.7] a0.6 w26.1 | 58.3 [53.2-63.4] a0.3 w41.5 | T | 1818 |
-| **all doc_types** | **63.7 [60.3-66.9] a1.0 w35.3** | **68.0 [65.5-70.5] a0.9 w31.2** | **69.5 [67.1-71.8] a0.2 w30.3** | **71.9 [69.4-74.3] a0.4 w27.8** | **63.1 [60.4-65.9] a0.3 w36.6** | **TL** | **11262** |
-| n (per col) | 2295 | 2225 | 2270 | 2168 | 2304 | - | - |
+| Reasoning | 66.8 [61.3-72.1] a1.3 w31.9 | 67.5 [62.8-72.1] a0.6 w31.9 | 71.9 [66.8-76.3] a0.5 w27.6 | 73.4 [68.9-77.7] a0.6 w26.0 | 58.3 [53.2-63.4] a0.3 w41.5 | T | 1819 |
+| **all doc_types** | **63.7 [60.3-66.9] a1.0 w35.3** | **68.0 [65.5-70.5] a0.9 w31.2** | **69.5 [67.1-71.8] a0.2 w30.3** | **71.9 [69.4-74.3] a0.4 w27.8** | **63.1 [60.4-65.9] a0.3 w36.6** | **TL** | **11263** |
+| n (per col) | 2295 | 2225 | 2270 | 2169 | 2304 | - | - |
 
 ### Question type: ladder accuracy by LongDocURL question type (oracle pages)
 
@@ -74,10 +76,10 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | summary2title | 67.2 [58.1-75.4] a0.7 w32.1 | 81.1 [73.5-87.8] a0.0 w18.9 | 75.0 [66.9-83.1] a0.0 w25.0 | 77.2 [68.8-84.0] a0.0 w22.8 | 74.3 [66.7-81.8] a0.0 w25.7 | 661 |
 | summary2tab | 14.9 [8.2-22.4] a0.8 w84.3 | 18.3 [10.3-27.9] a0.0 w81.7 | 19.0 [11.5-27.8] a0.0 w81.0 | 19.6 [9.7-30.7] a0.0 w80.4 | 19.0 [11.1-27.1] a0.0 w81.0 | 590 |
 | calculate | 61.0 [50.4-72.1] a2.8 w36.2 | 66.7 [57.7-75.3] a0.8 w32.6 | 69.8 [62.4-78.1] a0.7 w29.5 | 72.8 [63.8-80.8] a0.0 w27.2 | 50.7 [42.2-60.1] a0.0 w49.3 | 678 |
-| count | 57.9 [49.1-67.0] a0.9 w41.2 | 56.2 [46.1-66.0] a1.0 w42.9 | 64.2 [55.1-72.6] a0.0 w35.8 | 66.0 [57.0-75.7] a1.0 w33.0 | 58.0 [49.1-66.1] a0.0 w42.0 | 540 |
+| count | 57.9 [49.1-67.0] a0.9 w41.2 | 56.2 [46.1-66.0] a1.0 w42.9 | 64.2 [55.1-72.6] a0.0 w35.8 | 66.3 [56.4-75.2] a1.0 w32.7 | 58.0 [49.1-66.1] a0.0 w42.0 | 541 |
 | compare | 81.1 [72.6-89.3] a0.0 w18.9 | 78.8 [70.7-86.7] a0.0 w21.2 | 81.8 [74.5-88.9] a0.9 w17.3 | 80.2 [73.3-87.5] a1.0 w18.8 | 65.2 [56.9-73.1] a0.9 w33.9 | 538 |
 | summarize | 84.6 [61.5-100.0] a0.0 w15.4 | 76.9 [53.8-100.0] a0.0 w23.1 | 75.0 [50.0-100.0] a0.0 w25.0 | 81.8 [63.4-100.0] a0.0 w18.2 | 84.6 [61.5-100.0] a0.0 w15.4 | 62 |
-| n (per col) | 2295 | 2225 | 2270 | 2168 | 2304 | - |
+| n (per col) | 2295 | 2225 | 2270 | 2169 | 2304 | - |
 
 ### Answer format: ladder accuracy by expected answer shape (oracle pages)
 
@@ -89,10 +91,10 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | --- | --- | --- | --- | --- | --- | --- |
 | String | 77.1 [73.5-80.5] a0.8 w22.1 | 81.4 [78.7-84.2] a0.9 w17.7 | 79.0 [75.6-82.2] a0.1 w20.9 | 81.5 [78.5-84.6] a0.1 w18.4 | 75.8 [72.7-78.9] a0.2 w24.0 | 4613 |
 | List | 43.2 [38.4-47.6] a0.8 w56.0 | 47.5 [42.8-52.1] a0.4 w52.1 | 51.5 [47.3-55.9] a0.0 w48.5 | 53.8 [49.4-58.7] a0.0 w46.2 | 45.8 [41.1-50.3] a0.3 w53.9 | 3674 |
-| Integer | 65.8 [60.4-71.2] a1.6 w32.6 | 70.4 [65.4-74.9] a1.7 w27.9 | 75.5 [71.6-79.5] a0.5 w24.0 | 77.6 [72.9-82.1] a1.3 w21.1 | 64.6 [59.8-69.7] a0.5 w34.9 | 2064 |
+| Integer | 65.8 [60.4-71.2] a1.6 w32.6 | 70.4 [65.4-74.9] a1.7 w27.9 | 75.5 [71.6-79.5] a0.5 w24.0 | 77.6 [72.8-82.2] a1.3 w21.1 | 64.6 [59.8-69.7] a0.5 w34.9 | 2065 |
 | Float | 74.3 [63.9-82.9] a1.6 w24.0 | 75.6 [68.6-82.1] a0.6 w23.9 | 80.8 [74.4-86.7] a1.1 w18.1 | 81.8 [75.6-87.0] a1.2 w17.1 | 65.9 [56.6-74.1] a0.0 w34.1 | 896 |
 | None | 100.0 [100.0-100.0] a0.0 w0.0 | 100.0 [100.0-100.0] a0.0 w0.0 | 100.0 [100.0-100.0] a0.0 w0.0 | 100.0 [100.0-100.0] a0.0 w0.0 | 66.7 [33.3-100.0] a0.0 w33.3 | 15 |
-| n (per col) | 2295 | 2225 | 2270 | 2168 | 2304 | - |
+| n (per col) | 2295 | 2225 | 2270 | 2169 | 2304 | - |
 
 ### Composition: accuracy by evidence source and rung (appendix)
 
@@ -106,8 +108,8 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | Layout | 48.7 [43.9-53.6] a0.5 w50.8 | 52.4 [47.8-57.7] a0.3 w47.3 | 56.4 [51.1-61.5] a0.3 w43.4 | 56.3 [51.1-61.2] a0.4 w43.2 | 52.2 [47.4-56.9] a0.4 w47.4 | 3725 |
 | Others | 100.0 [100.0-100.0] a0.0 w0.0 | 100.0 [100.0-100.0] a0.0 w0.0 | 100.0 [100.0-100.0] a0.0 w0.0 | 87.5 [62.5-100.0] a0.0 w12.5 | 75.0 [55.6-100.0] a0.0 w25.0 | 40 |
 | Table | 61.2 [55.5-67.1] a0.9 w37.9 | 69.5 [65.6-73.3] a1.1 w29.3 | 64.6 [60.1-69.3] a0.0 w35.4 | 68.2 [63.6-72.5] a0.3 w31.6 | 57.3 [52.6-61.9] a0.1 w42.6 | 4179 |
-| Text | 75.3 [71.9-78.6] a1.2 w23.5 | 79.5 [77.0-82.3] a0.7 w19.8 | 80.5 [78.2-82.7] a0.4 w19.1 | 82.3 [79.8-84.5] a0.5 w17.2 | 74.0 [71.1-76.7] a0.3 w25.7 | 4852 |
-| n (per col) | 2295 | 2225 | 2270 | 2168 | 2304 | - |
+| Text | 75.3 [71.9-78.6] a1.2 w23.5 | 79.5 [77.0-82.3] a0.7 w19.8 | 80.5 [78.2-82.7] a0.4 w19.1 | 82.3 [79.8-84.6] a0.5 w17.2 | 74.0 [71.1-76.7] a0.3 w25.7 | 4853 |
+| n (per col) | 2295 | 2225 | 2270 | 2169 | 2304 | - |
 
 ### Fidelity: paired within-question verdict transitions by doc_type
 
@@ -118,26 +120,26 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | pairing | doc_type | wrong→right (%) | right→wrong (%) | right→right (%) | wrong→wrong (%) | paired n |
 | --- | --- | --- | --- | --- | --- | --- |
 | TL->TLV | Locating | 6.8 (44) | 9.0 (58) | 43.2 (280) | 41.0 (266) | 648 |
-| TL->TLV | Reasoning | 12.5 (42) | 6.5 (22) | 60.8 (205) | 20.2 (68) | 337 |
+| TL->TLV | Reasoning | 12.4 (42) | 6.5 (22) | 60.9 (206) | 20.1 (68) | 338 |
 | TL->TLV | Understanding | 8.5 (101) | 2.8 (33) | 74.9 (886) | 13.8 (163) | 1183 |
-| TL->TLV | **All doc_types** | 8.6 (187) | 5.2 (113) | 63.2 (1371) | 22.9 (497) | 2168 |
+| TL->TLV | **All doc_types** | 8.6 (187) | 5.2 (113) | 63.3 (1372) | 22.9 (497) | 2169 |
 | T->TL | Locating | 14.3 (95) | 6.8 (45) | 37.3 (248) | 41.7 (277) | 665 |
 | T->TL | Reasoning | 10.0 (35) | 9.4 (33) | 57.5 (202) | 23.1 (81) | 351 |
 | T->TL | Understanding | 10.1 (122) | 7.3 (88) | 67.0 (808) | 15.6 (188) | 1206 |
 | T->TL | **All doc_types** | 11.3 (252) | 7.5 (166) | 56.6 (1258) | 24.6 (546) | 2222 |
 | T->TLV | Locating | 14.4 (93) | 8.0 (52) | 35.6 (230) | 42.0 (271) | 646 |
-| T->TLV | Reasoning | 14.5 (49) | 7.4 (25) | 58.8 (198) | 19.3 (65) | 337 |
+| T->TLV | Reasoning | 14.5 (49) | 7.4 (25) | 58.9 (199) | 19.2 (65) | 338 |
 | T->TLV | Understanding | 13.1 (155) | 4.3 (51) | 70.3 (832) | 12.3 (145) | 1183 |
-| T->TLV | **All doc_types** | 13.7 (297) | 5.9 (128) | 58.2 (1260) | 22.2 (481) | 2166 |
+| T->TLV | **All doc_types** | 13.7 (297) | 5.9 (128) | 58.2 (1261) | 22.2 (481) | 2167 |
 | T->TV | Locating | 11.1 (76) | 7.9 (54) | 35.3 (241) | 45.6 (311) | 682 |
 | T->TV | Reasoning | 11.4 (42) | 6.5 (24) | 60.5 (224) | 21.6 (80) | 370 |
 | T->TV | Understanding | 11.2 (137) | 4.0 (49) | 70.4 (858) | 14.3 (174) | 1218 |
 | T->TV | **All doc_types** | 11.2 (255) | 5.6 (127) | 58.3 (1323) | 24.9 (565) | 2270 |
 | TV->TLV | Locating | 10.1 (65) | 6.8 (44) | 40.0 (258) | 43.1 (278) | 645 |
-| TV->TLV | Reasoning | 10.1 (34) | 9.2 (31) | 63.1 (212) | 17.6 (59) | 336 |
+| TV->TLV | Reasoning | 10.1 (34) | 9.2 (31) | 63.2 (213) | 17.5 (59) | 337 |
 | TV->TLV | Understanding | 5.1 (60) | 3.9 (46) | 78.4 (924) | 12.6 (149) | 1179 |
-| TV->TLV | **All doc_types** | 7.4 (159) | 5.6 (121) | 64.5 (1394) | 22.5 (486) | 2160 |
-| n (per col) | TL->TLV: 2168, T->TL: 2222, T->TLV: 2166, T->TV: 2270, TV->TLV: 2160 | - | - | - | - | - |
+| TV->TLV | **All doc_types** | 7.4 (159) | 5.6 (121) | 64.6 (1395) | 22.5 (486) | 2161 |
+| n (per col) | TL->TLV: 2169, T->TL: 2222, T->TLV: 2167, T->TV: 2270, TV->TLV: 2161 | - | - | - | - | - |
 
 ## Selection
 
@@ -256,7 +258,7 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | keep bottom 1 | colqwen3 | 24.5 [21.7-27.4] (n=1222) | 23.1 [20.1-26.2] (n=1206) | 24.3 [21.6-27.2] (n=1203) | 21.1 [18.5-23.7] (n=1222) | 4853 |
 | keep top 1 | bm25 | 43.8 [39.9-48.0] (n=1222) | 44.2 [39.7-48.6] (n=1216) | 47.0 [42.6-51.4] (n=1216) | 42.8 [38.8-46.8] (n=1222) | 4876 |
 | keep top 1 | colqwen3 | 44.8 [40.9-49.0] (n=1222) | 47.4 [43.3-51.7] (n=1217) | 49.1 [45.1-53.6] (n=1216) | 45.4 [41.5-49.5] (n=1222) | 4877 |
-| **oracle (gold 1, d=0)** | - | 65.6 [60.6-70.5] (n=1093) | 74.0 [70.7-77.0] (n=1076) | 74.7 [71.4-77.9] (n=1073) | 64.5 [61.0-68.3] (n=1093) | 5428 |
+| **oracle (gold 1, d=0)** | - | 65.6 [60.6-70.5] (n=1093) | 74.0 [70.7-77.0] (n=1076) | 74.7 [71.5-77.9] (n=1074) | 64.5 [61.0-68.3] (n=1093) | 5429 |
 | gold 1 + 1 distractors | colqwen3 | 65.4 [60.3-70.1] (n=1087) | 72.4 [69.1-75.8] (n=1028) | 74.4 [70.8-77.9] (n=988) | 63.0 [59.4-66.6] (n=1093) | 4196 |
 | gold 1 + 2 distractors | colqwen3 | 65.1 [60.1-69.5] (n=1074) | 68.7 [64.7-72.5] (n=927) | 72.0 [67.8-76.2] (n=835) | 63.9 [60.4-67.4] (n=1093) | 3929 |
 | gold 1 + 3 distractors | colqwen3 | 64.5 [59.9-69.0] (n=1060) | 68.0 [63.7-71.7] (n=827) | 68.4 [63.5-73.2] (n=681) | 62.1 [58.7-65.3] (n=1093) | 3661 |
@@ -268,6 +270,101 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | gold 2 + 3 distractors | colqwen3 | 58.1 [54.2-62.3] (n=867) | 63.3 [58.7-68.3] (n=716) | 70.8 [65.1-75.8] (n=579) | 57.8 [53.6-62.2] (n=906) | 3068 |
 | gold 2 + 4 distractors | colqwen3 | 57.8 [53.6-62.1] (n=843) | 63.2 [58.6-68.3] (n=661) | 68.3 [63.3-73.9] (n=458) | 57.1 [52.8-61.4] (n=906) | 2868 |
 | n (per col) | - | 18487 | 16695 | 15356 | 18813 | - |
+
+### Selection: paired within-question verdict transitions from the oracle page set
+
+> **swept**: page_set transition (oracle → each sufficiency rule / +k distractors) × ranking source × rung · **dataset**: longdocurl · **scan**: any · **sampling**: full (hop: multi) · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **prompt_mode**: none · **attrition**: OOM attrition is NESTED, not random: at TLV the questions that OOM at d=5 are a strict superset of those at d=4, and so on down. A cell at high distractor count is therefore the surviving lightest questions, so compare down a column only on the matched question set, never on the raw per-cell accuracy · **pairing**: within-question, oracle and perturbed page set both status==ok at that rung · **reading**: the four cells partition each row and sum to 100; ldu_selection_withholding is the same pairing cut by evidence source
+
+_LongDocURL. Built by the same builder as the MMLongBench table of the same name, so the layout, groupings and per-cell n mean exactly what they do there. The pools are NOT comparable cell for cell: LongDocURL documents are 51-149 pages (mean 89) against MMLongBench's 47.5, and its questions carry more gold pages, so read a difference between the two reports as a dataset difference and not a method one. Paired on (question_id, rung) against the SAME question's oracle cell, loaded from the G1 cache: a question counts at a rung only when both the oracle and the perturbed page set produced a status==ok row there. The four transition columns are PERCENTAGES of that row's paired n and sum to 100 per row; the figure in parentheses is the raw question count behind the percentage. Sufficiency pairs against the hop=multi oracle (the pool its rules are defined on); each robustness block pairs against the oracle over the questions with exactly that gold-page count, so every block reads against its own d=0 condition and blocks are not comparable to each other. The bolded All rungs row closing each transition pools the four rungs, so its paired n is the sum of the rung rows above it and one question can appear in it up to four times._
+
+| block | transition | ranker | rung | wrong→right (%) | right→wrong (%) | right→right (%) | wrong→wrong (%) | paired n |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | bm25 | T | 3.0 (36) | 18.8 (225) | 43.4 (521) | 34.8 (418) | 1200 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | bm25 | TL | 3.8 (44) | 17.8 (204) | 44.6 (512) | 33.7 (387) | 1147 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | bm25 | TLV | 3.0 (33) | 21.0 (230) | 48.2 (527) | 27.7 (303) | 1093 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | bm25 | V | 4.1 (49) | 19.8 (239) | 42.2 (510) | 34.0 (411) | 1209 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | bm25 | **All rungs** | 3.5 (162) | 19.3 (898) | 44.5 (2070) | 32.7 (1519) | 4649 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | colqwen3 | T | 2.9 (35) | 17.6 (211) | 44.6 (535) | 34.9 (419) | 1200 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | colqwen3 | TL | 3.6 (41) | 15.3 (175) | 47.2 (541) | 34.0 (390) | 1147 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | colqwen3 | TLV | 3.6 (39) | 19.6 (214) | 49.7 (543) | 27.2 (297) | 1093 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | colqwen3 | V | 4.6 (56) | 17.7 (214) | 44.3 (535) | 33.4 (404) | 1209 |
+| sufficiency (hop=multi) | oracle -> drop bottom 1 | colqwen3 | **All rungs** | 3.7 (171) | 17.5 (814) | 46.3 (2154) | 32.5 (1510) | 4649 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | bm25 | T | 2.7 (32) | 36.2 (434) | 26.0 (312) | 35.2 (422) | 1200 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | bm25 | TL | 2.4 (28) | 35.5 (407) | 26.9 (309) | 35.1 (403) | 1147 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | bm25 | TLV | 2.0 (22) | 42.1 (460) | 27.2 (297) | 28.7 (314) | 1093 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | bm25 | V | 3.1 (37) | 38.0 (460) | 23.9 (289) | 35.0 (423) | 1209 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | bm25 | **All rungs** | 2.6 (119) | 37.9 (1761) | 26.0 (1207) | 33.6 (1562) | 4649 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | colqwen3 | T | 2.6 (31) | 36.5 (438) | 25.7 (308) | 35.2 (423) | 1200 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | colqwen3 | TL | 2.3 (26) | 38.1 (437) | 24.3 (279) | 35.3 (405) | 1147 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | colqwen3 | TLV | 2.0 (22) | 43.2 (472) | 26.1 (285) | 28.7 (314) | 1093 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | colqwen3 | V | 2.9 (35) | 40.0 (483) | 22.0 (266) | 35.2 (425) | 1209 |
+| sufficiency (hop=multi) | oracle -> drop top 1 | colqwen3 | **All rungs** | 2.5 (114) | 39.4 (1830) | 24.5 (1138) | 33.7 (1567) | 4649 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | bm25 | T | 2.7 (32) | 39.6 (475) | 22.6 (271) | 35.2 (422) | 1200 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | bm25 | TL | 2.4 (27) | 39.4 (452) | 23.0 (264) | 35.2 (404) | 1147 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | bm25 | TLV | 2.2 (24) | 45.8 (501) | 23.4 (256) | 28.5 (312) | 1093 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | bm25 | V | 3.1 (38) | 42.1 (509) | 19.9 (240) | 34.9 (422) | 1209 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | bm25 | **All rungs** | 2.6 (121) | 41.7 (1937) | 22.2 (1031) | 33.6 (1560) | 4649 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | colqwen3 | T | 2.6 (31) | 40.2 (482) | 22.0 (264) | 35.2 (423) | 1200 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | colqwen3 | TL | 2.4 (28) | 41.5 (476) | 20.9 (240) | 35.1 (403) | 1147 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | colqwen3 | TLV | 1.8 (20) | 46.5 (508) | 22.8 (249) | 28.9 (316) | 1093 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | colqwen3 | V | 2.8 (34) | 44.0 (532) | 17.9 (217) | 35.2 (426) | 1209 |
+| sufficiency (hop=multi) | oracle -> keep bottom 1 | colqwen3 | **All rungs** | 2.4 (113) | 43.0 (1998) | 20.9 (970) | 33.7 (1568) | 4649 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | bm25 | T | 3.5 (42) | 21.7 (260) | 40.5 (486) | 34.3 (412) | 1200 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | bm25 | TL | 3.1 (35) | 20.5 (235) | 41.9 (481) | 34.5 (396) | 1147 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | bm25 | TLV | 3.6 (39) | 24.3 (266) | 44.9 (491) | 27.2 (297) | 1093 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | bm25 | V | 4.0 (48) | 23.4 (283) | 38.5 (466) | 34.1 (412) | 1209 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | bm25 | **All rungs** | 3.5 (164) | 22.5 (1044) | 41.4 (1924) | 32.6 (1517) | 4649 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | colqwen3 | T | 3.2 (39) | 20.3 (244) | 41.8 (502) | 34.6 (415) | 1200 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | colqwen3 | TL | 3.3 (38) | 17.8 (204) | 44.6 (512) | 34.3 (393) | 1147 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | colqwen3 | TLV | 3.5 (38) | 22.2 (243) | 47.0 (514) | 27.3 (298) | 1093 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | colqwen3 | V | 4.3 (52) | 20.9 (253) | 41.0 (496) | 33.7 (408) | 1209 |
+| sufficiency (hop=multi) | oracle -> keep top 1 | colqwen3 | **All rungs** | 3.6 (167) | 20.3 (944) | 43.5 (2024) | 32.6 (1514) | 4649 |
+| robustness (gold 1) | oracle -> +1 distractor | colqwen3 | T | 7.5 (82) | 7.8 (85) | 57.9 (629) | 26.8 (291) | 1087 |
+| robustness (gold 1) | oracle -> +1 distractor | colqwen3 | TL | 6.7 (69) | 8.7 (89) | 65.7 (675) | 19.0 (195) | 1028 |
+| robustness (gold 1) | oracle -> +1 distractor | colqwen3 | TLV | 8.1 (80) | 8.5 (84) | 66.3 (655) | 17.1 (169) | 988 |
+| robustness (gold 1) | oracle -> +1 distractor | colqwen3 | V | 8.3 (91) | 9.8 (107) | 54.7 (598) | 27.2 (297) | 1093 |
+| robustness (gold 1) | oracle -> +1 distractor | colqwen3 | **All rungs** | 7.7 (322) | 8.7 (365) | 60.9 (2557) | 22.7 (952) | 4196 |
+| robustness (gold 1) | oracle -> +2 distractors | colqwen3 | T | 8.3 (89) | 9.2 (99) | 56.8 (610) | 25.7 (276) | 1074 |
+| robustness (gold 1) | oracle -> +2 distractors | colqwen3 | TL | 6.5 (60) | 12.2 (113) | 62.2 (577) | 19.1 (177) | 927 |
+| robustness (gold 1) | oracle -> +2 distractors | colqwen3 | TLV | 7.5 (63) | 9.3 (78) | 64.4 (538) | 18.7 (156) | 835 |
+| robustness (gold 1) | oracle -> +2 distractors | colqwen3 | V | 10.2 (112) | 10.9 (119) | 53.6 (586) | 25.3 (276) | 1093 |
+| robustness (gold 1) | oracle -> +2 distractors | colqwen3 | **All rungs** | 8.2 (324) | 10.4 (409) | 58.8 (2311) | 22.5 (885) | 3929 |
+| robustness (gold 1) | oracle -> +3 distractors | colqwen3 | T | 9.0 (95) | 10.4 (110) | 55.6 (589) | 25.1 (266) | 1060 |
+| robustness (gold 1) | oracle -> +3 distractors | colqwen3 | TL | 6.5 (54) | 12.6 (104) | 61.4 (508) | 19.5 (161) | 827 |
+| robustness (gold 1) | oracle -> +3 distractors | colqwen3 | TLV | 6.9 (47) | 11.7 (80) | 61.5 (419) | 19.8 (135) | 681 |
+| robustness (gold 1) | oracle -> +3 distractors | colqwen3 | V | 10.0 (109) | 12.4 (135) | 52.2 (570) | 25.5 (279) | 1093 |
+| robustness (gold 1) | oracle -> +3 distractors | colqwen3 | **All rungs** | 8.3 (305) | 11.7 (429) | 57.0 (2086) | 23.0 (841) | 3661 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | T | 8.6 (89) | 10.9 (113) | 54.9 (571) | 25.7 (267) | 1040 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | TL | 7.5 (54) | 12.9 (93) | 60.5 (435) | 19.1 (137) | 719 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | TLV | 8.7 (44) | 10.5 (53) | 63.5 (322) | 17.4 (88) | 507 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | V | 9.8 (107) | 11.8 (129) | 52.7 (576) | 25.7 (281) | 1093 |
+| robustness (gold 1) | oracle -> +4 distractors | colqwen3 | **All rungs** | 8.8 (294) | 11.6 (388) | 56.7 (1904) | 23.0 (773) | 3359 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | T | 9.9 (99) | 10.3 (103) | 54.8 (550) | 25.1 (252) | 1004 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | TL | 7.5 (47) | 11.2 (70) | 61.5 (384) | 19.7 (123) | 624 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | TLV | 7.3 (25) | 11.4 (39) | 62.9 (215) | 18.4 (63) | 342 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | V | 9.1 (100) | 12.9 (141) | 51.6 (564) | 26.3 (288) | 1093 |
+| robustness (gold 1) | oracle -> +5 distractors | colqwen3 | **All rungs** | 8.8 (271) | 11.5 (353) | 55.9 (1713) | 23.7 (726) | 3063 |
+| robustness (gold 2) | oracle -> +1 distractor | colqwen3 | T | 4.7 (42) | 8.4 (75) | 54.0 (483) | 32.9 (294) | 894 |
+| robustness (gold 2) | oracle -> +1 distractor | colqwen3 | TL | 6.1 (50) | 6.8 (56) | 57.0 (470) | 30.2 (249) | 825 |
+| robustness (gold 2) | oracle -> +1 distractor | colqwen3 | TLV | 4.1 (32) | 9.6 (75) | 62.1 (484) | 24.1 (188) | 779 |
+| robustness (gold 2) | oracle -> +1 distractor | colqwen3 | V | 5.8 (53) | 9.4 (85) | 52.1 (472) | 32.7 (296) | 906 |
+| robustness (gold 2) | oracle -> +1 distractor | colqwen3 | **All rungs** | 5.2 (177) | 8.5 (291) | 56.1 (1909) | 30.2 (1027) | 3404 |
+| robustness (gold 2) | oracle -> +2 distractors | colqwen3 | T | 6.3 (56) | 9.6 (85) | 52.6 (465) | 31.4 (278) | 884 |
+| robustness (gold 2) | oracle -> +2 distractors | colqwen3 | TL | 7.3 (57) | 9.3 (73) | 54.9 (429) | 28.4 (222) | 781 |
+| robustness (gold 2) | oracle -> +2 distractors | colqwen3 | TLV | 4.4 (30) | 10.9 (74) | 62.0 (421) | 22.7 (154) | 679 |
+| robustness (gold 2) | oracle -> +2 distractors | colqwen3 | V | 6.4 (58) | 10.5 (95) | 51.0 (462) | 32.1 (291) | 906 |
+| robustness (gold 2) | oracle -> +2 distractors | colqwen3 | **All rungs** | 6.2 (201) | 10.1 (327) | 54.7 (1777) | 29.1 (945) | 3250 |
+| robustness (gold 2) | oracle -> +3 distractors | colqwen3 | T | 6.9 (60) | 10.7 (93) | 51.2 (444) | 31.1 (270) | 867 |
+| robustness (gold 2) | oracle -> +3 distractors | colqwen3 | TL | 7.3 (52) | 9.6 (69) | 56.0 (401) | 27.1 (194) | 716 |
+| robustness (gold 2) | oracle -> +3 distractors | colqwen3 | TLV | 6.0 (35) | 9.7 (56) | 64.8 (375) | 19.5 (113) | 579 |
+| robustness (gold 2) | oracle -> +3 distractors | colqwen3 | V | 7.6 (69) | 11.3 (102) | 50.2 (455) | 30.9 (280) | 906 |
+| robustness (gold 2) | oracle -> +3 distractors | colqwen3 | **All rungs** | 7.0 (216) | 10.4 (320) | 54.6 (1675) | 27.9 (857) | 3068 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | T | 7.1 (60) | 10.7 (90) | 50.7 (427) | 31.6 (266) | 843 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | TL | 7.1 (47) | 10.7 (71) | 56.1 (371) | 26.0 (172) | 661 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | TLV | 6.1 (28) | 13.3 (61) | 62.2 (285) | 18.3 (84) | 458 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | V | 6.4 (58) | 10.8 (98) | 50.7 (459) | 32.1 (291) | 906 |
+| robustness (gold 2) | oracle -> +4 distractors | colqwen3 | **All rungs** | 6.7 (193) | 11.2 (320) | 53.8 (1542) | 28.3 (813) | 2868 |
+| n (per col) | - | - | - | - | - | - | - | - |
 
 ### Withholding gold pages: verdict flips from the oracle page set, by evidence source
 
@@ -285,6 +382,69 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | **All sources** | 19.6 | 3.6 | 43.2 | 2.0 | 22.2 | 3.5 | 46.5 | 1.8 | 1093 | 1093 |
 | n (per col) | - | - | - | - | - | - | - | - | - | - |
 
+### Evidence coverage by question type: accuracy when a gold page is withheld
+
+> **swept**: gold page withheld × question type (multi-page questions, TLV) · **dataset**: longdocurl · **scan**: any · **sampling**: full (hop: multi) · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **prompt_mode**: none · **reads**: the pooled version of this is ldu_selection_withholding
+
+_Rung TLV, colqwen3 ranking, uninstructed, multi-page questions only. `oracle` is the whole gold set; the two arms withhold from it. `delta` is accuracy minus that type's own oracle accuracy, in points, so a type is read against itself rather than against the pool. The pooled row is what `ldu_selection_withholding` reports; it averages types whose answer survives a missing page over types whose answer cannot. The four arms share one question set — every question here is scored in all of them — so the pool is smaller than any single arm's own._
+
+| question_type | n | oracle | keep top-1 | keep top-1 delta | keep bottom-1 | keep bottom-1 delta | drop bottom-1 | drop bottom-1 delta | drop top-1 | drop top-1 delta |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| extract | 574 | 84.0 | 69.3 | -14.6 | 32.8 | -51.2 | 71.3 | -12.7 | 37.6 | -46.3 |
+| topic2title | 132 | 34.8 | 3.8 | -31.1 | 2.3 | -32.6 | 4.5 | -30.3 | 2.3 | -32.6 |
+| summary2title | 103 | 75.7 | 56.3 | -19.4 | 23.3 | -52.4 | 64.1 | -11.7 | 28.2 | -47.6 |
+| summary2tab | 99 | 19.2 | 7.1 | -12.1 | 0.0 | -19.2 | 7.1 | -12.1 | 1.0 | -18.2 |
+| calculate | 41 | 65.9 | 22.0 | -43.9 | 22.0 | -43.9 | 31.7 | -34.1 | 24.4 | -41.5 |
+| count | 75 | 64.0 | 37.3 | -26.7 | 13.3 | -50.7 | 42.7 | -21.3 | 18.7 | -45.3 |
+| compare | 65 | 83.1 | 66.2 | -16.9 | 49.2 | -33.8 | 69.2 | -13.8 | 50.8 | -32.3 |
+| summarize | 4 | 75.0 | 100.0 | +25.0 | 75.0 | +0.0 | 100.0 | +25.0 | 25.0 | -50.0 |
+| **All** | 1093 | 69.3 | 50.5 | -18.8 | 24.6 | -44.6 | 53.2 | -16.0 | 28.1 | -41.2 |
+
+### Evidence coverage by question type: paired verdict transitions when a gold page is withheld
+
+> **swept**: gold page withheld × question type × verdict transition (TLV) · **dataset**: longdocurl · **scan**: any · **sampling**: full (hop: multi) · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **prompt_mode**: none · **reads**: the same pool as ldu_coverage_by_type, read as paired transitions rather than levels
+
+_Rung TLV, colqwen3 ranking, uninstructed, multi-page questions only, paired within-question against the whole gold set. The four cells partition each row and sum to 100. `ldu_coverage_by_type` is the same pool read as levels: oracle accuracy is right→right plus right→wrong, and accuracy under the arm is right→right plus wrong→right._
+
+| question_type | arm | wrong→right (%) | right→wrong (%) | right→right (%) | wrong→wrong (%) | paired n |
+| --- | --- | --- | --- | --- | --- | --- |
+| extract | keep top-1 | 3.3 (19) | 17.9 (103) | 66.0 (379) | 12.7 (73) | 574 |
+| extract | keep bottom-1 | 1.9 (11) | 53.1 (305) | 30.8 (177) | 14.1 (81) | 574 |
+| extract | drop bottom-1 | 2.8 (16) | 15.5 (89) | 68.5 (393) | 13.2 (76) | 574 |
+| extract | drop top-1 | 2.4 (14) | 48.8 (280) | 35.2 (202) | 13.6 (78) | 574 |
+| topic2title | keep top-1 | 1.5 (2) | 32.6 (43) | 2.3 (3) | 63.6 (84) | 132 |
+| topic2title | keep bottom-1 | 0.8 (1) | 33.3 (44) | 1.5 (2) | 64.4 (85) | 132 |
+| topic2title | drop bottom-1 | 3.0 (4) | 33.3 (44) | 1.5 (2) | 62.1 (82) | 132 |
+| topic2title | drop top-1 | 0.8 (1) | 33.3 (44) | 1.5 (2) | 64.4 (85) | 132 |
+| summary2title | keep top-1 | 3.9 (4) | 23.3 (24) | 52.4 (54) | 20.4 (21) | 103 |
+| summary2title | keep bottom-1 | 3.9 (4) | 56.3 (58) | 19.4 (20) | 20.4 (21) | 103 |
+| summary2title | drop bottom-1 | 4.9 (5) | 16.5 (17) | 59.2 (61) | 19.4 (20) | 103 |
+| summary2title | drop top-1 | 1.0 (1) | 48.5 (50) | 27.2 (28) | 23.3 (24) | 103 |
+| summary2tab | keep top-1 | 1.0 (1) | 13.1 (13) | 6.1 (6) | 79.8 (79) | 99 |
+| summary2tab | keep bottom-1 | 0.0 (0) | 19.2 (19) | 0.0 (0) | 80.8 (80) | 99 |
+| summary2tab | drop bottom-1 | 1.0 (1) | 13.1 (13) | 6.1 (6) | 79.8 (79) | 99 |
+| summary2tab | drop top-1 | 1.0 (1) | 19.2 (19) | 0.0 (0) | 79.8 (79) | 99 |
+| calculate | keep top-1 | 2.4 (1) | 46.3 (19) | 19.5 (8) | 31.7 (13) | 41 |
+| calculate | keep bottom-1 | 0.0 (0) | 43.9 (18) | 22.0 (9) | 34.1 (14) | 41 |
+| calculate | drop bottom-1 | 4.9 (2) | 39.0 (16) | 26.8 (11) | 29.3 (12) | 41 |
+| calculate | drop top-1 | 2.4 (1) | 43.9 (18) | 22.0 (9) | 31.7 (13) | 41 |
+| count | keep top-1 | 6.7 (5) | 33.3 (25) | 30.7 (23) | 29.3 (22) | 75 |
+| count | keep bottom-1 | 1.3 (1) | 52.0 (39) | 12.0 (9) | 34.7 (26) | 75 |
+| count | drop bottom-1 | 5.3 (4) | 26.7 (20) | 37.3 (28) | 30.7 (23) | 75 |
+| count | drop top-1 | 2.7 (2) | 48.0 (36) | 16.0 (12) | 33.3 (25) | 75 |
+| compare | keep top-1 | 7.7 (5) | 24.6 (16) | 58.5 (38) | 9.2 (6) | 65 |
+| compare | keep bottom-1 | 3.1 (2) | 36.9 (24) | 46.2 (30) | 13.8 (9) | 65 |
+| compare | drop bottom-1 | 9.2 (6) | 23.1 (15) | 60.0 (39) | 7.7 (5) | 65 |
+| compare | drop top-1 | 3.1 (2) | 35.4 (23) | 47.7 (31) | 13.8 (9) | 65 |
+| summarize | keep top-1 | 25.0 (1) | 0.0 (0) | 75.0 (3) | 0.0 (0) | 4 |
+| summarize | keep bottom-1 | 25.0 (1) | 25.0 (1) | 50.0 (2) | 0.0 (0) | 4 |
+| summarize | drop bottom-1 | 25.0 (1) | 0.0 (0) | 75.0 (3) | 0.0 (0) | 4 |
+| summarize | drop top-1 | 0.0 (0) | 50.0 (2) | 25.0 (1) | 25.0 (1) | 4 |
+| **All** | keep top-1 | 3.5 (38) | 22.2 (243) | 47.0 (514) | 27.3 (298) | 1093 |
+| **All** | keep bottom-1 | 1.8 (20) | 46.5 (508) | 22.8 (249) | 28.9 (316) | 1093 |
+| **All** | drop bottom-1 | 3.6 (39) | 19.6 (214) | 49.7 (543) | 27.2 (297) | 1093 |
+| **All** | drop top-1 | 2.0 (22) | 43.2 (472) | 26.1 (285) | 28.7 (314) | 1093 |
+
 ### Adding distractor pages: verdict flips from the oracle page set, by evidence source
 
 > **swept**: distractor count added to a complete gold set · **dataset**: longdocurl · **scan**: any · **sampling**: full (hop: multi) · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **prompt_mode**: none · **attrition**: OOM attrition is NESTED, not random: at TLV the questions that OOM at d=5 are a strict superset of those at d=4, and so on down. A cell at high distractor count is therefore the surviving lightest questions, so compare down a column only on the matched question set, never on the raw per-cell accuracy
@@ -297,8 +457,8 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | 1 gold page | Layout | 11.2 | 8.0 | 11.4 | 9.1 | 14.9 | 5.6 | 13.0 | 8.4 | 16.3 | 8.2 | - | - | 187 | 187 |
 | 1 gold page | Others† | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | - | - | 4 | 4 |
 | 1 gold page | Table | 8.9 | 9.3 | 9.0 | 8.2 | 12.6 | 8.4 | 10.7 | 12.9 | 11.3 | 11.3 | - | - | 482 | 482 |
-| 1 gold page | Text | 4.8 | 7.0 | 7.4 | 6.1 | 8.0 | 5.8 | 8.6 | 5.9 | 9.0 | 6.0 | - | - | 314 | 314 |
-| 1 gold page | **All sources** | 8.5 | 8.1 | 9.4 | 7.6 | 11.8 | 6.9 | 10.5 | 8.7 | 11.4 | 7.3 | - | - | 987 | 987 |
+| 1 gold page | Text | 4.8 | 7.0 | 7.4 | 6.0 | 8.0 | 5.8 | 8.5 | 5.8 | 9.0 | 6.0 | - | - | 315 | 315 |
+| 1 gold page | **All sources** | 8.5 | 8.1 | 9.3 | 7.5 | 11.7 | 6.9 | 10.5 | 8.7 | 11.4 | 7.3 | - | - | 988 | 988 |
 | 2-3 gold pages | Figure | 14.0 | 3.8 | 11.9 | 2.4 | 10.9 | 3.8 | 15.3 | 5.3 | - | - | - | - | 186 | 183 |
 | 2-3 gold pages | Layout | 12.3 | 5.3 | 12.6 | 6.1 | 12.0 | 7.3 | 15.7 | 7.0 | - | - | - | - | 341 | 341 |
 | 2-3 gold pages | Others† | 0.0 | 25.0 | 0.0 | 25.0 | 0.0 | 0.0 | 0.0 | 0.0 | - | - | - | - | 4 | 4 |
@@ -308,6 +468,37 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | n (per col) | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 
 ## Integration
+
+### Multi-page questions still answered from one page, by question type
+
+> **swept**: question type × whether a multi-page question answers on one page (TLV) · **dataset**: longdocurl · **scan**: any · **sampling**: full (hop: multi) · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **representation**: T/TL/TLV/V · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **prompt_mode**: none · **bound**: the ranker picks the surviving page, so every survival share is a lower bound on redundancy
+
+_Rung TLV, colqwen3 ranking, uninstructed. `solved` is the multi-page questions the reasoner answers correctly with the WHOLE gold set; the two rate columns are how many of those it still answers with only the top-ranked gold page, and with the gold set minus its lowest-ranked page. A high rate means the annotation marks pages the answer does not need. The ranker picks which page survives, so a question that fails might still be answerable from a different single page: every rate here is a LOWER bound on redundancy. `counted as` marks the types `config.LDU_MULTIHOP_TYPES` keeps, which is those under 50% on the first column._
+
+| question_type | solved | keep top-1 % | drop bottom-1 % | counted as |
+| --- | --- | --- | --- | --- |
+| extract | 482 | 78.6 | 81.5 | - |
+| topic2title | 46 | 6.5 | 4.3 | multi-hop |
+| summary2title | 78 | 69.2 | 78.2 | - |
+| summary2tab | 19 | 31.6 | 31.6 | multi-hop |
+| calculate | 27 | 29.6 | 40.7 | multi-hop |
+| count | 48 | 47.9 | 58.3 | multi-hop |
+| compare | 54 | 70.4 | 72.2 | - |
+| summarize | 3 | 100.0 | 100.0 | - |
+| **All** | 757 | 67.9 | 71.7 | - |
+
+### Integration on genuinely multi-page questions (LongDocURL)
+
+> **swept**: gold-page count × rung, all types against the multi-hop types only · **dataset**: longdocurl · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **page_selection**: oracle · **prompt_mode**: none · **types**: config.LDU_MULTIHOP_TYPES — kept when under half of a type's solved multi-page questions survive on the top-ranked gold page alone
+
+_Uninstructed, oracle pages. The second row is what the integration tables report; the fourth keeps only topic2title, summary2tab, calculate, count, the types whose multi-page questions mostly cannot be answered from one page (see `ldu_page_need`), and the third is its complement within the multi-page pool. Rows three and four partition row two and sum to it; row two therefore must not be added to either of them. `M-S` is the row minus the single-page row, in points._
+
+| bucket | T | TL | TLV | V | M-S T | M-S TL | M-S TLV | M-S V | n |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| single page | 65.5 [60.5-70.4] | 73.8 [70.6-76.9] | 74.5 [71.4-77.7] | 64.4 [60.9-68.2] | - | - | - | - | 1095 |
+| multi-page (all types) | 62.2 [58.6-65.9] | 62.4 [58.9-66.2] | 69.3 [65.8-73.0] | 62.0 [58.3-65.5] | -3.3 | -11.4 | -5.3 | -2.4 | 1213 |
+| multi-page (non multi-hop types) | 74.1 [70.5-77.4] | 76.3 [72.6-79.9] | 82.7 [79.7-85.4] | 74.5 [71.3-77.4] | +8.7 | +2.4 | +8.2 | +10.1 | 813 |
+| multi-page (multi-hop types) | 37.5 [32.1-43.1] | 33.0 [28.1-38.9] | 40.3 [34.8-46.8] | 36.4 [31.2-42.0] | -28.0 | -40.9 | -34.2 | -28.0 | 400 |
 
 ### Integration: accuracy by evidence hop, per task family and rung (oracle pages)
 
@@ -330,14 +521,14 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | Reasoning | T | 61.4 [52.3-70.2] | 70.6 [64.8-76.6] | +9.2 | 379 |
 | Reasoning | TL | 72.5 [65.9-79.5] | 63.6 [57.1-70.6] | -8.9 | 351 |
 | Reasoning | TV | 70.3 [63.2-77.6] | 73.1 [66.7-79.1] | +2.9 | 370 |
-| Reasoning | TLV | 75.7 [69.1-81.7] | 71.4 [64.8-77.4] | -4.3 | 337 |
+| Reasoning | TLV | 75.8 [68.8-81.8] | 71.4 [64.8-77.4] | -4.5 | 338 |
 | Reasoning | V | 52.5 [43.9-60.4] | 62.3 [55.2-68.7] | +9.8 | 381 |
 | **all task_tags** | **T** | **65.6 [60.6-70.5]** | **62.2 [58.6-65.9]** | **-3.4** | **2293** |
 | **all task_tags** | **TL** | **74.0 [70.7-77.0]** | **62.4 [58.9-66.2]** | **-11.6** | **2223** |
 | **all task_tags** | **TV** | **72.5 [68.8-76.0]** | **66.9 [63.8-70.1]** | **-5.6** | **2268** |
-| **all task_tags** | **TLV** | **74.7 [71.4-77.9]** | **69.3 [65.8-73.0]** | **-5.4** | **2166** |
+| **all task_tags** | **TLV** | **74.7 [71.5-77.9]** | **69.3 [65.8-73.0]** | **-5.4** | **2167** |
 | **all task_tags** | **V** | **64.5 [61.0-68.3]** | **62.0 [58.3-65.5]** | **-2.5** | **2302** |
-| n (per col) | - | 5428 | 5824 | - | - |
+| n (per col) | - | 5429 | 5824 | - | - |
 
 ### Integration: accuracy by evidence hop, per question type and rung (oracle pages)
 
@@ -380,7 +571,7 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | count | T | 61.5 [42.3-80.8] | 56.8 [46.7-66.3] | -4.7 | 114 |
 | count | TL | 65.4 [46.2-84.6] | 53.2 [42.7-63.2] | -12.2 | 105 |
 | count | TV | 73.1 [53.8-88.5] | 61.4 [50.7-71.1] | -11.6 | 109 |
-| count | TLV | 72.0 [56.0-88.0] | 64.0 [52.7-74.0] | -8.0 | 100 |
+| count | TLV | 73.1 [57.7-88.5] | 64.0 [52.7-74.0] | -9.1 | 101 |
 | count | V | 65.4 [46.2-80.9] | 55.8 [46.3-66.0] | -9.6 | 112 |
 | compare | T | 66.7 [52.8-80.0] | 88.0 [78.9-94.9] | +21.3 | 111 |
 | compare | TL | 75.0 [60.6-87.9] | 80.9 [70.5-89.9] | +5.9 | 104 |
@@ -392,7 +583,7 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | summarize | TV | 57.1 [28.6-85.7] | 100.0 [100.0-100.0] | +42.9 | 12 |
 | summarize | TLV | 85.7 [57.1-100.0] | 75.0 [25.0-100.0] | -10.7 | 11 |
 | summarize | V | 71.4 [28.6-100.0] | 100.0 [100.0-100.0] | +28.6 | 13 |
-| n (per col) | - | 5428 | 5824 | - | - |
+| n (per col) | - | 5429 | 5824 | - | - |
 
 ### Integration: accuracy by evidence hop, per answer format and rung (oracle pages)
 
@@ -415,7 +606,7 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | Integer | T | 66.4 [58.7-74.0] | 65.2 [58.6-72.1] | -1.2 | 427 |
 | Integer | TL | 76.5 [70.3-81.9] | 63.0 [55.5-70.4] | -13.5 | 402 |
 | Integer | TV | 79.6 [75.0-84.3] | 70.6 [63.8-77.0] | -9.0 | 420 |
-| Integer | TLV | 82.3 [76.5-87.4] | 71.4 [63.9-78.3] | -10.8 | 388 |
+| Integer | TLV | 82.4 [76.2-87.6] | 71.4 [63.9-78.3] | -10.9 | 389 |
 | Integer | V | 64.6 [57.3-72.5] | 64.7 [57.7-71.2] | +0.1 | 427 |
 | Float | T | 77.7 [66.9-86.7] | 67.7 [55.4-79.6] | -9.9 | 183 |
 | Float | TL | 83.1 [76.2-89.2] | 60.3 [45.3-72.6] | -22.7 | 176 |
@@ -427,7 +618,82 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | None | TV | - | 100.0 [100.0-100.0] | - | 3 |
 | None | TLV | - | 100.0 [100.0-100.0] | - | 3 |
 | None | V | - | 66.7 [33.3-100.0] | - | 3 |
-| n (per col) | - | 5428 | 5824 | - | - |
+| n (per col) | - | 5429 | 5824 | - | - |
+
+### Integration: accuracy by evidence hop, per evidence source and rung (oracle pages)
+
+> **swept**: gold evidence-page count (single vs multi) x evidence source x rung · **dataset**: longdocurl · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **page_selection**: oracle · **prompt_mode**: none · **hop**: single/multi only, hop=none dropped · **gap**: M − S = multi-page minus single-page accuracy, in points (negative = multi-page is worse) · **source blocks**: overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once
+
+_LongDocURL. Built by the same builder as the MMLongBench table of the same name, so the layout, groupings and per-cell n mean exactly what they do there. The pools are NOT comparable cell for cell: LongDocURL documents are 51-149 pages (mean 89) against MMLongBench's 47.5, and its questions carry more gold pages, so read a difference between the two reports as a dataset difference and not a method one. hop=none is dropped: those rows are answerable questions that recorded no gold evidence pages, not unanswerable ones, so they carry no integration signal. Accuracy columns are percentages. `M − S` is multi-page accuracy MINUS single-page accuracy, in points, so it reads as how multi-page evidence performs relative to single-page: a NEGATIVE value means multi-page is worse._
+
+| evidence_source | rung | single | multi | M − S | n |
+| --- | --- | --- | --- | --- | --- |
+| Figure | T | 57.9 [49.4-65.8] | 67.7 [60.1-74.7] | +9.8 | 554 |
+| Figure | TL | 68.7 [61.7-75.6] | 62.2 [54.7-69.2] | -6.5 | 545 |
+| Figure | TV | 60.9 [53.5-68.2] | 76.0 [70.2-81.3] | +15.0 | 551 |
+| Figure | TLV | 68.4 [60.8-75.8] | 79.3 [74.6-83.8] | +10.9 | 542 |
+| Figure | V | 60.9 [52.9-68.5] | 70.0 [64.0-75.5] | +9.1 | 554 |
+| Layout | T | 53.3 [44.5-62.5] | 47.3 [42.0-52.6] | -6.1 | 760 |
+| Layout | TL | 62.1 [54.6-70.3] | 49.2 [44.1-55.0] | -12.9 | 738 |
+| Layout | TV | 66.7 [58.4-75.4] | 52.9 [48.0-58.6] | -13.8 | 745 |
+| Layout | TLV | 63.1 [55.3-71.1] | 54.0 [48.1-59.8] | -9.1 | 708 |
+| Layout | V | 57.9 [49.6-66.7] | 50.4 [45.0-55.9] | -7.5 | 764 |
+| Others | T | 100.0 [100.0-100.0] | 100.0 [100.0-100.0] | +0.0 | 8 |
+| Others | TL | 100.0 [100.0-100.0] | 100.0 [100.0-100.0] | +0.0 | 8 |
+| Others | TV | 100.0 [100.0-100.0] | 100.0 [100.0-100.0] | +0.0 | 8 |
+| Others | TLV | 100.0 [100.0-100.0] | 75.0 [60.0-100.0] | -25.0 | 8 |
+| Others | V | 75.0 [50.0-100.0] | 75.0 [60.0-100.0] | +0.0 | 8 |
+| Table | T | 66.6 [59.1-72.9] | 50.5 [42.7-58.8] | -16.1 | 858 |
+| Table | TL | 78.3 [74.7-81.9] | 50.2 [42.5-58.9] | -28.1 | 811 |
+| Table | TV | 71.7 [66.9-76.6] | 50.4 [42.7-58.3] | -21.4 | 853 |
+| Table | TLV | 75.4 [70.6-79.5] | 51.1 [42.7-59.4] | -24.3 | 789 |
+| Table | V | 62.9 [58.5-67.6] | 46.5 [38.7-54.6] | -16.4 | 868 |
+| Text | T | 77.4 [71.2-83.1] | 74.3 [70.3-78.1] | -3.1 | 984 |
+| Text | TL | 81.4 [76.9-85.9] | 78.5 [74.8-82.0] | -2.8 | 970 |
+| Text | TV | 82.4 [77.2-86.8] | 79.6 [76.4-82.3] | -2.7 | 971 |
+| Text | TLV | 82.3 [78.3-86.2] | 82.3 [79.3-85.2] | -0.0 | 943 |
+| Text | V | 72.4 [67.2-77.3] | 74.8 [71.6-78.2] | +2.3 | 985 |
+| n (per col) | - | 5429 | 5824 | - | - |
+
+### Integration cross-tab: accuracy by evidence source, rung, and evidence-page bucket (oracle pages)
+
+> **swept**: evidence source x rung x evidence-page bucket (1 / 2 / 3+) · **dataset**: longdocurl · **scan**: any · **sampling**: full · **parser**: paddleocrvl · **reasoner_spec**: qwen3vl-8b-local · **quantization**: bf16 · **visual_resolution**: med · **pool**: LongDocURL answerable pool, 2,317 questions over 395 documents (51-149 pages, mean 89) · **page_selection**: oracle · **prompt_mode**: none · **buckets**: single/multi only, hop=none dropped · **source blocks**: overlapping — a question citing Chart + Table is counted in both, so block n do not sum to the corpus; the All sources rows pool each question once · **thin rows**: per-cell n rides inline; a thin cell reads as survivorship, not robustness, so this is a trend table rather than a precision one
+
+_LongDocURL. Built by the same builder as the MMLongBench table of the same name, so the layout, groupings and per-cell n mean exactly what they do there. The pools are NOT comparable cell for cell: LongDocURL documents are 51-149 pages (mean 89) against MMLongBench's 47.5, and its questions carry more gold pages, so read a difference between the two reports as a dataset difference and not a method one. The evidence-source companion to the doc_type integration cross-tab: same buckets, same rungs, the modality a question draws on replacing the document class. Buckets are the number of gold evidence pages the question cites, taken from the corpus annotation that `hop` is derived from (NOT from `page_indices`, which for a no-gold-page question carries a stand-in page and would misbucket it); zero-evidence questions are dropped. 3+ merges the finer 3 / 4-5 / 6+ buckets of the integration-detail table. A question can cite several sources (e.g. Chart + Table) and is counted in each one it cites, so the source blocks overlap and their n do not sum to the corpus. The bolded All rows pool every question exactly once and are therefore NOT a column sum of the blocks above them. Every cell carries its own n: OOM attrition is rung-dependent at high page counts (worst on TLV), so a thin cell reads as survivorship, not robustness — check the n before quoting the cell. Read the 3+ column for trend, not precision: crossed with five sources it falls to single digits in places._
+
+| evidence_source | rung | 1 | 2 | 3+ | n |
+| --- | --- | --- | --- | --- | --- |
+| Figure | T | 57.9 [49.4-65.8] (n=297) | 71.0 [62.4-78.6] (n=193) | 57.8 [43.1-71.0] (n=64) | 554 |
+| Figure | TL | 68.7 [61.7-75.6] (n=291) | 67.2 [59.0-75.7] (n=192) | 46.8 [33.3-59.3] (n=62) | 545 |
+| Figure | TV | 60.9 [53.5-68.2] (n=297) | 82.8 [76.5-88.8] (n=192) | 54.8 [42.9-66.1] (n=62) | 551 |
+| Figure | TLV | 68.4 [60.8-75.8] (n=291) | 84.3 [78.6-89.5] (n=191) | 63.3 [52.0-75.0] (n=60) | 542 |
+| Figure | V | 60.9 [52.9-68.5] (n=297) | 73.1 [66.5-79.0] (n=193) | 60.9 [46.4-72.2] (n=64) | 554 |
+| Layout | T | 53.3 [44.5-62.5] (n=195) | 44.2 [38.3-51.0] (n=398) | 54.5 [44.8-63.9] (n=167) | 760 |
+| Layout | TL | 62.1 [54.6-70.3] (n=195) | 46.4 [40.0-53.1] (n=388) | 56.1 [46.4-65.4] (n=155) | 738 |
+| Layout | TV | 66.7 [58.4-75.4] (n=195) | 50.3 [44.3-56.7] (n=398) | 59.9 [51.3-69.1] (n=152) | 745 |
+| Layout | TLV | 63.1 [55.3-71.1] (n=195) | 52.5 [46.2-59.1] (n=377) | 58.1 [48.2-68.5] (n=136) | 708 |
+| Layout | V | 57.9 [49.6-66.7] (n=195) | 46.7 [40.9-53.2] (n=405) | 59.8 [50.3-68.9] (n=164) | 764 |
+| Others | T | 100.0 [100.0-100.0] (n=4) | 100.0 [100.0-100.0] (n=4) | - (n=0) | 8 |
+| Others | TL | 100.0 [100.0-100.0] (n=4) | 100.0 [100.0-100.0] (n=4) | - (n=0) | 8 |
+| Others | TV | 100.0 [100.0-100.0] (n=4) | 100.0 [100.0-100.0] (n=4) | - (n=0) | 8 |
+| Others | TLV | 100.0 [100.0-100.0] (n=4) | 75.0 [60.0-100.0] (n=4) | - (n=0) | 8 |
+| Others | V | 75.0 [50.0-100.0] (n=4) | 75.0 [60.0-100.0] (n=4) | - (n=0) | 8 |
+| Table | T | 66.6 [59.1-72.9] (n=569) | 50.6 [42.4-60.2] (n=249) | 50.0 [35.0-66.7] (n=40) | 858 |
+| Table | TL | 78.3 [74.7-81.9] (n=558) | 50.9 [41.6-59.8] (n=226) | 44.4 [25.0-65.2] (n=27) | 811 |
+| Table | TV | 71.7 [66.9-76.6] (n=569) | 50.6 [42.4-59.8] (n=249) | 48.6 [31.6-65.7] (n=35) | 853 |
+| Table | TLV | 75.4 [70.6-79.5] (n=556) | 52.2 [43.2-61.0] (n=207) | 42.3 [21.4-63.6] (n=26) | 789 |
+| Table | V | 62.9 [58.5-67.6] (n=569) | 45.5 [37.7-54.1] (n=255) | 52.3 [37.0-67.4] (n=44) | 868 |
+| Text | T | 77.4 [71.2-83.1] (n=323) | 76.3 [71.8-81.0] (n=469) | 69.3 [61.5-76.2] (n=192) | 984 |
+| Text | TL | 81.4 [76.9-85.9] (n=322) | 81.1 [77.1-84.9] (n=470) | 71.9 [64.1-79.1] (n=178) | 970 |
+| Text | TV | 82.4 [77.2-86.8] (n=323) | 82.1 [78.6-85.4] (n=468) | 73.3 [66.3-80.2] (n=180) | 971 |
+| Text | TLV | 82.3 [78.3-86.2] (n=322) | 85.2 [81.8-88.5] (n=460) | 73.9 [67.1-81.3] (n=161) | 943 |
+| Text | V | 72.4 [67.2-77.3] (n=323) | 75.8 [72.0-79.7] (n=471) | 72.3 [65.7-78.5] (n=191) | 985 |
+| **All** | T | 65.6 [60.6-70.5] (n=1093) | 62.2 [58.2-66.3] (n=898) | 61.9 [55.3-67.7] (n=302) | 2293 |
+| **All** | TL | 74.0 [70.7-77.0] (n=1076) | 63.4 [59.3-67.7] (n=871) | 59.4 [52.4-66.2] (n=276) | 2223 |
+| **All** | TV | 72.5 [68.8-76.0] (n=1093) | 67.6 [63.8-71.4] (n=896) | 64.5 [58.6-70.1] (n=279) | 2268 |
+| **All** | TLV | 74.7 [71.5-77.9] (n=1074) | 70.4 [66.6-74.5] (n=846) | 65.2 [58.6-72.0] (n=247) | 2167 |
+| **All** | V | 64.5 [61.0-68.3] (n=1093) | 61.5 [57.4-65.6] (n=906) | 63.4 [57.5-68.9] (n=303) | 2302 |
+| n (per col) | - | 5429 | 4417 | 1407 | - |
 
 ### Integration detail: accuracy by gold evidence-page count and rung (oracle pages)
 
@@ -437,12 +703,12 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 
 | evidence pages | T | TL | TV | TLV | V | n |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 65.6 [60.6-70.5] a1.0 w33.4 (n=1093) | 74.0 [70.7-77.0] a1.3 w24.7 (n=1076) | 72.5 [68.8-76.0] a0.2 w27.4 (n=1093) | 74.7 [71.4-77.9] a0.2 w25.2 (n=1073) | 64.5 [61.0-68.3] a0.2 w35.3 (n=1093) | 5428 |
+| 1 | 65.6 [60.6-70.5] a1.0 w33.4 (n=1093) | 74.0 [70.7-77.0] a1.3 w24.7 (n=1076) | 72.5 [68.8-76.0] a0.2 w27.4 (n=1093) | 74.7 [71.5-77.9] a0.2 w25.1 (n=1074) | 64.5 [61.0-68.3] a0.2 w35.3 (n=1093) | 5429 |
 | 2 | 62.2 [58.2-66.3] a1.0 w36.7 (n=898) | 63.4 [59.3-67.7] a0.5 w36.2 (n=871) | 67.6 [63.8-71.4] a0.3 w32.0 (n=896) | 70.4 [66.6-74.5] a0.7 w28.8 (n=846) | 61.5 [57.4-65.6] a0.4 w38.1 (n=906) | 4417 |
 | 3 | 65.9 [58.0-73.4] a1.1 w33.0 (n=182) | 63.8 [55.4-72.0] a0.6 w35.6 (n=174) | 68.0 [60.2-75.8] a0.0 w32.0 (n=178) | 69.1 [61.5-76.7] a0.0 w30.9 (n=162) | 66.7 [59.5-74.1] a0.0 w33.3 (n=183) | 879 |
 | 4-5 | 53.9 [41.9-65.9] a0.0 w46.1 (n=89) | 53.2 [43.1-63.4] a0.0 w46.8 (n=79) | 57.0 [45.8-67.9] a0.0 w43.0 (n=86) | 59.7 [48.5-71.0] a0.0 w40.3 (n=72) | 60.7 [48.7-71.1] a0.0 w39.3 (n=89) | 415 |
 | 6+ | 61.3 [38.5-78.4] a3.2 w35.5 (n=31) | 47.8 [21.1-73.9] a0.0 w52.2 (n=23) | 66.7 [41.7-86.7] a0.0 w33.3 (n=15) | 46.2 [22.2-66.7] a0.0 w53.8 (n=13) | 51.6 [37.5-64.5] a0.0 w48.4 (n=31) | 113 |
-| n (per col) | 2293 | 2223 | 2268 | 2166 | 2302 | - |
+| n (per col) | 2293 | 2223 | 2268 | 2167 | 2302 | - |
 
 ### Integration detail (overall): how each rung degrades with evidence-page count
 
@@ -455,9 +721,9 @@ _LongDocURL. Built by the same builder as the MMLongBench table of the same name
 | T | 65.6 [60.6-70.5] (n=1093) | 62.2 [58.2-66.3] (n=898) | 65.9 [58.0-73.4] (n=182) | 53.9 [41.9-65.9] (n=89) | 61.3 [38.5-78.4] (n=31) | -4.3 | 2293 |
 | TL | 74.0 [70.7-77.0] (n=1076) | 63.4 [59.3-67.7] (n=871) | 63.8 [55.4-72.0] (n=174) | 53.2 [43.1-63.4] (n=79) | 47.8 [21.1-73.9] (n=23) | -26.2 | 2223 |
 | TV | 72.5 [68.8-76.0] (n=1093) | 67.6 [63.8-71.4] (n=896) | 68.0 [60.2-75.8] (n=178) | 57.0 [45.8-67.9] (n=86) | 66.7 [41.7-86.7] (n=15) | -5.8 | 2268 |
-| TLV | 74.7 [71.4-77.9] (n=1073) | 70.4 [66.6-74.5] (n=846) | 69.1 [61.5-76.7] (n=162) | 59.7 [48.5-71.0] (n=72) | 46.2 [22.2-66.7] (n=13) | -28.5 | 2166 |
+| TLV | 74.7 [71.5-77.9] (n=1074) | 70.4 [66.6-74.5] (n=846) | 69.1 [61.5-76.7] (n=162) | 59.7 [48.5-71.0] (n=72) | 46.2 [22.2-66.7] (n=13) | -28.5 | 2167 |
 | V | 64.5 [61.0-68.3] (n=1093) | 61.5 [57.4-65.6] (n=906) | 66.7 [59.5-74.1] (n=183) | 60.7 [48.7-71.1] (n=89) | 51.6 [37.5-64.5] (n=31) | -12.9 | 2302 |
-| n (per col) | 5428 | 4417 | 879 | 415 | 113 | - | - |
+| n (per col) | 5429 | 4417 | 879 | 415 | 113 | - | - |
 
 ## Deployment
 

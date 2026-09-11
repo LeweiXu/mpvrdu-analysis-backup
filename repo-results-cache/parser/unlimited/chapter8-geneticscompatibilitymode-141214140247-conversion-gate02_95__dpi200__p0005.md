@@ -1,0 +1,3 @@
+THE EUKARYOTIC CELL
+CYCLE AND MITOSIS
+Copyright © 2009 Pearson Education, Inc.

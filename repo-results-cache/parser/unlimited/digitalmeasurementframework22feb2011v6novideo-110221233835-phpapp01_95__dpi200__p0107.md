@@ -1,0 +1,4 @@
+Search Budgets vs Search Opportunities
+As illustrated below, there is a significant misalignment of marketing budgets to the actual performance of SEM.
+For every paid search click there are 5.6 organic clicks yet SEO receives less than 10% of the SEM budget and in most cases effort and resources.
+<table><tr><td></td><td colspan="3">Paid Search</td><td colspan="3">Organic Search</td></tr><tr><td></td><td>Budget</td><td>Clicks</td><td>Conversions</td><td>Budget</td><td>Clicks</td><td>Conversions</td></tr><tr><td>2007</td><td>88%</td><td>1</td><td>1.5</td><td>10%</td><td>5.6</td><td>1</td></tr><tr><td>2008</td><td>88%</td><td>1</td><td>1.5</td><td>10%</td><td>5.6</td><td>1</td></tr><tr><td>2010</td><td>91%</td><td>1</td><td>1.5</td><td>9%</td><td>5.6</td><td>1</td></tr></table>

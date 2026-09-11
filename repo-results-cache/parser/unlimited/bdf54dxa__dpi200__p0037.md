@@ -1,0 +1,7 @@
+USING YOUR DISHWASHER
+Control Panel
+![](images/0.jpg)
+
+Operation (Button)
+<table><tr><td>1 Power</td><td>Press this button to turn on the dishwasher, the screen lights up.</td></tr><tr><td>2 Program</td><td>Select the appropriate washing program and corresponding indicator will be lit.</td></tr><tr><td>3 Function</td><td>Press the button to select a function, corresponding indicator will be lit.</td></tr><tr><td>4 Alt</td><td>Press the button to select either upper basket or lower basket loaded, and the response indicator will be lit.</td></tr><tr><td>5 Delay</td><td>Press the button to increase the delay start time. Delay a cycle for up to 24 hours in one-hour increments. After setting the delay time, press the Start/Pause button to start.</td></tr><tr><td>6 Child lock</td><td>This option allows you to lock the buttons on the control panel, so children cannot accidentally start the dishwasher by pressing the buttons on the panel. Only the Power button remains active. To lock or unlock the buttons on the control panel, press and hold the Alt button+ Delay button for 3 seconds simultaneously.</td></tr><tr><td>7 Start/Pause</td><td>To start the selected washing program or pause it when the dishwasher is working.</td></tr></table>
+4
